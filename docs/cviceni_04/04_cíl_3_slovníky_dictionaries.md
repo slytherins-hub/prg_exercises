@@ -1,10 +1,10 @@
-﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE A SLOVNÍKY
+﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE, MNOŽINY A SLOVNÍKY
 
 Algoritmizace a programování
 
-## CÍL 3: SLOVNÍKY (DICTIONARIES)
+## CÍL 4: SLOVNÍKY (DICTIONARIES)
 
-### 3.1 Proč potřebujeme slovníky?
+### 4.1 Proč potřebujeme slovníky?
 
 **Seznam** funguje skvěle pro **sekvenci podobných prvků**:
 ```python
@@ -93,7 +93,7 @@ print(f"Pacient P002: {name}")
 
 ---
 
-### 3.3 Vytváření slovníků
+### 4.2 Vytváření slovníků
 
 Slovník vytvoříme pomocí **složených závorek `{}`** a párů **klíč: hodnota** oddělených čárkou.
 
@@ -121,7 +121,7 @@ lab_results = {
 > - **Klíč** – nejčastěji řetězec (`str`), ale může být i číslo (`int`)
 > - **Hodnota** – může být **cokoliv** (`str`, `int`, `float`, `list`...)
 
-### 3.4 Přístup k hodnotám
+### 4.3 Přístup k hodnotám
 
 K hodnotám přistupujeme pomocí **klíče v hranatých závorkách** `slovnik[klic]`.
 
@@ -248,7 +248,7 @@ Pak:
 
 ---
 
-### 3.5 Iterace přes slovníky
+### 4.4 Iterace přes slovníky
 
 Slovníky můžeme procházet pomocí **for cyklu** několika způsoby.
 
@@ -358,7 +358,7 @@ prodeje = {"leden": 120, "unor": 95, "brezen": 140}
 
 ---
 
-### 3.6 Metody slovníků
+### 4.5 Metody slovníků
 
 Užitečné metody pro práci se slovníky:
 

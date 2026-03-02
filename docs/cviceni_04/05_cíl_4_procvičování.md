@@ -2,7 +2,7 @@
 
 Algoritmizace a programování
 
-## CÍL 4: PROCVIČOVÁNÍ
+## CÍL 5: PROCVIČOVÁNÍ
 
 ---
 

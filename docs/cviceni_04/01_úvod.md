@@ -1,4 +1,4 @@
-﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE A SLOVNÍKY
+﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE, MNOŽINY A SLOVNÍKY
 
 Algoritmizace a programování
 
@@ -20,7 +20,14 @@ Algoritmizace a programování
  - `break` a `continue` pro řízení toku cyklu
  - Validace uživatelských vstupů pomocí while
 
-3. **Slovníky:**
+3. **Množiny (`set`):**
+
+ - Co je množina a proč se chová jako matematická množina
+ - Unikátnost prvků a odstranění duplicit
+ - Hashování a rychlé ověření členství (`in`)
+ - Základní operace: sjednocení, průnik, rozdíl
+
+4. **Slovníky:**
 
  - Proč slovník místo seznamu? – dict vs list
  - Vytváření slovníků (prázdné, s hodnotami)
@@ -29,7 +36,7 @@ Algoritmizace a programování
  - Iterace přes slovníky pomocí for cyklů
  - Vnořené slovníky
 
-4. **Procvičování:**
+5. **Procvičování:**
 
 - procvičovací programovací úkoly
   
