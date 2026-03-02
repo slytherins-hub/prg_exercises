@@ -1,0 +1,87 @@
+﻿site_name: BPC-PRG
+site_description: Kompletní materiály cvičení 1 až 4
+docs_dir: docs
+theme:
+  name: material
+  language: cs
+  palette:
+    - scheme: default
+      primary: blue
+      accent: teal
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - sane_lists
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Rozcestník: README.md
+  - Cvičení 1:
+    - Přehled: cviceni_01/README.md
+    - Úvod: cviceni_01/01_úvod.md
+    - Cíl 1 – instalace a příprava prostředí (uv): cviceni_01/02_cíl_1_instalace_a_příprava_prostředí_uv.md
+    - Cíl 2 – první program a základy syntaxe: cviceni_01/03_cíl_2_první_program_a_základy_syntaxe.md
+    - Cíl 3 – pokročilé podmínky: cviceni_01/04_cíl_3_pokročilé_podmínky.md
+    - Cíl 4 – kombinace cyklů a podmínek: cviceni_01/05_cíl_4_kombinace_cyklu_a_podmínek.md
+    - Závěrečné úkoly: cviceni_01/06_závěrečné_úkoly.md
+    - Bonusové úkoly: cviceni_01/07_bonusové_úkoly.md
+    - Shrnutí: cviceni_01/08_shrnutí.md
+    - Self-check: cviceni_01/09_self_check_procvičení_znalostí.md
+  - Cvičení 2:
+    - Přehled: cviceni_02/README.md
+    - Úvod: cviceni_02/01_úvod.md
+    - Cíl 1 – datové typy a konverze: cviceni_02/02_cíl_1_datové_typy_a_konverze.md
+    - Cíl 2 – základy práce s řetězci: cviceni_02/03_cíl_2_základy_práce_s_řetězci.md
+    - Cíl 3 – indexace a průchod řetězcem: cviceni_02/04_cíl_3_indexace_a_průchod_řetězcem.md
+    - Cíl 4 – metody řetězců: cviceni_02/05_cíl_4_metody_řetězců.md
+    - Cíl 5 – podmínky s řetězci: cviceni_02/06_cíl_5_podmínky_s_řetězci.md
+    - Cíl 6 – základy debugování v PyCharm: cviceni_02/07_cíl_6_základy_debugování_v_pycharm.md
+    - Závěrečný úkol – analýza textu: cviceni_02/08_závěrečný_úkol_analýza_textu.md
+    - Shrnutí: cviceni_02/09_shrnutí.md
+    - Self-check: cviceni_02/10_self_check_procvičení_znalostí.md
+    - Bonusové úkoly: cviceni_02/11_bonusové_úkoly.md
+  - Cvičení 3:
+    - Přehled: cviceni_03/README.md
+    - Úvod: cviceni_03/01_úvod.md
+    - Cíl 1 – funkce a základy: cviceni_03/02_cíl_1_funkce_základy.md
+    - Cíl 2 – seznamy: cviceni_03/03_cíl_2_seznamy.md
+    - Cíl 3 – procvičování: cviceni_03/04_cíl_3_procvičování.md
+    - Bonusové úkoly: cviceni_03/05_bonusové_úkoly.md
+    - Self-check: cviceni_03/06_self_check_procvičení_znalostí.md
+  - Cvičení 4:
+    - Přehled: cviceni_04/README.md
+    - Úvod: cviceni_04/01_úvod.md
+    - Cíl 1 – výjimky a try/except: cviceni_04/02_cíl_1_výjimky_a_try_except.md
+    - Cíl 2 – while cyklus: cviceni_04/03_cíl_2_while_cyklus.md
+    - Cíl 3 – slovníky: cviceni_04/04_cíl_3_slovníky_dictionaries.md
+    - Cíl 4 – procvičování: cviceni_04/05_cíl_4_procvičování.md
+    - Bonusové úkoly: cviceni_04/06_bonusové_úkoly.md
+    - Self-check: cviceni_04/07_self_check_procvičení_znalostí.md
+
+extra_css:
+  - assets/nav-toggle.css
+  - assets/theme-overrides.css
+
+extra_javascript:
+  - assets/nav-toggle.js
+  - assets/content-enhancements.js
+
+validation:
+  nav:
+    omitted_files: ignore
+

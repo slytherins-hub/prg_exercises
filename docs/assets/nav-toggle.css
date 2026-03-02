@@ -1,0 +1,47 @@
+#topnav-toggle {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 10000;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #111827;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+html.topnav-hidden,
+body.topnav-hidden {
+    --md-header-height: 0px;
+}
+
+html.topnav-hidden .md-header,
+html.topnav-hidden .md-tabs,
+html.topnav-hidden [data-md-component="header"],
+html.topnav-hidden [data-md-component="tabs"],
+body.topnav-hidden .md-header,
+body.topnav-hidden .md-tabs,
+body.topnav-hidden [data-md-component="header"],
+body.topnav-hidden [data-md-component="tabs"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    min-height: 0 !important;
+}
+
+html.topnav-hidden .md-main,
+body.topnav-hidden .md-main,
+html.topnav-hidden .md-container,
+body.topnav-hidden .md-container {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+body.topnav-hidden #topnav-toggle,
+html.topnav-hidden #topnav-toggle {
+    top: 12px;
+}

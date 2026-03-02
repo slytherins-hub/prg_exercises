@@ -1,0 +1,21 @@
+[project]
+name = "prg-pokus"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "markdown2>=2.5.4",
+    "markitdown[all]>=0.1.4",
+    "mkdocs>=1.6.1,<2.0",
+    "mkdocs-material>=9.5.0,<9.7.0",
+    "pygments>=2.19.2",
+    "python-docx>=1.2.0",
+    "weasyprint>=68.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "temp_check_uv",
+    "temp_test_uv",
+    "cviceni_test",
+]
