@@ -5,7 +5,7 @@
 
 - GitHub Pages: `https://slytherins-hub.github.io/prg_exercises/`
 
-V repozitáři je připravená dokumentace cvičení 1-4 přes MkDocs a automatický deploy na GitHub Pages.
+V repozitáři je připravená dokumentace cvičení PRG přes MkDocs a automatický deploy na GitHub Pages.
 
 ## Co už je nastavené
 
