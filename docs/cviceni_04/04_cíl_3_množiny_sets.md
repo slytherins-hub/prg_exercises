@@ -17,6 +17,7 @@ Typické situace v praxi:
 - rychlé ověření, jestli je uživatelské jméno na blacklistu.
 
 > **📘 Co je množina (`set`)?**
+> 
 > `set` je datová struktura, která se chová jako **matematická množina**: nemá duplicity a podporuje operace jako sjednocení, průnik a rozdíl.
 
 ---
@@ -33,11 +34,8 @@ Můžeš si to představit tak, že existuje **hashovací funkce**, která z hod
 
 > **⚠️ Pozor:** Dvě různé hodnoty můžou výjimečně skončit na stejném místě (tzv. **kolize**). Python to umí interně vyřešit.
 
-Zjednodušený nákres pro `set` (bez hodnot, jen prvky):
 
-![Nákres hashování v setu](../assets/cviceni_04/set_hashing_diagram.svg)
-
-> **💡 Poznámka:** U `set` se ukládají jen samotné prvky (na rozdíl od slovníku, kde je dvojice klíč–hodnota).
+> **Poznámka:** U `set` se ukládají jen samotné prvky (na rozdíl od slovníku, kde je dvojice klíč–hodnota).
 
 Krátký model:
 
@@ -55,7 +53,7 @@ Jednoduchý nákres, co se děje uvnitř:
 "latex"  -> hash("latex")  -> přihrádka 2 (už tam je, nepřidá se znovu)
 ```
 
-> **💡 Poznámka:** Proto bývá kontrola `x in mnozina` rychlá — Python jde rovnou do „správné přihrádky“ místo procházení celé kolekce.
+> **Poznámka:** Proto bývá kontrola `x in mnozina` rychlá — Python jde rovnou do „správné přihrádky“ místo procházení celé kolekce.
 
 ```python
 kody_oddeleni = {"A", "B", "A", "C"}
@@ -93,11 +91,11 @@ print(prunik_metoda)
 print(rozdil_metoda)
 ```
 
-> **💡 Tip:** Když řešíš „co je společné“, „co je navíc“ nebo „co je unikátní“, je `set` často jednodušší než seznam.
+> ** Tip:** Když řešíš „co je společné“, „co je navíc“ nebo „co je unikátní“, je `set` často jednodušší než seznam.
 
 ---
 
-### 3.3 Převod mezi list a set
+### 3.3 Převod mezi seznamem a množinou
 
 ```python
 mereni = ["EKG", "EEG", "EKG", "MRI", "EEG"]
@@ -111,7 +109,7 @@ print(mereni_bez_duplikat)
 
 ---
 
-**📝 ÚKOL 1: Unikátní diagnózy**
+#### ÚKOL: Unikátní diagnózy
 
 Máš seznam diagnóz:
 
@@ -125,7 +123,7 @@ diagnozy = ["I10", "E11", "I10", "J45", "E11", "N39"]
 
 ---
 
-**📝 ÚKOL 2: Společné hashtagy**
+#### ÚKOL: Společné hashtagy
 
 Máš dva příspěvky na sociální síti a u každého množinu hashtagů:
 

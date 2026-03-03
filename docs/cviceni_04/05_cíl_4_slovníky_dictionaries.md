@@ -69,6 +69,7 @@ print(f"Pacient P002: {name}")
 | **Nastavení přístroje**  | Pozice v seznamu = význam            | `{"mode": "CT", "voltage": 120}` |
 
 > **📘 Co je slovník (dictionary)?**
+> 
 > **Slovník** je datová struktura, která **páruje klíče s hodnotami**. Místo indexování čísly (0, 1, 2...) indexujeme **smysluplnými klíči** (jméno, kód, ID...).
 
 ---
@@ -85,10 +86,12 @@ print(f"Pacient P002: {name}")
 | **Unikátní klíče**            | ❌ Může mít duplicity        | Klíče automaticky unikátní                                                            |
 | **Čitelnost kódu**            | ❌ Co znamená `data[2]`?     | `data["age"]` je jasné                                                                |
 
-> ** Klíčový princip:**
+> **Klíčový princip:**
+> 
 > Pokud potřebuješ **najít hodnotu podle něčeho jiného než pozice** (číslo, jméno, kód...), použij **slovník**!
 
 > **⚠️ Pozor – klíče musí být unikátní:**
+> 
 > Ve slovníku **nemůžeš mít stejný klíč dvakrát**. Pokud přidáš stejný klíč, druhá hodnota **přepíše** první.
 
 ---
@@ -118,6 +121,7 @@ lab_results = {
 ```
 
 > **Poznámka:**
+> 
 > - **Klíč** – nejčastěji řetězec (`str`), ale může být i číslo (`int`)
 > - **Hodnota** – může být **cokoliv** (`str`, `int`, `float`, `list`...)
 
@@ -155,7 +159,7 @@ print(patient)
 # {'name': 'Jan Novák', 'age': 46, 'diagnosis': 'Diabetes', 'blood_group': 'AB+'}
 ```
 
-#### ⚠️ Co když klíč neexistuje?
+#### Co když klíč neexistuje?
 
 Pokud se pokusíš přistoupit ke klíči, který ve slovníku **není**, dostaneš **chybu `KeyError`**:
 
@@ -190,7 +194,8 @@ else:
 print(f"Krevní skupina: {blood_group}")
 ```
 
-> ** Kdy použít co?**
+> **Kdy použít co?**
+> 
 > - **`slovnik[klic]`** – Když **víš jistě**, že klíč existuje (jinak chyba)
 > - **`in slovnik`** – Když chceš **zkontrolovat existenci** před přístupem
 
@@ -232,7 +237,7 @@ CRP: Nevyšetřeno
 glucose: Nevyšetřeno
 ```
 
-#### ÚKOL (rychlé procvičení):
+#### ÚKOL: Knihovnický záznam
 
 Vytvoř slovník `book` s klíči:
 
@@ -253,6 +258,7 @@ Pak:
 Slovníky můžeme procházet pomocí **for cyklu** několika způsoby.
 
 > **⚠️ Poznámka o pořadí:**
+> 
 > I když Python 3.7+ zachovává pořadí vkládání, **slovníky nejsou určené pro pořadí**. Používej je pro **vyhledávání podle klíče**, ne pro pořadí prvků!
 
 #### Iterace přes klíče
@@ -304,7 +310,7 @@ age: 45
 diagnosis: Diabetes
 ```
 
-> ** Doporučení:** Téměř vždy použij `.items()` – získáš klíč i hodnotu najednou!
+> **Doporučení:** Téměř vždy použij `.items()` – získáš klíč i hodnotu najednou!
 
 **Medicínský příklad – zpracování laboratorních výsledků:**
 
@@ -345,7 +351,7 @@ thrombocytes: 250 (150-400) V normě
 CRP: 12.5 (0-5) Mimo normu!
 ```
 
-#### ÚKOL:
+#### ÚKOL: Statistika prodejů
 
 Máš slovník:
 ```python
@@ -373,7 +379,7 @@ values_list = list(patient.values()) # ['Jan', 45, 'Diabetes']
 pairs_list = list(patient.items()) # [('name', 'Jan'), ('age', 45), ...]
 ```
 
-> **Poznámka:** Použití v cyklech viz sekce 3.5 – Iterace přes slovníky.
+> **Poznámka:** Použití v cyklech viz sekce 4.4 – Iterace přes slovníky.
 
 #### `.pop(key)` – Odstranění a vrácení hodnoty
 
@@ -399,7 +405,8 @@ del patient["diagnosis"] # Odstraní klíč
 print(patient) # {'name': 'Jan', 'age': 45}
 ```
 
-> ** `.pop()` vs `del`:**
+> **`.pop()` vs `del`:**
+> 
 > - **`.pop()`** – odstraní a **vrátí hodnotu**, má defaultní hodnotu
 > - **`del`** – jen odstraní, **nevrací nic**
 

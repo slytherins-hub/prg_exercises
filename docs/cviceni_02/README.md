@@ -9,7 +9,7 @@
 6. [CÍL 5: PODMÍNKY S ŘETĚZCI](06_cíl_5_podmínky_s_řetězci.md)
 7. [CÍL 6: ZÁKLADY DEBUGOVÁNÍ V PYCHARM](07_cíl_6_základy_debugování_v_pycharm.md)
 8. [ZÁVĚREČNÝ ÚKOL: ANALÝZA TEXTU](08_závěrečný_úkol_analýza_textu.md)
-9. [SHRNUTÍ](09_shrnutí.md)
-10. [ SELF-CHECK: PROCVIČENÍ ZNALOSTÍ](10_self_check_procvičení_znalostí.md)
-11. [ BONUSOVÉ ÚKOLY](11_bonusové_úkoly.md)
+9. [ BONUSOVÉ ÚKOLY](09_bonusové_úkoly.md)
+10. [SHRNUTÍ](10_shrnutí.md)
+11. [ SELF-CHECK: PROCVIČENÍ ZNALOSTÍ](11_self_check_procvičení_znalostí.md)
 

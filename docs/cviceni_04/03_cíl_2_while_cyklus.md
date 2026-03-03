@@ -51,7 +51,8 @@ while heart_rate > 100 or heart_rate < 60:
 print("Tep v normě")
 ```
 
-> ** Klíčový rozdíl:**
+> **Klíčový rozdíl:**
+> 
 > - **For** = "Udělej to N-krát" (známý počet)
 > - **While** = "Dělej to, DOKUD platí podmínka" (neznámý počet)
 
@@ -122,7 +123,7 @@ Start!
 
 ---
 
-#### ÚKOL:
+#### ÚKOL: Simulace uklidnění tepu
 
 Simuluj uklidnění tepu pacienta po zátěži:
 
@@ -160,11 +161,13 @@ while counter < 5:
 ```
 
 **Jak poznáš nekonečný cyklus?**
+
 - Program "zamrzne" a nic se neděje
 - Terminál vypíše nekonečně mnoho řádků
 - CPU využití skočí na 100%
 
 **Jak ho zastavit?**
+
 - V PyCharmu: **Červené tlačítko Stop** nebo **Ctrl + C**
 - V terminálu: **Ctrl + C**
 
@@ -175,7 +178,7 @@ while counter < 5:
 
 ---
 
-### 2.5 Break a continue pro řízení toku cyklu
+### 2.5 Řízení toku cyklu
 
 #### Break – okamžité ukončení cyklu
 
@@ -292,7 +295,7 @@ while measurements < 10:
 print(f"\nCelkem platných měření: {valid_count}/10")
 ```
 
-> ** `Break` a `continue` fungují i ve for cyklu!**
+> **`Break` a `continue` fungují i ve for cyklu!**
 > Vše, co jsi se naučil o `break` a `continue`, funguje stejně i v `for` cyklu:
 >
 > ```python
@@ -307,7 +310,7 @@ print(f"\nCelkem platných měření: {valid_count}/10")
 > ```
 ---
 
-#### ÚKOL:
+#### ÚKOL: Filtrování čísel
 
 Natrénuj `continue` a `break` nad připravenými daty:
 
@@ -387,7 +390,8 @@ while not valid_input:
 print(f"Za 10 let ti bude {age + 10}")
 ```
 
-> ** Který vzor použít?**
+> **Který vzor použít?**
+> 
 > - **While True + break** – jednodušší, přehlednější (doporučeno)
 > - **Flagová proměnná** – explicitnější podmínka
 

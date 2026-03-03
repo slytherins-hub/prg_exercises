@@ -27,7 +27,7 @@ Algoritmizace a programování
  - Hashování a rychlé ověření členství (`in`)
  - Základní operace: sjednocení, průnik, rozdíl
 
-4. **Slovníky:**
+4. **Slovníky (`dict`):**
 
  - Proč slovník místo seznamu? – dict vs list
  - Vytváření slovníků (prázdné, s hodnotami)

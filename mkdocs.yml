@@ -1,5 +1,5 @@
-﻿site_name: BPC-PRG
-site_description: Kompletní materiály cvičení 1 až 4
+﻿site_name: PRG
+site_description: Podklady ke cvičením
 docs_dir: docs
 theme:
   name: material
@@ -52,9 +52,9 @@ nav:
     - Cíl 5 – podmínky s řetězci: cviceni_02/06_cíl_5_podmínky_s_řetězci.md
     - Cíl 6 – základy debugování v PyCharm: cviceni_02/07_cíl_6_základy_debugování_v_pycharm.md
     - Závěrečný úkol – analýza textu: cviceni_02/08_závěrečný_úkol_analýza_textu.md
-    - Shrnutí: cviceni_02/09_shrnutí.md
-    - Self-check: cviceni_02/10_self_check_procvičení_znalostí.md
-    - Bonusové úkoly: cviceni_02/11_bonusové_úkoly.md
+    - Bonusové úkoly: cviceni_02/09_bonusové_úkoly.md
+    - Shrnutí: cviceni_02/10_shrnutí.md
+    - Self-check: cviceni_02/11_self_check_procvičení_znalostí.md
   - Cvičení 3:
     - Přehled: cviceni_03/README.md
     - Úvod: cviceni_03/01_úvod.md
@@ -68,10 +68,11 @@ nav:
     - Úvod: cviceni_04/01_úvod.md
     - Cíl 1 – výjimky a try/except: cviceni_04/02_cíl_1_výjimky_a_try_except.md
     - Cíl 2 – while cyklus: cviceni_04/03_cíl_2_while_cyklus.md
-    - Cíl 3 – slovníky: cviceni_04/04_cíl_3_slovníky_dictionaries.md
-    - Cíl 4 – procvičování: cviceni_04/05_cíl_4_procvičování.md
-    - Bonusové úkoly: cviceni_04/06_bonusové_úkoly.md
-    - Self-check: cviceni_04/07_self_check_procvičení_znalostí.md
+    - Cíl 3 – množiny: cviceni_04/04_cíl_3_množiny_sets.md
+    - Cíl 3 – slovníky: cviceni_04/05_cíl_4_slovníky_dictionaries.md
+    - Cíl 4 – procvičování: cviceni_04/06_cíl_5_procvičování.md
+    - Bonusové úkoly: cviceni_04/07_bonusové_úkoly.md
+    - Self-check: cviceni_04/08_self_check_procvičení_znalostí.md
 
 extra_css:
   - assets/nav-toggle.css

@@ -13,7 +13,9 @@ Bez `try/except`: chyba → program se zastaví.
 S `try/except`: chyba → přesun do `except` → program pokračuje.
 
 > **📘 Co je výjimka (exception)?**
+> 
 > Výjimka je chyba za běhu programu.
+> 
 > Příklad: `int("abc")` vyhodí `ValueError`.
 
 **Nejčastější typy výjimek:**
@@ -84,6 +86,7 @@ except ValueError:
 4. Program pokračuje dál (nezastaví se).
 
 **⚠️ Čeho se vyvarovat!**
+
 - Nepoužívej holé `except:` bez typu chyby! (schová i chyby, které nechceš ignorovat)
 - Nedávej do `try` zbytečně moc kódu! (hůř zjistíš, kde přesně chyba vznikla)
 - Nedělej `except ...: pass` bez zprávy! (chyba se ztratí a debug je těžký)
@@ -103,11 +106,12 @@ except:
 ```
 
 **Proč je to špatně?**
+
 - Nevíš, jaká chyba nastala.
 - Program chybu potichu ignoruje.
 - Těžko se hledá problém.
 
-** Prakticky správně:**
+**✅ Prakticky správně:**
 
 ```python
 weight_text = input("Zadej váhu pacienta (kg): ")
@@ -127,7 +131,7 @@ except ValueError:
 - Uvnitř `except` dej uživateli jasnou zprávu, co opravit.
 - Nepoužívej `try/except` na maskování logických chyb v programu.
 
-#### ÚKOL:
+#### ÚKOL: Ošetření chyb při násobení
 
 Doplň ošetření chyb pro tento kód:
 ```python
