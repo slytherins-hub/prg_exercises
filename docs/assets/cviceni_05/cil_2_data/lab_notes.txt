@@ -1,0 +1,5 @@
+Pacient P001: ranní kontrola.
+
+Pacient P002: potřeba opakovat měření tlaku.
+Pacient P003: lehká dušnost při zátěži.
+Kontrola za 24 hodin.
