@@ -31,10 +31,10 @@ print(f"Pacient P002: {name}")
 
 **Problémy tohoto přístupu:**
 
-- **Složité** – dva kroky místo jednoho
-- **Chybové** – když přidáš/smažeš prvek a zapomeneš v druhém seznamu
-- **Nečitelné** – není jasné, že seznamy spolu souvisejí
-- **Pomalé** – `.index()` musí projít celý seznam (O(n))
+* **Složité** – dva kroky místo jednoho
+* **Chybové** – když přidáš/smažeš prvek a zapomeneš v druhém seznamu
+* **Nečitelné** – není jasné, že seznamy spolu souvisejí
+* **Pomalé** – `.index()` musí projít celý seznam (O(n))
 
 
 **Řešení: Slovník**
@@ -53,10 +53,10 @@ print(f"Pacient P002: {name}")
 
 **Výhody slovníku:**
 
-- **Jednoduché** – jeden krok místo dvou
-- **Bezpečné** – klíč a hodnota jsou propojené
-- **Čitelné** – jasné, co je klíč a co hodnota
-- **Rychlé** – přístup je v průměru O(1) místo O(n)
+* **Jednoduché** – jeden krok místo dvou
+* **Bezpečné** – klíč a hodnota jsou propojené
+* **Čitelné** – jasné, co je klíč a co hodnota
+* **Rychlé** – přístup je v průměru O(1) místo O(n)
 
 **Medicínské příklady využití slovníků:**
 
@@ -122,8 +122,8 @@ lab_results = {
 
 > **Poznámka:**
 > 
-> - **Klíč** – nejčastěji řetězec (`str`), ale může být i číslo (`int`)
-> - **Hodnota** – může být **cokoliv** (`str`, `int`, `float`, `list`...)
+> * **Klíč** – nejčastěji řetězec (`str`), ale může být i číslo (`int`)
+> * **Hodnota** – může být **cokoliv** (`str`, `int`, `float`, `list`...)
 
 ### 4.3 Přístup k hodnotám
 
@@ -196,8 +196,8 @@ print(f"Krevní skupina: {blood_group}")
 
 > **Kdy použít co?**
 > 
-> - **`slovnik[klic]`** – Když **víš jistě**, že klíč existuje (jinak chyba)
-> - **`in slovnik`** – Když chceš **zkontrolovat existenci** před přístupem
+> * **`slovnik[klic]`** – Když **víš jistě**, že klíč existuje (jinak chyba)
+> * **`in slovnik`** – Když chceš **zkontrolovat existenci** před přístupem
 
 **Medicínský příklad – bezpečný přístup k datům:**
 
@@ -241,9 +241,9 @@ glucose: Nevyšetřeno
 
 Vytvoř slovník `book` s klíči:
 
-- `"title"` a hodnotou `"1984"`,
-- `"author"` a hodnotou `"George Orwell"`,
-- `"year"` a hodnotou `1949`.
+* `"title"` a hodnotou `"1984"`,
+* `"author"` a hodnotou `"George Orwell"`,
+* `"year"` a hodnotou `1949`.
 
 Pak:
 
@@ -407,8 +407,8 @@ print(patient) # {'name': 'Jan', 'age': 45}
 
 > **`.pop()` vs `del`:**
 > 
-> - **`.pop()`** – odstraní a **vrátí hodnotu**, má defaultní hodnotu
-> - **`del`** – jen odstraní, **nevrací nic**
+> * **`.pop()`** – odstraní a **vrátí hodnotu**, má defaultní hodnotu
+> * **`del`** – jen odstraní, **nevrací nic**
 
 #### `.update()` – Sloučení slovníků
 

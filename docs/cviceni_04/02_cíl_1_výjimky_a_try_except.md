@@ -1,4 +1,4 @@
-﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE A SLOVNÍKY
+﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE, MNOŽINY A SLOVNÍKY
 
 Algoritmizace a programování
 
@@ -20,9 +20,9 @@ S `try/except`: chyba → přesun do `except` → program pokračuje.
 
 **Nejčastější typy výjimek:**
 
-- `ValueError` – hodnota má špatný formát (`int("abc")`)
-- `TypeError` – nekompatibilní datové typy (`"5" + 3`)
-- `KeyError` – neexistující klíč ve slovníku (`data["chybny_klic"]`)
+* `ValueError` – hodnota má špatný formát (`int("abc")`)
+* `TypeError` – nekompatibilní datové typy (`"5" + 3`)
+* `KeyError` – neexistující klíč ve slovníku (`data["chybny_klic"]`)
 
 ### 1.1 Základní syntaxe
 
@@ -87,9 +87,9 @@ except ValueError:
 
 **⚠️ Čeho se vyvarovat!**
 
-- Nepoužívej holé `except:` bez typu chyby! (schová i chyby, které nechceš ignorovat)
-- Nedávej do `try` zbytečně moc kódu! (hůř zjistíš, kde přesně chyba vznikla)
-- Nedělej `except ...: pass` bez zprávy! (chyba se ztratí a debug je těžký)
+* Nepoužívej holé `except:` bez typu chyby! (schová i chyby, které nechceš ignorovat)
+* Nedávej do `try` zbytečně moc kódu! (hůř zjistíš, kde přesně chyba vznikla)
+* Nedělej `except ...: pass` bez zprávy! (chyba se ztratí a debug je těžký)
 
 **❌ Prakticky špatně:**
 
@@ -107,9 +107,9 @@ except:
 
 **Proč je to špatně?**
 
-- Nevíš, jaká chyba nastala.
-- Program chybu potichu ignoruje.
-- Těžko se hledá problém.
+* Nevíš, jaká chyba nastala.
+* Program chybu potichu ignoruje.
+* Těžko se hledá problém.
 
 **✅ Prakticky správně:**
 
@@ -127,9 +127,9 @@ except ValueError:
 
 **Jak s tím pracovat správně:**
 
-- Chytej jen konkrétní chyby (např. `except ValueError:`), ne všechno.
-- Uvnitř `except` dej uživateli jasnou zprávu, co opravit.
-- Nepoužívej `try/except` na maskování logických chyb v programu.
+* Chytej jen konkrétní chyby (např. `except ValueError:`), ne všechno.
+* Uvnitř `except` dej uživateli jasnou zprávu, co opravit.
+* Nepoužívej `try/except` na maskování logických chyb v programu.
 
 #### ÚKOL: Ošetření chyb při násobení
 

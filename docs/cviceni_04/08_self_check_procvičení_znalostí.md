@@ -1,4 +1,4 @@
-﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE A SLOVNÍKY
+﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE, MNOŽINY A SLOVNÍKY
 
 Algoritmizace a programování
 
@@ -8,231 +8,280 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 
 ### Část A: While cykly
 
-**1. Jaký je rozdíl mezi `for` a `while` cyklem?**
-
-- a) `for` je rychlejší
-- b) `for` se používá pro známý počet opakování, `while` pro neznámý počet
-- c) `while` je zastaralý
-- d) Žádný rozdíl
-
-<details class="answer-details">
-<summary>Zobrazit správnou odpověď</summary>
-
-b) `for` se používá, když víš předem kolikrát se má opakovat (např. projdi seznam), `while` když opakuješ dokud platí podmínka (např. dokud uživatel nezadá správný vstup)
-</details>
-
-**2. Co způsobí tento kód?**
-```python
-x = 0
-while x < 5:
-    print(x)
-```
-
-- a) Vypíše 0 1 2 3 4
-- b) Vypíše 0 1 2 3 4 5
-- c) Nekonečný cyklus
-- d) Chybu
+1. **Jaký je rozdíl mezi `for` a `while` cyklem?**
+    <ol type="a">
+      <li><code>for</code> je rychlejší</li>
+      <li><code>for</code> se používá pro známý počet opakování, `while` pro neznámý počet</li>
+      <li><code>while</code> je zastaralý</li>
+      <li>Žádný rozdíl</li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-c) Nekonečný cyklus - `x` se nikdy nezmění, podmínka `x < 5` bude pořád pravdivá
+<b>b.</b> <code>for</code> se používá, když víš předem kolikrát se má opakovat (např. projdi seznam), <code>while</code> když opakuješ dokud platí podmínka (např. dokud uživatel nezadá správný vstup)
+
 </details>
 
-**3. Co dělá klíčové slovo `break`?**
-
-- a) Přeskočí aktuální iteraci a pokračuje další
-- b) Ukončí celý cyklus okamžitě
-- c) Ukončí program
-- d) Vyhodí chybu
+2. **Co způsobí tento kód?**
+    ```python
+    x = 0
+    while x < 5:
+        print(x)
+    ```
+    <ol type="a">
+      <li>Vypíše: 0 1 2 3 4</li>
+      <li>Vypíše: 0 1 2 3 4 5</li>
+      <li>Nekonečný cyklus</li>
+      <li>Chybu</li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) Ukončí celý cyklus okamžitě a pokračuje kódem za cyklem
+<b>c.</b> Nekonečný cyklus - <code>x</code> se nikdy nezmění, podmínka <code>x < 5</code> bude pořád pravdivá
+
 </details>
 
-**4. Co dělá klíčové slovo `continue`?**
-
-- a) Ukončí cyklus
-- b) Přeskočí zbytek aktuální iterace a pokračuje další iterací
-- c) Nic, je zastaralé
-- d) Ukončí funkci
+3. **Co dělá klíčové slovo <code>break</code>?**
+    <ol type="a">
+      <li>Přeskočí aktuální iteraci a pokračuje další</li>
+      <li>Ukončí celý cyklus okamžitě</li>
+      <li>Ukončí program</li>
+      <li>Vyhodí chybu</li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) Přeskočí zbytek aktuální iterace a skočí na začátek další iterace
+<b>b.</b> Ukončí celý cyklus okamžitě a pokračuje kódem za cyklem
+
 </details>
 
-**5. Kdy je vhodné použít `while True`?**
-
-- a) Nikdy, vždycky způsobí nekonečný cyklus
-- b) Když chceš cyklus, který se ukončí pomocí `break` uvnitř
-- c) Jen pro začátečníky
-- d) Nahrazuje if podmínku
+4. **Co dělá klíčové slovo <code>continue</code>?**
+    <ol type="a">
+      <li>Ukončí celý cyklus</li>
+      <li>Přeskočí zbytek aktuální iterace a pokračuje další iterací</li>
+      <li>Nic, je zastaralé</li>
+      <li>Ukončí funkci</li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) `while True` s `break` uvnitř je běžný pattern pro menu nebo validaci vstupu - cyklus běží dokud nenastane nějaká vnitřní podmínka
+<b>b.</b> Přeskočí zbytek aktuální iterace a pokračuje další iterací
+
 </details>
+
+5. **Kdy je vhodné použít <code>while True</code>?**
+    <ol type="a">
+      <li>Nikdy, vždycky způsobí nekonečný cyklus</li>
+      <li>Když chceš cyklus, který se ukončí pomocí <code>break</code> uvnitř</li>
+      <li>Jen pro začátečníky</li>
+      <li>Nahrazuje if podmínku</li>
+    </ol>
+
+<details class="answer-details">
+<summary>Zobrazit správnou odpověď</summary>
+
+<b>b.</b> <code>while True</code> s <code>break</code> uvnitř je běžný vzor pro menu nebo validaci vstupu - cyklus běží dokud nenastane nějaká vnitřní podmínka
+
+</details>
+
+---
 
 ### Část B: Slovníky - základy
 
-**6. Co je pravda o slovnících?**
-
-- a) Indexují se pomocí pozic (0, 1, 2...)
-- b) Indexují se pomocí klíčů
-- c) Mohou mít duplicitní klíče
-- d) Jsou immutable
-
-<details class="answer-details">
-<summary>Zobrazit správnou odpověď</summary>
-
-b) Slovníky používají klíče místo číselných indexů. Klíče musí být unikátní!
-</details>
-
-**7. Co vypíše tento kód?**
-```python
-patient = {"name": "Jan", "age": 45}
-print(patient["age"])
-```
-
-- a) "age"
-- b) 45
-- c) Jan
-- d) KeyError
+6. **Co je pravda o slovnících?**
+    <ol type="a">
+      <li>Indexují se pomocí pozic (0, 1, 2...)</li>
+      <li>Indexují se pomocí klíčů</li>
+      <li>Mohou mít duplicitní klíče</li>
+      <li>Jsou immutable</li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) 45 - `patient["age"]` vrací hodnotu pro klíč "age"
+<b>b.</b> Slovníky používají klíče místo číselných indexů. Klíče musí být unikátní!
+
 </details>
 
-**8. Co se stane při tomto kódu?**
-```python
-data = {"name": "Jan"}
-data["name"] = "Marie"
-print(data)
-```
-
-- a) `{"name": "Jan", "name": "Marie"}`
-- b) `{"name": "Marie"}`
-- c) Chyba
-- d) `{"name": "Jan"}`
+7. **Co vypíše tento kód?**
+    ```python
+    patient = {"name": "Jan", "age": 45}
+    print(patient["age"])
+    ```
+    <ol type="a">
+      <li>age</li>
+      <li>45</li>
+      <li>Jan</li>
+      <li>KeyError</li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) `{"name": "Marie"}` - přiřazení na existující klíč ho přepíše, klíče musí být unikátní
+<b>b.</b> 45 – <code>patient["age"]</code> vrací hodnotu pro klíč <code>"age"</code>
+
 </details>
 
-**9. Co se stane při přístupu `slovnik["klic"]`, když klíč neexistuje?**
+8. **Co se stane při tomto kódu?**
+    ```python
+    data = {"name": "Jan"}
+    data["name"] = "Marie"
+    print(data)
+    ```
 
-- a) Vrátí `None`
-- b) Vytvoří klíč automaticky
-- c) Vyhodí chybu `KeyError`
-- d) Vrátí prázdný řetězec
+    <ol type="a">
+      <li><code>{"name": "Jan", "name": "Marie"}</code></li>
+      <li><code>{"name": "Marie"}</code></li>
+      <li>Chyba</li>
+      <li><code>{"name": "Jan"}</code></li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-c) Při přístupu `slovnik["klic"]` Python vyhodí chybu `KeyError`, pokud klíč ve slovníku není.
+<b>b.</b> <code>{"name": "Marie"}</code> – přiřazení na existující klíč ho přepíše, klíče musí být unikátní
+
 </details>
 
-**10. Co vrací metoda `.items()`?**
+9. **Co se stane při přístupu <code>slovnik["klic"]</code>, když klíč neexistuje?**
 
-- a) Jen klíče
-- b) Jen hodnoty
-- c) Páry (klíč, hodnota) - ideální pro for cyklus
-- d) Počet prvků
+    <ol type="a">
+      <li>Vrátí <code>None</code></li>
+      <li>Vytvoří klíč automaticky</li>
+      <li>Vyhodí chybu <code>KeyError</code></li>
+      <li>Vrátí prázdný řetězec</li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-c) `.items()` vrací páry (klíč, hodnota), nejužitečnější pro iteraci: `for klic, hodnota in slovnik.items()`
+<b>c.</b> Při přístupu <code>slovnik["klic"]</code> Python vyhodí chybu <code>KeyError</code>, pokud klíč ve slovníku není.
+
 </details>
+
+10. **Co vrací metoda <code>.items()</code>?**
+
+    <ol type="a">
+      <li>Jen klíče</li>
+      <li>Jen hodnoty</li>
+      <li>Páry (klíč, hodnota) – ideální pro for cyklus</li>
+      <li>Počet prvků</li>
+    </ol>
+
+<details class="answer-details">
+<summary>Zobrazit správnou odpověď</summary>
+
+<b>c.</b> <code>.items()</code> vrací páry (klíč, hodnota), nejužitečnější pro iteraci:
+
+<code>for klic, hodnota in slovnik.items():</code>
+
+</details>
+
+---
 
 ### Část C: Slovníky - pokročilé
 
-**11. Co vypíše tento kód?**
-```python
-codons = {"AUG": "Methionin", "UUU": "Fenylalanin"}
-for codon in codons:
-    print(codon)
-```
+11. **Co vypíše tento kód?**
 
-- a) Methionin, Fenylalanin
-- b) AUG, UUU
-- c) AUG: Methionin, UUU: Fenylalanin
-- d) Chybu
+    ```python
+    codons = {"AUG": "Methionin", "UUU": "Fenylalanin"}
+    for codon in codons:
+        print(codon)
+    ```
+
+    <ol type="a">
+      <li>Methionin, Fenylalanin</li>
+      <li>AUG, UUU</li>
+      <li>AUG: Methionin, UUU: Fenylalanin</li>
+      <li>Chybu</li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) AUG, UUU - při iteraci `for x in slovnik` dostáváš jen klíče (ne hodnoty!)
+<b>b.</b> AUG, UUU – při iteraci <code>for x in slovnik</code> dostáváš jen klíče (ne hodnoty!)
+
 </details>
 
-**12. Jak správně přidat nový klíč do slovníku?**
+12. **Jak správně přidat nový klíč do slovníku?**
 
-- a) `my_dict.add("new_key", "value")`
-- b) `my_dict["new_key"] = "value"`
-- c) `my_dict.append("new_key": "value")`
-- d) `my_dict.insert("new_key", "value")`
+    <ol type="a">
+      <li><code>my_dict.add("new_key", "value")</code></li>
+      <li><code>my_dict["new_key"] = "value"</code></li>
+      <li><code>my_dict.append("new_key": "value")</code></li>
+      <li><code>my_dict.insert("new_key", "value")</code></li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) Prostě přiřaď: `my_dict["new_key"] = "value"` - pokud klíč neexistuje, vytvoří se
+<b>b.</b> Prostě přiřaď:
+
+<code>my_dict["new_key"] = "value"</code>
+
+Pokud klíč neexistuje, vytvoří se.
+
 </details>
 
-**13. Co dělá metoda `.pop("key")`?**
+13. **Co dělá metoda <code>.pop("key")</code>?**
 
-- a) Jen vrátí hodnotu
-- b) Jen smaže klíč
-- c) Smaže klíč a vrátí jeho hodnotu
-- d) Nic
+    <ol type="a">
+      <li>Jen vrátí hodnotu</li>
+      <li>Jen smaže klíč</li>
+      <li>Smaže klíč a vrátí jeho hodnotu</li>
+      <li>Nic</li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-c) `.pop()` odstraní klíč a vrátí jeho hodnotu. Můžeš dát default: `.pop("key", "default")`
+<b>c.</b><code>.pop()</code> odstraní klíč a vrátí jeho hodnotu.
+
+Můžeš dát default:
+
+<code>.pop("key", "default")</code>
+
 </details>
 
-**14. Proč jsou slovníky užitečnější než seznamy pro databázi pacientů?**
+14. **Proč jsou slovníky užitečnější než seznamy pro databázi pacientů?**
 
-- a) Jsou rychlejší
-- b) Zabírají méně paměti
-- c) Můžeš vyhledávat podle ID místo pozice
-- d) Vypadají lépe
+    <ol type="a">
+      <li>Jsou rychlejší</li>
+      <li>Zabírají méně paměti</li>
+      <li>Můžeš vyhledávat podle ID místo pozice</li>
+      <li>Vypadají lépe</li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-c) Se slovníkem můžeš napsat `patients["P001"]` místo pamatovat si, že P001 je na pozici 5 v seznamu. Klíče jsou čitelnější než indexy!
+<b>c.</b> Se slovníkem můžeš napsat:
+
+<code>patients["P001"]</code>
+
+Místo pamatovat si, že P001 je na pozici 5 v seznamu. Klíče jsou čitelnější než indexy.
+
 </details>
 
-**15. Co je lepší pattern pro kontrolu existence klíče?**
+15. **Co je lepší vzor pro kontrolu existence klíče?**
 
-- a)
-```python
-if "key" in my_dict:
-    value = my_dict["key"]
-```
-
-- b)
-```python
-value = my_dict["key"]
-```
-
-- c) Není potřeba kontrolovat klíč nikdy
-- d) Klíč vždy raději odstraň přes `pop()`
+    <ol type="a">
+      <li>
+       <pre><code>if "key" in my_dict:
+       value = my_dict["key"]</code></pre>
+      </li>
+      <li><code>value = my_dict["key"]</code></li>
+      <li>Není potřeba kontrolovat klíč nikdy</li>
+      <li>Klíč vždy raději odstraň přes <code>pop()</code></li>
+    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-a) Kontrola `if "key" in my_dict:` je bezpečný způsob, jak se vyhnout `KeyError`.
+<b>a.</b> Kontrola <code>if "key" in my_dict:</code> je bezpečný způsob, jak se vyhnout <code>KeyError</code>.
 
----
 </details>

@@ -10,11 +10,11 @@ Množiny (`set`) se hodí, když potřebuješ pracovat s **unikátními hodnotam
 
 Typické situace v praxi:
 
-- seznam unikátních alergenů pacienta,
-- odstranění duplicit ze seznamu laboratorních kódů,
-- unikátní hashtagy pod příspěvkem,
-- odstranění duplicitních e-mailů při rozesílce,
-- rychlé ověření, jestli je uživatelské jméno na blacklistu.
+* seznam unikátních alergenů pacienta,
+* odstranění duplicit ze seznamu laboratorních kódů,
+* unikátní hashtagy pod příspěvkem,
+* odstranění duplicitních e-mailů při rozesílce,
+* rychlé ověření, jestli je uživatelské jméno na blacklistu.
 
 > **📘 Co je množina (`set`)?**
 > 
@@ -28,9 +28,9 @@ Typické situace v praxi:
 
 Můžeš si to představit tak, že existuje **hashovací funkce**, která z hodnoty (např. řetězce) vyrobí číslo.
 
-- Výstupy vypadají trochu **chaoticky** (nejdou jednoduše odhadnout z hlavy).
-- Ale jsou **deterministické**: pro stejný vstup dostaneš stejný hash.
-- Díky tomu Python rychle najde správné místo, kam prvek uložit nebo kde ho hledat.
+* Výstupy vypadají trochu **chaoticky** (nejdou jednoduše odhadnout z hlavy).
+* Ale jsou **deterministické**: pro stejný vstup dostaneš stejný hash.
+* Díky tomu Python rychle najde správné místo, kam prvek uložit nebo kde ho hledat.
 
 > **⚠️ Pozor:** Dvě různé hodnoty můžou výjimečně skončit na stejném místě (tzv. **kolize**). Python to umí interně vyřešit.
 
@@ -91,7 +91,7 @@ print(prunik_metoda)
 print(rozdil_metoda)
 ```
 
-> ** Tip:** Když řešíš „co je společné“, „co je navíc“ nebo „co je unikátní“, je `set` často jednodušší než seznam.
+> **Tip:** Když řešíš „co je společné“, „co je navíc“ nebo „co je unikátní“, je `set` často jednodušší než seznam.
 
 ---
 

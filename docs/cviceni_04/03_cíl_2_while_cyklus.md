@@ -1,4 +1,4 @@
-﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE A SLOVNÍKY
+﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE, MNOŽINY A SLOVNÍKY
 
 Algoritmizace a programování
 
@@ -53,8 +53,8 @@ print("Tep v normě")
 
 > **Klíčový rozdíl:**
 > 
-> - **For** = "Udělej to N-krát" (známý počet)
-> - **While** = "Dělej to, DOKUD platí podmínka" (neznámý počet)
+> * **For** = "Udělej to N-krát" (známý počet)
+> * **While** = "Dělej to, DOKUD platí podmínka" (neznámý počet)
 
 ---
 
@@ -162,14 +162,14 @@ while counter < 5:
 
 **Jak poznáš nekonečný cyklus?**
 
-- Program "zamrzne" a nic se neděje
-- Terminál vypíše nekonečně mnoho řádků
-- CPU využití skočí na 100%
+* Program "zamrzne" a nic se neděje
+* Terminál vypíše nekonečně mnoho řádků
+* CPU využití skočí na 100%
 
 **Jak ho zastavit?**
 
-- V PyCharmu: **Červené tlačítko Stop** nebo **Ctrl + C**
-- V terminálu: **Ctrl + C**
+* V PyCharmu: **Červené tlačítko Stop** nebo **Ctrl + C**
+* V terminálu: **Ctrl + C**
 
 > **⚠️ Prevence nekonečných cyklů:**
 >
@@ -392,8 +392,8 @@ print(f"Za 10 let ti bude {age + 10}")
 
 > **Který vzor použít?**
 > 
-> - **While True + break** – jednodušší, přehlednější (doporučeno)
-> - **Flagová proměnná** – explicitnější podmínka
+> * **While True + break** – jednodušší, přehlednější (doporučeno)
+> * **Flagová proměnná** – explicitnější podmínka
 
 ---
 
@@ -404,9 +404,9 @@ Proveď validaci rodného čísla, které ti zadá uživatel:
 1. V cyklu `while` načítej rodné číslo od uživatele pomocí funkce `input()` tak dlouho, dokud nezadá validní hodnotu.
 2. Umožni uživateli ukončit zadávání slovem `konec`.
 3. U každého pokusu ověř:
-	- přesně 10 znaků (`len(...) == 10`),
-	- pouze číslice (`.isdigit()`),
-    - zkontroluj dělitelonost 11-ti.
+    * přesně 10 znaků (`len(...) == 10`),
+    * pouze číslice (`.isdigit()`),
+    * zkontroluj dělitelonost 11-ti.
 4. Pokud je vstup nevalidní, vypiš důvod a nech uživatele zkusit další pokus.
 5. Jakmile je vstup validní, vypiš: `Rodné číslo bylo přijato.`
 6. Pokud uživatel zadá `konec`, vypiš: `Zadávání bylo ukončeno.`

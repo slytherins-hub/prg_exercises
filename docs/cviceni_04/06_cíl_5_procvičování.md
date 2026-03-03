@@ -1,10 +1,10 @@
-﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE A SLOVNÍKY
+﻿# CVIČENÍ 4: VÝJIMKY, CYKLY WHILE, MNOŽINY A SLOVNÍKY
 
 Algoritmizace a programování
 
 ## CÍL 5: PROCVIČOVÁNÍ
 
-#### ÚKOL 1: Hádání čísla
+#### ÚKOL 1: Hádání tajného čísla
 
 Navrhni minihru pro hádání náhodného čísla v programu `guessing_game.py`.
 
@@ -41,14 +41,14 @@ Vytvoř program `stream_analysis.py`.
 1. Definuj funkci `process_stream()`, která:
     * Přijímá jeden parametr typu `list` obsahující čísla a speciální řetězce (`"null"` a `"error"`).
     * Funkce projde seznam postupně pomocí `while` a indexace:
-         * Pokud je prvek `"null"`, přeskoč ho (neinkrementuj počet zpracovaných).
-         * Pokud je prvek `"error"`, ihned přestaň zpracovávat a vrať dosavadní výsledky.
-         * Pokud je prvek číslo, aktualizuj statistiky: počet kladných, počet záporných, součet všech.
+        * Pokud je prvek `"null"`, přeskoč ho (neinkrementuj počet zpracovaných).
+        * Pokud je prvek `"error"`, ihned přestaň zpracovávat a vrať dosavadní výsledky.
+        * Pokud je prvek číslo, aktualizuj statistiky: počet kladných, počet záporných, součet všech.
     * Funkce vrátí hodnotu typu `dict`: `{"positive": int, "negative": int, "sum": int, "processed": int}`, kde klíče ve slovníku představují:
-         * `positive` — počet kladných čísel,
-         * `negative` — počet záporných čísel,
-         * `sum` — součet všech zpracovaných čísel,
-         * `processed` — počet zpracovaných čísel (čísla, ne `"null"`).
+        * `positive` — počet kladných čísel,
+        * `negative` — počet záporných čísel,
+        * `sum` — součet všech zpracovaných čísel,
+        * `processed` — počet zpracovaných čísel (čísla, ne `"null"`).
 
 2. Vytvoř seznam `data_stream`:
 ```python
@@ -81,21 +81,21 @@ Vytvoř program `dna_translation.py` pro analýzu a translaci mRNA sekvence.
 
 2. Definuj funkci `translate()`:
     * Funkce přijímá dva parametry:
-         * RNA sekvence (typ `str`),
-         * genetický kód (typ `dict`).
+        * RNA sekvence (typ `str`),
+        * genetický kód (typ `dict`).
     * Funkce projde sekvenci po trojicích znaků (kodonech):
-         * Pokud je poslední kodon kratší než 3 znaky, ignoruj ho.
-         * Pokud kodon není v `genetic_code`, přeskoč ho a pokračuj.
-         * Pokud je výsledek `"STOP"`, překlad se ihned zastaví (STOP se nevrací).
+        * Pokud je poslední kodon kratší než 3 znaky, ignoruj ho.
+        * Pokud kodon není v `genetic_code`, přeskoč ho a pokračuj.
+        * Pokud je výsledek `"STOP"`, překlad se ihned zastaví (STOP se nevrací).
     * Funkce vrátí hodnotu typu `str` představující sekvenci jednopísmenných zkratek aminokyselin v pořadí překladu.
 
 3. Definuje funkci `analyze_aa()`:
     * Funkce přijímá jeden parametr typu `str` představujícíc sekvenci aminokyselin.
     * Funkce vrátí hodnotu typu `dict` se statistikami o aminokyselinách. Klíče ve slovníku:
-         * `"aa_count"` — počet aminokyselin v sekvenci,
-         * `"contains_M"` — `True`/`False` (zda je přítomen methionin `"M"` v sekvenci),
-         * `"A_count"` — počet alaninů `"A"` v sekvenci,
-         * `"unique_aa"` — seznam všech unikátních aminokyselin.
+        * `"aa_count"` — počet aminokyselin v sekvenci,
+        * `"contains_M"` — `True`/`False` (zda je přítomen methionin `"M"` v sekvenci),
+        * `"A_count"` — počet alaninů `"A"` v sekvenci,
+        * `"unique_aa"` — seznam všech unikátních aminokyselin.
 
 4. Hlavní program:
     * Definuj RNA sekvenci: `rna_sequence = "AUGGCCUUUGAAUGGGAUGCUUUCGAAGCCGAUUGGUGAUAAUUCGCC"`
