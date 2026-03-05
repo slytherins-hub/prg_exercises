@@ -134,6 +134,37 @@ print(min_v, max_v, avg_v)
 
 Python vrací tuple, kterou můžeš rozbalit do proměnných.
 
+Ukázka: návrat uložený do tuple a následná indexace:
+
+```python
+stats = basic_stats([1200, 980, 1430, 1600, 890])
+print(stats)      # (890, 1600, 1220.0)
+print(stats[0])   # min
+print(stats[1])   # max
+print(stats[2])   # avg
+```
+
+Ukázka: vytažení jednoho výstupu přímo při volání:
+
+```python
+avg_only = basic_stats([1200, 980, 1430, 1600, 890])[2]
+print(avg_only)
+```
+
+> **💡 Poznámka:** Stejný styl rozbalení funguje jak pro tuple, tak pro list.
+> Počet proměnných na levé straně ale musí odpovídat počtu vracených hodnot.
+> Jinak dostaneš chybu při přiřazení.
+>
+> ```python
+> stats_tuple = (890, 1600, 1220.0)
+> min_v, max_v, avg_v = stats_tuple
+>
+> stats_list = [890, 1600, 1220.0]
+> min_v, max_v, avg_v = stats_list
+>
+> # min_v, max_v = stats_tuple  # ValueError: too many values to unpack
+> ```
+
 ---
 
 ### 1.8 Lokální vs globální proměnné

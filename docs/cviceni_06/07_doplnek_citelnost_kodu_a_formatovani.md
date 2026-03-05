@@ -137,6 +137,42 @@ total = (
 2. **Neponechávej mezery na konci řádků** (trailing whitespace).
 3. **Každý soubor ukonči jedním prázdným řádkem**.
 
+---
+
+### Dokumentační řetězec (Google format)
+
+Docstring piš hned pod hlavičku funkce.
+V Google formátu drž hlavně sekce `Args:` a `Returns:`.
+Když funkce může padnout na chybě, přidej i `Raises:`.
+
+```python
+def compute_score_delta(score, baseline, multiplier=1.0, round_to=2):
+    """Spočítá rozdíl skóre vůči baseline a aplikuje násobitel.
+
+    Args:
+        score (float): Aktuální hodnota skóre.
+        baseline (float): Referenční hodnota, od které počítáš rozdíl.
+        multiplier (float): Násobitel výsledného rozdílu.
+        round_to (int): Počet desetinných míst pro zaokrouhlení.
+
+    Returns:
+        float: Zaokrouhlený rozdíl skóre.
+
+    Raises:
+        ValueError: Pokud je `round_to` záporné.
+    """
+    if round_to < 0:
+        raise ValueError("round_to musí být >= 0")
+    return round((score - baseline) * multiplier, round_to)
+```
+
+Co by měl docstring minimálně obsahovat:
+
+1. Co funkce dělá (jedna stručná věta).
+2. Jaké má vstupy (`Args`) a co znamenají.
+3. Co vrací (`Returns`).
+4. Jaké chyby může vyvolat (`Raises`), pokud je to relevantní.
+
 > **💡 Tip:** Čitelnost kódu je týmová dovednost. Kód by měl být jasný i člověku, který ho čte poprvé.
 
 ---
