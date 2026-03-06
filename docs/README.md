@@ -7,5 +7,6 @@
 3. [Cvičení 3: Funkce a seznamy](cviceni_03/README.md)
 4. [Cvičení 4: Výjimky, while, množiny a slovníky](cviceni_04/README.md)
 5. [Cvičení 5: Práce se soubory, PowerShell a Git](cviceni_05/README.md)
-6. [Cvičení 6: Funkce, moduly a testy](cviceni_06/README.md)
+
+[//]: # (6. [Cvičení 6: Funkce, moduly a testy]&#40;cviceni_06/README.md&#41;)
 

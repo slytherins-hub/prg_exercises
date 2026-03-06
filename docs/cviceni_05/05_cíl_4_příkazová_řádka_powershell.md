@@ -2,7 +2,7 @@
 
 Algoritmizace a programování
 
-## CÍL 3: PŘÍKAZOVÁ ŘÁDKA (POWERSHELL, BASH, TERMINAL)
+## CÍL 4: PŘÍKAZOVÁ ŘÁDKA (POWERSHELL, BASH, TERMINAL)
  
 V praxi ji používáš, když:
 
@@ -33,7 +33,7 @@ Když umíš terminál, poznáš, co příkaz dělá, upravíš si ho a použije
 
 ---
 
-### 3.1 Co je terminal a co je shell?
+### 4.1 Co je terminal a co je shell?
 
 - **Terminal** = aplikace/okno, kam píšeš příkazy.
 - **Shell** = program uvnitř terminálu, který příkazy vykonává.
@@ -48,7 +48,7 @@ Typicky:
 
 ---
 
-### 3.2 Proč se vyplatí znát i bash?
+### 4.2 Proč se vyplatí znát i bash?
 
 Bash je velmi rozšířený standard na Linuxu a serverech.
 
@@ -62,20 +62,21 @@ PowerShell je skvělý ve Windows. Bash je skvělý pro přenositelnost mezi sys
 
 ---
 
-### 3.3 Základní orientace v terminálu
+### 4.3 Základní orientace v terminálu
 
-> **💡 Poznámka:** Příkazová řádka je dostupná i přímo v PyCharmu (spodní panel **Terminal**), takže nemusíš odcházet z editoru.
+> **Poznámka:** Příkazová řádka je dostupná i přímo v PyCharmu (spodní panel **Terminal**), takže nemusíš odcházet z editoru.
 
-| Co chceš udělat | PowerShell (Windows) | Bash (Linux/macOS/Git Bash/WSL) | cmd (Windows) | Co to dělá |
-|---|---|---|---|---|
-| Zjistit, kde právě jsi | `Get-Location` | `pwd` | `cd` | Vypíše aktuální složku (working directory). |
-| Vypsat obsah složky | `Get-ChildItem` | `ls -la` | `dir` | Zobrazí soubory a podsložky v aktuální složce. |
-| Přejít do složky `cviceni_05` | `cd .\cviceni_05` | `cd ./cviceni_05` | `cd .\cviceni_05` | Změní aktuální složku na `cviceni_05`. |
-| Vytvořit složku `data` | `mkdir .\data` | `mkdir -p ./data` | `mkdir .\data` | Vytvoří novou složku `data` (v bash `-p` nehlásí chybu, když už existuje). |
+| Co chceš udělat               | PowerShell (Windows) | Bash (Linux/macOS/Git Bash/WSL) | cmd (Windows)     | Co to dělá                                                                 |
+| ----------------------------- | -------------------- | ------------------------------- | ----------------- | -------------------------------------------------------------------------- |
+| Zjistit, kde právě jsi        | `Get-Location`       | `pwd`                           | `cd`              | Vypíše aktuální složku (working directory).                                |
+| Vypsat obsah složky           | `Get-ChildItem`      | `ls -la`                        | `dir`             | Zobrazí soubory a podsložky v aktuální složce.                             |
+| Přejít do složky `cviceni_05` | `cd .\cviceni_05`    | `cd ./cviceni_05`               | `cd .\cviceni_05` | Změní aktuální složku na `cviceni_05`.                                     |
+| Vrátit se o složku výš        | `cd ..`              | `cd ..`                         | `cd ..`           | Přesune tě do nadřazené složky (parent directory).                         |
+| Vytvořit složku `data`        | `mkdir .\data`       | `mkdir -p ./data`               | `mkdir .\data`    | Vytvoří novou složku `data` (v bash `-p` nehlásí chybu, když už existuje). |
 
 ---
 
-### 3.4 Spuštění Python skriptu
+### 4.4 Spuštění Python skriptu
 
 V tomto repozitáři používej `uv`:
 
@@ -101,17 +102,17 @@ Když má cesta mezery, dej ji do uvozovek:
     uv run python "./moje slozka/analyza.py"
     ```
 
-> **💡 Poznámka:** Obecně se Python skripty spouští přes `python soubor.py`. V tomhle repozitáři ale používej `uv run python soubor.py`, protože chceš běžet v projektovém prostředí. `uv` si Python vybere podle nastavení projektu (hlavně `requires-python` v `pyproject.toml`) a použije kompatibilní verzi.
+> **Poznámka:** Obecně se Python skripty spouští přes `python soubor.py`. V tomhle repozitáři ale používej `uv run python soubor.py`, protože chceš běžet v projektovém prostředí. `uv` si Python vybere podle nastavení projektu (hlavně `requires-python` v `pyproject.toml`) a použije kompatibilní verzi.
 
 ---
 
-### 3.5 Praktické triky, které šetří čas
+### 4.5 Praktické triky, které šetří čas
 
 #### Otevření terminálu přímo ve složce
 
 - V Průzkumníku otevři složku projektu.
 - Klikni do adresního řádku, napiš `powershell` (nebo `wt`) a potvrď Enter.
-- Alternativa: Shift + pravé tlačítko ve složce -> otevřít terminál zde.
+- Alternativa: Shift + pravé tlačítko ve složce → otevřít terminál zde.
 
 #### Jak vytvořit soubor z terminálu
 
@@ -161,7 +162,7 @@ Když má cesta mezery, dej ji do uvozovek:
 - `Ctrl + C` zastaví běžící proces.
 - Soubory můžeš přetáhnout myší do terminálu a cesta se vloží sama.
 
-**ÚKOL: Terminálový warm-up (praktická varianta)**
+#### ÚKOL: Terminálový warm-up
 
 1. Otevři terminál přímo ve složce projektu (ne přes ruční `cd` z jiné náhodné složky).
 2. Vypiš aktuální složku a její obsah.

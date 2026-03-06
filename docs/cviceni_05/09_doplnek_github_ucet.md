@@ -6,19 +6,19 @@ Algoritmizace a programování
 
 Tenhle krok potřebuješ před prací s GitHub Classroom.
 
-### 1) Vytvoření účtu
+### Vytvoření účtu
 
-1. Otevři stránku: [GitHub Sign up](https://github.com/signup)
-2. Zadej e-mail, heslo a uživatelské jméno.
-3. Dokonči ověření účtu podle pokynů na stránce.
+- Otevři stránku: [GitHub Sign up](https://github.com/signup)
+- Zadej e-mail, heslo a uživatelské jméno.
+- Dokonči ověření účtu podle pokynů na stránce.
 
-### 2) Ověření e-mailu
+### Ověření e-mailu
 
 - Po registraci ti přijde ověřovací e-mail.
 - Otevři ho a potvrď účet.
 - Bez ověření e-mailu může být práce s repozitáři omezená.
 
-### 3) Co si hned zkontrolovat
+### Co si hned zkontrolovat
 
 - že si pamatuješ `username` na GitHubu,
 - že se umíš přihlásit přes web [github.com](https://github.com),
@@ -28,4 +28,4 @@ Tenhle krok potřebuješ před prací s GitHub Classroom.
 
 ### Pokračování
 
-[Zpět na CÍL 4: Git a GitHub Classroom](05_cíl_4_git_a_github_classroom.md)
+[Zpět na CÍL 5: Git a GitHub Classroom](06_cíl_5_git_a_github_classroom.md)

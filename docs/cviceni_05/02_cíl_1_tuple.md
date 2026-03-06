@@ -2,8 +2,6 @@
 
 Algoritmizace a programování
 
-## ÚVOD
-
 ## CÍL 1: TUPLE (N-TICE)
 
 
@@ -27,22 +25,20 @@ Když tuple zkusíš změnit, dostaneš chybu:
 record[1] = 60  # TypeError
 ```
 
-> **💡 Tip:** Tuple používej, když máš pevnou sadu hodnot, která se během programu nemá měnit.
+> **Tip:** Tuple používej, když máš pevnou sadu hodnot, která se během programu nemá měnit.
 
 
-
-
-### Proč tuple?
+### 1.1 Proč tuple?
 
 - **Bezpečnější data:** Když se hodnota nemá měnit (např. pevný záznam pacienta), tuple ji chrání před náhodnou úpravou.
 - **Jasný záměr:** Když vidíš tuple, víš, že jde o „hotová data“, ne o seznam, který budeš dál měnit.
 - **Mírně úspornější/rychlejší:** Tuple bývá v Pythonu obvykle o něco úspornější na paměť a někdy i rychlejší než list, ale hlavní důvod použití je neměnitelnost.
 
-> **💡 Poznámka:** Neber tuple jako „zázračné zrychlení“. Největší přínos je bezpečnost a čitelnost kódu.
+> **Poznámka:** Neber tuple jako „zázračné zrychlení“. Největší přínos je bezpečnost a čitelnost kódu.
 
 ---
 
-### Rozbalování tuple (unpacking)
+### 1.2 Rozbalování tuple (unpacking)
 
 Stejným způsobem můžeš rozbalit i seznam se stejným počtem prvků.
 
@@ -62,7 +58,7 @@ print(spo2)
 
 ---
 
-### `zip(...)` a `enumerate(...)`
+### 1.3 `zip(...)` a `enumerate(...)`
 
 `zip(...)` spojí prvky a vrací dvojice jako tuple:
 
@@ -81,7 +77,9 @@ print(pairs[0])
     ('P001', 22.7)
     ```
 
-`enumerate(...)` vrací také tuple: `(index, hodnota)`.
+`enumerate(...)` vrací také tuple: `(index, hodnota)`. 
+
+> **Poznámka:** Cyklus for umí *n*-tice také rozbalit. Toho lze využít u funkcí `enumerate()` a `zip()`, které právě *n*-tici (dvojici hodnot) vrací.
 
 ```python
 rates = [58, 64, 72]

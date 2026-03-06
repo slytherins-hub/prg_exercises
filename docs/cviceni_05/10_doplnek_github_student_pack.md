@@ -29,4 +29,4 @@ GitHub Student Developer Pack může dát studentům přístup k vybraným nást
 
 ### Pokračování
 
-[Zpět na CÍL 4: Git a GitHub Classroom](05_cíl_4_git_a_github_classroom.md)
+[Zpět na CÍL 5: Git a GitHub Classroom](06_cíl_5_git_a_github_classroom.md)

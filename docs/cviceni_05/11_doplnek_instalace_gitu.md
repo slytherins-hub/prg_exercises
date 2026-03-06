@@ -7,7 +7,7 @@ Algoritmizace a programování
 Na školních počítačích je Git už připravený.  
 Tenhle doplněk potřebuješ hlavně doma.
 
-### 1) Ověř, jestli už Git máš
+### Ověř, jestli už Git máš
 
 ```powershell
 git --version
@@ -15,13 +15,13 @@ git --version
 
 Když příkaz nefunguje, použij jednu z variant níže.
 
-### 2) Instalace přes instalační soubor
+### Instalace přes instalační soubor
 
 1. Otevři [git-scm.com/download/win](https://git-scm.com/download/win)
 2. Stáhni a spusť instalátor.
 3. Pokud si nejsi jistý volbami, nech výchozí nastavení.
 
-### 3) Instalace přes příkazovou řádku
+### Instalace přes příkazovou řádku
 
 === "Windows (winget)"
     Základní příkaz:
@@ -47,7 +47,7 @@ Když příkaz nefunguje, použij jednu z variant níže.
 
     Když `brew` nemáš, nainstaluj ho podle: [brew.sh](https://brew.sh/)
 
-### 4) Minimální nastavení Gitu (jméno + email)
+### Minimální nastavení Gitu (jméno + email)
 
 Tohle nastav i když už Git máš nainstalovaný:
 
@@ -62,6 +62,6 @@ Kontrola nastavení:
 git config --global --list
 ```
 
-### 5) Pokračování
+### Pokračování
 
-[Zpět na CÍL 4: Git a GitHub Classroom](05_cíl_4_git_a_github_classroom.md)
+[Zpět na CÍL 5: Git a GitHub Classroom](06_cíl_5_git_a_github_classroom.md)

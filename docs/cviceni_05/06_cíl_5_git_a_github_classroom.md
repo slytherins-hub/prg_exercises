@@ -2,7 +2,7 @@
 
 Algoritmizace a programování
 
-## CÍL 4: GIT A GITHUB
+## CÍL 5: GIT A GITHUB
 
 Kód dnes nestačí jen napsat, musíš ho umět verzovat a sdílet.
 
@@ -16,14 +16,14 @@ Git je v praxi standard skoro všude, kde se dělá software:
 Když Git neumíš, narážíš při každé týmové práci.
 Když ho umíš, máš okamžitě lepší kontrolu nad kódem.
 
-Proč je Git + GitHub tak super:
+**Proč je Git + GitHub užitečný?**
 
-- mít historii změn,
-- vrátit se bezpečně o krok zpět, když něco rozbiješ,
-- neztratit práci,
-- spolupracovat s ostatními bez chaosu v souborech,
-- mít jasný přehled kdo, co a kdy změnil,
-- sdílet a odevzdat řešení přes GitHub.
+- máš historii změn
+- můžeš se bezpečně vrátit o krok zpět, když něco rozbiješ,
+- neztratíš práci,
+- můžeš spolupracovat s ostatními bez chaosu v souborech,
+- máš jasný přehled kdo, co a kdy změnil,
+- umíš sdílet a odevzdat řešení přes GitHub.
 
 V tomhle cvičení nejde o teorii navíc.
 Jde o návyk, který budeš používat prakticky v každém dalším projektu.
@@ -31,23 +31,23 @@ Je dobré začít Git používat hned, ať si na ten workflow zvykneš co nejdř
 
 ---
 
-### 4.0 Příprava na GitHub
+### 5.0 Příprava na GitHub
 
-Aby ti zbytek CÍLE 4 šel hladce, drž se tohoto pořadí:
+Aby ti zbytek CÍLE 5 šel hladce, drž se tohoto pořadí:
 
-1. Povinné: zkontroluj, že máš GitHub účet.
-   - [Doplněk: Založení GitHub účtu](07_doplnek_github_ucet.md)
-2. Doma: pokud Git nemáš, nainstaluj ho podle doplňku (viz minimální nastavení níže).
-   - [Doplněk: Instalace Gitu (jen pro domácí počítač)](09_doplnek_instalace_gitu.md)
-3. Povinné: nastav minimální Git identitu (`jméno`, `email`).
+- Povinné: zkontroluj, že máš GitHub účet.
+   - [Doplněk: Založení GitHub účtu](09_doplnek_github_ucet.md)
+- Doma: pokud Git nemáš, nainstaluj ho podle doplňku  a proveď minimální nastavení viz níže.
+   - [Doplněk: Instalace Gitu (jen pro domácí počítač)](11_doplnek_instalace_gitu.md)
+- Povinné: nastav minimální Git identitu (`jméno`, `email`).
    - tenhle krok udělej i když Git neinstaluješ (např. už Git máš).
-4. Volitelné: požádej o studentský GitHub benefit.
-   - [Doplněk: GitHub Student Developer Pack (nepovinné)](08_doplnek_github_student_pack.md)
+- Volitelné: požádej o studentský GitHub benefit.
+   - [Doplněk: GitHub Student Developer Pack (nepovinné)](10_doplnek_github_student_pack.md)
 
 #### Minimální nastavení Gitu (jméno + email)
 
 Instalaci Gitu najdeš v doplňku:  
-[Doplněk: Instalace Gitu (jen pro domácí počítač)](09_doplnek_instalace_gitu.md)
+[Doplněk: Instalace Gitu (jen pro domácí počítač)](11_doplnek_instalace_gitu.md)
 
 Na školních počítačích je Git už připravený.
 
@@ -72,7 +72,7 @@ git config --global --list
 
 ---
 
-### 4.1 Co je Git a co je GitHub?
+### 5.1 Co je Git a co je GitHub?
 
 **Git** je systém pro verzování kódu.
 
@@ -88,27 +88,28 @@ git config --global --list
 
 Krátce:
 
-- Git = „motor“ verzování.
-- GitHub = „online místo“, kam ten motor posílá historii.
+- Git = provádí verzování.
+- GitHub = „online místo“, kam Git posílá historii.
 
 ---
 
-### 4.2 Základní princip práce s Gitem
+### 5.2 Základní princip práce s Gitem
 
 Základní tok práce s Gitem:
 
-- `clone` = stáhneš si zadání k sobě,
-- `add` = vybereš konkrétní změny, které chceš odevzdat,
-- `commit` = uložíš checkpoint své práce,
-- `push` = nahraješ checkpoint na GitHub,
-- `pull` = stáhneš novější změny z GitHubu.
+- `git clone` = stáhneš si zadání k sobě,
+- `git status` = zkontroluješ, co je změněné,
+- `git add` = vybereš konkrétní změny, které chceš odevzdat,
+- `git commit` = uložíš checkpoint své práce,
+- `git push` = nahraješ checkpoint na GitHub,
+- `git pull` = stáhneš novější změny z GitHubu.
 
 `commit` je jako „uložený stav projektu“.  
 Neukládá jen jeden soubor, ale celý stav změn, které předtím označíš přes `git add`.
 
 ---
 
-### 4.3 Co znamenají hlavní příkazy
+### 5.3 Co znamenají hlavní příkazy
 
 `git status`
 
@@ -142,7 +143,7 @@ Neukládá jen jeden soubor, ale celý stav změn, které předtím označíš p
 
 ---
 
-### 4.4 Základní workflow na GitHubu
+### 5.4 Základní workflow na GitHubu
 
 ```powershell
 git clone <URL_REPOZITARE>
@@ -161,7 +162,7 @@ git pull origin main
 
 ---
 
-### 4.5 Co vždy zkontrolovat před commitem/pushem
+### 5.5 Co vždy zkontrolovat před commitem/pushem
 
 1. Jsi ve správné složce repozitáře?
 2. Upravuješ správný soubor podle zadání?
@@ -172,7 +173,7 @@ git pull origin main
 
 ---
 
-### 4.6 Když se něco rozbije: jednoduchý záchranný postup
+### 5.6 Když se něco rozbije: jednoduchý záchranný postup
 
 Tohle je důležitý trik pro začátečníky.
 
@@ -190,7 +191,7 @@ Tohle je často rychlejší a bezpečnější než dlouhé „zachraňování“
 
 ---
 
-### 4.7 Typický scénář
+### 5.7 Typický scénář
 
 1. Vytvoříš repozitář nebo ho zkopíruješ na GitHubu.
 2. Naklonuješ repozitář.
@@ -200,5 +201,5 @@ Tohle je často rychlejší a bezpečnější než dlouhé „zachraňování“
 
 ---
 
-> **💡 Poznámka:** Git umí výrazně víc než základní `add/commit/push` — třeba větve (`branch`), spojování změn (`merge`), přepis historie (`rebase`), dočasné odložení práce (`stash`) nebo návrat k předchozímu stavu. V tomhle cíli držíme jednoduchý základ, pokročilé možnosti si ukážeme později.
+> **Poznámka:** Git umí výrazně víc než základní `add/commit/push` — třeba větve (`branch`), spojování změn (`merge`), přepis historie (`rebase`), dočasné odložení práce (`stash`) nebo návrat k předchozímu stavu. V tomhle cíli držíme jednoduchý základ, pokročilé možnosti si ukážeme později.
 
