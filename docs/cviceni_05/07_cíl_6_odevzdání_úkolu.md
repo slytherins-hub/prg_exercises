@@ -8,13 +8,17 @@ Algoritmizace a programování
 
 #### ÚKOL: [Analýza buněk](https://classroom.github.com/a/touYQP1y)
 
+Tahle úloha simuluje jednoduchou datovou analýzu, jakou bys řešil(a) třeba v laboratorní praxi: dostaneš měření v čase, 
+ověříš kvalitu dat a připravíš výstup, který může jít dál do reportu nebo vizualizace. 
+Cílem není jen „aby to prošlo testy", ale hlavně procvičit kompletní tok práce s daty od načtení po uložení výsledků.
+
 ### ❗❗ POVINNÉ ODEVZDÁNÍ
 
 <ul style="color:#c62828;">
   <li>Pro splnění cvičení je nezbytné odevzdat řešení do repozitáře v GitHub Classroom.</li>
   <li>Správnost řešení bude kontrolována pomocí automatických testů.</li>
   <li>Řešení bude kontrolováno na přítomnost plagiátů mezi studenty.</li>
-  <li>Odevzdání a případné úpravy v repozitáři je nutné provést nejpozději do půlnoci v den konání cvičení.</li>
+  <li>Odevzdání a případné úpravy v repozitáři je nutné provést nejpozději do konce cvičení.</li>
 </ul>
 
 ---
