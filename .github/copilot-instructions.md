@@ -3,7 +3,7 @@
 ## Big picture
 - Repo je primárně obsahový: výukové materiály BPC-PRG v Markdownu pro začátečníky (medicína/bioinženýrství).
 - Aktuální zdroj pravdy je složka `docs/`.
-- Cvičení 1-4 jsou rozdělená po stránkách ve složkách `docs/cviceni_01` až `docs/cviceni_04`.
+- Cvičení 1-5 jsou rozdělená po stránkách ve složkách `docs/cviceni_01` až `docs/cviceni_05`.
 
 ## Co upravovat
 - Výukový obsah upravuj primárně v `docs/`.
@@ -32,8 +32,22 @@
 - Respektuj `requires-python = ">=3.13"` v `pyproject.toml`.
 - Náhled dokumentace lokálně: `uv run mkdocs serve` (zdroj docs je `docs/`).
 - Jednorázový build: `uv run mkdocs build` (výstup do `site/`).
-- Po větších úpravách vždy ověř build (`uv run mkdocs build`) a případně restartuj server skriptem `scripts/restart_mkdocs_server.ps1`.
+- Po každé změně v dokumentaci (`docs/`, `mkdocs.yml`, `docs/assets/`) vždy:
+  1) spusť build `uv run mkdocs build`,
+  2) restartuj lokální server skriptem `scripts/restart_mkdocs_server.ps1`,
+  aby byl náhled na `http://127.0.0.1:8000/` vždy aktuální.
 - Po úpravách Markdownu kontroluj render ve VS Code Markdown Preview (nadpisy, tabulky, relativní odkazy, fenced code blocks).
+
+## Kódování souborů (kritické)
+- Všechny textové soubory v repu (`.md`, `.yml`, `.py`, `.toml`) ber jako UTF-8.
+- Při práci v PowerShellu vždy explicitně nastav kódování i při čtení i při zápisu:
+  - čtení: `Get-Content -Encoding utf8`
+  - zápis: `Set-Content -Encoding utf8` (nebo `Out-File -Encoding utf8`)
+- Nepoužívej hromadné přepisování celého souboru přes shell, pokud stačí cílená změna.
+- Pro menší/konkrétní editace preferuj `apply_patch`, aby se minimalizovalo riziko rozbití diakritiky.
+- Po větší textové úpravě udělej rychlou kontrolu mojibake:
+  - `rg -n "Ã|Ä|Å|Â|â€|Ă|Ĺ|ď¸|đź" docs .github`
+- Pokud se mojibake objeví, nepokračuj v dalších editacích, nejdřív oprav kódování.
 
 ## CI/deploy a integrace
 - GitHub Actions workflow `.github/workflows/deploy-docs.yml` nasazuje GitHub Pages při pushi na `main`/`master`.

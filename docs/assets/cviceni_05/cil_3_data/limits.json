@@ -1,0 +1,7 @@
+{
+  "heart_rate_min": 55,
+  "heart_rate_max": 100,
+  "spo2_min": 94,
+  "systolic_bp_max": 135,
+  "diastolic_bp_max": 85
+}

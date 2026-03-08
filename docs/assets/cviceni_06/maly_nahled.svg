@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="160" height="90" viewBox="0 0 160 90" role="img" aria-label="Small line chart">
+  <rect x="0" y="0" width="160" height="90" fill="#f7f9fc"/>
+  <line x1="12" y1="75" x2="148" y2="75" stroke="#9aa4b2" stroke-width="1"/>
+  <line x1="12" y1="12" x2="12" y2="75" stroke="#9aa4b2" stroke-width="1"/>
+  <polyline points="14,66 28,62 42,64 56,40 70,58 84,50 98,52 112,30 126,46 140,42" fill="none" stroke="#2b6cb0" stroke-width="2"/>
+  <circle cx="112" cy="30" r="3" fill="#d9480f"/>
+</svg>

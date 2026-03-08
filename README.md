@@ -27,13 +27,7 @@ Po pushi na `main` (nebo `master`) se automaticky spustí workflow a nasadí web
 - Pokud stránka ještě není dostupná, počkej na první úspěšný běh workflow **Deploy docs to GitHub Pages** v záložce **Actions**.
 - Poznámka: tenhle commit je jen technický trigger pro ověření deploye.
 
-## Jak nasadit (lokálně)
 
-```bash
-git add .
-git commit -m "Nastavení docs a GitHub Pages"
-git push
-```
 
 ## Jak si to ověřit lokálně
 
