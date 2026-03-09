@@ -341,14 +341,14 @@ Zápis JSON:
 ```python
 import json
 
-summary = {
-    "total_records": 5,
-    "risk_records": 2,
-    "limit_keys": ["heart_rate_min", "heart_rate_max", "spo2_min"],
+uzivatel = {
+    "jmeno": "Anna",
+    "vek": 21,
+    "obor": "biomedicinske inzenyrstvi",
 }
 
-with open("data/summary.json", "w") as file:
-    json.dump(summary, file, indent=4)
+with open("data/uzivatel.json", "w") as file:
+    json.dump(uzivatel, file, indent=4)
 ```
 
 Pro ukládání výsledků je JSON velmi praktický:
@@ -366,6 +366,8 @@ Pro ukládání výsledků je JSON velmi praktický:
 3. Zkontroluj počet datových řádků (bez hlavičky).
 4. Načti `data/limits.json` a použij limity pro označení rizikových pacientů.
 5. Ulož rizikové pacienty do `data/risk_patients.csv` se středníkem jako oddělovačem.
-6. Ulož souhrn výsledků do `data/summary.json` (počty záznamů + použité limity).
+6. Ulož souhrn výsledků do `data/summary.json` jako slovník, který bude obsahovat klíče `total_measurements` (celkový počet měření) a `risk_measurements` (počet rizikových měření).
+
+V tomto úkolu ber jako rizikového pacienta toho, kdo má alespoň jednu hodnotu mimo limity z `data/limits.json` (např. `heart_rate` mimo interval `heart_rate_min` až `heart_rate_max` nebo `spo2` menší než `spo2_min`).
 
 ---

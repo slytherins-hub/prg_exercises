@@ -201,5 +201,94 @@ Tohle je často rychlejší a bezpečnější než dlouhé „zachraňování“
 
 ---
 
+#### ÚKOL 5.8: Založ repozitář, nastav `uv`, uprav `main.py` a pošli změny na GitHub
+
+V tomhle úkolu si projdeš celý workflow od čistého repozitáře až po kontrolu změn na webu.
+
+**Krok 1: Vytvoř nový repozitář na GitHubu**
+
+1. Otevři [https://github.com/new](https://github.com/new).
+2. Vyplň formulář:
+    - **Repository name**: třeba `prg-cv05-uv-git`.
+    - **Description**: volitelné, krátký popis projektu.
+    - **Public / Private**:
+        - `Public`: repozitář je veřejně viditelný.
+        - `Private`: repozitář vidíš jen ty (a lidé, kterým dáš přístup).
+    - **Add a README file**: zaškrtni (povinné v tomto úkolu).
+    - **Add .gitignore**:
+        - klidně nech `None`,
+        - nebo vyber `Python`, čímž se ignorují typické dočasné Python soubory.
+    - **Choose a license**:
+        - pro školní úkol může zůstat `None`,
+        - licence určuje, jak mohou ostatní tvůj kód použít.
+3. Klikni na **Create repository**.
+
+**Krok 2: Naklonuj repozitář na svůj počítač**
+
+Na stránce repozitáře zkopíruj URL (HTTPS) a v PowerShellu spusť:
+
+```powershell
+git clone <URL_TVEHO_REPO>
+cd <NAZEV_REPOZITARE>
+git status
+```
+
+`git status` by měl ukázat čistý stav (`nothing to commit, working tree clean`).
+
+**Krok 3: Inicializuj Python projekt přes `uv`**
+
+V kořeni repozitáře spusť:
+
+```powershell
+uv init
+uv sync
+```
+
+- `uv init` vytvoří základ projektu (např. `pyproject.toml`, `main.py`).
+- `uv sync` vytvoří/aktualizuje prostředí a nainstaluje závislosti z konfigurace.
+
+**Krok 4: Uprav `main.py` na specifický výpis**
+
+Do `main.py` dej přesně tento obsah:
+
+```python
+print("BPC-PRG CV05: GitHub + uv funguje")
+```
+
+Spuštění kontroly:
+
+```powershell
+uv run python main.py
+```
+
+Na výstupu musíš vidět:
+
+```text
+BPC-PRG CV05: GitHub + uv funguje
+```
+
+**Krok 5: Commit a push na GitHub**
+
+```powershell
+git status
+git add .
+git commit -m "Inicializace projektu pres uv a uprava main.py"
+git push origin main
+```
+
+Pokud má repozitář výchozí větev `master`, použij místo `main` právě `master`.
+
+**Krok 6: Kontrola na GitHubu**
+
+Na webu repozitáře zkontroluj:
+
+1. Je vidět nový commit s tvojí zprávou.
+2. Soubor `main.py` obsahuje správný výpis.
+3. V repozitáři jsou soubory vytvořené přes `uv init`.
+
+> **💡 Tip:** Když `git push` selže, nejdřív zkontroluj `git status` a název větve přes `git branch`.
+
+---
+
 > **Poznámka:** Git umí výrazně víc než základní `add/commit/push` — třeba větve (`branch`), spojování změn (`merge`), přepis historie (`rebase`), dočasné odložení práce (`stash`) nebo návrat k předchozímu stavu. V tomhle cíli držíme jednoduchý základ, pokročilé možnosti si ukážeme později.
 
