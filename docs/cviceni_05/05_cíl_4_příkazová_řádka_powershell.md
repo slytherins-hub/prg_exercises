@@ -68,8 +68,8 @@ PowerShell je skvělý ve Windows. Bash je skvělý pro přenositelnost mezi sys
 
 | Co chceš udělat               | PowerShell (Windows) | Bash (Linux/macOS/Git Bash/WSL) | cmd (Windows)     | Co to dělá                                                                 |
 | ----------------------------- | -------------------- | ------------------------------- | ----------------- | -------------------------------------------------------------------------- |
-| Zjistit, kde právě jsi        | `Get-Location`       | `pwd`                           | `cd`              | Vypíše aktuální složku (working directory).                                |
-| Vypsat obsah složky           | `Get-ChildItem`      | `ls -la`                        | `dir`             | Zobrazí soubory a podsložky v aktuální složce.                             |
+| Zjistit, kde právě jsi        | `pwd`                | `pwd`                           | `cd`              | Vypíše aktuální složku (working directory).                                |
+| Vypsat obsah složky           | `ls`                 | `ls`                            | `dir`             | Zobrazí soubory a podsložky v aktuální složce.                             |
 | Přejít do složky `cviceni_05` | `cd .\cviceni_05`    | `cd ./cviceni_05`               | `cd .\cviceni_05` | Změní aktuální složku na `cviceni_05`.                                     |
 | Vrátit se o složku výš        | `cd ..`              | `cd ..`                         | `cd ..`           | Přesune tě do nadřazené složky (parent directory).                         |
 | Vytvořit složku `data`        | `mkdir .\data`       | `mkdir -p ./data`               | `mkdir .\data`    | Vytvoří novou složku `data` (v bash `-p` nehlásí chybu, když už existuje). |
@@ -114,47 +114,6 @@ Když má cesta mezery, dej ji do uvozovek:
 - Klikni do adresního řádku, napiš `powershell` (nebo `wt`) a potvrď Enter.
 - Alternativa: Shift + pravé tlačítko ve složce → otevřít terminál zde.
 
-#### Jak vytvořit soubor z terminálu
-
-=== "PowerShell"
-    ```powershell
-    New-Item .\temp_data\sample.txt -ItemType File
-    Set-Content .\temp_data\sample.txt "Prvni radek"
-    Add-Content .\temp_data\sample.txt "Druhy radek"
-    Get-Content .\temp_data\sample.txt
-    ```
-
-    - `New-Item ... -ItemType File` vytvoří nový soubor.
-    - `Set-Content ...` zapíše první řádek (případně přepíše obsah).
-    - `Add-Content ...` přidá další řádek na konec.
-    - `Get-Content ...` vypíše obsah souboru do terminálu.
-
-=== "Bash"
-    ```bash
-    touch ./temp_data/sample.txt
-    echo "Prvni radek" > ./temp_data/sample.txt
-    echo "Druhy radek" >> ./temp_data/sample.txt
-    cat ./temp_data/sample.txt
-    ```
-
-    - `touch ...` vytvoří nový soubor.
-    - `echo ... > ...` zapíše první řádek (přepíše obsah).
-    - `echo ... >> ...` přidá další řádek na konec.
-    - `cat ...` vypíše obsah souboru do terminálu.
-
-=== "cmd"
-    ```bat
-    type nul > .\temp_data\sample.txt
-    echo Prvni radek > .\temp_data\sample.txt
-    echo Druhy radek >> .\temp_data\sample.txt
-    type .\temp_data\sample.txt
-    ```
-
-    - `type nul > ...` vytvoří nový soubor.
-    - `echo ... > ...` zapíše první řádek (přepíše obsah).
-    - `echo ... >> ...` přidá další řádek na konec.
-    - `type ...` vypíše obsah souboru do terminálu.
-
 #### Další užitečné návyky
 
 - `Tab` doplňuje názvy souborů a složek.
@@ -162,14 +121,12 @@ Když má cesta mezery, dej ji do uvozovek:
 - `Ctrl + C` zastaví běžící proces.
 - Soubory můžeš přetáhnout myší do terminálu a cesta se vloží sama.
 
-#### ÚKOL: Terminálový warm-up
+**🌟 BONUS: Terminálový warm-up (dobrovolné)**
 
 1. Otevři terminál přímo ve složce projektu (ne přes ruční `cd` z jiné náhodné složky).
 2. Vypiš aktuální složku a její obsah.
 3. Vytvoř složku `temp_data`.
-4. V terminálu vytvoř soubor `temp_data/hello.py`.
-5. Zapiš do něj program `print("Hello world")`.
-6. Vypiš obsah `temp_data/hello.py` přímo v terminálu.
-7. Spusť `temp_data/hello.py` z terminálu (v tomhle repozitáři přes `uv run python ...`).
+4. V PyCharmu vytvoř soubor `temp_data/hello.py` a zapiš do něj program `print("Hello world")`.
+5. Spusť `temp_data/hello.py` z terminálu (v tomhle repozitáři přes `uv run python ...`).
 
 ---

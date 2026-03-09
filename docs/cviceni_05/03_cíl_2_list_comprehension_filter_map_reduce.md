@@ -188,15 +188,10 @@ records = [
 ]
 ```
 
-1. Pomocí list comprehension vytvoř seznam slovníků s klíči:
-   - `id`, `kusy`, `cena_za_kus`
-2. Pomocí list comprehension vytvoř seznam „větších objednávek":
+1. Pomocí list comprehension vytvoř seznam „větších objednávek":
    - objednávky, kde `kusy >= 5` nebo `cena_za_kus >= 1000`
-3. Pomocí list comprehension vytvoř seznam řádků reportu pro větší objednávky ve formátu:
+2. Pomocí list comprehension vytvoř seznam řádků reportu pro větší objednávky ve formátu:
    - `"ORD-001: celkem 998 Kč"`
-4. Pomocí `len(...)` vypiš:
-   - počet všech objednávek,
-   - počet větších objednávek.
 
 > **Tip:** Rozděl řešení do více krátkých comprehension místo jedné dlouhé.
 

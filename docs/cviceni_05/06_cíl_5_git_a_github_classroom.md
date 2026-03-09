@@ -31,7 +31,28 @@ Je dobré začít Git používat hned, ať si na ten workflow zvykneš co nejdř
 
 ---
 
-### 5.0 Příprava na GitHub
+### 5.0 Co je Git a co je GitHub?
+
+**Git** je systém pro verzování kódu.
+
+- běží lokálně na tvém počítači,
+- pamatuje si změny v čase,
+- dovolí ti vrátit se k předchozí verzi.
+
+**GitHub** je webová služba nad Gitem.
+
+- ukládá repozitáře online,
+- umožní sdílení a spolupráci,
+- používá se pro sdílení i odevzdání.
+
+Krátce:
+
+- Git = provádí verzování.
+- GitHub = „online místo", kam Git posílá historii.
+
+---
+
+### 5.1 Příprava na GitHub
 
 Aby ti zbytek CÍLE 5 šel hladce, drž se tohoto pořadí:
 
@@ -40,8 +61,6 @@ Aby ti zbytek CÍLE 5 šel hladce, drž se tohoto pořadí:
 - Doma: pokud Git nemáš, nainstaluj ho podle doplňku  a proveď minimální nastavení viz níže.
    - [Doplněk: Instalace Gitu (jen pro domácí počítač)](11_doplnek_instalace_gitu.md)
 - Povinné: nastav minimální Git identitu (`jméno`, `email`).
-   - tenhle krok udělej i když Git neinstaluješ (např. už Git máš).
-- Volitelné: požádej o studentský GitHub benefit.
    - [Doplněk: GitHub Student Developer Pack (nepovinné)](10_doplnek_github_student_pack.md)
 
 #### Minimální nastavení Gitu (jméno + email)
@@ -69,27 +88,6 @@ Kontrola:
 ```powershell
 git config --global --list
 ```
-
----
-
-### 5.1 Co je Git a co je GitHub?
-
-**Git** je systém pro verzování kódu.
-
-- běží lokálně na tvém počítači,
-- pamatuje si změny v čase,
-- dovolí ti vrátit se k předchozí verzi.
-
-**GitHub** je webová služba nad Gitem.
-
-- ukládá repozitáře online,
-- umožní sdílení a spolupráci,
-- používá se pro sdílení i odevzdání.
-
-Krátce:
-
-- Git = provádí verzování.
-- GitHub = „online místo“, kam Git posílá historii.
 
 ---
 
@@ -149,9 +147,10 @@ Neukládá jen jeden soubor, ale celý stav změn, které předtím označíš p
 git clone <URL_REPOZITARE>
 cd <NAZEV_REPOZITARE>
 git status
-git add assignment.py
+git add <NAZEV_MODIFIKOVANEHO_SOUBORU.py>
+# nebo: git add . (tecka znamena aktualni slozku a vsechny zmeny v ni i v podslozkach)
 git commit -m "Doplneni reseni ukolu"
-git push origin main
+git push
 ```
 
 Když potřebuješ stáhnout nové změny:
@@ -159,17 +158,6 @@ Když potřebuješ stáhnout nové změny:
 ```powershell
 git pull origin main
 ```
-
----
-
-### 5.5 Co vždy zkontrolovat před commitem/pushem
-
-1. Jsi ve správné složce repozitáře?
-2. Upravuješ správný soubor podle zadání?
-3. Co přesně ukazuje `git status`?
-
-> **Tip:** Obvykle upravuješ jen soubor(y) určené zadáním.  
-> Testy ani jiné podpůrné soubory neupravuj.
 
 ---
 
@@ -188,105 +176,6 @@ Když je repozitář rozbitý nebo jsi ztracený v chybách:
 Tohle je často rychlejší a bezpečnější než dlouhé „zachraňování“ rozbitého stavu.
 
 > **Pozor:** Než starou složku smažeš, vždy si z ní vytáhni soubory, které chceš zachovat.
-
----
-
-### 5.7 Typický scénář
-
-1. Vytvoříš repozitář nebo ho zkopíruješ na GitHubu.
-2. Naklonuješ repozitář.
-3. Doplníš řešení.
-4. `git add`, `git commit`, `git push`.
-5. Na GitHubu ověříš, že se změny propsaly.
-
----
-
-#### ÚKOL 5.8: Založ repozitář, nastav `uv`, uprav `main.py` a pošli změny na GitHub
-
-V tomhle úkolu si projdeš celý workflow od čistého repozitáře až po kontrolu změn na webu.
-
-**Krok 1: Vytvoř nový repozitář na GitHubu**
-
-1. Otevři [https://github.com/new](https://github.com/new).
-2. Vyplň formulář:
-    - **Repository name**: třeba `prg-cv05-uv-git`.
-    - **Description**: volitelné, krátký popis projektu.
-    - **Public / Private**:
-        - `Public`: repozitář je veřejně viditelný.
-        - `Private`: repozitář vidíš jen ty (a lidé, kterým dáš přístup).
-    - **Add a README file**: zaškrtni (povinné v tomto úkolu).
-    - **Add .gitignore**:
-        - klidně nech `None`,
-        - nebo vyber `Python`, čímž se ignorují typické dočasné Python soubory.
-    - **Choose a license**:
-        - pro školní úkol může zůstat `None`,
-        - licence určuje, jak mohou ostatní tvůj kód použít.
-3. Klikni na **Create repository**.
-
-**Krok 2: Naklonuj repozitář na svůj počítač**
-
-Na stránce repozitáře zkopíruj URL (HTTPS) a v PowerShellu spusť:
-
-```powershell
-git clone <URL_TVEHO_REPO>
-cd <NAZEV_REPOZITARE>
-git status
-```
-
-`git status` by měl ukázat čistý stav (`nothing to commit, working tree clean`).
-
-**Krok 3: Inicializuj Python projekt přes `uv`**
-
-V kořeni repozitáře spusť:
-
-```powershell
-uv init
-uv sync
-```
-
-- `uv init` vytvoří základ projektu (např. `pyproject.toml`, `main.py`).
-- `uv sync` vytvoří/aktualizuje prostředí a nainstaluje závislosti z konfigurace.
-
-**Krok 4: Uprav `main.py` na specifický výpis**
-
-Do `main.py` dej přesně tento obsah:
-
-```python
-print("BPC-PRG CV05: GitHub + uv funguje")
-```
-
-Spuštění kontroly:
-
-```powershell
-uv run python main.py
-```
-
-Na výstupu musíš vidět:
-
-```text
-BPC-PRG CV05: GitHub + uv funguje
-```
-
-**Krok 5: Commit a push na GitHub**
-
-```powershell
-git status
-git add .
-git commit -m "Inicializace projektu pres uv a uprava main.py"
-git push origin main
-```
-
-Pokud má repozitář výchozí větev `master`, použij místo `main` právě `master`.
-
-**Krok 6: Kontrola na GitHubu**
-
-Na webu repozitáře zkontroluj:
-
-1. Je vidět nový commit s tvojí zprávou.
-2. Soubor `main.py` obsahuje správný výpis.
-3. V repozitáři jsou soubory vytvořené přes `uv init`.
-
-> **💡 Tip:** Když `git push` selže, nejdřív zkontroluj `git status` a název větve přes `git branch`.
 
 ---
 

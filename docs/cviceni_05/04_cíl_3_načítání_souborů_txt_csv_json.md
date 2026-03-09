@@ -17,9 +17,7 @@ Přesně takhle vypadá běžná práce s daty v praxi.
 
 - [lab_notes.txt](../assets/cviceni_05/cil_3_data/lab_notes.txt)
 - [measurements.csv](../assets/cviceni_05/cil_3_data/measurements.csv)
-- [dodavatel_alfa.csv](../assets/cviceni_05/cil_3_data/dodavatel_alfa.csv)
-- [dodavatel_beta.csv](../assets/cviceni_05/cil_3_data/dodavatel_beta.csv)
-- [dodavatel_gamma.csv](../assets/cviceni_05/cil_3_data/dodavatel_gamma.csv)
+- [products_comma.csv](../assets/cviceni_05/cil_3_data/products_comma.csv)
 - [limits.json](../assets/cviceni_05/cil_3_data/limits.json)
 - [Balíček všech souborů (.zip)](../assets/cviceni_05/cil_3_data/cil_3_data.zip)
 
@@ -54,7 +52,7 @@ Základní režimy:
 Čtení:
 
 ```python
-with open("data/notes.txt", mode="r") as file:
+with open("data/lab_notes.txt", mode="r") as file:
     content = file.read()
 print(content)
 ```
@@ -133,14 +131,12 @@ with open("data/lab_notes.txt", "r") as file:
 
 ---
 
-### 3.3 Starší zápis bez context manageru
-
 > **Poznámka:**
 >
 > Starší zápis (jen pro orientaci):
 >
 > ```python
-> file = open("data/notes.txt", "r")
+> file = open("data/lab_notes.txt", "r")
 > content = file.read()
 > print(content)
 > file.close()
@@ -155,14 +151,14 @@ with open("data/lab_notes.txt", "r") as file:
 Relativní cesta:
 
 ```python
-with open("data/patients.txt", "r") as file:
+with open("data/lab_notes.txt", "r") as file:
     content = file.read()
 ```
 
 Absolutní cesta:
 
 ```python
-with open(r"D:\BPC-PRG\cviceni_05\data\patients.txt", "r") as file:
+with open(r"D:\BPC-PRG\cviceni_05\data\lab_notes.txt", "r") as file:
     content = file.read()
 ```
 
@@ -176,86 +172,18 @@ Takovým znakům se říká escape sekvence.
 Proto máš u cest tři bezpečné možnosti:
 
 ```python
-path_1 = "data\\patients.txt"   # dvojité lomítko
-path_2 = r"data\patients.txt"   # raw string = ber text doslova
-path_3 = "data/patients.txt"    # dopředné lomítko
+path_1 = "data\\lab_notes.txt"   # dvojité lomítko
+path_2 = r"data\lab_notes.txt"   # raw string = ber text doslova
+path_3 = "data/lab_notes.txt"    # dopředné lomítko
 ```
 
 > **Pozor:** Raw string nesmí končit jedním `\` (např. `r"C:\data\"` je špatně).
 
 ---
 
-### 3.5 `pathlib`: doporučený způsob práce s cestami
-
-`pathlib` znamená: cesta není obyčejný text, ale objekt, se kterým se líp pracuje.
-
-Nejdřív úplný základ:
-
-- `Path("data")` = složka `data`,
-- `Path("data") / "patients.txt"` = cesta k souboru ve složce `data`.
-
-`/` tady není dělení, ale bezpečné skládání cesty.
-
-Krok 1: vytvoř cestu a načti soubor.
-
-```python
-from pathlib import Path
-
-file_path = Path("data") / "patients.txt"
-
-with open(file_path, "r") as file:
-    content = file.read()
-print(content)
-```
-
-Krok 2: vytvoř složku a ulož výstup.
-
-```python
-from pathlib import Path
-
-reports_dir = Path("data") / "reports"
-reports_dir.mkdir(parents=True, exist_ok=True)
-
-output_path = reports_dir / "summary.txt"
-with open(output_path, "w") as file:
-    file.write("Hotovo.\n")
-```
-
-Doporučení do praxe:
-
-- používej relativní cesty v projektu,
-- cesty skládej přes `Path(...) / "soubor.ext"`,
-- soubory otevírej přes `with open(...) as file`.
-
-**`glob`: jak najít více souborů najednou**
-
-`glob` hledá soubory podle vzoru.
-
-- `*.csv` = všechny CSV soubory v jedné složce,
-- `dodavatel_*.csv` = všechny CSV soubory dodavatelů,
-- `*.txt` = všechny TXT soubory v jedné složce.
-
-```python
-from pathlib import Path
-
-for csv_path in Path("data").glob("dodavatel_*.csv"):
-    print(csv_path.name)
-```
-
-> **Tip:** Když chceš procházet i podsložky, použij `rglob("*.csv")`.
-
 ---
 
-#### ÚKOL: První práce se souborem
-
-1. Načti soubor `data/lab_notes.txt`.
-2. Vypiš první dva řádky (použij `readline()`).
-3. Znovu načti stejný soubor a spočítej počet neprázdných řádků.
-4. Výsledek ulož do `data/notes_summary.txt`.
-
----
-
-### 3.6 Formáty CSV a JSON
+### 3.5 Formáty CSV a JSON
 
 CSV se hodí, když máš tabulku:
 
@@ -271,7 +199,7 @@ JSON se hodí, když ukládáš strukturovaná data:
 
 ---
 
-### 3.7 CSV (Comma-Separated Values)
+### 3.6 CSV (Comma-Separated Values)
 
 V tomhle cvičení budeme CSV brát jako obyčejný textový soubor, kde:
 
@@ -318,7 +246,7 @@ with open("data/risk_patients.csv", "w") as file:
 
 ---
 
-### 3.8 JSON (JavaScript Object Notation)
+### 3.7 JSON (JavaScript Object Notation)
 
 JSON si představ jako slovník uložený do textového souboru.
 
@@ -361,12 +289,10 @@ Pro ukládání výsledků je JSON velmi praktický:
 
 #### ÚKOL: Zpracování laboratorních dat
 
-1. Načti `data/lab_notes.txt` a vytvoř seznam neprázdných řádků bez koncových znaků.
-2. Načti `data/measurements.csv` a rozděl řádky pomocí `split(";")` (v tomto úkolu ber data oddělená středníkem).
-3. Zkontroluj počet datových řádků (bez hlavičky).
-4. Načti `data/limits.json` a použij limity pro označení rizikových pacientů.
-5. Ulož rizikové pacienty do `data/risk_patients.csv` se středníkem jako oddělovačem.
-6. Ulož souhrn výsledků do `data/summary.json` jako slovník, který bude obsahovat klíče `total_measurements` (celkový počet měření) a `risk_measurements` (počet rizikových měření).
+1. Načti `data/measurements.csv` a rozděl řádky pomocí `split(";")` (v tomto úkolu ber data oddělená středníkem).
+2. Načti `data/limits.json` a použij limity pro označení rizikových pacientů.
+3. Ulož rizikové pacienty do `data/risk_patients.csv` se středníkem jako oddělovačem.
+4. Ulož souhrn výsledků do `data/summary.json` jako slovník, který bude obsahovat klíče `total_measurements` (celkový počet měření) a `risk_measurements` (počet rizikových měření).
 
 V tomto úkolu ber jako rizikového pacienta toho, kdo má alespoň jednu hodnotu mimo limity z `data/limits.json` (např. `heart_rate` mimo interval `heart_rate_min` až `heart_rate_max` nebo `spo2` menší než `spo2_min`).
 
