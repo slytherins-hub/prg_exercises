@@ -6,7 +6,7 @@ Algoritmizace a programování
 
 ### ZADÁNÍ
 
-#### ÚKOL: [Analýza buněk](https://classroom.github.com/a/touYQP1y)
+#### ÚKOL: [Analýza růstu buněk](https://classroom.github.com/a/touYQP1y)
 
 Tahle úloha simuluje jednoduchou datovou analýzu, jakou bys řešil(a) třeba v laboratorní praxi: dostaneš měření v čase, 
 ověříš kvalitu dat a připravíš výstup, který může jít dál do reportu nebo vizualizace. 
