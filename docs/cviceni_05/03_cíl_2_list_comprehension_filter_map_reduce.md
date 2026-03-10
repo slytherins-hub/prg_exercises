@@ -188,10 +188,14 @@ records = [
 ]
 ```
 
-1. Pomocí list comprehension vytvoř seznam „větších objednávek":
-   - objednávky, kde `kusy >= 5` nebo `cena_za_kus >= 1000`
+1. Pomocí list comprehension vytvoř seznam „větších objednávek", které splňují jednu z těchto podmínek:
+
+    - cena za kus je větší nebo rovna 1000 Kč, nebo
+    - počet kusů je větší nebo roven 5.
+
 2. Pomocí list comprehension vytvoř seznam řádků reportu pro větší objednávky ve formátu:
-   - `"ORD-001: celkem 998 Kč"`
+
+    `"ORD-001: celkem 998 Kč"`
 
 > **Tip:** Rozděl řešení do více krátkých comprehension místo jedné dlouhé.
 

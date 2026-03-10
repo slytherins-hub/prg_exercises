@@ -121,7 +121,7 @@ Když má cesta mezery, dej ji do uvozovek:
 - `Ctrl + C` zastaví běžící proces.
 - Soubory můžeš přetáhnout myší do terminálu a cesta se vloží sama.
 
-**🌟 BONUS: Terminálový warm-up (dobrovolné)**
+**BONUS: Terminálový warm-up (dobrovolné)**
 
 1. Otevři terminál přímo ve složce projektu (ne přes ruční `cd` z jiné náhodné složky).
 2. Vypiš aktuální složku a její obsah.

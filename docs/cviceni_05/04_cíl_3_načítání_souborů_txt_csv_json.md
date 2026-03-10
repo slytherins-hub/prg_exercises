@@ -181,8 +181,6 @@ path_3 = "data/lab_notes.txt"    # dopředné lomítko
 
 ---
 
----
-
 ### 3.5 Formáty CSV a JSON
 
 CSV se hodí, když máš tabulku:
