@@ -1,0 +1,25 @@
+<svg width="960" height="320" viewBox="0 0 960 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="320" fill="#FFFDF8"/>
+  <text x="40" y="48" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="28" font-weight="700">FFT</text>
+  <text x="40" y="78" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="17">Místo signálu v čase dostaneš přehled frekvenčních složek.</text>
+
+  <text x="100" y="122" fill="#0F4C5C" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18" font-weight="700">Signál v čase</text>
+  <line x1="80" y1="250" x2="360" y2="250" stroke="#1F2933" stroke-width="2"/>
+  <line x1="80" y1="250" x2="80" y2="120" stroke="#1F2933" stroke-width="2"/>
+  <path d="M90 210C120 130 155 130 185 210C215 290 250 290 280 210C310 130 335 130 350 180" stroke="#0F4C5C" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <rect x="410" y="140" width="150" height="60" rx="16" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="3"/>
+  <text x="456" y="177" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="20" font-weight="700">FFT</text>
+  <line x1="360" y1="170" x2="410" y2="170" stroke="#D1495B" stroke-width="5" stroke-linecap="round"/>
+  <line x1="560" y1="170" x2="620" y2="170" stroke="#D1495B" stroke-width="5" stroke-linecap="round"/>
+
+  <text x="688" y="122" fill="#0F4C5C" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18" font-weight="700">Frekvenční složky</text>
+  <line x1="650" y1="250" x2="900" y2="250" stroke="#1F2933" stroke-width="2"/>
+  <line x1="650" y1="250" x2="650" y2="120" stroke="#1F2933" stroke-width="2"/>
+  <rect x="690" y="220" width="26" height="30" fill="#CBD5E1"/>
+  <rect x="735" y="170" width="26" height="80" fill="#D1495B"/>
+  <rect x="780" y="200" width="26" height="50" fill="#CBD5E1"/>
+  <rect x="825" y="135" width="26" height="115" fill="#0F4C5C"/>
+  <rect x="870" y="225" width="26" height="25" fill="#CBD5E1"/>
+  <text x="720" y="286" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="14">slabé / silné frekvence</text>
+</svg>

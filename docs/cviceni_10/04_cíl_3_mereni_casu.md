@@ -33,25 +33,29 @@ Obě varianty dávají smysl, ale odpovídají na trochu jinou otázku.
 
 Pro jednoduché měření je vhodný například `time.perf_counter()`, protože nabízí jemnější rozlišení než běžný systémový čas.
 
-Ukázka jednoduché pomocné funkce:
+Úplně jednoduchý ukázkový skript může vypadat třeba takto:
 
 ```python
 import time
 
+numbers = [4, 8, 15, 16, 23, 42, 55, 78, 91, 120]
+target = 78
 
-def measure_call(function, *args, repeats=20):
-	durations = []
+start = time.perf_counter()
 
-	for _ in range(repeats):
-		start = time.perf_counter()
-		function(*args)
-		end = time.perf_counter()
-		durations.append(end - start)
+for number in numbers:
+	if number == target:
+		break
 
-	return sum(durations) / len(durations)
+end = time.perf_counter()
+
+duration = end - start
+print(f"Měření trvalo {duration:.8f} s")
 ```
 
-Taková funkce vrátí průměrný čas jednoho volání. U velmi rychlých funkcí budou výsledky často vycházet v řádu mikrosekund nebo milisekund, což je v pořádku.
+Tady se prostě změří čas mezi začátkem a koncem vybraného bloku kódu. Je to nejjednodušší možný princip, na kterém si můžeš měření rychle vyzkoušet.
+
+> **💡 Tip:** U velmi rychlých operací bývá jedno měření hodně krátké a kolísavé. Proto je při poctivějším experimentu lepší celý test několikrát zopakovat a výsledky zprůměrovat.
 
 ### 3.3 Uložení výsledků měření
 
@@ -81,43 +85,34 @@ Pokud ji v prostředí ještě nemáš, nainstaluj ji přes:
 uv add matplotlib
 ```
 
-Jednoduchý příklad vykreslení závislosti času běhu na velikosti vstupu:
+Jednoduchý ukázkový graf může vypadat třeba takto:
 
 ```python
 import matplotlib.pyplot as plt
 
-plt.plot(sizes, linear_times, marker="o", label="Sekvenční vyhledávání")
-plt.plot(sizes, binary_times, marker="s", label="Binární vyhledávání")
+sizes = [100, 500, 1000, 5000, 10000]
+times = [0.00001, 0.00003, 0.00006, 0.00031, 0.00067]
+
+plt.plot(sizes, times)
 
 plt.xlabel("Velikost vstupu")
-plt.ylabel("Průměrný čas [s]")
-plt.title("Porovnání doby běhu algoritmů vyhledávání")
-plt.legend()
-plt.grid(True)
+plt.ylabel("Čas [s]")
+plt.title("Ukázkový graf měření")
 plt.show()
 ```
 
-Z grafu pak můžeš lépe odhadnout, jak se jednotlivé algoritmy škálují s rostoucí velikostí vstupu.
+Tohle je záměrně jen jeden jednoduchý příklad. Dál si ho upravíš podle toho, co budeš opravdu měřit a kolik různých algoritmů budeš chtít porovnat.
 
 #### ÚKOL: Měření času běhu
 
 1. Vytvoř si generátor vlastních sekvencí o různé délce, například `100`, `500`, `1000`, `5000` a `10000` prvků.
 2. Případně do modulu `searching.py` importuj už připravené generátory z modulu `generators.py`, který je dostupný na e-learningu.
 3. Vyber si alespoň dva algoritmy, které chceš porovnat, například sekvenční a binární vyhledávání.
-4. Pro každou velikost vstupu proveď více měření stejné funkce a spočítej průměrný čas běhu.
-5. Ulož si výsledky do seznamů podle velikosti vstupu.
-6. Pomocí `matplotlib` vykresli graf závislosti času běhu na velikosti vstupu.
-7. Do grafu přidej popisky os, legendu a smysluplný název.
-8. Krátce slovně okomentuj, jestli výsledky odpovídají teoretické asymptotické složitosti.
-
-#### ÚKOL: Porovnání s a bez ceny za seřazení
-
-Zkus porovnat dvě různé situace:
-
-1. měříš pouze samotné binární vyhledávání nad už seřazenými daty,
-2. měříš seřazení dat a až potom binární vyhledávání.
-
-Na závěr napiš, ve které situaci dává binární vyhledávání největší smysl.
+4. Ulož si výsledky do seznamů podle velikosti vstupu.
+5. Pomocí `matplotlib` vykresli graf závislosti času běhu na velikosti vstupu.
+6. Do grafu přidej popisky os, legendu a smysluplný název.
+7. Krátce slovně okomentuj, jestli výsledky odpovídají teoretické asymptotické složitosti.
+8. Dobrovolně: Pro každou velikost vstupu proveď více měření stejné funkce a spočítej průměrný čas běhu.
 
 > **💡 Tip:** U velmi krátkých seznamů může být rozdíl mezi algoritmy téměř neviditelný. Zajímavější výsledky často dostaneš až u větších vstupů.
 

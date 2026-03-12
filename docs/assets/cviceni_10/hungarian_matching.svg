@@ -1,0 +1,43 @@
+<svg width="960" height="320" viewBox="0 0 960 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="320" fill="#FFFDF8"/>
+  <text x="40" y="48" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="28" font-weight="700">Maďarský algoritmus</text>
+  <text x="40" y="78" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="17">Hledáš nejlepší párování tak, aby celková cena byla co nejmenší.</text>
+
+  <text x="88" y="132" fill="#0F4C5C" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18" font-weight="700">Lidé</text>
+  <text x="754" y="132" fill="#0F4C5C" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18" font-weight="700">Úlohy</text>
+
+  <circle cx="120" cy="180" r="26" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="3"/>
+  <circle cx="120" cy="240" r="26" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="3"/>
+  <circle cx="120" cy="300" r="26" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="3"/>
+  <text x="111" y="188" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">A</text>
+  <text x="111" y="248" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">B</text>
+  <text x="111" y="308" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">C</text>
+
+  <circle cx="820" cy="180" r="26" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="3"/>
+  <circle cx="820" cy="240" r="26" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="3"/>
+  <circle cx="820" cy="300" r="26" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="3"/>
+  <text x="812" y="188" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">1</text>
+  <text x="812" y="248" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">2</text>
+  <text x="812" y="308" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">3</text>
+
+  <rect x="300" y="148" width="300" height="180" rx="16" fill="#F8FAFC" stroke="#D9E2EC"/>
+  <line x1="400" y1="148" x2="400" y2="328" stroke="#D9E2EC"/>
+  <line x1="500" y1="148" x2="500" y2="328" stroke="#D9E2EC"/>
+  <line x1="300" y1="208" x2="600" y2="208" stroke="#D9E2EC"/>
+  <line x1="300" y1="268" x2="600" y2="268" stroke="#D9E2EC"/>
+  <text x="344" y="185" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">4</text>
+  <text x="444" y="185" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">1</text>
+  <text x="544" y="185" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">3</text>
+  <text x="344" y="245" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">2</text>
+  <text x="444" y="245" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">5</text>
+  <text x="544" y="245" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">1</text>
+  <text x="344" y="305" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">3</text>
+  <text x="444" y="305" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">2</text>
+  <text x="544" y="305" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">4</text>
+
+  <line x1="146" y1="180" x2="820" y2="180" stroke="#D1495B" stroke-width="4" stroke-linecap="round"/>
+  <line x1="146" y1="240" x2="820" y2="300" stroke="#D1495B" stroke-width="4" stroke-linecap="round"/>
+  <line x1="146" y1="300" x2="820" y2="240" stroke="#D1495B" stroke-width="4" stroke-linecap="round"/>
+
+  <text x="40" y="108" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">Zvýrazněné spojnice ukazují jedno optimální párování.</text>
+</svg>

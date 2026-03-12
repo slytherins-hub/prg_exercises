@@ -1,0 +1,21 @@
+<svg width="960" height="320" viewBox="0 0 960 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="320" fill="#FFFDF8"/>
+  <text x="40" y="48" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="28" font-weight="700">Karacubův algoritmus</text>
+  <text x="40" y="78" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="17">Velká čísla rozdělíš na části a počítáš chytře méně násobení.</text>
+
+  <rect x="380" y="100" width="200" height="56" rx="16" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="3"/>
+  <text x="423" y="135" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="22" font-weight="700">1234 × 5678</text>
+
+  <line x1="480" y1="156" x2="300" y2="218" stroke="#D1495B" stroke-width="4"/>
+  <line x1="480" y1="156" x2="480" y2="218" stroke="#D1495B" stroke-width="4"/>
+  <line x1="480" y1="156" x2="660" y2="218" stroke="#D1495B" stroke-width="4"/>
+
+  <rect x="200" y="218" width="200" height="56" rx="16" fill="#F8FAFC" stroke="#0F4C5C" stroke-width="3"/>
+  <rect x="380" y="218" width="200" height="56" rx="16" fill="#F8FAFC" stroke="#0F4C5C" stroke-width="3"/>
+  <rect x="560" y="218" width="200" height="56" rx="16" fill="#F8FAFC" stroke="#0F4C5C" stroke-width="3"/>
+  <text x="240" y="252" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="20">12 × 56</text>
+  <text x="418" y="252" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="20">34 × 78</text>
+  <text x="591" y="252" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="20">(12+34)(56+78)</text>
+
+  <text x="40" y="290" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">Školní násobení používá 4 dílčí součiny. Karacuba si vystačí jen se 3.</text>
+</svg>
