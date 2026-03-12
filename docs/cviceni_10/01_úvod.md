@@ -12,9 +12,9 @@ Algoritmizace a programování
 
 Schopnost analyzovat složitost algoritmu umožňuje programátorům porovnat mezi sebou více algoritmů a rozhodnout, který z nich pro daný problém použít, aby navržené řešení bylo maximálně výpočetně efektivní (asi nikdo z nás by nechtěl několik vteřin či dokonce minut čekat na odezvu programů, které denně používáme). Odhad složitosti algoritmu lze provést jak pro výpočetní čas, tak pro paměťové nebo jiné prostředky.
 
-V této lekci si vyzkoušíme základy analýzy asymptotické složitosti na algoritmech vyhledávání. Jedná se o algoritmy, které jsou základem naprosté většiny programů a využíváme je prakticky na denní bázi (např. vyhledávání přes Google).
+V téhle lekci si vyzkoušíš základy analýzy asymptotické složitosti na algoritmech vyhledávání. Jde o algoritmy, které jsou základem naprosté většiny programů a využíváš je prakticky na denní bázi, třeba při vyhledávání přes Google.
 
-V praxi se jen málokdy setkáte s potřebou implementovat tyto algoritmy svépomocí, protože jsou součástí základní sady příkazů u většiny jazyků. Jedná se nicméně o principiálně jednoduché postupy, na kterých lze vliv asymptotické náročnosti na běh programu velmi dobře pochopit. Alespoň základní orientace mezi těmito algoritmy také umožňuje zvolit konkrétní implementaci v závislosti na našich datech a řešeném problému. V kombinaci s např. vhodnou datovou strukturou, tak můžeme **zrychlit náš program o několik řádů**!
+V praxi se jen málokdy setkáš s potřebou implementovat tyto algoritmy úplně od nuly, protože podobné operace často nabízí standardní knihovny, hotové metody nebo vhodně zvolené datové struktury. Jde ale o principiálně jednoduché postupy, na kterých se vliv asymptotické náročnosti na běh programu vysvětluje velmi dobře. Základní orientace mezi těmito algoritmy ti navíc pomůže zvolit vhodné řešení podle dat a problému, který řešíš. V kombinaci s vhodnou datovou strukturou tak můžeš **zrychlit program o několik řádů**.
 
 ### Co se v tomto cvičení naučíte?
 
@@ -23,7 +23,5 @@ V praxi se jen málokdy setkáte s potřebou implementovat tyto algoritmy svépo
 3. Jak funguje vyhledávání vzorů v sekvenci.
 4. Jak funguje binární vyhledávání na seřazeném seznamu.
 5. Jak porovnat nejlepší a nejhorší scénář u různých algoritmů vyhledávání.
-
-Obsah následujících stránek je převedený ze starého cvičení do nové šablony, ale věcně zůstává zachovaný.
 
 ---

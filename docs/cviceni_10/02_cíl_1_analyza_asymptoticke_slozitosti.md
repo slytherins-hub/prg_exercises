@@ -17,21 +17,21 @@ Odhad řádu růstu funkce $g(n)$ zkoumaného algoritmu lze provést řadou růz
 - $f(n) = \Theta(g(n))$ – Big Theta notation  
 	**Asymptotická těsná mez** – kde platí zároveň $O$ i $\Omega$.
 
-Nás bude zajímat zejména odhad složitosti v nejhorším možném scénáři.
-V tomto případě postupujeme zpravidla tak, že:
+Nejvíc nás bude zajímat odhad složitosti v nejhorším možném scénáři.
+V tom případě obvykle postupuješ tak, že:
 
 1. zanedbáme členy funkce $g(n)$ rostoucí stejně rychle nebo pomaleji než člen s nejrychlejším růstem,
 2. zanedbáme konstanty funkce $g(n)$.
 
-> **💡 Poznámka:** V praxi je kromě asymptotické složitosti nutné zohlednit také další parametry. Někdy tak může být výhodnější použít algoritmus s horší asymptotickou složitostí:
+> **💡 Poznámka:** V praxi je kromě asymptotické složitosti potřeba zohlednit i další parametry. Někdy tak může být výhodnější použít algoritmus s horší asymptotickou složitostí:
 >
 > - **Složitá implementace**  
->   Algoritmy s lepší asymptotickou složitostí jsou často více komplikované a mohou zvýšit čas potřebný na implementaci.
+>   Algoritmy s lepší asymptotickou složitostí bývají často složitější a mohou výrazně zvýšit čas potřebný na implementaci.
 >
 > - **Malá velikost vstupních dat**  
->   Pro malou velikost vstupních dat může vzrůst vliv konstant a výrazů nižšího řádu, které jsou u asymptotické složitosti zanedbány. Algoritmus s vyšší asymptotickou složitostí tedy může výpočetně překonat asymptoticky jednodušší algoritmus.
+>   U malé velikosti vstupních dat může vzrůst vliv konstant a výrazů nižšího řádu, které se v asymptotické složitosti zanedbávají. Algoritmus s vyšší asymptotickou složitostí tak může v praxi běžet rychleji než asymptoticky jednodušší algoritmus.
 >
 > - **Rozdíly mezi průměrným a nejhorším scénářem**  
->   V určitých případech může být výhodnější zvolit algoritmus, který má vyšší asymptotickou složitost pro nejhorší scénář, ale relativně nízkou složitost průměrnou (např. když víme, že nejhorší scénář nenastává příliš často). Naopak v kritických situacích (např. kontrolní systémy letadel) můžeme preferovat algoritmus s nižší průměrnou složitostí, pokud je jeho asymptotická složitost v nejhorším případě lepší než u jiného řešení.
+>   V určitých situacích může být výhodnější algoritmus, který má horší asymptotickou složitost pro nejhorší scénář, ale relativně nízkou složitost průměrnou, třeba když víš, že nejhorší scénář nastává jen zřídka. Naopak v kritických aplikacích může být důležitější chování v nejhorším případě než průměrný výkon.
 
 ---
