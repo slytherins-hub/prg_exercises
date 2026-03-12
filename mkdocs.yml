@@ -85,15 +85,21 @@ nav:
     - Cíl 5 – Git a GitHub: cviceni_05/06_cíl_5_git_a_github_classroom.md
     - Cíl 6 – zadání a odevzdání úkolu: cviceni_05/07_cíl_6_odevzdání_úkolu.md
     - Self-check: cviceni_05/08_self_check_procvičení_znalostí.md
-#  - Cvičení 6:
-#    - Přehled: cviceni_06/README.md
-#    - Úvod: cviceni_06/01_úvod.md
-#    - Cíl 1 – funkce, rozšíření a dobré návyky: cviceni_06/02_cíl_1_funkce_rozšíření.md
-#    - Cíl 2 – moduly, importy a __main__: cviceni_06/03_cíl_2_moduly_a_importy.md
-#    - Cíl 3 – modulární program, průnik kružnic: cviceni_06/04_cíl_3_kružnice_modulární_program.md
-#    - Cíl 4 – testy a standardní struktura Python repozitáře: cviceni_06/05_cíl_4_testy_a_struktura_python_repozitáře.md
-#    - Self-check: cviceni_06/06_self_check_procvičení_znalostí.md
-#    - Doplňek – čitelnost kódu a formátování: cviceni_06/07_doplnek_citelnost_kodu_a_formatovani.md
+  - Cvičení 6:
+    - Přehled: cviceni_06/README.md
+    - Úvod: cviceni_06/01_úvod.md
+    - Cíl 1 – funkce, rozšíření a dobré návyky: cviceni_06/02_cíl_1_funkce_rozšíření.md
+    - Cíl 2 – moduly, importy a __main__: cviceni_06/03_cíl_2_moduly_a_importy.md
+    - Cíl 3 – modulární program, průnik kružnic: cviceni_06/04_cíl_3_kružnice_modulární_program.md
+    - Cíl 4 – testy a standardní struktura Python repozitáře: cviceni_06/05_cíl_4_testy_a_struktura_python_repozitáře.md
+    - Self-check: cviceni_06/06_self_check_procvičení_znalostí.md
+    - Doplňek – čitelnost kódu a formátování: cviceni_06/07_doplnek_citelnost_kodu_a_formatovani.md
+  - Cvičení 10:
+    - Přehled: cviceni_10/README.md
+    - Úvod: cviceni_10/01_úvod.md
+    - Cíl 1 – analýza asymptotické složitosti: cviceni_10/02_cíl_1_analyza_asymptoticke_slozitosti.md
+    - Cíl 2 – algoritmy vyhledávání: cviceni_10/03_cíl_2_algoritmy_vyhledavani.md
+    - Cíl 3 – dobrovolný úkol, měření času: cviceni_10/04_cíl_3_dobrovolny_ukol_mereni_casu.md
 
 extra_css:
   - assets/nav-toggle.css
