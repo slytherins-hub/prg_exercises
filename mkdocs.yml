@@ -103,6 +103,12 @@ nav:
     - Cíl 4 – vyhledávání vzorů: cviceni_10/05_cíl_4_vyhledavani_vzoru.md
     - Cíl 5 – teoreticky zajímavé algoritmy: cviceni_10/06_cíl_5_teoreticky_zajimave_algoritmy.md
     - Cíl 6 – odevzdání úkolu: cviceni_10/07_cíl_6_odevzdání_úkolu.md
+  - Cvičení 11:
+    - Přehled: cviceni_11/README.md
+    - Úvod: cviceni_11/01_úvod.md
+    - Cíl 1 – přímé řadicí algoritmy: cviceni_11/02_cíl_1_prime_radici_algoritmy.md
+    - Cíl 2 – řazení v Pythonu a další algoritmy: cviceni_11/03_cíl_2_razeni_v_pythonu_a_dalsi_algoritmy.md
+    - Cíl 3 – odevzdání úkolu: cviceni_11/04_cíl_3_odevzdání_úkolu.md
 
 extra_css:
   - assets/nav-toggle.css

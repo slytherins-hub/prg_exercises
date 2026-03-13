@@ -9,4 +9,5 @@
 5. [Cvičení 5: Práce se soubory, PowerShell a Git](cviceni_05/README.md)
 6. [Cvičení 6: Funkce, moduly a testy](cviceni_06/README.md)
 7. [Cvičení 10: Algoritmy vyhledávání](cviceni_10/README.md)
+8. [Cvičení 11: Řadicí algoritmy](cviceni_11/README.md)
 
