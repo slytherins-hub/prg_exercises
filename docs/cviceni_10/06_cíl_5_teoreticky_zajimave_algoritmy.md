@@ -16,8 +16,6 @@ Dijkstrův algoritmus řeší problém **nejkratší cesty v grafu**. Máš uzly
 
 Právě tohle **ohodnocení hran** je důležité: nehledáš cestu s nejmenším počtem kroků, ale cestu s nejmenším **součtem vah**. Na obrázku tedy čísla u hran neříkají pořadí průchodu, ale cenu jednotlivých přesunů. Nejkratší cesta vznikne tak, že se tyto hodnoty sčítají. V tomhle konkrétním obrázku si to můžeš představit třeba jako hledání nejkratší cesty z uzlu `A` do uzlu `F`.
 
-To přímo souvisí i s tímhle cílem. Kdybys zkoušel mnoho různých cest hrubou silou a jejich ceny jen porovnával, počet možností by rychle explodoval. Dijkstrův algoritmus je zajímavý právě tím, že stejný problém řeší systematicky a výrazně efektivněji.
-
 Grafická představa:
 
 ![Dijkstrův algoritmus](../assets/cviceni_10/others/djiskra.png)
@@ -29,7 +27,7 @@ Typické použití:
 
 Jak to algoritmus dělá:
 
-Na obrázku je zvýrazněná výsledná nejlevnější cesta. Algoritmus si ale nejdřív u uzlů průběžně zapisuje nejlepší zatím známou cenu od startu. Pak vždy vezme uzel s nejnižší známou cenou a zkusí přes něj zlevnit cesty k dalším sousedům.
+Na obrázku vidíš graf s ohodnocenými hranami. Algoritmus si u uzlů průběžně zapisuje nejlepší zatím známou cenu od startu. Pak vždy vezme uzel s nejnižší známou cenou a zkusí přes něj zlevnit cesty k dalším sousedům.
 
 > **📘 Složitost:**
 >

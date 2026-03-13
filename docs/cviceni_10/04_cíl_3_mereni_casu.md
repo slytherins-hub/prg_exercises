@@ -29,9 +29,15 @@ U binárního vyhledávání je důležité si uvědomit, že funguje nad **seř
 
 Obě varianty dávají smysl, ale odpovídají na trochu jinou otázku.
 
+Jako další zajímavé srovnání můžeš přidat i **vyhledávání v množině (`set`)**. To bývá v Pythonu velmi rychlé, protože množina je postavená na hashovací tabulce. Místo postupného procházení prvků se tedy typicky rovnou spočítá, kam se má hledaná hodnota zařadit.
+
+> **💡 Poznámka:** Množina v Pythonu používá **hashovací tabulku**. To znamená, že se z hodnoty nejdřív spočítá její hash a podle něj se velmi rychle určí, kde se má prvek v tabulce hledat. U seznamu naproti tomu obvykle procházíš prvky jeden po druhém. Proto bývá `x in some_set` v průměru přibližně $O(1)$, zatímco `x in some_list` je typicky $O(n)$. Je to ale vykoupené **vyšší paměťovou náročností**, protože hashovací tabulka si musí držet rezervu a pomocnou strukturu pro rychlý přístup. Na $O(n)$ se hledání v množině může zhoršit v krajním případě tehdy, když vznikne hodně **kolizí**, tedy když mnoho různých hodnot padá do stejných míst tabulky a Python je pak musí rozlišovat postupně.
+
 ### 3.2 Měření pomocí `time.perf_counter()`
 
 Pro jednoduché měření je vhodný například `time.perf_counter()`, protože nabízí jemnější rozlišení než běžný systémový čas.
+
+Narazit můžeš i na základní funkci `time.time()`, která vrací aktuální čas. I s ní se dá doba běhu měřit, ale pro krátké úseky kódu bývá `time.perf_counter()` obvykle vhodnější.
 
 Úplně jednoduchý ukázkový skript může vypadat třeba takto:
 
@@ -107,12 +113,13 @@ Tohle je záměrně jen jeden jednoduchý příklad. Dál si ho upravíš podle 
 
 1. Vytvoř si generátor vlastních sekvencí o různé délce, například `100`, `500`, `1000`, `5000` a `10000` prvků.
 2. Případně do modulu `searching.py` importuj už připravené generátory z modulu `generators.py`, který je dostupný na e-learningu.
-3. Vyber si alespoň dva algoritmy, které chceš porovnat, například sekvenční a binární vyhledávání.
+3. Porovnej sekvenční a binární vyhledávání.
 4. Ulož si výsledky do seznamů podle velikosti vstupu.
 5. Pomocí `matplotlib` vykresli graf závislosti času běhu na velikosti vstupu.
 6. Do grafu přidej popisky os, legendu a smysluplný název.
-7. Krátce slovně okomentuj, jestli výsledky odpovídají teoretické asymptotické složitosti.
-8. Dobrovolně: Pro každou velikost vstupu proveď více měření stejné funkce a spočítej průměrný čas běhu.
+7. Dobrovolně: Přidej do srovnání i test členství v množině (`set`) a porovnej, jak se chová vůči seznamu.
+8. Krátce slovně okomentuj, jestli výsledky odpovídají teoretické asymptotické složitosti.
+9. Dobrovolně: Pro každou velikost vstupu proveď více měření stejné funkce a spočítej průměrný čas běhu.
 
 > **💡 Tip:** U velmi krátkých seznamů může být rozdíl mezi algoritmy téměř neviditelný. Zajímavější výsledky často dostaneš až u větších vstupů.
 

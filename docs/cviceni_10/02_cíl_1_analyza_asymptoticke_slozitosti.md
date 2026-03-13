@@ -97,18 +97,6 @@ Když si vezmeš třeba seznamy délky $3$, $5$ a $10$, pak v nejhorším příp
 
 ![Asymptotická složitost – lineární](../assets/cviceni_10/asymptotic_linear_intuition.svg)
 
-### 1.4 Co při odhadu vlastně počítáme
-
-Při analýze algoritmu obvykle nepočítáš každou drobnost úplně přesně, ale vybíráš si **základní operaci**, která dává pro danou úlohu smysl.
-
-U vyhledávání to často bývá:
-
-- počet porovnání,
-- počet průchodů cyklem,
-- počet kontrol podmínky.
-
-Například u sekvenčního vyhledávání je přirozené počítat, kolikrát porovnáváš hledanou hodnotu s prvkem seznamu.
-
 ### 1.5 Nejlepší, průměrný a nejhorší scénář
 
 U jednoho algoritmu můžeš často rozlišovat více případů:
@@ -382,7 +370,60 @@ Podobně u funkce $2^n + n^4$ bude pro opravdu velká $n$ dominantní člen $2^n
 > - **Rozdíly mezi průměrným a nejhorším scénářem**  
 >   V určitých situacích může být výhodnější algoritmus, který má horší asymptotickou složitost pro nejhorší scénář, ale relativně nízkou složitost průměrnou, třeba když víš, že nejhorší scénář nastává jen zřídka. Naopak v kritických aplikacích může být důležitější chování v nejhorším případě než průměrný výkon.
 
-### 1.11 Krátké shrnutí
+### 1.11 Co při odhadu vlastně počítáme
+
+Když už víš, že nás v tomhle cvičení zajímá hlavně **nejhorší scénář**, můžeš se ptát ještě na jednu věc: co přesně v tom scénáři vlastně počítat.
+
+Při analýze algoritmu obvykle nepočítáš každou drobnost úplně přesně, ale vybíráš si **základní operaci**, která dává pro danou úlohu smysl.
+
+U vyhledávání to často bývá:
+
+- počet porovnání,
+- počet průchodů cyklem,
+- počet kontrol podmínky.
+
+Například u sekvenčního vyhledávání je přirozené počítat, kolikrát porovnáváš hledanou hodnotu s prvkem seznamu.
+
+To ale neznamená, že se operace **nedají** počítat přesně. Dají. Jenže kdybys počítal úplně každou drobnost, třeba přiřazení do proměnné, posun indexu, kontrolu podmínky i samotné porovnání zvlášť, dostal bys velmi detailní zápis, který je pro základní odhad zbytečně složitý.
+
+Proto se v asymptotické analýze obvykle vybere jedna **hlavní operace**, která nejlépe vystihuje náročnost dané úlohy. U vyhledávání je to často porovnání, protože právě ta většinou rozhodují o tom, jak dlouho bude algoritmus běžet.
+
+Podívej se na jednoduchý příklad v nejhorším scénáři:
+
+```python
+def linear_search(values, target):
+	for value in values:
+		if value == target:
+			return True
+	return False
+```
+
+Když budeš počítat **základní operaci**, můžeš sledovat jen porovnání `value == target`:
+
+$$
+n \text{ porovnání v nejhorším scénáři} \rightarrow O(n)
+$$
+
+Když budeš naopak počítat skoro všechno, dostaneš třeba tento hrubý odhad:
+
+- průchod cyklem: přibližně $n$,
+- kontrola podmínky `if`: přibližně $n$,
+- porovnání `value == target`: přibližně $n$,
+- závěrečný `return False`: konstanta.
+
+To můžeš zapsat třeba jako:
+
+$$
+3n + 1 \rightarrow O(n)
+$$
+
+Na tom je dobře vidět hlavní pointa:
+
+- přesnější počítání ti dá detailnější funkci,
+- výběr základní operace ti dá jednodušší funkci,
+- v obou případech ale pro nejhorší scénář vyjde stejný asymptotický závěr: $O(n)$.
+
+### 1.12 Krátké shrnutí
 
 V tomhle cíli je důležité odnést si hlavně tyto myšlenky:
 
