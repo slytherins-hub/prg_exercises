@@ -106,9 +106,12 @@ nav:
   - Cvičení 11:
     - Přehled: cviceni_11/README.md
     - Úvod: cviceni_11/01_úvod.md
-    - Cíl 1 – přímé řadicí algoritmy: cviceni_11/02_cíl_1_prime_radici_algoritmy.md
-    - Cíl 2 – řazení v Pythonu a další algoritmy: cviceni_11/03_cíl_2_razeni_v_pythonu_a_dalsi_algoritmy.md
-    - Cíl 3 – odevzdání úkolu: cviceni_11/04_cíl_3_odevzdání_úkolu.md
+    - Cíl 1 – úvod ke řazení: cviceni_11/02_cíl_1_úvod_ke_řazení.md
+    - Cíl 1 – Selection Sort: cviceni_11/03_cíl_1_selection_sort.md
+    - Cíl 1 – Bubble Sort: cviceni_11/04_cíl_1_bubble_sort.md
+    - Cíl 1 – Insertion Sort: cviceni_11/05_cíl_1_insertion_sort.md
+    - Cíl 2 – řazení v Pythonu a další algoritmy: cviceni_11/06_cíl_2_razeni_v_pythonu_a_dalsi_algoritmy.md
+    - Cíl 3 – odevzdání úkolu: cviceni_11/07_cíl_3_odevzdání_úkolu.md
 
 extra_css:
   - assets/nav-toggle.css
