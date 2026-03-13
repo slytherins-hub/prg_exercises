@@ -112,6 +112,13 @@ nav:
     - Cíl 1 – Insertion Sort: cviceni_11/05_cíl_1_insertion_sort.md
     - Cíl 2 – řazení v Pythonu a další algoritmy: cviceni_11/06_cíl_2_razeni_v_pythonu_a_dalsi_algoritmy.md
     - Cíl 3 – odevzdání úkolu: cviceni_11/07_cíl_3_odevzdání_úkolu.md
+  - Cvičení 13:
+    - Přehled: cviceni_13/README.md
+    - Úvod: cviceni_13/01_úvod.md
+    - Cíl 1 – první třída: cviceni_13/02_cíl_1_první_třída.md
+    - Cíl 2 – dědičnost: cviceni_13/03_cíl_2_dědičnost.md
+    - Cíl 3 – DNA sekvence: cviceni_13/04_cíl_3_dna_sekvence.md
+    - Cíl 4 – GitHub Copilot: cviceni_13/05_cíl_4_github_copilot.md
 
 extra_css:
   - assets/nav-toggle.css

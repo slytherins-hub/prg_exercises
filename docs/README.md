@@ -10,4 +10,5 @@
 6. [Cvičení 6: Funkce, moduly a testy](cviceni_06/README.md)
 7. [Cvičení 10: Algoritmy vyhledávání](cviceni_10/README.md)
 8. [Cvičení 11: Řadicí algoritmy](cviceni_11/README.md)
+9. [Cvičení 13: OOP](cviceni_13/README.md)
 
