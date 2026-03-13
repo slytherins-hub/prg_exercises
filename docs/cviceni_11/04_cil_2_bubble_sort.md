@@ -19,7 +19,7 @@ Základní princip algoritmu pro vzestupné seřazení:
 5. Po jednom průchodu se největší hodnota dostane na konec.
 6. Opakuj, dokud není seřazená celá sekvence.
 
-![Bubble Sort](../assets/cviceni_11/10_bubble_sort_visualization.png)
+![Bubble Sort](../assets/cviceni_11/11_bubble_sort_visualization.png)
 
 > **Tip:** U Bubble Sortu se vyplatí vzít si papír a projít si pár kroků ručně — hned pak vidíš, proč se největší 
 > hodnota každou iterací „probublává" na konec seznamu.

@@ -20,6 +20,8 @@ Rozdělují se podle několika kritérií; pro začátek ti stačí jedno - **st
 - **Stabilní algoritmus** zachovává relativní pořadí prvků se stejnou hodnotou (stejným klíčem řazení).
 - **Nestabilní algoritmus** tuto vlastnost nezaručuje.
 
+![Stability of sorting algorithms](../assets/cviceni_11/11_stable_vs_unstable_sorting.png)
+
 Když řadíš pouze čísla, není stabilita důležitá — dvě stejné sedmičky se od sebe neliší. Důležitá je ve chvíli, 
 kdy se stejným klíčem pracují různé objekty, které od sebe umíš odlišit (třeba záznamy studentů se stejným počtem bodů).
 
@@ -68,7 +70,7 @@ Základní princip algoritmu pro vzestupné seřazení:
 3. Pak najdi druhý nejmenší prvek a prohoď ho s druhým prvkem.
 4. Opakuj, dokud nejsou všechny prvky na správném místě.
 
-![Selection Sort](../assets/cviceni_11/10_selection_sort_visualization.png)
+![Selection Sort](../assets/cviceni_11/11_selection_sort_visualization.png)
 
 Všimni si, že v každém průchodu algoritmus prohodí dva prvky — nalezené minimum a prvek na aktuální pozici. 
 Takové prohození může přeskočit pořadí dvou stejných hodnot, a proto je algoritmus **nestabilní**.
