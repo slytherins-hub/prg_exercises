@@ -17,6 +17,13 @@ theme:
     - search.suggest
     - search.highlight
 
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false
+      include_source: true
+      ignore_h1_titles: true
+
 markdown_extensions:
   - sane_lists
   - admonition
@@ -94,6 +101,14 @@ nav:
     - Cíl 4 – testy a standardní struktura Python repozitáře: cviceni_06/05_cíl_4_testy_a_struktura_python_repozitáře.md
     - Self-check: cviceni_06/06_self_check_procvičení_znalostí.md
     - Doplňek – čitelnost kódu a formátování: cviceni_06/07_doplnek_citelnost_kodu_a_formatovani.md
+  - Cvičení 9:
+    - Přehled: cviceni_09/README.md
+    - Úvod: cviceni_09/01_úvod.md
+    - Cíl 1 – Python ekosystém: cviceni_09/02_cíl_1_ekosystem.md
+    - Cíl 2 – Jupyter Notebook: cviceni_09/02_cíl_1_jupyter_notebook.md
+    - Cíl 3 – NumPy: cviceni_09/cviceni_09_numpy.ipynb
+    - Cíl 4 – Matplotlib: cviceni_09/cviceni_09_matplotlib.ipynb
+    - Cíl 5 – Úkol: cviceni_09/05_cíl_4_úkol.md
   - Cvičení 10:
     - Přehled: cviceni_10/README.md
     - Úvod: cviceni_10/01_úvod.md
