@@ -108,7 +108,8 @@ nav:
     - Cíl 2 – Jupyter Notebook: cviceni_09/02_cíl_1_jupyter_notebook.md
     - Cíl 3 – NumPy: cviceni_09/cviceni_09_numpy.ipynb
     - Cíl 4 – Matplotlib: cviceni_09/cviceni_09_matplotlib.ipynb
-    - Cíl 5 – Úkol: cviceni_09/05_cíl_4_úkol.md
+    - Cíl 5 – Úkol: cviceni_09/cviceni_09_segmentace.ipynb
+    - Cíl 6 – Úkol: cviceni_09/cviceni_09_ekg.ipynb
   - Cvičení 10:
     - Přehled: cviceni_10/README.md
     - Úvod: cviceni_10/01_úvod.md
