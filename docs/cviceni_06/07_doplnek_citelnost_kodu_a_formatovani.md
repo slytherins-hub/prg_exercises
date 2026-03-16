@@ -8,7 +8,7 @@ Formátování není kosmetika.
 Je to praktický nástroj, který ti zrychlí čtení, ladění i opravy kódu.
 
 Pro základní styl Pythonu vycházej z doporučení **PEP 8**:
-https://peps.python.org/pep-0008/
+(https://peps.python.org/pep-0008/)[https://peps.python.org/pep-0008/]
 
 V tomhle doplňku máš praktický výběr pravidel, která se vyplatí držet hned od začátku.
 
@@ -24,7 +24,7 @@ Rozdělení do více řádků použij hlavně, když:
 
 ---
 
-### 1) Funkce s více parametry
+#### Funkce s více parametry
 
 ```python
 def analyze_round_scores(
@@ -40,7 +40,7 @@ def analyze_round_scores(
 
 ---
 
-### 2) Volání funkce s více argumenty
+#### Volání funkce s více argumenty
 
 ```python
 result = analyze_round_scores(
@@ -55,7 +55,7 @@ result = analyze_round_scores(
 
 ---
 
-### 3) Delší seznamy
+#### Delší seznamy
 
 ```python
 scores = [
@@ -69,7 +69,7 @@ scores = [
 
 ---
 
-### 4) Návrat více hodnot (`return (...)`)
+#### Návrat více hodnot (`return (...)`)
 
 ```python
 return (
@@ -85,9 +85,9 @@ return (
 
 Tohle je dobrý standard, když vracíš víc položek.
 
-> **💡 Poznámka k čárce na konci:** U víceřádkového zápisu nech i poslední položku s čárkou (`trailing comma`).
+> **Poznámka k čárce na konci:** U víceřádkového zápisu nech i poslední položku s čárkou (`trailing comma`).
 > Když potom přidáš další položku, v Gitu se obvykle změní jen jeden nový řádek.
-> Review je přehlednější a bývá méně merge konfliktů.
+> Review je přehlednější a bývá méně konfliktů při začlenění více změn od různých lidí.
 
 ---
 
@@ -173,6 +173,6 @@ Co by měl docstring minimálně obsahovat:
 3. Co vrací (`Returns`).
 4. Jaké chyby může vyvolat (`Raises`), pokud je to relevantní.
 
-> **💡 Tip:** Čitelnost kódu je týmová dovednost. Kód by měl být jasný i člověku, který ho čte poprvé.
+> **Tip:** Čitelnost kódu je týmová dovednost. Kód by měl být jasný i člověku, který ho čte poprvé.
 
 ---

@@ -4,12 +4,11 @@ Algoritmizace a programování
 
 ## CÍL 4: TESTY A STANDARDNÍ STRUKTURA PYTHON REPOZITÁŘE
 
-Test v kódu je krátký, opakovatelný check, který ověřuje,
-že funkce pro daný vstup vrátí správný výstup.
+Test v Pythonu je kód, který ověřuje, že funkce nebo část programu funguje správně.
+Tedy že pro daný vstup vrací očekávaný výstup.
 
-Je důležitý, protože po každé změně rychle zjistíš, jestli se něco nerozbilo.
-Testování je dnes standardní součást vývoje a je to dovednost,
-kterou by měl znát každý programátor.
+Testování je klíčová součást vývoje, protože ti pomáhá rychle zjistit, jestli se něco nerozbilo po úpravě kódu.
+Dnes je testování standardní praxí a je to dovednost, kterou by měl znát každý programátor.
 
 ---
 
@@ -33,10 +32,10 @@ S testy:
 
 ### 4.2 Základní pojmy v testování
 
-- **test case**: konkrétní vstup + očekávaný výstup,
-- **assertion**: podmínka, která musí platit (`assert ...`),
-- **test suite**: sada více testů pro část projektu,
-- **pass/fail**: test prošel / neprošel.
+- **test case**: konkrétní scénář s daným vstupem a očekávaným výstupem,
+- **assertion**: výraz, který ověřuje, že výstup odpovídá očekávání (např. `assert function(input) == expected_output`),
+- **test suite**: sada test cases pro ověření funkčnosti celé části kódu,
+- **pass/fail**: výsledek testu, který říká, jestli test case prošel (pass) nebo ne (fail).
 
 Praktický příklad test case:
 
@@ -46,25 +45,25 @@ Praktický příklad test case:
 
 ---
 
-### 4.3 Co testovat jako první (praktický rámec)
+### 4.3 Návrh testovacích případů
 
-U každé funkce testuj minimálně:
+U každé funkce testuj různé typy vstupů, abys pokryl různé scénáře:
 
-1. **běžný případ** (typický vstup),
+1. **běžný případ** (typický vstup, např. dvě kružnice s dvěma průniky),
 2. **hraniční případ** (např. dotyk kružnic),
 3. **negativní případ** (např. bez průniku).
 
 Pro `has_intersection(...)` to může být:
 
-- `[0,0,2]` a `[0,3,1]` -> 1 průnik,
-- `[0,0,2]` a `[0,3,2]` -> 2 průniky,
-- `[2,-1,1]` a `[1.2,5,3]` -> 0 průniků.
+- `{"x": 0, "y": 0, "r": 2}` a `{"x": 0, "y": 3, "r": 1}` → 1 průnik,
+- `{"x": 0, "y": 0, "r": 2}` a `{"x": 0, "y": 3, "r": 2}` → 2 průniky,
+- `{"x": 2, "y": -1, "r": 1}` a `{"x": 1.2, "y": 5, "r": 3}` → 0 průniků.
 
 ---
 
-### 4.4 Základ s `pytest`
+### 4.4 Implementace testů v Pythonu s `pytest`
 
-Nejdřív jednoduchý test bez parametrizace:
+Jednoduchý test bez `pytest` může vypadat takto:
 
 ```python
 from circle_stats import has_intersection
@@ -75,7 +74,7 @@ def test_has_intersection_basic():
     assert result == (True, 1)
 ```
 
-Ještě test jiné funkce ze stejného modulu (`radius_sum`):
+Nebo pro funkci `radius_sum`:
 
 ```python
 from circle_stats import radius_sum
@@ -85,7 +84,7 @@ def test_radius_sum_basic():
     assert radius_sum(2, 3) == 5
 ```
 
-Pak parametrizace (stejný test pro více vstupů):
+Pokud chceš testovat více případů, můžeš použít `pytest.mark.parametrize` pro parametrizaci testů:
 
 ```python
 import pytest
@@ -105,7 +104,7 @@ def test_has_intersection(circle_1, circle_2, expected):
 ```
 
 `@pytest.mark.parametrize(...)` znamená, že `pytest` spustí stejnou testovací funkci
-opakovaně pro každý řádek vstupních dat.
+opakovaně pro každý řádek vstupních dat. To je užitečné pro testování více scénářů bez duplikace kódu.
 
 Instalace a spuštění:
 
@@ -129,14 +128,13 @@ uv run pytest tests/test_circle_stats.py
 
 ### 4.5 Pojmy: knihovna, balíček, repozitář
 
-Než půjdeme na strukturu projektu, hodí se rozlišit tyhle pojmy:
+Než půjdeme na strukturu projektu, hodí se rozlišit tyto pojmy:
 
-- **knihovna**: větší sada hotového kódu pro určitou oblast
-  (např. `matplotlib` pro grafy),
-- **balíček**: Python package, tedy logický celek modulů, který importuješ do kódu
-  (např. `matplotlib.pyplot`),
-- **repozitář**: celý projekt pod verzováním (typicky Git/GitHub),
-  obsahuje zdrojové soubory, testy, dokumentaci i historii změn.
+- **modul**: jeden `.py` soubor s funkcemi a třídami (např. `circle_stats.py`),
+- **balíček**: složka s `__init__.py`, která může obsahovat více modulů (např. `circle_project`),
+- **knihovna**: soubor modulů a balíčků pro konkrétní účel (např. `matplotlib` pro grafy),
+- **balíček**: Python package - složka s `__init__.py`, která může obsahovat více modulů (např. `matplotlib.pyplot`),
+- **repozitář**: místo, kde máš uložený celý svůj projekt, včetně kódu, testů, dokumentace a historie změn (např. na GitHubu).
 
 Stručně:
 
@@ -168,23 +166,22 @@ project_name/
 
 Co kam patří:
 
-- `src/...` -> produkční kód,
-- `tests/...` -> testy,
-- `README.md` -> popis projektu, spuštění a rychlá orientace,
-- `pyproject.toml` -> závislosti a konfigurace.
+- `src/...` → produkční kód,
+- `tests/...` → testy,
+- `README.md` → popis projektu, spuštění a rychlá orientace,
+- `pyproject.toml` → závislosti a konfigurace.
 
 ---
 
 ### 4.7 Je potřeba `__init__.py`?
 
-`__init__.py` je speciální soubor, který říká:
-„Tahle složka je Python balíček (package).“
+`__init__.py` je speciální soubor, který říká: „Tahle složka je Python balíček (package).“
 
 Co je dobré vědět:
 
 - může být úplně prázdný,
 - často v něm jen sjednotíš importy nebo metadata balíčku,
-- u začátečnických projektů ho typicky necháš jednoduchý.
+- u začátečnických projektů ho typicky necháš prázdný.
 
 Praktické pravidlo pro tento předmět:
 
@@ -198,7 +195,7 @@ Technicky to bez `__init__.py` někdy funguje, ale explicitní varianta je čite
 ### 4.8 A co složka `docs/`?
 
 Složka `docs/` je místo pro dokumentaci projektu.
-Není to „kód aplikace“, ale texty, návody a vysvětlení pro lidi.
+Není to „kód aplikace“, ale texty, návody a vysvětlení pro uživatele nebo vývojáře.
 
 Typicky se tam dává:
 
@@ -224,17 +221,6 @@ U malého školního úkolu často stačí kvalitní `README.md`.
 Markdown je jednoduchý značkovací jazyk pro formátování textu, který se dobře čte i bez vykreslení.
 
 Ukázka jednoho malého Markdown souboru:
-
-
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
 
 === "Kód (Markdown)"
     ````markdown
@@ -292,27 +278,12 @@ Ukázka jednoho malého Markdown souboru:
 
     Více informací je v [přehledu cvičení](./README.md).
 
-<br>
-<br>
-<br>
-<br>
-<br>
 
-
-
-
-
-
-Praktické pravidlo:
-
-- `README.md` = krátký vstup do projektu (co to je, jak to spustit),
-- `docs/` = podrobnější vysvětlení a rozšířená dokumentace.
-
-> **💡 Tip:** Když něco popisuješ, drž text stručný a akční. Začátečník by měl po přečtení hned vědět, co má udělat.
+> **Tip:** Když něco popisuješ, drž text stručný a akční. Začátečník by měl po přečtení hned vědět, co má udělat.
 
 ---
 
-**📝 ÚKOL: Praktický návrh testů a struktury**
+#### ÚKOL: Praktický návrh testů a struktury
 
 1. Navrhni strukturu repozitáře pro projekt s kružnicemi.
 2. Napiš 5 test cases pro `has_intersection`:
@@ -335,16 +306,15 @@ Praktické pravidlo:
     - jak projekt spustit,
     - jak spustit testy.
 
-**💻 Zkus:** Schválně nastav špatný expected output u jednoho testu a trénuj čtení fail výpisu.
+**💻 Zkus:** Schválně nastav špatný *expected output* u jednoho testu a trénuj čtení neúspěšného testu, abys věděl, jak rychle najít problém.
 
-**📝 ÚKOL: Nahraj projekt na GitHub**
+#### ÚKOL: Nahraj projekt na GitHub
 
 1. Na GitHubu vytvoř nový repozitář a nastav:
 
     - `Repository name`: stejný název jako má tvoje lokální složka projektu,
     - `Visibility`: `Public` (pokud zadání nevyžaduje `Private`),
-    - nezaškrtávej `Add a README file`, `.gitignore` ani `Choose a license`
-      (tyhle soubory už máš lokálně).
+    - nezaškrtávej `Add a README file`, `.gitignore` ani `Choose a license` (tyhle soubory už máš lokálně).
 
 2. V kořeni projektu nejdřív ověř, jestli už existuje `.git`
    (`uv` projekt ji automaticky vytvoří, jinak by bylo potřeba nejdřív zavolat `git init`):
@@ -377,6 +347,6 @@ Praktické pravidlo:
 <ul style="color:#c62828;">
   <li>Pro splnění cvičení je nezbytné odevzdat do e-learningu funkční odkaz na repozitář.</li>
   <li>Správnost řešení nebude kontrolována, ale odevzdání úkolu je povinné a projekt musí obsahovat alespoň základní rysy požadovaného řešení.</li>
-  <li>Odevzdání a modifikace v repozitáři je nutné provést nejpozději do půlnoci v den cvičení.</li>
+  <li>Odevzdání a modifikace v repozitáři je nutné provést nejpozději do konce cvičení.</li>
   <li>Ověř, že repozitář je <code>Public</code> (jde otevřít i z anonymního okna prohlížeče).</li>
 </ul>

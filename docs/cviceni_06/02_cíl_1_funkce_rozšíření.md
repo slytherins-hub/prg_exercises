@@ -8,8 +8,8 @@ Algoritmizace a programování
 
 ### 1.1 Povinné a nepovinné parametry
 
-Povinný parametr musíš vždy zadat při volání.
-Nepovinný parametr má výchozí hodnotu.
+- **Povinný** parametr musíš vždy zadat při volání. 
+- **Nepovinný** parametr má výchozí hodnotu. Když ho při volání vynecháš, použije se ta výchozí.
 
 ```python
 def average_value(values, round_to=2):
@@ -26,7 +26,7 @@ print(average_value([1200, 980, 1430], 1))    # round_to=1
 
 ### 1.2 Poziční argumenty (positional)
 
-Poziční argument se páruje podle pořadí:
+Poziční argumenty se zadávají bez názvu, jen podle pořadí.
 
 ```python
 def convert_coins(value, from_currency, to_currency):
@@ -42,17 +42,25 @@ print(convert_coins(2500, "gold", "gems"))
 
 Je to rychlé, ale u delších funkcí nemusí být hned jasné, co které číslo znamená.
 
+> **Poznámka: Parametr vs argument**
+> 
+> - **parametr** je proměnná v definici funkce (např. `value`, `from_currency`),
+> - **argument** je konkrétní hodnota, kterou předáváš při volání (např. `2500`, `"gold"`).
+> 
+> Pojmy se často zaměňují, ale je dobré vědět, že parametr je „místo pro hodnotu“ a argument je „konkrétní hodnota“.
+
 ---
 
 ### 1.3 Pojmenované argumenty (keyword)
 
-U delších funkcí bývá čitelnější volání přes názvy parametrů:
+U delších funkcí bývá čitelnější volání přes názvy parametrů. Pojmenované argumenty se zadávají s názvem parametru, 
+takže je hned jasné, co který vstup znamená.
 
 ```python
 print(convert_coins(value=2500, from_currency="gold", to_currency="gems"))
 ```
 
-Tohle se hodí hlavně při práci s default parametry.
+Tohle se hodí hlavně při práci s nepovinnými parametry, protože můžeš zadat jen ty, které chceš změnit, a zbytek nechat na výchozí hodnotě.
 
 ---
 
@@ -60,9 +68,9 @@ Tohle se hodí hlavně při práci s default parametry.
 
 Míchat je můžeš, ale platí:
 
-1. poziční argumenty musí být dřív,
+1. poziční argumenty musí být vždy před pojmenovanými,
 2. stejný parametr nesmíš zadat 2x,
-3. poziční argument za pojmenovaným je chyba.
+3. poziční argument za pojmenovaným vede k chybě.
 
 Správně:
 
@@ -97,7 +105,7 @@ Pojmenované argumenty používej hlavně když:
 - máš více defaultů,
 - chceš mít volání samo o sobě čitelné.
 
-> **💡 Tip:** Parametry typu `True/False`, `mode`, `round_to`, `tolerance` volej radši pojmenovaně.
+> **Tip:** Parametry typu `True/False`, `mode`, `round_to`, `tolerance` volej radši pojmenovaně.
 
 ---
 
@@ -132,7 +140,7 @@ min_v, max_v, avg_v = basic_stats([1200, 980, 1430, 1600, 890])
 print(min_v, max_v, avg_v)
 ```
 
-Python vrací tuple, kterou můžeš rozbalit do proměnných.
+Python vrací více hodnot jako tuple, který můžeš rozbalit do proměnných.
 
 Ukázka: návrat uložený do tuple a následná indexace:
 
@@ -151,7 +159,7 @@ avg_only = basic_stats([1200, 980, 1430, 1600, 890])[2]
 print(avg_only)
 ```
 
-> **💡 Poznámka:** Stejný styl rozbalení funguje jak pro tuple, tak pro list.
+> **Poznámka:** Stejný styl rozbalení funguje jak pro tuple, tak pro list.
 > Počet proměnných na levé straně ale musí odpovídat počtu vracených hodnot.
 > Jinak dostaneš chybu při přiřazení.
 >
@@ -171,10 +179,10 @@ print(avg_only)
 
 Každá proměnná žije v nějakém jmenném prostoru (scope).
 
-- **lokální proměnná**: vzniká uvnitř funkce, mimo funkci k ní nevidíš,
+- **lokální proměnná**: vzniká uvnitř funkce, mimo funkci neexistuje,
 - **globální proměnná**: je definovaná mimo funkce na úrovni souboru.
 
-#### A) Lokální proměnná existuje jen uvnitř funkce
+#### Lokální proměnná existuje jen uvnitř funkce
 
 ```python
 def local_demo():
@@ -186,7 +194,7 @@ local_demo()
 # print(value)  # NameError: value mimo funkci neexistuje
 ```
 
-#### B) Funkce může globální proměnnou číst
+#### Funkce může globální proměnnou číst
 
 ```python
 DEFAULT_ROUND = 2
@@ -199,7 +207,7 @@ def round_value(value):
 print(round_value(12.3456))  # 12.35
 ```
 
-#### C) Stejné jméno uvnitř funkce přepíše globální jen lokálně
+#### Stejné jméno uvnitř funkce přepíše globální jen lokálně
 
 ```python
 player_name = "GlobalPlayer"
@@ -215,12 +223,13 @@ print("mimo funkci:", player_name)
 ```
 
 Výsledek:
+
 - ve funkci se vypíše `LocalPlayer`,
 - mimo funkci zůstane `GlobalPlayer`.
 
 Tomuhle chování se říká **stínování (shadowing)**.
 
-#### D) Pokus o změnu globální proměnné uvnitř funkce (bez `global`)
+#### Pokus o změnu globální proměnné uvnitř funkce (bez `global`)
 
 ```python
 counter = 10
@@ -235,7 +244,7 @@ def increment_bad():
 
 Tohle je častá začátečnická chyba.
 
-#### E) Změna globální proměnné přes `global` (technicky jde, prakticky opatrně)
+#### Změna globální proměnné přes `global` (technicky jde, prakticky opatrně)
 
 ```python
 counter = 10
@@ -276,59 +285,42 @@ Praktické zásady čitelného odřádkování a formátování jsou v doplňku:
 
 ---
 
-**📝 ÚKOL: Navrhni funkci pro kontrolu síly hesla**
+#### ÚKOL: Kontrola síly hesla
 
 Vytvoř soubor `function_design.py` a implementuj funkci `analyze_password`.
 
-Požadavky:
+1. Funkce má mít tyto parametry:
 
-1. Funkce má mít tyto vstupy:
+    - `password` – povinný řetězec s heslem
+    - `min_length` – minimální délka hesla (nepovinný, výchozí hodnota `8`)
+    - `require_digit` – zda musí heslo obsahovat číslici (nepovinný, výchozí `True`)
+    - `require_upper` – zda musí heslo obsahovat velké písmeno (nepovinný, výchozí `True`)
+    - `require_symbol` – zda musí heslo obsahovat symbol (nepovinný, výchozí `False`)
+    - `banned_words` – seznam zakázaných slov (nepovinný, výchozí `None`)
 
-    - `password` (povinný řetězec),
-    - `min_length` (nepovinný, výchozí hodnota `8`),
-    - `require_digit` (nepovinný, výchozí `True`),
-    - `require_upper` (nepovinný, výchozí `True`),
-    - `require_symbol` (nepovinný, výchozí `False`),
-    - `banned_words` (nepovinný, výchozí `None`).
-
-2. Funkce ověří pravidla:
+2. Funkce ověří následující pravidla:
 
     - minimální délka hesla (`min_length`),
-    - přítomnost alespoň jedné číslice,
-    - přítomnost alespoň jednoho velkého písmene,
-    - přítomnost symbolu, pokud je `require_symbol=True`,
-    - zákaz vybraných slov z `banned_words`.
+    - přítomnost alespoň jedné číslice, pokud je `require_digit=True`,
+    - přítomnost alespoň jednoho velkého písmene, pokud je `require_upper=True`,
+    - přítomnost alespoň jednoho symbolu, pokud je `require_symbol=True`,
+      > Za symbol považuj znaky: `!@#$%^&*()-_=+[]{};:,.?`
+    - heslo nesmí obsahovat žádné slovo ze seznamu `banned_words`.
+      > Pokud je `banned_words=None`, nastav uvnitř funkce vlastní výchozí seznam (např. `['heslo', 'password', '1234']`).
 
-3. Za symbol ber znaky jako:
+3. Funkce vrátí tři výstupy v tomto pořadí:
 
-    - `!@#$%^&*()-_=+[]{};:,.?`
-    - stačí, aby heslo obsahovalo alespoň jeden z nich.
+    - `is_strong` (`bool`) - `True` pokud heslo splní všechna aktivní pravidla, jinak `False`,
+    - `score_percent` (`int`, hodnota `0-100`) - procentuální podíl splněných pravidel vůči všem aktivním pravidlům,
+    - `missing_rules` (`list[str]`, názvy nesplněných pravidel) - seznam pravidel, která heslo nesplnilo (např. `"min_length"`, `"digit"`, `"upper"`, `"symbol"`, `"banned_word"`).
 
-4. Pokud je `banned_words=None`, nastav uvnitř funkce vlastní výchozí seznam
-   (např. `['heslo', 'password', '1234']`).
-
-5. Funkce vrátí přesně 3 výstupy v tomto pořadí:
-
-    - `is_strong` (`bool`)
-    - `score_percent` (`int`, hodnota `0-100`)
-    - `missing_rules` (`list[str]`, názvy nesplněných pravidel)
-
-6. `is_strong` nastav na `True` jen tehdy, když heslo splní všechna aktivní pravidla.
-
-7. `score_percent` spočítej jako podíl splněných pravidel vůči všem aktivním pravidlům.
-   Výsledek zaokrouhli na celé číslo.
-
-8. `missing_rules` vrať jako seznam stručných názvů pravidel, která heslo nesplnilo
-   (např. `"min_length"`, `"digit"`, `"upper"`, `"symbol"`, `"banned_word"`).
-
-9. Připrav minimálně 4 testovací volání funkce:
+4. Připrav minimálně 4 testovací volání funkce:
 
     - čistě poziční,
     - mix pozičních a pojmenovaných argumentů,
     - volání s vypnutým pravidlem pro symbol,
     - volání s vlastním seznamem `banned_words`.
 
-10. Každé volání vypiš přes `print(...)` a pod výpis krátce napiš,
-    proč je takové volání čitelné (nebo méně čitelné).
+5. Každé volání vypiš přes `print(...)` a pod výpis krátce napiš, proč je dané volání čitelné (nebo méně čitelné) a jaké jsou výhody nebo nevýhody zvoleného stylu.
 
 ---

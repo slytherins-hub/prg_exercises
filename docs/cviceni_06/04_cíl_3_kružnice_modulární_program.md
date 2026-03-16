@@ -13,13 +13,14 @@ Výsledek bude přehledný program rozdělený do logických částí.
 
 ### 3.1 Co bude výstup programu
 
-Pro dvě kružnice chceš určit:
+Cílem je napsat program, který určí, jestli se dvě kružnice protínají, a pokud ano, kolik mají průniků (dva, jeden nebo žádný).
 
-- jestli se protínají,
-- kolik mají průniků (0/1/2),
-- výsledek vracet jako slovník,
-- a zároveň připravit stručný textový výstup do terminálu.
-- vykreslení kružnic v grafu.
+Program bude provádět následující:
+
+- zjistí, jestli se kružnice protínají,
+- vrátí výsledek jako slovník (např. `{"is_intersection": True, "intersections_count": 2}`),
+- vypíše stručný textový výstup do terminálu (např. „Kružnice se protínají a mají 2 průniky“),
+- vykreslí obě kružnice v grafu.
 
 ---
 
@@ -48,7 +49,7 @@ k_2:\ S_2 = (x_2, y_2),\ r_2
 Kružnice \(k_1\) je tedy definovaná středem \((x_1, y_1)\) a poloměrem \(r_1\).
 Kružnice \(k_2\) je definovaná středem \((x_2, y_2)\) a poloměrem \(r_2\).
 
-**Nejdřív spočti:**
+**Nejdřív spočítej dvě klíčové hodnoty:**
 
 Vzdálenost středů:
 
@@ -76,7 +77,7 @@ d &< r_s &\Rightarrow&\ 2\ \text{průniky}
 
 ### 3.3 Doporučený postup implementace
 
-Reprezentace kružnic v kódu:
+Kružnice budeš reprezentovat jako slovník s klíči `x`, `y` a `r`:
 
 ```python
 circle_1 = {"x": x1, "y": y1, "r": r1}
@@ -90,27 +91,28 @@ circle_1 = {"x": 0, "y": 0, "r": 2}
 circle_2 = {"x": 3, "y": 0, "r": 1}
 ```
 
-1. Napiš nejdřív čisté výpočtové funkce (`radius_sum`, `euclid_distance`).
-2. Napiš rozhodovací funkci `has_intersection(...)`.
+1. Nejprve vytvoř funkce pro výpočty (součet poloměrů, Euklidovská vzdálenost).
+2. Napiš funkci, která rozhodne o průniku na základě těchto výpočtů.
 3. Ověř funkce přes několik testovacích volání a výpisů.
-4. Teprve potom napiš hlavní skript s výpisem.
+4. Následně napiš hlavní skript s výpisem.
 5. Nakonec přidej vykreslení.
 
-> **💡 Tip:** Když něco nefunguje, debuguj vždy nejdřív malé funkce, ne celý program najednou.
+> **Tip:** Debuguj vždy po kouscích. Nečekej, až bude celý program hotový, ale testuj každou funkci zvlášť, abys měl 
+> jistotu, že funguje správně.
 
 ---
 
 ### 3.4 Modul `circle_stats.py`
 
-V modulu vytvoř tyto funkce:
+Vytvoř modul `circle_stats.py` a v něm tyto funkce:
 
-1. `radius_sum(r1, r2)` -> vrátí součet poloměrů.
-2. `euclid_distance(x1, y1, x2, y2)` -> vrátí Euklidovskou vzdálenost.
-3. `has_intersection(circle_1, circle_2, tolerance=...)` -> vrátí slovník s výsledkem
+1. `radius_sum(r1, r2)` - vrátí součet poloměrů.
+2. `euclid_distance(x1, y1, x2, y2)` - vrátí Euklidovskou vzdálenost mezi dvěma body.
+3. `has_intersection(circle_1, circle_2)` - vrátí slovník s informací o průniku
    (např. `{"is_intersection": ..., "intersections_count": ...}`).
 
 > **⚠️ Pozor:** U desetinných čísel neporovnávej hraniční případ přes ostré `==`.
-> Využij toleranci (např. přes `isclose(...)`), aby dotyk fungoval spolehlivě.
+> Využij toleranci (např. přes `isclose(...)`), aby program správně rozpoznal dotyk dvou kružnic v jednom bodě.
 
 ---
 
@@ -118,18 +120,21 @@ V modulu vytvoř tyto funkce:
 
 Vytvoř `circle_intersection.py`, ve kterém:
 
-1. Naimportuješ `has_intersection`.
-2. Definuješ dvě kružnice jako slovníky (`x`, `y`, `r`).
-3. Zavoláš funkci a výsledek načteš ze slovníku (`result["is_intersection"]`, `result["intersections_count"]`).
-4. Vypíšeš výsledek uživatelsky srozumitelně.
+1. Naimportuješ funkci `has_intersection` z modulu `circle_stats`.
+2. Definuješ dvě kružnice jako slovníky s konkrétními hodnotami.
+3. Zavoláš funkci pro zjištění průniku.
+4. Podle výsledku vypíšeš, jestli se kružnice protínají a kolik mají průniků.
 
 ---
 
-### 3.6 Vykreslení kružnic
+### 3.6 Modul `circles_intersection_draw.py`
 
-Vytvoř soubor `circles_intersection_draw.py` s funkcí `draw_data(...)`.
+Vytvoř modul `circles_intersection_draw.py` s funkcí `draw_data(...)`:
 
-Instalace:
+- Tato funkce bude přijímat dva parametry: `circle_1` a `circle_2` (stejně jako v `has_intersection(...)`).
+- Funkce vykreslí obě kružnice do grafu pomocí knihovny `matplotlib`.
+
+Instalace knihovny pro vykreslení:
 
 ```powershell
 uv add matplotlib
@@ -153,14 +158,14 @@ plt.show()  # zobrazení okna s kružnicí
 
 ### 3.7 Vnitřní poloha kružnic (volitelně)
 
-V základní verzi řešíš hlavně případy podle porovnání \(d\) a \(r_1 + r_2\).
-Ještě existuje situace, kdy je jedna kružnice celá uvnitř druhé.
-Tam je potřeba navíc sledovat i rozdíl poloměrů \(|r_1 - r_2|\).
+V základní verzi řešíš hlavně případy podle porovnání \(d\) a \(r_1 + r_2\). Nicméně, existuje i další situace,
+kdy se kružnice „neprotínají“, ale jedna je celá uvnitř druhé. 
+To nastane, když je vzdálenost středů \(d\) menší než absolutní hodnota rozdílu poloměrů \(|r_1 - r_2|\).
 
 Rozšiř funkci `has_intersection(...)` tak, aby správně řešila i vnitřní případy:
 
 - když \(d < |r_1 - r_2|\), kružnice se neprotínají (jedna je uvnitř druhé),
-- když \(d = |r_1 - r_2|\), mají jeden vnitřní dotyk,
+- když \(d = |r_1 - r_2|\), mají jeden průnik (dotyk),
 - když \(|r_1 - r_2| < d < r_1 + r_2\), mají dva průniky.
 
 ---
