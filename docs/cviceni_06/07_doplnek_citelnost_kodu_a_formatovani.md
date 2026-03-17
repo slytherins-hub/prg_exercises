@@ -8,7 +8,7 @@ Formátování není kosmetika.
 Je to praktický nástroj, který ti zrychlí čtení, ladění i opravy kódu.
 
 Pro základní styl Pythonu vycházej z doporučení **PEP 8**:
-(https://peps.python.org/pep-0008/)[https://peps.python.org/pep-0008/]
+[https://peps.python.org/pep-0008/](https://peps.python.org/pep-0008/)
 
 V tomhle doplňku máš praktický výběr pravidel, která se vyplatí držet hned od začátku.
 

@@ -63,50 +63,63 @@ Pro `has_intersection(...)` to může být:
 
 ### 4.4 Implementace testů v Pythonu s `pytest`
 
-Jednoduchý test bez `pytest` může vypadat takto:
+Testování v Pythonu pomocí knihovny pytest je velmi jednoduché. Základem je psát funkce, které obsahují `assert`
+– tedy kontrolu, že výstup odpovídá očekávání.
+
+Například pro funkci `radius_sum` můžeš napsat test case takto:
 
 ```python
-from circle_stats import has_intersection
-
-
-def test_has_intersection_basic():
-    result = has_intersection([0, 0, 2], [0, 3, 1])
-    assert result == (True, 1)
-```
-
-Nebo pro funkci `radius_sum`:
-
-```python
-from circle_stats import radius_sum
+from circles_stats import radius_sum
 
 
 def test_radius_sum_basic():
     assert radius_sum(2, 3) == 5
 ```
 
+U funkcí, které vrací více hodnot (např. slovník), testujeme jednotlivé části výsledku, například pro `has_intersection`:
+
+```python
+from circles_stats import has_intersection
+
+
+def test_has_intersection_basic():
+    circle_1 = {"x": 0, "y": 0, "r": 2}
+    circle_2 = {"x": 0, "y": 3, "r": 1}
+
+    result = has_intersection(circle_1, circle_2)
+
+    assert result["intersects"] is True
+    assert result["intersections_count"] == 1
+```
+
 Pokud chceš testovat více případů, můžeš použít `pytest.mark.parametrize` pro parametrizaci testů:
 
 ```python
 import pytest
-from circle_stats import has_intersection
+from circles_stats import has_intersection
 
 
 @pytest.mark.parametrize(
-    ("circle_1", "circle_2", "expected"),
+    ("circle_1", "circle_2", "expected_intersects", "expected_count"),
     [
-        ([0, 0, 2], [0, 3, 1], (True, 1)),
-        ([0, 0, 2], [0, 3, 2], (True, 2)),
-        ([2, -1, 1], [1.2, 5, 3], (False, 0)),
+        ({"x": 0, "y": 0, "r": 2}, {"x": 0, "y": 3, "r": 1}, True, 1),
+        ({"x": 0, "y": 0, "r": 2}, {"x": 0, "y": 3, "r": 2}, True, 2),
+        ({"x": 2, "y": -1, "r": 1}, {"x": 1.2, "y": 5, "r": 3}, False, 0),
     ],
 )
-def test_has_intersection(circle_1, circle_2, expected):
-    assert has_intersection(circle_1, circle_2) == expected
+def test_has_intersection(circle_1, circle_2, expected_intersects, expected_count):
+    result = has_intersection(circle_1, circle_2)
+
+    assert result["intersects"] is expected_intersects
+    assert result["intersections_count"] == expected_count
 ```
 
 `@pytest.mark.parametrize(...)` znamená, že `pytest` spustí stejnou testovací funkci
 opakovaně pro každý řádek vstupních dat. To je užitečné pro testování více scénářů bez duplikace kódu.
 
-Instalace a spuštění:
+---
+
+**Instalace a spuštění:**
 
 ```powershell
 uv add pytest
@@ -121,7 +134,7 @@ Co udělá `uv run pytest`:
 Spuštění konkrétního souboru:
 
 ```powershell
-uv run pytest tests/test_circle_stats.py
+uv run pytest tests/test_circles_stats.py
 ```
 
 ---
@@ -130,8 +143,8 @@ uv run pytest tests/test_circle_stats.py
 
 Než půjdeme na strukturu projektu, hodí se rozlišit tyto pojmy:
 
-- **modul**: jeden `.py` soubor s funkcemi a třídami (např. `circle_stats.py`),
-- **balíček**: složka s `__init__.py`, která může obsahovat více modulů (např. `circle_project`),
+- **modul**: jeden `.py` soubor s funkcemi a třídami (např. `circles_stats.py`),
+- **balíček**: složka s `__init__.py`, která může obsahovat více modulů (např. `circles_project`),
 - **knihovna**: soubor modulů a balíčků pro konkrétní účel (např. `matplotlib` pro grafy),
 - **balíček**: Python package - složka s `__init__.py`, která může obsahovat více modulů (např. `matplotlib.pyplot`),
 - **repozitář**: místo, kde máš uložený celý svůj projekt, včetně kódu, testů, dokumentace a historie změn (např. na GitHubu).
@@ -153,15 +166,15 @@ project_name/
 ├─ pyproject.toml
 ├─ .gitignore
 ├─ src/
-│  └─ circle_project/
+│  └─ circles_project/
 │     ├─ __init__.py
-│     ├─ circle_stats.py
+│     ├─ circles_stats.py
 │     ├─ circles_intersection_draw.py
-│     └─ circle_intersection.py
+│     └─ circles_intersection.py
 <span style="color:#8a8f98;">├─ docs/                      (volitelné)</span>
 <span style="color:#8a8f98;">│  └─ index.md                (volitelné)</span>
 └─ tests/
-   └─ test_circle_stats.py
+   └─ test_circles_stats.py
 </pre>
 
 Co kam patří:
@@ -185,7 +198,7 @@ Co je dobré vědět:
 
 Praktické pravidlo pro tento předmět:
 
-- v balíčku pod `src/` ho nech (`src/circle_project/__init__.py`),
+- v balíčku pod `src/` ho nech (`src/circles_project/__init__.py`),
 - v `tests/` ho většinou nepotřebuješ.
 
 Technicky to bez `__init__.py` někdy funguje, ale explicitní varianta je čitelnější a stabilnější.
@@ -280,6 +293,38 @@ Ukázka jednoho malého Markdown souboru:
 
 
 > **Tip:** Když něco popisuješ, drž text stručný a akční. Začátečník by měl po přečtení hned vědět, co má udělat.
+ 
+---
+
+### 4.10 Změna importů pro testy
+
+Pokud změníš strukturu projektu, přesuneš kód do `src/circles_project/` a testy dáš do `tests/`, budeš muset upravit 
+importy v testech, aby odpovídaly nové struktuře.
+
+Například místo:
+
+```python
+from circles_stats import radius_sum
+```
+budeš mít:
+
+```python
+from circles_project.circles_stats import radius_sum
+```
+
+Před spuštěním testů s `pytest` bude nutné balíček nainstalovat do prostředí, aby `pytest` věděl, kde hledat moduly. 
+Balíček nainstaluj v kořeni projektu pomocí:
+
+```powershell
+uv pip install -e .
+```
+To vytvoří tzv. „editable install“, což znamená, že `pytest` bude hledat kód přímo v `src/` a nebudeš muset znovu instalovat po každé změně.
+
+Teď můžeš spustit testy a měly by fungovat s novou strukturou:
+
+```powershell
+uv run pytest
+```
 
 ---
 

@@ -18,7 +18,7 @@ Cílem je napsat program, který určí, jestli se dvě kružnice protínají, a
 Program bude provádět následující:
 
 - zjistí, jestli se kružnice protínají,
-- vrátí výsledek jako slovník (např. `{"is_intersection": True, "intersections_count": 2}`),
+- vrátí výsledek jako slovník (např. `{"intersects": True, "intersections_count": 2}`),
 - vypíše stručný textový výstup do terminálu (např. „Kružnice se protínají a mají 2 průniky“),
 - vykreslí obě kružnice v grafu.
 
@@ -102,25 +102,26 @@ circle_2 = {"x": 3, "y": 0, "r": 1}
 
 ---
 
-### 3.4 Modul `circle_stats.py`
+### 3.4 Modul `circles_stats.py`
 
-Vytvoř modul `circle_stats.py` a v něm tyto funkce:
+Vytvoř modul `circles_stats.py` a v něm tyto funkce:
 
 1. `radius_sum(r1, r2)` - vrátí součet poloměrů.
 2. `euclid_distance(x1, y1, x2, y2)` - vrátí Euklidovskou vzdálenost mezi dvěma body.
 3. `has_intersection(circle_1, circle_2)` - vrátí slovník s informací o průniku
-   (např. `{"is_intersection": ..., "intersections_count": ...}`).
+   (např. `{"intersects": ..., "intersections_count": ...}`).
 
 > **⚠️ Pozor:** U desetinných čísel neporovnávej hraniční případ přes ostré `==`.
-> Využij toleranci (např. přes `isclose(...)`), aby program správně rozpoznal dotyk dvou kružnic v jednom bodě.
+> Využij toleranci (např. přes `isclose(...)` z Python modulu `math`), aby program správně rozpoznal dotyk dvou 
+> kružnic v jednom bodě.
 
 ---
 
 ### 3.5 Hlavní skript programu
 
-Vytvoř `circle_intersection.py`, ve kterém:
+Vytvoř `circles_intersection.py`, ve kterém:
 
-1. Naimportuješ funkci `has_intersection` z modulu `circle_stats`.
+1. Naimportuješ funkci `has_intersection` z modulu `circles_stats`.
 2. Definuješ dvě kružnice jako slovníky s konkrétními hodnotami.
 3. Zavoláš funkci pro zjištění průniku.
 4. Podle výsledku vypíšeš, jestli se kružnice protínají a kolik mají průniků.
@@ -149,6 +150,9 @@ fig, ax = plt.subplots()  # připravení okna pro vykreslení
 
 circle = plt.Circle((0, 0), 2, fill=False, color="blue")  # vytvoření kružnice
 ax.add_patch(circle)  # přidání kružnice do okna
+
+ax.set_xlim(-5, 5) # nastavení rozsahu os, aby bylo vidět celý graf
+ax.set_ylim(-5, 5)
 
 ax.set_aspect("equal")  # nastavení stejného poměru os, aby kružnice vypadala jako kruh
 plt.show()  # zobrazení okna s kružnicí
