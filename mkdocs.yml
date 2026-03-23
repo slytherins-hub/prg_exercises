@@ -99,6 +99,7 @@ nav:
     - Úvod: cviceni_07/01_úvod.md
     - Cíl 1 – Určení aktivity z akcelerometrických dat: cviceni_07/02_cíl_1_úkol_aktivity_podle_akcelerometru.md
     - Cíl 2 – Správce kontaktů: cviceni_07/03_cíl_2_úkol_správce_kontaktů.md
+    - Doporučení – jak postupovat: cviceni_07/04_doporučení_jak_postupovat.md
 
 extra_css:
   - assets/nav-toggle.css

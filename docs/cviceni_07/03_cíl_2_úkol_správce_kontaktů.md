@@ -11,4 +11,4 @@ Cílem je navrhnout a implementovat funkce, které umožní kontakty vyhledávat
 
 ---
 
-Odkaz na GitHub Classroom je dostupný v e-learningu, kde naleznete kompletní zadání úlohy.
+Odkaz na GitHub Classroom je dostupný v [e-learningu](https://moodle.vut.cz/course/section.php?id=127417), kde naleznete kompletní zadání úlohy.

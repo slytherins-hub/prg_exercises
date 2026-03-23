@@ -12,4 +12,4 @@ pohybuje, stojí, nebo leží.
 
 ---
 
-Odkaz na GitHub Classroom je dostupný v e-learningu, kde naleznete kompletní zadání úlohy.
+Odkaz na GitHub Classroom je dostupný v [e-learningu](https://moodle.vut.cz/course/section.php?id=127417), kde naleznete kompletní zadání úlohy.
