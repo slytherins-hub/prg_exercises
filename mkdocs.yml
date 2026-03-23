@@ -94,6 +94,11 @@ nav:
     - Cíl 4 – testy a standardní struktura Python repozitáře: cviceni_06/05_cíl_4_testy_a_struktura_python_repozitáře.md
     - Self-check: cviceni_06/06_self_check_procvičení_znalostí.md
     - Doplňek – čitelnost kódu a formátování: cviceni_06/07_doplnek_citelnost_kodu_a_formatovani.md
+  - Cvičení 7:
+    - Přehled: cviceni_07/README.md
+    - Úvod: cviceni_07/01_úvod.md
+    - Cíl 1 – Určení aktivity z akcelerometrických dat: cviceni_07/02_cíl_1_úkol_aktivity_podle_akcelerometru.md
+    - Cíl 2 – Správce kontaktů: cviceni_07/03_cíl_2_úkol_správce_kontaktů.md
 
 extra_css:
   - assets/nav-toggle.css
