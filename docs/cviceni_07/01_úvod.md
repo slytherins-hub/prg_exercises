@@ -27,6 +27,7 @@ Schopnost porozumět zadání, navrhnout řešení a správně ho implementovat 
   <li>Správnost řešení bude kontrolována pomocí automatických testů.</li>
   <li>Řešení bude kontrolováno na přítomnost plagiátů mezi studenty.</li>
   <li>Odevzdání a případné úpravy v repozitářích je nutné provést nejpozději do konce cvičení.</li>
+  <li><strong>I při dřívějším odevzdání není možné ze cvičení odejít dříve než po 2 hodinách.</strong> Využijte zbývající čas pro ověření a procvičení svých znalostí – když necháte úkoly vyřešit AI, nic se nenaučíte.</li>
 </ul>
 
 ---
