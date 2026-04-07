@@ -12,17 +12,17 @@ Při práci na společném projektu je klíčové, aby každý člen týmu měl 
 
 Jednou ze služeb poskytujících možnost nahrání gitového repozitáře a sdílení s ostatními je **GitHub**. Při práci na domácích úkolech pracuješ se vzdáleným repozitářem, který vlastníš ty. Teď si vyzkoušíme práci s repozitářem, který založil někdo jiný.
 
-V příkazové řádce se přepni **mimo složku**, kde jsme doteď pracovali, a zadej příkaz `git clone` s odkazem na repozitář:
+V příkazové řádce se přepni **mimo složku**, kde jsme doteď pracovali, a zadej příkaz `git clone` s odkazem na repozitář (adresu ti sdělí cvičící):
 
 ```bash
-git clone https://github.com/slytherins-hub/KJ_prezencka
+git clone https://github.com/ucet-cviciciho/nazev-repozitare
 ```
 
 Díky tomuto příkazu se vytvoří nová složka s obsahem repozitáře. Na obsah se můžeš podívat i v prohlížeči po zadání stejného odkazu.
 
 > **📘 Co je `git clone`?**
 >
-> `git clone` vytvoří lokální kopii vzdáleného repozitáře včetně celé jeho historie.
+> `git clone` vytvoří lokální kopii vzdáleného repozitáře včetně celé jeho historie. Na rozdíl od stahování ZIP souboru získáš i všechny větve a revize.
 
 ---
 
@@ -30,7 +30,7 @@ Díky tomuto příkazu se vytvoří nová složka s obsahem repozitáře. Na obs
 
 **📝 ÚKOL 6: Přidání souboru do naklonovaného repozitáře**
 
-1. Přepni se do naklonované složky a zkontroluj historii repozitáře (např. pomocí `gitk --all` nebo `git log`).
+1. Přepni se do naklonované složky a zkontroluj historii repozitáře (např. pomocí `gitk --all` nebo `git log --oneline`).
 2. V pracovním adresáři vytvoř prázdný textový soubor a ulož ho pod svým jménem (`jmeno_prijmeni.txt`). Nepoužívej diakritiku.
 3. Vytvoř novou revizi:
 
@@ -126,13 +126,13 @@ Pokud jsou změny v pořádku, majitel provede jejich začlenění (**Merge pull
 
 ### 3.7 Aktualizace lokální kopie
 
-Aby ses vždy pracoval/a na nejnovější verzi, je potřeba aktualizovat lokální kopii:
+Abys vždy pracoval/a na nejnovější verzi, je potřeba aktualizovat lokální kopii:
 
 ```bash
 git pull origin main
 ```
 
-Pomocí `git status` ověř stav repozitáře a pomocí `gitk --all` nebo `git log` zkontroluj, jak se projekt posunul.
+Pomocí `git status` ověř stav repozitáře a pomocí `gitk --all` nebo `git log --oneline` zkontroluj, jak se projekt posunul.
 
 ---
 
@@ -149,7 +149,7 @@ Pomocí `git status` ověř stav repozitáře a pomocí `gitk --all` nebo `git l
 2. Přepni se do nově vytvořené větve:
 
     ```bash
-    git checkout nazev_vetve
+    git switch nazev_vetve
     ```
 
 3. V souboru se svým jménem proveď potřebné změny (např. doplň, jakou máš dnes náladu).
@@ -167,7 +167,7 @@ Pomocí `git status` ověř stav repozitáře a pomocí `gitk --all` nebo `git l
 7. Přepni se zpět na hlavní větev:
 
     ```bash
-    git checkout main
+    git switch main
     ```
 
 8. Stáhni aktuální verzi repozitáře:

@@ -6,7 +6,7 @@ Algoritmizace a programování
 
 Během práce na programu budeš občas současně pracovat na několika dílčích částech a přijde čas, kdy budeš chtít tyto změny sloučit dohromady. Stejně tak se může stát, že během řešení své části zjistíš, že potřebuješ opravit chybu v hlavním programu a pak se vrátit ke své původní práci. Proto se naučíme v Gitu používat **větve** (**branches**).
 
-Z jedné větve se můžeš přepnout do jiné, provést změny, vrátit se zpět do původní větve a pokračovat dál v práci.
+Představ si to jako pařez stromu – z hlavního kmene (`main`) vyrostou větve pro různé úkoly. Každá větev má svou vlastní historii změn, ale nakonec ji můžeš sloučit zpátky do kmene.
 
 ---
 
@@ -19,10 +19,10 @@ git branch
 ```
 
 ```
-* master
+* main
 ```
 
-Zatím máme jen jednu větev `master` – **hlavní větev**.
+Zatím máme jen jednu větev `main` – **hlavní větev**.
 
 Vytvoř novou větev pro testování funkce `is_natural_number()`:
 
@@ -35,14 +35,14 @@ git branch
 ```
 
 ```
-* master
+* main
   test_natural_numbers
 ```
 
-Příkaz vytvořil novou větev, ale hvězdička říká, že jsi pořád na větvi `master`. Do nové větve se přepneš příkazem:
+Příkaz vytvořil novou větev, ale hvězdička říká, že jsi pořád na větvi `main`. Do nové větve se přepneš příkazem:
 
 ```bash
-git checkout test_natural_numbers
+git switch test_natural_numbers
 ```
 
 ```bash
@@ -50,9 +50,12 @@ git branch
 ```
 
 ```
-  master
+  main
 * test_natural_numbers
 ```
+
+> **💡 Tip:**
+> Vytvoření větve a přepnutí můžeš udělat najednou: `git switch -c nazev_vetve` (zkratka za **c**reate).
 
 **📝 ÚKOL 4: Testování na větvi `test_natural_numbers`**
 
@@ -64,18 +67,17 @@ git branch
 
 ![Větvení – test_natural_numbers](../assets/cviceni_09/08_git_branch_natural_numbers.png)
 
-Aktuální větev je zvýrazněná tučně a starší větev `master` je stále na původní revizi.
+Aktuální větev je zvýrazněná tučně a starší větev `main` je stále na původní revizi.
 
 ---
 
 ### 2.2 Práce s více větvemi
 
-Vrať se na hlavní větev `master` a vytvoř na ní novou větev `test_even_numbers`:
+Vrať se na hlavní větev `main` a vytvoř na ní novou větev `test_even_numbers`:
 
 ```bash
-git checkout master
-git branch test_even_numbers
-git checkout test_even_numbers
+git switch main
+git switch -c test_even_numbers
 ```
 
 ```bash
@@ -83,7 +85,7 @@ git branch
 ```
 
 ```
-  master
+  main
 * test_even_numbers
   test_natural_numbers
 ```
@@ -98,16 +100,16 @@ git branch
 > **⚠️ Pozor:**
 > Vždy před přepnutím na jinou větev vytvoř novou revizi a pomocí `git status` ověř, že je vše uložené.
 
-Takto se lze přepínat mezi různými větvemi. Obdobně probíhá i práce v týmu – společný základ reprezentuje hlavní větev `master` a každý pracuje na své větvi, dokud není práce hotová.
+Takto se lze přepínat mezi různými větvemi. Obdobně probíhá i práce v týmu – společný základ reprezentuje hlavní větev `main` a každý pracuje na své větvi, dokud není práce hotová.
 
 ---
 
 ### 2.3 Sloučení větví
 
-Pokud máš některou větev hotovou, budeš potřebovat změny z ní začlenit do větve `master`. Přepni se zpět na `master` a proveď sloučení:
+Pokud máš některou větev hotovou, budeš potřebovat změny z ní začlenit do větve `main`. Přepni se zpět na `main` a proveď sloučení:
 
 ```bash
-git checkout master
+git switch main
 git merge test_even_numbers
 ```
 
@@ -118,7 +120,7 @@ Fast-forward
  1 file changed, 3 insertions(+), 2 deletions(-)
 ```
 
-Větve byly sloučeny. **Fast-forward** znamená, že se pouze přidaly nové změny do větve `master` a nic se neslučovalo. Výsledek zkontroluj pomocí `gitk --all` – větev `master` se posunula na poslední revizi z této větve.
+Větve byly sloučeny. **Fast-forward** znamená, že se pouze přidaly nové změny do větve `main` a nic se neslučovalo. Výsledek zkontroluj pomocí `gitk --all` – větev `main` se posunula na poslední revizi z této větve.
 
 ![Merge – fast forward](../assets/cviceni_09/08_git_merge_fast_forward.png)
 
@@ -179,7 +181,7 @@ Pomocí `git add` a `git commit` vytvoř revizi s řešením konfliktu. Ke každ
 
 ### 2.5 Smazání nepotřebných větví
 
-Po sloučení změn již staré větve nepotřebuješ – veškeré změny jsou v hlavní větvi `master`. Vymaž je:
+Po sloučení změn již staré větve nepotřebuješ – veškeré změny jsou v hlavní větvi `main`. Vymaž je:
 
 ```bash
 git branch -d test_natural_numbers

@@ -6,7 +6,7 @@ Algoritmizace a programování
 
 Git je verzovací nástroj – zaznamenává změny prováděné v souborech v průběhu času a umožňuje kdykoli obnovit jejich konkrétní verzi.
 
-Lokální úložiště je zajištěno na vlastním počítači pomocí verzovací databáze. Lokální verzovací systém uchovává v databázi sadu verzí spravovaného souboru.
+Lokální úložiště je na tvém počítači. Lokální verzovací systém uchovává v databázi sadu verzí každého spravovaného souboru – takže se můžeš kdykoli vrátit k jakékoli předchozí verzi.
 
 ![Lokální verzovací systém](../assets/cviceni_09/08_local_version_control.png)
 
@@ -28,44 +28,29 @@ Z toho vyplývá, že projekt je v systému Git rozdělen do tří částí:
 
 ![Stavy souborů v Gitu](../assets/cviceni_09/08_git_workflow_states.png)
 
-Git se dá používat různými způsoby – k dispozici jsou nástroje příkazové řádky i grafická uživatelská rozhraní. Mezi nejznámější platformy patří:
+Git se dá používat různými způsoby – k dispozici jsou nástroje příkazové řádky i grafická uživatelská rozhraní (např. **gitk**, **git gui** nebo přímo integrované v **PyCharmu**). Mezi nejznámější online platformy pro sdílení repozitářů patří:
 
-- GitHub
-- GitLab
-- BitBucket
-- GitKraken
+- **GitHub** – nejrozšířenější platforma, kterou budeme používat
+- **GitLab** – alternativa s CI/CD
+- **BitBucket** – populární v komerčním prostředí
 
 ---
 
 ### 1.2 Globální nastavení
 
-Předtím než začneš Git používat, musíš ho správně nastavit. Nejprve nastav editor. Do příkazové řádky zadej:
+Předtím než začneš Git používat, musíš ho správně nastavit.
 
-**Windows:**
-
-```bash
-git config --global core.editor notepad
-git config --global format.commitMessageColumns 80
-git config --global gui.encoding utf-8
-```
-
-**Linux/macOS:**
-
-```bash
-git config --global core.editor nano
-```
-
-Na projektu většinou spolupracuje více lidí, proto každá změna musí mít svého autora. Pokud v Gitu nemáš nastavené jméno a email, proveď nastavení (změň jméno a email na své):
+Na projektu většinou spolupracuje více lidí, proto každá změna musí mít svého autora. Nastav jméno a email (změň na své):
 
 ```bash
 git config --global user.name "Zuzana Nova"
 git config --global user.email z.nova@vut.cz
 ```
 
-Nastav barevné výpisy Gitu v příkazové řádce:
+Moderní Git používá jako výchozí název hlavní větve `main` (starší verze používaly `master`). Zajisti si to:
 
 ```bash
-git config --global color.ui true
+git config --global init.defaultBranch main
 ```
 
 Po zadání příkazů `git config` to vypadá, že se nic nestalo – nic nového se do příkazové řádky nevypíše, ale to je v pořádku. Aktuální nastavení zkontroluj příkazem:
@@ -75,12 +60,9 @@ git config --global --list
 ```
 
 ```
-core.editor=notepad
-format.commitmessagecolumns=80
-gui.encoding=utf-8
 user.name=Zuzana Nova
 user.email=z.nova@vut.cz
-color.ui=true
+init.defaultbranch=main
 ```
 
 Pokud chceš nějaké nastavení změnit, zadej znovu příkaz s novými hodnotami. Pokud konfigurace v jakémkoliv kroku neproběhla, ihned se obrať na cvičícího.
@@ -106,21 +88,40 @@ git status
 ```
 
 ```
-On branch master
+On branch main
 
 No commits yet
 
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
-Výpis říká, že jsi na hlavní větvi `master` (o větvích se dozvíš více později). „No commits yet" říká, že v Gitu zatím není žádná revize, a „nothing to commit" říká, že ve složce není nic, co bychom mohli přidat.
+Výpis říká, že jsi na hlavní větvi `main`. „No commits yet" znamená, že v Gitu zatím není žádná revize, a „nothing to commit" říká, že ve složce není nic ke sledování.
 
 > **💡 Poznámka:**
 > Git při inicializaci vytváří skrytou složku `.git` a ukládá do ní své informace. Do této složky **nikdy nezasahuj** – nebudeme ji přesouvat ani mazat.
 
 ---
 
-### 1.4 První revize
+### 1.4 Soubor `.gitignore`
+
+Ne všechny soubory v projektu chceš sledovat Gitem. Některé vznikají automaticky a do repozitáře nepatří – například složka `.venv/` (virtuální prostředí), `__pycache__/` (cache Pythonu) nebo `.idea/` (nastavení PyCharmu).
+
+Vytvoř v kořenovém adresáři projektu soubor `.gitignore` (pozor, název **začíná tečkou**) a vlož do něj:
+
+```
+.venv/
+__pycache__/
+.idea/
+```
+
+Git bude tyto soubory a složky úplně ignorovat a nebude je nabízet k přidání.
+
+> **💡 Tip:**
+> Soubor `.gitignore` sám přidej do Gitu (`git add .gitignore`) – díky tomu ho budou mít i spolupracovníci, pokud si repozitář naklonují.
+
+---
+
+### 1.5 První revize
 
 **📝 ÚKOL 1: Vytvoření souboru a první revize**
 
@@ -137,7 +138,7 @@ git status
 ```
 
 ```
-On branch master
+On branch main
 
 No commits yet
 
@@ -163,7 +164,7 @@ git status
 ```
 
 ```
-On branch master
+On branch main
 
 No commits yet
 
@@ -191,7 +192,7 @@ git commit -m "Add check for whole numbers"
 V příkazové řádce se vypíše krátká informace o provedené revizi:
 
 ```
-[master (root-commit) a670f2d] Add check for whole numbers
+[main (root-commit) a670f2d] Add check for whole numbers
  1 file changed, 14 insertions(+)
  create mode 100644 analyse_numbers.py
 ```
@@ -203,7 +204,7 @@ git status
 ```
 
 ```
-On branch master
+On branch main
 nothing to commit, working tree clean
 ```
 
@@ -216,7 +217,7 @@ git show
 ```
 
 ```
-commit a670f2d2744a27e29fcb4a24bf6ed5a2835d0d12 (HEAD -> master)
+commit a670f2d2744a27e29fcb4a24bf6ed5a2835d0d12 (HEAD -> main)
 Author: Zuzana Nova <z.nova@vut.cz>
 Date:   Wed Mar 24 17:05:48 2021 +0100
 
@@ -248,7 +249,7 @@ Nahoře vidíš unikátní označení revize (hash), díky kterému se můžeš 
 
 ---
 
-### 1.5 Druhá revize
+### 1.6 Druhá revize
 
 **📝 ÚKOL 2: Úprava funkce a nová revize**
 
@@ -263,10 +264,10 @@ git status
 ```
 
 ```
-On branch master
+On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
+  (use "git restore <file>..." to discard changes in working directory)
 
         modified:   analyse_numbers.py
 
@@ -318,9 +319,9 @@ git status
 ```
 
 ```
-On branch master
+On branch main
 Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
+  (use "git restore --staged <file>..." to unstage)
 
           modified:   analyse_numbers.py
 ```
@@ -332,7 +333,7 @@ git commit -m "Change check for whole number to check for natural number"
 ```
 
 ```
-commit d012da8f74790bf9a7774addd9744c977426f439 (HEAD -> master)
+commit d012da8f74790bf9a7774addd9744c977426f439 (HEAD -> main)
 Author: Zuzana Nova <z.nova@vut.cz>
 Date:   Wed Mar 24 19:54:46 2021 +0100
 
@@ -348,11 +349,11 @@ Date:   Wed Mar 24 19:54:46 2021 +0100
 >
 > Tyto jednořádkové popisky slouží k orientaci v historii a využívají je nástroje spojené s Gitem. Pokud nejsi schopen/schopna shrnout změny na jednom řádku, pravděpodobně jsou příliš rozsáhlé a bylo by lepší je rozdělit do několika menších revizí.
 >
-> Pokud potřebuješ změny popsat podrobněji, oddělte první řádek jedním prázdným řádkem a změny popiš. Vysvětli **co** a **proč** jsi měnil/a, nepopisuj jak. Řádky by neměly přesáhnout 72 znaků.
+> Pokud potřebuješ změny popsat podrobněji, odděl první řádek jedním prázdným řádkem a změny popiš. Vysvětli **co** a **proč** jsi měnil/a, nepopisuj jak. Řádky by neměly přesáhnout 72 znaků.
 
 ---
 
-### 1.6 Procházení historie
+### 1.7 Procházení historie
 
 Revizí bude postupně přibývat a bude se hodit je umět procházet. Jedním ze způsobů je `git log`, který vypíše všechny revize od nejnovější:
 
@@ -361,7 +362,7 @@ git log
 ```
 
 ```
-commit d012da8f74790bf9a7774addd9744c977426f439 (HEAD -> master)
+commit d012da8f74790bf9a7774addd9744c977426f439 (HEAD -> main)
 Author: Zuzana Nova <z.nova@vut.cz>
 Date:   Wed Mar 24 19:54:46 2021 +0100
 
@@ -374,13 +375,29 @@ Date:   Wed Mar 24 17:05:48 2021 +0100
     Add check for whole numbers
 ```
 
-V logu se pohybuj stejně jako u `git diff`. Pro grafický přehled zadej `gitk --all`:
+V logu se pohybuj šipkami nebo `PgUp`/`PgDn` a ukonči klávesou `q`.
+
+Pro kompaktnější přehled použij:
+
+```bash
+git log --oneline
+```
+
+```
+d012da8 (HEAD -> main) Change check for whole number to check for natural number
+a670f2d Add check for whole numbers
+```
+
+Pro orientaci v historii se hodí i grafické rozhraní **gitk**. Spusť příkaz `gitk --all` a prohlédni si svou dosavadní historii:
 
 ```bash
 gitk --all
 ```
 
-![gitk – prohlížeč historie](../assets/cviceni_09/08_gitk_history_viewer.png)
+![Prohlížeč historie gitk](../assets/cviceni_09/08_gitk_history_viewer.png)
+
+> **💡 Tip:**
+> Pokud program `gitk` necháš otevřený, nové změny se v něm projeví až po obnovení: menu *File → Update* nebo klávesa `F5`.
 
 **📝 ÚKOL 3: Přidání funkce pro sudá čísla**
 
@@ -388,28 +405,40 @@ gitk --all
 2. Volání funkce přidej do hlavní funkce `main()` a výstup vypiš do terminálu.
 3. Vytvoř novou revizi a výsledek si zkontroluj přes `gitk --all`.
 
-> **💡 Tip:**
-> Pokud `gitk` necháš otevřený, nové změny se projeví až po obnovení: **File → Update** nebo klávesa **F5**.
-
 ---
 
-### 1.7 Grafické rozhraní git gui
+### 1.8 Grafické rozhraní `git gui`
 
-Git disponuje také grafickým rozhraním, které nahrazuje příkazy v příkazové řádce. Otevřeš ho příkazem:
+Git disponuje také grafickým rozhraním, které nahrazuje příkazy v příkazové řádce. Oba přístupy se dají velmi dobře kombinovat. Rozhraní otevřeš příkazem:
 
 ```bash
 git gui
 ```
 
-![Git GUI rozhraní](../assets/cviceni_09/08_git_gui_interface.png)
+![Grafické rozhraní git gui](../assets/cviceni_09/08_git_gui_interface.png)
 
-V tomto rozhraní můžeš snadno provést:
+V `git gui` můžeš snadno provést celý workflow:
 
-- **add** – kliknutím na ikony souborů se přesunou do *Staged Changes* (nebo tlačítkem *Stage Changed*),
-- **commit** – vložením commit message a tlačítkem *Commit*,
-- **push** – tlačítkem *Push*, kde budeš dotázán/a na cílovou větev a repozitář.
+1. **Add** – kliknutím na ikony souborů je přesuneš do *Staged Changes* (nebo tlačítkem *Stage Changed* přesuneš všechny).
+2. **Commit** – vlož commit message a klikni na *Commit*.
+3. **Push** – tlačítkem *Push* nahraješ revize na vzdálený repozitář.
 
-Zároveň vidíš zobrazení aktuálních změn v souborech. Změny se automaticky nezobrazí – rozhraní aktualizuj tlačítkem **Rescan** nebo jeho zavřením a znovuotevřením.
+Zároveň vidíš zobrazení aktuálních změn v souborech. Změny se automaticky nezobrazí – rozhraní aktualizuješ tlačítkem *Rescan*.
 
 > **💡 Tip:**
-> Git GUI je alternativou příkazů v příkazové řádce – je na tobě, zda ho budeš využívat. Velmi vhodné je oba přístupy kombinovat.
+> `git gui` je alternativou příkazů v příkazové řádce. Klidně oba přístupy kombinuj – v praxi se to hodí.
+
+---
+
+### 1.9 Git v PyCharmu
+
+Příkazová řádka a `gitk`/`git gui` jsou základ, ale **PyCharm** (a podobné editory jako VS Code) nabízí pohodlný grafický přístup ke Gitu přímo v editoru:
+
+- Záložka **Git** dole ukazuje historii a větve – podobně jako `gitk`.
+- Změněné soubory vidíš barevně: červená = nesledovaný, modrá = změněný, zelená = nový.
+- **Commit** provedeš přes `Ctrl+K` (nebo menu *Git → Commit*).
+- **Push** provedeš přes `Ctrl+Shift+K`.
+- Kliknutím na barevné značky vedle čísel řádků vidíš diff přímo v editoru.
+
+> **💡 Tip:**
+> I když používáš grafické rozhraní, je důležité rozumět příkazům – pomůže ti to, když se něco pokazí nebo když potřebuješ vyřešit složitější situaci (např. konflikt).
