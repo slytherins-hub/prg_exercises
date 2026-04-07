@@ -100,6 +100,13 @@ nav:
     - Cíl 1 – Určení aktivity z akcelerometrických dat: cviceni_07/02_cíl_1_úkol_aktivity_podle_akcelerometru.md
     - Cíl 2 – Správce kontaktů: cviceni_07/03_cíl_2_úkol_správce_kontaktů.md
     - Doporučení – jak postupovat: cviceni_07/04_doporučení_jak_postupovat.md
+  - Cvičení 9:
+    - Přehled: cviceni_09/README.md
+    - Úvod: cviceni_09/01_úvod.md
+    - Cíl 1 – základy práce s Git: cviceni_09/02_cíl_1_základy_práce_s_git.md
+    - Cíl 2 – větvení v Gitu: cviceni_09/03_cíl_2_větvení_v_gitu.md
+    - Cíl 3 – spolupráce – GitHub: cviceni_09/04_cíl_3_spolupráce_github.md
+    - Shrnutí: cviceni_09/05_shrnutí.md
   - Cvičení 10:
     - Přehled: cviceni_10/README.md
     - Úvod: cviceni_10/01_úvod.md
