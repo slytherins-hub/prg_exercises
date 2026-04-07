@@ -100,6 +100,15 @@ nav:
     - Cíl 1 – Určení aktivity z akcelerometrických dat: cviceni_07/02_cíl_1_úkol_aktivity_podle_akcelerometru.md
     - Cíl 2 – Správce kontaktů: cviceni_07/03_cíl_2_úkol_správce_kontaktů.md
     - Doporučení – jak postupovat: cviceni_07/04_doporučení_jak_postupovat.md
+  - Cvičení 9:
+    - Přehled: cviceni_09/README.md
+    - Úvod: cviceni_09/01_úvod.md
+    - Cíl 1 – analýza asymptotické složitosti: cviceni_09/02_cíl_1_analyza_asymptoticke_slozitosti.md
+    - Cíl 2 – sekvenční a binární vyhledávání: cviceni_09/03_cíl_2_algoritmy_vyhledavani.md
+    - Cíl 3 – měření času: cviceni_09/04_cíl_3_mereni_casu.md
+    - Cíl 4 – vyhledávání vzorů: cviceni_09/05_cíl_4_vyhledavani_vzoru.md
+    - Cíl 5 – teoreticky zajímavé algoritmy: cviceni_09/06_cíl_5_teoreticky_zajimave_algoritmy.md
+    - Cíl 6 – odevzdání úkolu: cviceni_09/07_cíl_6_odevzdání_úkolu.md
 
 extra_css:
   - assets/nav-toggle.css

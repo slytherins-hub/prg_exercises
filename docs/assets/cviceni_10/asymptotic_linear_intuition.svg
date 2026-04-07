@@ -1,0 +1,130 @@
+<svg width="1200" height="560" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="560" fill="#FFFDF8"/>
+
+  <text x="56" y="62" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="28" font-weight="700">
+    Lineární složitost: s delším seznamem roste i počet porovnání
+  </text>
+  <text x="56" y="96" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="17">
+    V nejhorším případě projdeš celý seznam. Proto pro délky 3, 5 a 10 dostaneš 3, 5 a 10 porovnání.
+  </text>
+
+  <rect x="48" y="126" width="640" height="382" rx="20" fill="#F6F1E7"/>
+  <rect x="728" y="126" width="424" height="382" rx="20" fill="#F8FAFC"/>
+
+  <text x="76" y="164" fill="#0F4C5C" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18" font-weight="700">
+    Tři konkrétní příklady
+  </text>
+  <text x="756" y="164" fill="#0F4C5C" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18" font-weight="700">
+    Body v grafu
+  </text>
+
+  <text x="76" y="214" fill="#0F4C5C" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="17" font-weight="700">
+    délka 3
+  </text>
+  <rect x="160" y="188" width="42" height="42" rx="10" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="212" y="188" width="42" height="42" rx="10" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="264" y="188" width="42" height="42" rx="10" fill="#D1495B" stroke="#D1495B" stroke-width="2"/>
+  <text x="177" y="214" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18">2</text>
+  <text x="229" y="214" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18">4</text>
+  <text x="281" y="214" fill="white" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18" font-weight="700">8</text>
+  <text x="334" y="214" fill="#D1495B" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="17" font-weight="700">3 porovnání</text>
+
+  <text x="76" y="302" fill="#0F4C5C" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="17" font-weight="700">
+    délka 5
+  </text>
+  <rect x="160" y="276" width="42" height="42" rx="10" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="212" y="276" width="42" height="42" rx="10" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="264" y="276" width="42" height="42" rx="10" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="316" y="276" width="42" height="42" rx="10" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="368" y="276" width="42" height="42" rx="10" fill="#D1495B" stroke="#D1495B" stroke-width="2"/>
+  <text x="177" y="302" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18">1</text>
+  <text x="229" y="302" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18">3</text>
+  <text x="281" y="302" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18">5</text>
+  <text x="333" y="302" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18">7</text>
+  <text x="385" y="302" fill="white" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="18" font-weight="700">8</text>
+  <text x="438" y="302" fill="#D1495B" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="17" font-weight="700">5 porovnání</text>
+
+  <text x="76" y="390" fill="#0F4C5C" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="17" font-weight="700">
+    délka 10
+  </text>
+  <rect x="160" y="364" width="36" height="36" rx="9" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="204" y="364" width="36" height="36" rx="9" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="248" y="364" width="36" height="36" rx="9" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="292" y="364" width="36" height="36" rx="9" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="336" y="364" width="36" height="36" rx="9" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="380" y="364" width="36" height="36" rx="9" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="424" y="364" width="36" height="36" rx="9" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="468" y="364" width="36" height="36" rx="9" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="512" y="364" width="36" height="36" rx="9" fill="#EFE8D8" stroke="#0F4C5C" stroke-width="2"/>
+  <rect x="556" y="364" width="36" height="36" rx="9" fill="#D1495B" stroke="#D1495B" stroke-width="2"/>
+  <text x="178" y="382" text-anchor="middle" dominant-baseline="middle" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15">3</text>
+  <text x="222" y="382" text-anchor="middle" dominant-baseline="middle" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15">1</text>
+  <text x="266" y="382" text-anchor="middle" dominant-baseline="middle" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15">5</text>
+  <text x="310" y="382" text-anchor="middle" dominant-baseline="middle" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15">1</text>
+  <text x="354" y="382" text-anchor="middle" dominant-baseline="middle" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15">0</text>
+  <text x="398" y="382" text-anchor="middle" dominant-baseline="middle" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15">4</text>
+  <text x="442" y="382" text-anchor="middle" dominant-baseline="middle" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15">9</text>
+  <text x="486" y="382" text-anchor="middle" dominant-baseline="middle" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15">7</text>
+  <text x="530" y="382" text-anchor="middle" dominant-baseline="middle" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15">2</text>
+  <text x="574" y="382" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15" font-weight="700">8</text>
+  <text x="612" y="388" fill="#D1495B" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="17" font-weight="700">10 porovnání</text>
+
+  <line x1="804" y1="448" x2="804" y2="188" stroke="#1F2933" stroke-width="2.5"/>
+  <line x1="804" y1="448" x2="1100" y2="448" stroke="#1F2933" stroke-width="2.5"/>
+
+  <text x="812" y="188" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15">počet porovnání</text>
+  <text x="1088" y="474" fill="#1F2933" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="15">n</text>
+
+  <line x1="830" y1="448" x2="830" y2="442" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="856" y1="448" x2="856" y2="442" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="882" y1="448" x2="882" y2="442" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="908" y1="448" x2="908" y2="442" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="934" y1="448" x2="934" y2="442" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="960" y1="448" x2="960" y2="442" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="986" y1="448" x2="986" y2="442" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="1012" y1="448" x2="1012" y2="442" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="1038" y1="448" x2="1038" y2="442" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="1064" y1="448" x2="1064" y2="442" stroke="#1F2933" stroke-width="1.6"/>
+
+  <text x="830" y="468" text-anchor="middle" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">1</text>
+  <text x="856" y="468" text-anchor="middle" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">2</text>
+  <text x="882" y="468" text-anchor="middle" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">3</text>
+  <text x="908" y="468" text-anchor="middle" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">4</text>
+  <text x="934" y="468" text-anchor="middle" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">5</text>
+  <text x="960" y="468" text-anchor="middle" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">6</text>
+  <text x="986" y="468" text-anchor="middle" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">7</text>
+  <text x="1012" y="468" text-anchor="middle" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">8</text>
+  <text x="1038" y="468" text-anchor="middle" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">9</text>
+  <text x="1064" y="468" text-anchor="middle" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">10</text>
+
+  <line x1="804" y1="422" x2="810" y2="422" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="804" y1="396" x2="810" y2="396" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="804" y1="370" x2="810" y2="370" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="804" y1="344" x2="810" y2="344" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="804" y1="318" x2="810" y2="318" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="804" y1="292" x2="810" y2="292" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="804" y1="266" x2="810" y2="266" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="804" y1="240" x2="810" y2="240" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="804" y1="214" x2="810" y2="214" stroke="#1F2933" stroke-width="1.6"/>
+  <line x1="804" y1="188" x2="810" y2="188" stroke="#1F2933" stroke-width="1.6"/>
+
+  <text x="790" y="426" text-anchor="end" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">1</text>
+  <text x="790" y="400" text-anchor="end" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">2</text>
+  <text x="790" y="374" text-anchor="end" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">3</text>
+  <text x="790" y="348" text-anchor="end" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">4</text>
+  <text x="790" y="322" text-anchor="end" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">5</text>
+  <text x="790" y="296" text-anchor="end" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">6</text>
+  <text x="790" y="270" text-anchor="end" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">7</text>
+  <text x="790" y="244" text-anchor="end" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">8</text>
+  <text x="790" y="218" text-anchor="end" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">9</text>
+  <text x="790" y="192" text-anchor="end" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="12">10</text>
+
+  <polyline points="882,370 934,318 1064,188" fill="none" stroke="#D1495B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="882" cy="370" r="7" fill="#D1495B"/>
+  <circle cx="934" cy="318" r="7" fill="#D1495B"/>
+  <circle cx="1064" cy="188" r="7" fill="#D1495B"/>
+
+  <text x="756" y="496" fill="#5B6472" font-family="Segoe UI, DejaVu Sans, sans-serif" font-size="16">
+    Z těchto bodů je vidět, že počet porovnání roste přímo úměrně délce seznamu.
+  </text>
+</svg>
