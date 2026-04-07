@@ -22,26 +22,26 @@ V tomto cvičení jsme se naučili:
 
 ### Tahák: nejpoužívanější příkazy
 
-| Příkaz | Co dělá |
-|---|---|
-| `git config --global user.name "Jméno"` | Nastaví jméno autora |
-| `git config --global user.email email` | Nastaví email autora |
-| `git init` | Založí nový repozitář |
-| `git status` | Ukáže stav souborů (co je změněné, co je staged) |
-| `git add soubor` | Přidá soubor do stage (připraví k commitu) |
-| `git add .` | Přidá **všechny** změněné soubory do stage |
-| `git commit -m "popis"` | Vytvoří revizi s popisem |
-| `git diff` | Ukáže změny oproti poslednímu commitu |
-| `git log --oneline` | Kompaktní historie revizí |
-| `gitk --all` | Grafický prohlížeč historie |
-| `git gui` | Grafické rozhraní pro add/commit/push |
-| `git show` | Detail poslední revize |
-| `git branch nazev` | Vytvoří novou větev |
-| `git switch nazev` | Přepne na větev |
-| `git switch -c nazev` | Vytvoří větev a přepne na ni |
-| `git merge nazev` | Sloučí větev do aktuální |
-| `git branch -d nazev` | Smaže větev |
-| `git clone URL` | Naklonuje vzdálený repozitář |
-| `git remote -v` | Vypíše vzdálené repozitáře |
-| `git push remote vetev` | Nahraje revize na vzdálený repozitář |
-| `git pull remote vetev` | Stáhne a sloučí změny ze vzdáleného repozitáře |
+| Příkaz                                   | Co dělá                                          |
+|------------------------------------------|--------------------------------------------------|
+| `git config --global user.name "Jmeno"`  | Nastaví jméno autora                             |
+| `git config --global user.email "email"` | Nastaví email autora                             |
+| `git init`                               | Založí nový repozitář                            |
+| `git status`                             | Ukáže stav souborů (co je změněné, co je staged) |
+| `git add soubor`                         | Přidá soubor do stage (připraví k commitu)       |
+| `git add .`                              | Přidá **všechny** změněné soubory do stage       |
+| `git commit -m "popis"`                  | Vytvoří revizi s popisem                         |
+| `git diff`                               | Ukáže změny oproti poslednímu commitu            |
+| `git log --oneline`                      | Kompaktní historie revizí                        |
+| `gitk --all`                             | Grafický prohlížeč historie                      |
+| `git gui`                                | Grafické rozhraní pro add/commit/push            |
+| `git show`                               | Detail poslední revize                           |
+| `git branch nazev`                       | Vytvoří novou větev                              |
+| `git switch nazev`                       | Přepne na větev                                  |
+| `git switch -c nazev`                    | Vytvoří větev a přepne na ni                     |
+| `git merge nazev`                        | Sloučí větev do aktuální                         |
+| `git branch -d nazev`                    | Smaže větev                                      |
+| `git clone URL`                          | Naklonuje vzdálený repozitář                     |
+| `git remote -v`                          | Vypíše vzdálené repozitáře                       |
+| `git push remote vetev`                  | Nahraje revize na vzdálený repozitář             |
+| `git pull remote vetev`                  | Stáhne a sloučí změny ze vzdáleného repozitáře   |

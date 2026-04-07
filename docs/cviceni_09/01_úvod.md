@@ -4,15 +4,19 @@ Algoritmizace a programování
 
 ## ÚVOD
 
-V tomto cvičení se blíže seznámíš se systémem **Git**, který už znáš z domácích úkolů. Git je univerzální nástroj pro správu a synchronizaci dat v souborech. Je to **verzovací nástroj** – zaznamenává změny prováděné v souborech v průběhu času, takže můžeš kdykoli obnovit konkrétní verzi.
+V tomto cvičení se blíže seznámíš se systémem Git, který už znáš z domácích úkolů. Git je univerzální nástroj pro správu
+a synchronizaci dat v souborech. Je to verzovací nástroj – zaznamenává změny prováděné v souborech v průběhu času, 
+takže můžeš kdykoli obnovit konkrétní verzi.
 
-Naučíš se Git nakonfigurovat, inicializovat repozitář, sledovat soubory, připravovat je k **zápisu (stage)**, zapisovat **revize (commit)** a vytvářet **větve (branches)**. Seznámíš se také s platformou **GitHub** pro správu vzdálených repozitářů.
+Naučíš se Git nakonfigurovat, inicializovat repozitář, sledovat soubory, připravovat je k zápisu (stage),
+zapisovat revize (commit) a vytvářet větve (branches). Seznámíš se také s platformou GitHub pro správu vzdálených repozitářů.
 
 ### Proč se učit Git?
 
-Představ si, že pracuješ na analýze pacientských dat. Máš skript, který funguje perfektně – a pak ho „vylepšíš" a všechno se rozbije. Bez Gitu máš smůlu. S Gitem se prostě vrátíš k verzi, která fungovala.
+Představ si, že pracuješ na analýze pacientských dat. Máš skript, který funguje perfektně – a pak ho „vylepšíš"
+a všechno se rozbije. Bez Gitu máš smůlu. S Gitem se prostě vrátíš k verzi, která fungovala.
 
-**Git v praxi používá skoro každý, kdo píše kód:**
+Git v praxi používá skoro každý, kdo píše kód:
 
 - vývojáři ve firmách,
 - vědci analyzující data z klinických studií,

@@ -4,31 +4,37 @@ Algoritmizace a programování
 
 ## CÍL 3: SPOLUPRÁCE – GITHUB
 
-Při práci na společném projektu je klíčové, aby každý člen týmu měl přístup k práci ostatních. Vyzkoušíme si, jak přistupovat ke vzdálenému repozitáři, jak z něj získat aktuální stav projektu i jak do něj přispět vlastními změnami.
+Při práci na společném projektu je klíčové, aby každý člen týmu měl přístup k práci ostatních. Vyzkoušíme si, 
+jak přistupovat ke vzdálenému repozitáři, jak z něj získat aktuální stav projektu i jak do něj přispět vlastními změnami.
 
 ---
 
 ### 3.1 Klonování repozitáře
 
-Jednou ze služeb poskytujících možnost nahrání gitového repozitáře a sdílení s ostatními je **GitHub**. Při práci na domácích úkolech pracuješ se vzdáleným repozitářem, který vlastníš ty. Teď si vyzkoušíme práci s repozitářem, který založil někdo jiný.
+Jednou ze služeb poskytujících možnost nahrání gitového repozitáře a sdílení s ostatními je **GitHub**. Při práci
+na domácích úkolech pracuješ se vzdáleným repozitářem, který vlastníš ty. Teď si vyzkoušíme práci s repozitářem,
+který založil někdo jiný.
 
-V příkazové řádce se přepni **mimo složku**, kde jsme doteď pracovali, a zadej příkaz `git clone` s odkazem na repozitář (adresu ti sdělí cvičící):
+V příkazové řádce se přepni **mimo složku**, kde jsme doteď pracovali, a zadej příkaz `git clone` s odkazem na repozitář
+(adresa je na e-learningu):
 
 ```bash
 git clone https://github.com/ucet-cviciciho/nazev-repozitare
 ```
 
-Díky tomuto příkazu se vytvoří nová složka s obsahem repozitáře. Na obsah se můžeš podívat i v prohlížeči po zadání stejného odkazu.
+Díky tomuto příkazu se vytvoří nová složka s obsahem repozitáře. Na obsah se můžeš podívat i v prohlížeči po zadání
+stejného odkazu.
 
 > **📘 Co je `git clone`?**
 >
-> `git clone` vytvoří lokální kopii vzdáleného repozitáře včetně celé jeho historie. Na rozdíl od stahování ZIP souboru získáš i všechny větve a revize.
+> `git clone` vytvoří lokální kopii vzdáleného repozitáře včetně celé jeho historie. Na rozdíl od stahování ZIP souboru
+> získáš i všechny větve a revize.
 
 ---
 
 ### 3.2 Zapojení do projektu
 
-**📝 ÚKOL 6: Přidání souboru do naklonovaného repozitáře**
+#### ÚKOL: Přidání souboru do naklonovaného repozitáře
 
 1. Přepni se do naklonované složky a zkontroluj historii repozitáře (např. pomocí `gitk --all` nebo `git log --oneline`).
 2. V pracovním adresáři vytvoř prázdný textový soubor a ulož ho pod svým jménem (`jmeno_prijmeni.txt`). Nepoužívej diakritiku.
@@ -68,10 +74,11 @@ Podívej se na adresy vzdálených repozitářů, které si Git pamatuje:
 git remote -v
 ```
 
-```
-origin  https://github.com/jmeno/prezencka (fetch)
-origin  https://github.com/jmeno/prezencka (push)
-```
+!!! output "Výstup"
+   ```text
+   origin  https://github.com/jmeno/prezencka (fetch)
+   origin  https://github.com/jmeno/prezencka (push)
+   ```
 
 Pod zkratkou `origin` vidíš adresu původního vzdáleného repozitáře. Vytvoř si zkratku k **tvému** vzdálenému repozitáři:
 
@@ -83,12 +90,13 @@ git remote add muj_fork https://github.com/tvejmeno/prezencka
 git remote -v
 ```
 
-```
-origin    https://github.com/jmeno/prezencka (fetch)
-origin    https://github.com/jmeno/prezencka (push)
-muj_fork  https://github.com/tvejmeno/prezencka (fetch)
-muj_fork  https://github.com/tvejmeno/prezencka (push)
-```
+!!! output "Výstup"
+   ```text
+   origin    https://github.com/jmeno/prezencka (fetch)
+   origin    https://github.com/jmeno/prezencka (push)
+   muj_fork  https://github.com/tvejmeno/prezencka (fetch)
+   muj_fork  https://github.com/tvejmeno/prezencka (push)
+   ```
 
 ---
 
@@ -106,11 +114,13 @@ V prohlížeči zkontroluj, že nahrání proběhlo.
 
 ### 3.6 Vytvoření pull requestu
 
-Na stránce tvého vzdáleného repozitáře se nahoře objeví možnost **Contribute** a po rozkliknutí **Open pull request**. Otevři nový pull request, zkontroluj popisek změny a potvrď ho.
+Na stránce tvého vzdáleného repozitáře se nahoře objeví možnost **Contribute** a po rozkliknutí **Open pull request**.
+Otevři nový pull request, zkontroluj popisek změny a potvrď ho.
 
 > **📘 Co je pull request?**
 >
-> Pull request je žádost o začlenění tvých změn do původního repozitáře. Před začleněním obvykle probíhá **kontrola kódu** (**code review**) – majitel může mít připomínky a vyžádat si další úpravy, nebo změny rovnou schválí.
+> Pull request je žádost o začlenění tvých změn do původního repozitáře. Před začleněním obvykle probíhá 
+> **kontrola kódu** (**code review**) – majitel může mít připomínky a vyžádat si další úpravy, nebo změny rovnou schválí.
 
 Další revize můžeš do pull requestu přidat opakováním:
 
@@ -138,7 +148,7 @@ Pomocí `git status` ověř stav repozitáře a pomocí `gitk --all` nebo `git l
 
 ### 3.8 Komplexní workflow s větvemi
 
-**📝 ÚKOL 7: Větev, push a pull request**
+#### ÚKOL 7: Větev, push a pull request
 
 1. V repozitáři prezencka vytvoř novou větev:
 
