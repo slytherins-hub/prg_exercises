@@ -1,4 +1,4 @@
-# CVIČENÍ 9: ALGORITMY VYHLEDÁVÁNÍ
+# CVIČENÍ 10: ALGORITMY VYHLEDÁVÁNÍ
 
 Algoritmizace a programování
 

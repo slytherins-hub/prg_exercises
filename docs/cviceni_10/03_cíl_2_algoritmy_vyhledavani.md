@@ -1,4 +1,4 @@
-# CVIČENÍ 9: ALGORITMY VYHLEDÁVÁNÍ
+# CVIČENÍ 10: ALGORITMY VYHLEDÁVÁNÍ
 
 Algoritmizace a programování
 
@@ -45,7 +45,7 @@ a potom je naklonuješ do pracovního adresáře s dnešním cvičením.
 3. Vpravo nahoře najdi tlačítko `Fork` a klikni na něj.
 4. Naklonuj si repozitář ze svého GitHub účtu na Plochu.
 
-> **Poznámka:** Podrobný postup viz cvičení 8, cíl 3.
+> **Poznámka:** Podrobný postup viz cvičení 9, cíl 3.
 
 ---
 

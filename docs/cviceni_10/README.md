@@ -1,4 +1,4 @@
-# Cvičení 9: Algoritmy vyhledávání
+# Cvičení 10: Algoritmy vyhledávání
 
 ## Obsah
 1. [ÚVOD](01_úvod.md)
