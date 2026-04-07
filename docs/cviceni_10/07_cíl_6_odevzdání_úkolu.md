@@ -29,7 +29,7 @@ Před odevzdáním by měl tvůj repozitář obsahovat alespoň:
 <ul style="color:#c62828;">
   <li>Pro splnění cvičení je nezbytné odevzdat do e-learningu funkční odkaz na repozitář.</li>
   <li>Cílem je mít v repozitáři vyplněné všechny úkoly z tohoto cvičení.</li>
-  <li>Odevzdání a modifikace v repozitáři je nutné provést nejpozději do půlnoci v den cvičení.</li>
+  <li>Odevzdání a modifikace v repozitáři je nutné provést nejpozději do konce cvičení.</li>
   <li>Ověř, že repozitář je <code>Public</code> a jde otevřít i z anonymního okna prohlížeče.</li>
 </ul>
 
