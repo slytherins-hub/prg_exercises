@@ -285,6 +285,8 @@ datum, popis a shrnutí změn. Ve výpisu se pohybuj šipkami nebo `PgUp`/`PgDn`
 4. Nezapomeň upravit volání funkce v `main()`.
 5. Po úpravě zkontroluj stav repozitáře příkazem `git status`.
 
+---
+
 ```bash
 git status
 ```

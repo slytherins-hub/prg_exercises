@@ -75,10 +75,10 @@ git remote -v
 ```
 
 !!! output "Výstup"
-   ```text
-   origin  https://github.com/jmeno/prezencka (fetch)
-   origin  https://github.com/jmeno/prezencka (push)
-   ```
+    ```text
+    origin  https://github.com/jmeno/prezencka (fetch)
+    origin  https://github.com/jmeno/prezencka (push)
+    ```
 
 Pod zkratkou `origin` vidíš adresu původního vzdáleného repozitáře. Vytvoř si zkratku k **tvému** vzdálenému repozitáři:
 
@@ -91,12 +91,12 @@ git remote -v
 ```
 
 !!! output "Výstup"
-   ```text
-   origin    https://github.com/jmeno/prezencka (fetch)
-   origin    https://github.com/jmeno/prezencka (push)
-   muj_fork  https://github.com/tvejmeno/prezencka (fetch)
-   muj_fork  https://github.com/tvejmeno/prezencka (push)
-   ```
+    ```text
+    origin    https://github.com/jmeno/prezencka (fetch)
+    origin    https://github.com/jmeno/prezencka (push)
+    muj_fork  https://github.com/tvejmeno/prezencka (fetch)
+    muj_fork  https://github.com/tvejmeno/prezencka (push)
+    ```
 
 ---
 
