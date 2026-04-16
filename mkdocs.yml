@@ -119,6 +119,12 @@ nav:
     - Cíl 2 – dědičnost: cviceni_13/03_cíl_2_dědičnost.md
     - Cíl 3 – DNA sekvence: cviceni_13/04_cíl_3_dna_sekvence.md
     - Cíl 4 – GitHub Copilot: cviceni_13/05_cíl_4_github_copilot.md
+  - Cvičení 13B:
+    - Přehled: cviceni_13_B/README.md
+    - Úvod – AI nástroje: cviceni_13_B/01_uvod_ai_nastroje.md
+    - Cíl 1 – důležité koncepty: cviceni_13_B/02_cil_1_dulezite_koncepty.md
+    - Cíl 2 – ukázky: cviceni_13_B/03_cil_2_ukazky.md
+    - Slide – přehled AI nástrojů: cviceni_13_B/04_slide_prehled.md
 
 extra_css:
   - assets/nav-toggle.css

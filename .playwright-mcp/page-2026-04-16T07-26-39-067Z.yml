@@ -1,0 +1,453 @@
+- generic [active] [ref=e1]:
+  - link "Přeskočit obsah" [ref=e2] [cursor=pointer]:
+    - /url: "#prg-podklady-ke-cvicenim"
+  - banner [ref=e3]:
+    - navigation "Záhlaví" [ref=e4]:
+      - img [ref=e6] [cursor=pointer]
+      - generic [ref=e9]:
+        - generic [ref=e11]: PRG
+        - generic:
+          - generic: Rozcestník
+      - img [ref=e13] [cursor=pointer]
+      - dialog:
+        - search:
+          - generic:
+            - textbox "Hledat" [ref=e15]
+            - img [ref=e17] [cursor=pointer]
+            - navigation "Vyhledávání":
+              - button "Vyčistit":
+                - img
+          - generic [ref=e20]: Inicializace vyhledávání
+  - generic [ref=e21]:
+    - main [ref=e22]:
+      - generic [ref=e23]:
+        - navigation "Navigace" [ref=e26]:
+          - generic [ref=e27] [cursor=pointer]:
+            - link "PRG" [ref=e28]:
+              - /url: .
+              - img [ref=e29]
+            - text: PRG
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - generic [ref=e34]: Rozcestník
+              - navigation "Obsah" [ref=e36]:
+                - generic [ref=e37] [cursor=pointer]: Obsah
+                - list [ref=e39]:
+                  - listitem [ref=e40]:
+                    - link "Cvičení" [ref=e41] [cursor=pointer]:
+                      - /url: "#cviceni"
+                      - generic [ref=e42]: Cvičení
+            - listitem [ref=e43]:
+              - generic [ref=e45]: Cvičení 1
+              - navigation "Cvičení 1" [ref=e47]:
+                - generic [ref=e48] [cursor=pointer]: Cvičení 1
+                - list [ref=e50]:
+                  - listitem [ref=e51]:
+                    - link "Přehled" [ref=e52] [cursor=pointer]:
+                      - /url: cviceni_01/
+                      - generic [ref=e53]: Přehled
+                  - listitem [ref=e54]:
+                    - link "Úvod" [ref=e55] [cursor=pointer]:
+                      - /url: cviceni_01/01_%C3%BAvod/
+                      - generic [ref=e56]: Úvod
+                  - listitem [ref=e57]:
+                    - link "Cíl 1 – instalace a příprava prostředí (uv)" [ref=e58] [cursor=pointer]:
+                      - /url: cviceni_01/02_c%C3%ADl_1_instalace_a_p%C5%99%C3%ADprava_prost%C5%99ed%C3%AD_uv/
+                      - generic [ref=e59]: Cíl 1 – instalace a příprava prostředí (uv)
+                  - listitem [ref=e60]:
+                    - link "Cíl 2 – první program a základy syntaxe" [ref=e61] [cursor=pointer]:
+                      - /url: cviceni_01/03_c%C3%ADl_2_prvn%C3%AD_program_a_z%C3%A1klady_syntaxe/
+                      - generic [ref=e62]: Cíl 2 – první program a základy syntaxe
+                  - listitem [ref=e63]:
+                    - link "Cíl 3 – pokročilé podmínky" [ref=e64] [cursor=pointer]:
+                      - /url: cviceni_01/04_c%C3%ADl_3_pokro%C4%8Dil%C3%A9_podm%C3%ADnky/
+                      - generic [ref=e65]: Cíl 3 – pokročilé podmínky
+                  - listitem [ref=e66]:
+                    - link "Cíl 4 – kombinace cyklů a podmínek" [ref=e67] [cursor=pointer]:
+                      - /url: cviceni_01/05_c%C3%ADl_4_kombinace_cyklu_a_podm%C3%ADnek/
+                      - generic [ref=e68]: Cíl 4 – kombinace cyklů a podmínek
+                  - listitem [ref=e69]:
+                    - link "Závěrečné úkoly" [ref=e70] [cursor=pointer]:
+                      - /url: cviceni_01/06_z%C3%A1v%C4%9Bre%C4%8Dn%C3%A9_%C3%BAkoly/
+                      - generic [ref=e71]: Závěrečné úkoly
+                  - listitem [ref=e72]:
+                    - link "Bonusové úkoly" [ref=e73] [cursor=pointer]:
+                      - /url: cviceni_01/07_bonusov%C3%A9_%C3%BAkoly/
+                      - generic [ref=e74]: Bonusové úkoly
+                  - listitem [ref=e75]:
+                    - link "Shrnutí" [ref=e76] [cursor=pointer]:
+                      - /url: cviceni_01/08_shrnut%C3%AD/
+                      - generic [ref=e77]: Shrnutí
+                  - listitem [ref=e78]:
+                    - link "Self-check" [ref=e79] [cursor=pointer]:
+                      - /url: cviceni_01/09_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e80]: Self-check
+            - listitem [ref=e81]:
+              - generic [ref=e83]: Cvičení 2
+              - navigation "Cvičení 2" [ref=e85]:
+                - generic [ref=e86] [cursor=pointer]: Cvičení 2
+                - list [ref=e88]:
+                  - listitem [ref=e89]:
+                    - link "Přehled" [ref=e90] [cursor=pointer]:
+                      - /url: cviceni_02/
+                      - generic [ref=e91]: Přehled
+                  - listitem [ref=e92]:
+                    - link "Úvod" [ref=e93] [cursor=pointer]:
+                      - /url: cviceni_02/01_%C3%BAvod/
+                      - generic [ref=e94]: Úvod
+                  - listitem [ref=e95]:
+                    - link "Cíl 1 – datové typy a konverze" [ref=e96] [cursor=pointer]:
+                      - /url: cviceni_02/02_c%C3%ADl_1_datov%C3%A9_typy_a_konverze/
+                      - generic [ref=e97]: Cíl 1 – datové typy a konverze
+                  - listitem [ref=e98]:
+                    - link "Cíl 2 – základy práce s řetězci" [ref=e99] [cursor=pointer]:
+                      - /url: cviceni_02/03_c%C3%ADl_2_z%C3%A1klady_pr%C3%A1ce_s_%C5%99et%C4%9Bzci/
+                      - generic [ref=e100]: Cíl 2 – základy práce s řetězci
+                  - listitem [ref=e101]:
+                    - link "Cíl 3 – indexace a průchod řetězcem" [ref=e102] [cursor=pointer]:
+                      - /url: cviceni_02/04_c%C3%ADl_3_indexace_a_pr%C5%AFchod_%C5%99et%C4%9Bzcem/
+                      - generic [ref=e103]: Cíl 3 – indexace a průchod řetězcem
+                  - listitem [ref=e104]:
+                    - link "Cíl 4 – metody řetězců" [ref=e105] [cursor=pointer]:
+                      - /url: cviceni_02/05_c%C3%ADl_4_metody_%C5%99et%C4%9Bzc%C5%AF/
+                      - generic [ref=e106]: Cíl 4 – metody řetězců
+                  - listitem [ref=e107]:
+                    - link "Cíl 5 – podmínky s řetězci" [ref=e108] [cursor=pointer]:
+                      - /url: cviceni_02/06_c%C3%ADl_5_podm%C3%ADnky_s_%C5%99et%C4%9Bzci/
+                      - generic [ref=e109]: Cíl 5 – podmínky s řetězci
+                  - listitem [ref=e110]:
+                    - link "Cíl 6 – základy debugování v PyCharm" [ref=e111] [cursor=pointer]:
+                      - /url: cviceni_02/07_c%C3%ADl_6_z%C3%A1klady_debugov%C3%A1n%C3%AD_v_pycharm/
+                      - generic [ref=e112]: Cíl 6 – základy debugování v PyCharm
+                  - listitem [ref=e113]:
+                    - link "Závěrečný úkol – analýza textu" [ref=e114] [cursor=pointer]:
+                      - /url: cviceni_02/08_z%C3%A1v%C4%9Bre%C4%8Dn%C3%BD_%C3%BAkol_anal%C3%BDza_textu/
+                      - generic [ref=e115]: Závěrečný úkol – analýza textu
+                  - listitem [ref=e116]:
+                    - link "Bonusové úkoly" [ref=e117] [cursor=pointer]:
+                      - /url: cviceni_02/09_bonusov%C3%A9_%C3%BAkoly/
+                      - generic [ref=e118]: Bonusové úkoly
+                  - listitem [ref=e119]:
+                    - link "Shrnutí" [ref=e120] [cursor=pointer]:
+                      - /url: cviceni_02/10_shrnut%C3%AD/
+                      - generic [ref=e121]: Shrnutí
+                  - listitem [ref=e122]:
+                    - link "Self-check" [ref=e123] [cursor=pointer]:
+                      - /url: cviceni_02/11_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e124]: Self-check
+            - listitem [ref=e125]:
+              - generic [ref=e127]: Cvičení 3
+              - navigation "Cvičení 3" [ref=e129]:
+                - generic [ref=e130] [cursor=pointer]: Cvičení 3
+                - list [ref=e132]:
+                  - listitem [ref=e133]:
+                    - link "Přehled" [ref=e134] [cursor=pointer]:
+                      - /url: cviceni_03/
+                      - generic [ref=e135]: Přehled
+                  - listitem [ref=e136]:
+                    - link "Úvod" [ref=e137] [cursor=pointer]:
+                      - /url: cviceni_03/01_%C3%BAvod/
+                      - generic [ref=e138]: Úvod
+                  - listitem [ref=e139]:
+                    - link "Cíl 1 – funkce a základy" [ref=e140] [cursor=pointer]:
+                      - /url: cviceni_03/02_c%C3%ADl_1_funkce_z%C3%A1klady/
+                      - generic [ref=e141]: Cíl 1 – funkce a základy
+                  - listitem [ref=e142]:
+                    - link "Cíl 2 – seznamy" [ref=e143] [cursor=pointer]:
+                      - /url: cviceni_03/03_c%C3%ADl_2_seznamy/
+                      - generic [ref=e144]: Cíl 2 – seznamy
+                  - listitem [ref=e145]:
+                    - link "Cíl 3 – procvičování" [ref=e146] [cursor=pointer]:
+                      - /url: cviceni_03/04_c%C3%ADl_3_procvi%C4%8Dov%C3%A1n%C3%AD/
+                      - generic [ref=e147]: Cíl 3 – procvičování
+                  - listitem [ref=e148]:
+                    - link "Bonusové úkoly" [ref=e149] [cursor=pointer]:
+                      - /url: cviceni_03/05_bonusov%C3%A9_%C3%BAkoly/
+                      - generic [ref=e150]: Bonusové úkoly
+                  - listitem [ref=e151]:
+                    - link "Self-check" [ref=e152] [cursor=pointer]:
+                      - /url: cviceni_03/06_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e153]: Self-check
+            - listitem [ref=e154]:
+              - generic [ref=e156]: Cvičení 4
+              - navigation "Cvičení 4" [ref=e158]:
+                - generic [ref=e159] [cursor=pointer]: Cvičení 4
+                - list [ref=e161]:
+                  - listitem [ref=e162]:
+                    - link "Přehled" [ref=e163] [cursor=pointer]:
+                      - /url: cviceni_04/
+                      - generic [ref=e164]: Přehled
+                  - listitem [ref=e165]:
+                    - link "Úvod" [ref=e166] [cursor=pointer]:
+                      - /url: cviceni_04/01_%C3%BAvod/
+                      - generic [ref=e167]: Úvod
+                  - listitem [ref=e168]:
+                    - link "Cíl 1 – výjimky a try/except" [ref=e169] [cursor=pointer]:
+                      - /url: cviceni_04/02_c%C3%ADl_1_v%C3%BDjimky_a_try_except/
+                      - generic [ref=e170]: Cíl 1 – výjimky a try/except
+                  - listitem [ref=e171]:
+                    - link "Cíl 2 – while cyklus" [ref=e172] [cursor=pointer]:
+                      - /url: cviceni_04/03_c%C3%ADl_2_while_cyklus/
+                      - generic [ref=e173]: Cíl 2 – while cyklus
+                  - listitem [ref=e174]:
+                    - link "Cíl 3 – množiny" [ref=e175] [cursor=pointer]:
+                      - /url: cviceni_04/04_c%C3%ADl_3_mno%C5%BEiny_sets/
+                      - generic [ref=e176]: Cíl 3 – množiny
+                  - listitem [ref=e177]:
+                    - link "Cíl 3 – slovníky" [ref=e178] [cursor=pointer]:
+                      - /url: cviceni_04/05_c%C3%ADl_4_slovn%C3%ADky_dictionaries/
+                      - generic [ref=e179]: Cíl 3 – slovníky
+                  - listitem [ref=e180]:
+                    - link "Cíl 4 – procvičování" [ref=e181] [cursor=pointer]:
+                      - /url: cviceni_04/06_c%C3%ADl_5_procvi%C4%8Dov%C3%A1n%C3%AD/
+                      - generic [ref=e182]: Cíl 4 – procvičování
+                  - listitem [ref=e183]:
+                    - link "Bonusové úkoly" [ref=e184] [cursor=pointer]:
+                      - /url: cviceni_04/07_bonusov%C3%A9_%C3%BAkoly/
+                      - generic [ref=e185]: Bonusové úkoly
+                  - listitem [ref=e186]:
+                    - link "Self-check" [ref=e187] [cursor=pointer]:
+                      - /url: cviceni_04/08_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e188]: Self-check
+            - listitem [ref=e189]:
+              - generic [ref=e191]: Cvičení 5
+              - navigation "Cvičení 5" [ref=e193]:
+                - generic [ref=e194] [cursor=pointer]: Cvičení 5
+                - list [ref=e196]:
+                  - listitem [ref=e197]:
+                    - link "Přehled" [ref=e198] [cursor=pointer]:
+                      - /url: cviceni_05/
+                      - generic [ref=e199]: Přehled
+                  - listitem [ref=e200]:
+                    - link "Úvod" [ref=e201] [cursor=pointer]:
+                      - /url: cviceni_05/01_%C3%BAvod/
+                      - generic [ref=e202]: Úvod
+                  - listitem [ref=e203]:
+                    - link "Cíl 1 – tuple (n-tice)" [ref=e204] [cursor=pointer]:
+                      - /url: cviceni_05/02_c%C3%ADl_1_tuple/
+                      - generic [ref=e205]: Cíl 1 – tuple (n-tice)
+                  - listitem [ref=e206]:
+                    - link "Cíl 2 – list comprehension" [ref=e207] [cursor=pointer]:
+                      - /url: cviceni_05/03_c%C3%ADl_2_list_comprehension_filter_map_reduce/
+                      - generic [ref=e208]: Cíl 2 – list comprehension
+                  - listitem [ref=e209]:
+                    - link "Cíl 3 – načítání souborů (txt, csv, json)" [ref=e210] [cursor=pointer]:
+                      - /url: cviceni_05/04_c%C3%ADl_3_na%C4%8D%C3%ADt%C3%A1n%C3%AD_soubor%C5%AF_txt_csv_json/
+                      - generic [ref=e211]: Cíl 3 – načítání souborů (txt, csv, json)
+                  - listitem [ref=e212]:
+                    - link "Cíl 4 – příkazová řádka (PowerShell, Bash, Terminal)" [ref=e213] [cursor=pointer]:
+                      - /url: cviceni_05/05_c%C3%ADl_4_p%C5%99%C3%ADkazov%C3%A1_%C5%99%C3%A1dka_powershell/
+                      - generic [ref=e214]: Cíl 4 – příkazová řádka (PowerShell, Bash, Terminal)
+                  - listitem [ref=e215]:
+                    - link "Cíl 5 – Git a GitHub" [ref=e216] [cursor=pointer]:
+                      - /url: cviceni_05/06_c%C3%ADl_5_git_a_github_classroom/
+                      - generic [ref=e217]: Cíl 5 – Git a GitHub
+                  - listitem [ref=e218]:
+                    - link "Cíl 6 – zadání a odevzdání úkolu" [ref=e219] [cursor=pointer]:
+                      - /url: cviceni_05/07_c%C3%ADl_6_odevzd%C3%A1n%C3%AD_%C3%BAkolu/
+                      - generic [ref=e220]: Cíl 6 – zadání a odevzdání úkolu
+                  - listitem [ref=e221]:
+                    - link "Self-check" [ref=e222] [cursor=pointer]:
+                      - /url: cviceni_05/08_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e223]: Self-check
+            - listitem [ref=e224]:
+              - generic [ref=e226]: Cvičení 6
+              - navigation "Cvičení 6" [ref=e228]:
+                - generic [ref=e229] [cursor=pointer]: Cvičení 6
+                - list [ref=e231]:
+                  - listitem [ref=e232]:
+                    - link "Přehled" [ref=e233] [cursor=pointer]:
+                      - /url: cviceni_06/
+                      - generic [ref=e234]: Přehled
+                  - listitem [ref=e235]:
+                    - link "Úvod" [ref=e236] [cursor=pointer]:
+                      - /url: cviceni_06/01_%C3%BAvod/
+                      - generic [ref=e237]: Úvod
+                  - listitem [ref=e238]:
+                    - link "Cíl 1 – funkce, rozšíření a dobré návyky" [ref=e239] [cursor=pointer]:
+                      - /url: cviceni_06/02_c%C3%ADl_1_funkce_roz%C5%A1%C3%AD%C5%99en%C3%AD/
+                      - generic [ref=e240]: Cíl 1 – funkce, rozšíření a dobré návyky
+                  - listitem [ref=e241]:
+                    - link "Cíl 2 – moduly, importy a __main__" [ref=e242] [cursor=pointer]:
+                      - /url: cviceni_06/03_c%C3%ADl_2_moduly_a_importy/
+                      - generic [ref=e243]: Cíl 2 – moduly, importy a __main__
+                  - listitem [ref=e244]:
+                    - link "Cíl 3 – modulární program, průnik kružnic" [ref=e245] [cursor=pointer]:
+                      - /url: cviceni_06/04_c%C3%ADl_3_kru%C5%BEnice_modul%C3%A1rn%C3%AD_program/
+                      - generic [ref=e246]: Cíl 3 – modulární program, průnik kružnic
+                  - listitem [ref=e247]:
+                    - link "Cíl 4 – testy a standardní struktura Python repozitáře" [ref=e248] [cursor=pointer]:
+                      - /url: cviceni_06/05_c%C3%ADl_4_testy_a_struktura_python_repozit%C3%A1%C5%99e/
+                      - generic [ref=e249]: Cíl 4 – testy a standardní struktura Python repozitáře
+                  - listitem [ref=e250]:
+                    - link "Self-check" [ref=e251] [cursor=pointer]:
+                      - /url: cviceni_06/06_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e252]: Self-check
+                  - listitem [ref=e253]:
+                    - link "Doplňek – čitelnost kódu a formátování" [ref=e254] [cursor=pointer]:
+                      - /url: cviceni_06/07_doplnek_citelnost_kodu_a_formatovani/
+                      - generic [ref=e255]: Doplňek – čitelnost kódu a formátování
+            - listitem [ref=e256]:
+              - generic [ref=e258]: Cvičení 10
+              - navigation "Cvičení 10" [ref=e260]:
+                - generic [ref=e261] [cursor=pointer]: Cvičení 10
+                - list [ref=e263]:
+                  - listitem [ref=e264]:
+                    - link "Přehled" [ref=e265] [cursor=pointer]:
+                      - /url: cviceni_10/
+                      - generic [ref=e266]: Přehled
+                  - listitem [ref=e267]:
+                    - link "Úvod" [ref=e268] [cursor=pointer]:
+                      - /url: cviceni_10/01_%C3%BAvod/
+                      - generic [ref=e269]: Úvod
+                  - listitem [ref=e270]:
+                    - link "Cíl 1 – analýza asymptotické složitosti" [ref=e271] [cursor=pointer]:
+                      - /url: cviceni_10/02_c%C3%ADl_1_analyza_asymptoticke_slozitosti/
+                      - generic [ref=e272]: Cíl 1 – analýza asymptotické složitosti
+                  - listitem [ref=e273]:
+                    - link "Cíl 2 – sekvenční a binární vyhledávání" [ref=e274] [cursor=pointer]:
+                      - /url: cviceni_10/03_c%C3%ADl_2_algoritmy_vyhledavani/
+                      - generic [ref=e275]: Cíl 2 – sekvenční a binární vyhledávání
+                  - listitem [ref=e276]:
+                    - link "Cíl 3 – měření času" [ref=e277] [cursor=pointer]:
+                      - /url: cviceni_10/04_c%C3%ADl_3_mereni_casu/
+                      - generic [ref=e278]: Cíl 3 – měření času
+                  - listitem [ref=e279]:
+                    - link "Cíl 4 – vyhledávání vzorů" [ref=e280] [cursor=pointer]:
+                      - /url: cviceni_10/05_c%C3%ADl_4_vyhledavani_vzoru/
+                      - generic [ref=e281]: Cíl 4 – vyhledávání vzorů
+                  - listitem [ref=e282]:
+                    - link "Cíl 5 – teoreticky zajímavé algoritmy" [ref=e283] [cursor=pointer]:
+                      - /url: cviceni_10/06_c%C3%ADl_5_teoreticky_zajimave_algoritmy/
+                      - generic [ref=e284]: Cíl 5 – teoreticky zajímavé algoritmy
+                  - listitem [ref=e285]:
+                    - link "Cíl 6 – odevzdání úkolu" [ref=e286] [cursor=pointer]:
+                      - /url: cviceni_10/07_c%C3%ADl_6_odevzd%C3%A1n%C3%AD_%C3%BAkolu/
+                      - generic [ref=e287]: Cíl 6 – odevzdání úkolu
+            - listitem [ref=e288]:
+              - generic [ref=e290]: Cvičení 11
+              - navigation "Cvičení 11" [ref=e292]:
+                - generic [ref=e293] [cursor=pointer]: Cvičení 11
+                - list [ref=e295]:
+                  - listitem [ref=e296]:
+                    - link "Přehled" [ref=e297] [cursor=pointer]:
+                      - /url: cviceni_11/
+                      - generic [ref=e298]: Přehled
+                  - listitem [ref=e299]:
+                    - link "Úvod" [ref=e300] [cursor=pointer]:
+                      - /url: cviceni_11/01_%C3%BAvod/
+                      - generic [ref=e301]: Úvod
+                  - listitem [ref=e302]:
+                    - link "Cíl 1 – úvod ke řazení" [ref=e303] [cursor=pointer]:
+                      - /url: cviceni_11/02_c%C3%ADl_1_%C3%BAvod_ke_%C5%99azen%C3%AD/
+                      - generic [ref=e304]: Cíl 1 – úvod ke řazení
+                  - listitem [ref=e305]:
+                    - link "Cíl 1 – Selection Sort" [ref=e306] [cursor=pointer]:
+                      - /url: cviceni_11/03_c%C3%ADl_1_selection_sort/
+                      - generic [ref=e307]: Cíl 1 – Selection Sort
+                  - listitem [ref=e308]:
+                    - link "Cíl 1 – Bubble Sort" [ref=e309] [cursor=pointer]:
+                      - /url: cviceni_11/04_c%C3%ADl_1_bubble_sort/
+                      - generic [ref=e310]: Cíl 1 – Bubble Sort
+                  - listitem [ref=e311]:
+                    - link "Cíl 1 – Insertion Sort" [ref=e312] [cursor=pointer]:
+                      - /url: cviceni_11/05_c%C3%ADl_1_insertion_sort/
+                      - generic [ref=e313]: Cíl 1 – Insertion Sort
+                  - listitem [ref=e314]:
+                    - link "Cíl 2 – řazení v Pythonu a další algoritmy" [ref=e315] [cursor=pointer]:
+                      - /url: cviceni_11/06_c%C3%ADl_2_razeni_v_pythonu_a_dalsi_algoritmy/
+                      - generic [ref=e316]: Cíl 2 – řazení v Pythonu a další algoritmy
+                  - listitem [ref=e317]:
+                    - link "Cíl 3 – odevzdání úkolu" [ref=e318] [cursor=pointer]:
+                      - /url: cviceni_11/07_c%C3%ADl_3_odevzd%C3%A1n%C3%AD_%C3%BAkolu/
+                      - generic [ref=e319]: Cíl 3 – odevzdání úkolu
+            - listitem [ref=e320]:
+              - generic [ref=e322]: Cvičení 13
+              - navigation "Cvičení 13" [ref=e324]:
+                - generic [ref=e325] [cursor=pointer]: Cvičení 13
+                - list [ref=e327]:
+                  - listitem [ref=e328]:
+                    - link "Přehled" [ref=e329] [cursor=pointer]:
+                      - /url: cviceni_13/
+                      - generic [ref=e330]: Přehled
+                  - listitem [ref=e331]:
+                    - link "Úvod" [ref=e332] [cursor=pointer]:
+                      - /url: cviceni_13/01_%C3%BAvod/
+                      - generic [ref=e333]: Úvod
+                  - listitem [ref=e334]:
+                    - link "Cíl 1 – první třída" [ref=e335] [cursor=pointer]:
+                      - /url: cviceni_13/02_c%C3%ADl_1_prvn%C3%AD_t%C5%99%C3%ADda/
+                      - generic [ref=e336]: Cíl 1 – první třída
+                  - listitem [ref=e337]:
+                    - link "Cíl 2 – dědičnost" [ref=e338] [cursor=pointer]:
+                      - /url: cviceni_13/03_c%C3%ADl_2_d%C4%9Bdi%C4%8Dnost/
+                      - generic [ref=e339]: Cíl 2 – dědičnost
+                  - listitem [ref=e340]:
+                    - link "Cíl 3 – DNA sekvence" [ref=e341] [cursor=pointer]:
+                      - /url: cviceni_13/04_c%C3%ADl_3_dna_sekvence/
+                      - generic [ref=e342]: Cíl 3 – DNA sekvence
+                  - listitem [ref=e343]:
+                    - link "Cíl 4 – GitHub Copilot" [ref=e344] [cursor=pointer]:
+                      - /url: cviceni_13/05_c%C3%ADl_4_github_copilot/
+                      - generic [ref=e345]: Cíl 4 – GitHub Copilot
+            - listitem [ref=e346]:
+              - generic [ref=e348]: Cvičení 13B
+              - navigation "Cvičení 13B" [ref=e350]:
+                - generic [ref=e351] [cursor=pointer]: Cvičení 13B
+                - list [ref=e353]:
+                  - listitem [ref=e354]:
+                    - link "Přehled" [ref=e355] [cursor=pointer]:
+                      - /url: cviceni_13_B/
+                      - generic [ref=e356]: Přehled
+                  - listitem [ref=e357]:
+                    - link "Úvod – AI nástroje" [ref=e358] [cursor=pointer]:
+                      - /url: cviceni_13_B/01_%C3%BAvod_ai_n%C3%A1stroje/
+                      - generic [ref=e359]: Úvod – AI nástroje
+                  - listitem [ref=e360]:
+                    - link "Cíl 1 – důležité koncepty" [ref=e361] [cursor=pointer]:
+                      - /url: cviceni_13_B/02_c%C3%ADl_1_d%C5%AFle%C5%BEit%C3%A9_koncepty/
+                      - generic [ref=e362]: Cíl 1 – důležité koncepty
+                  - listitem [ref=e363]:
+                    - link "Cíl 2 – ukázky" [ref=e364] [cursor=pointer]:
+                      - /url: cviceni_13_B/03_c%C3%ADl_2_uk%C3%A1zky/
+                      - generic [ref=e365]: Cíl 2 – ukázky
+        - article [ref=e367]:
+          - heading "PRG – Podklady ke cvičením" [level=1] [ref=e368]
+          - heading "Cvičení" [level=2] [ref=e369]
+          - list [ref=e370]:
+            - listitem [ref=e371]:
+              - 'link "Cvičení 1: První kroky s Pythonem" [ref=e372] [cursor=pointer]':
+                - /url: cviceni_01/
+            - listitem [ref=e373]:
+              - 'link "Cvičení 2: Datové typy a řetězce" [ref=e374] [cursor=pointer]':
+                - /url: cviceni_02/
+            - listitem [ref=e375]:
+              - 'link "Cvičení 3: Funkce a seznamy" [ref=e376] [cursor=pointer]':
+                - /url: cviceni_03/
+            - listitem [ref=e377]:
+              - 'link "Cvičení 4: Výjimky, while, množiny a slovníky" [ref=e378] [cursor=pointer]':
+                - /url: cviceni_04/
+            - listitem [ref=e379]:
+              - 'link "Cvičení 5: Práce se soubory, PowerShell a Git" [ref=e380] [cursor=pointer]':
+                - /url: cviceni_05/
+            - listitem [ref=e381]:
+              - 'link "Cvičení 6: Funkce, moduly a testy" [ref=e382] [cursor=pointer]':
+                - /url: cviceni_06/
+            - listitem [ref=e383]:
+              - 'link "Cvičení 10: Algoritmy vyhledávání" [ref=e384] [cursor=pointer]':
+                - /url: cviceni_10/
+            - listitem [ref=e385]:
+              - 'link "Cvičení 11: Řadicí algoritmy" [ref=e386] [cursor=pointer]':
+                - /url: cviceni_11/
+            - listitem [ref=e387]:
+              - 'link "Cvičení 13: OOP" [ref=e388] [cursor=pointer]':
+                - /url: cviceni_13/
+      - button "Zpět na začátek":
+        - img
+        - text: Zpět na začátek
+    - contentinfo [ref=e389]:
+      - generic [ref=e392]:
+        - text: Made with
+        - link "Material for MkDocs" [ref=e393] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - button "Skrýt lištu" [ref=e394] [cursor=pointer]

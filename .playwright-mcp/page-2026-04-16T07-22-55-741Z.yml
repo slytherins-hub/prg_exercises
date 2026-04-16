@@ -1,0 +1,772 @@
+- generic [active] [ref=e1]:
+  - link "Přeskočit obsah" [ref=e2] [cursor=pointer]:
+    - /url: "#cviceni-13b-ai-nastroje-pro-programovani"
+  - banner [ref=e3]:
+    - navigation "Záhlaví" [ref=e4]:
+      - img [ref=e6] [cursor=pointer]
+      - generic [ref=e9]:
+        - generic [ref=e11]: PRG
+        - generic:
+          - generic: Úvod – AI nástroje
+      - img [ref=e13] [cursor=pointer]
+      - dialog:
+        - search:
+          - generic:
+            - textbox "Hledat" [ref=e15]
+            - img [ref=e17] [cursor=pointer]
+            - navigation "Vyhledávání":
+              - button "Vyčistit":
+                - img
+          - generic [ref=e20]: Inicializace vyhledávání
+  - generic [ref=e21]:
+    - main [ref=e22]:
+      - generic [ref=e23]:
+        - navigation "Navigace" [ref=e26]:
+          - generic [ref=e27] [cursor=pointer]:
+            - link "PRG" [ref=e28]:
+              - /url: ../..
+              - img [ref=e29]
+            - text: PRG
+          - list [ref=e31]:
+            - listitem [ref=e32]:
+              - link "Rozcestník" [ref=e33] [cursor=pointer]:
+                - /url: ../..
+                - generic [ref=e34]: Rozcestník
+            - listitem [ref=e35]:
+              - generic [ref=e37]: Cvičení 1
+              - navigation "Cvičení 1" [ref=e39]:
+                - generic [ref=e40] [cursor=pointer]: Cvičení 1
+                - list [ref=e42]:
+                  - listitem [ref=e43]:
+                    - link "Přehled" [ref=e44] [cursor=pointer]:
+                      - /url: ../../cviceni_01/
+                      - generic [ref=e45]: Přehled
+                  - listitem [ref=e46]:
+                    - link "Úvod" [ref=e47] [cursor=pointer]:
+                      - /url: ../../cviceni_01/01_%C3%BAvod/
+                      - generic [ref=e48]: Úvod
+                  - listitem [ref=e49]:
+                    - link "Cíl 1 – instalace a příprava prostředí (uv)" [ref=e50] [cursor=pointer]:
+                      - /url: ../../cviceni_01/02_c%C3%ADl_1_instalace_a_p%C5%99%C3%ADprava_prost%C5%99ed%C3%AD_uv/
+                      - generic [ref=e51]: Cíl 1 – instalace a příprava prostředí (uv)
+                  - listitem [ref=e52]:
+                    - link "Cíl 2 – první program a základy syntaxe" [ref=e53] [cursor=pointer]:
+                      - /url: ../../cviceni_01/03_c%C3%ADl_2_prvn%C3%AD_program_a_z%C3%A1klady_syntaxe/
+                      - generic [ref=e54]: Cíl 2 – první program a základy syntaxe
+                  - listitem [ref=e55]:
+                    - link "Cíl 3 – pokročilé podmínky" [ref=e56] [cursor=pointer]:
+                      - /url: ../../cviceni_01/04_c%C3%ADl_3_pokro%C4%8Dil%C3%A9_podm%C3%ADnky/
+                      - generic [ref=e57]: Cíl 3 – pokročilé podmínky
+                  - listitem [ref=e58]:
+                    - link "Cíl 4 – kombinace cyklů a podmínek" [ref=e59] [cursor=pointer]:
+                      - /url: ../../cviceni_01/05_c%C3%ADl_4_kombinace_cyklu_a_podm%C3%ADnek/
+                      - generic [ref=e60]: Cíl 4 – kombinace cyklů a podmínek
+                  - listitem [ref=e61]:
+                    - link "Závěrečné úkoly" [ref=e62] [cursor=pointer]:
+                      - /url: ../../cviceni_01/06_z%C3%A1v%C4%9Bre%C4%8Dn%C3%A9_%C3%BAkoly/
+                      - generic [ref=e63]: Závěrečné úkoly
+                  - listitem [ref=e64]:
+                    - link "Bonusové úkoly" [ref=e65] [cursor=pointer]:
+                      - /url: ../../cviceni_01/07_bonusov%C3%A9_%C3%BAkoly/
+                      - generic [ref=e66]: Bonusové úkoly
+                  - listitem [ref=e67]:
+                    - link "Shrnutí" [ref=e68] [cursor=pointer]:
+                      - /url: ../../cviceni_01/08_shrnut%C3%AD/
+                      - generic [ref=e69]: Shrnutí
+                  - listitem [ref=e70]:
+                    - link "Self-check" [ref=e71] [cursor=pointer]:
+                      - /url: ../../cviceni_01/09_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e72]: Self-check
+            - listitem [ref=e73]:
+              - generic [ref=e75]: Cvičení 2
+              - navigation "Cvičení 2" [ref=e77]:
+                - generic [ref=e78] [cursor=pointer]: Cvičení 2
+                - list [ref=e80]:
+                  - listitem [ref=e81]:
+                    - link "Přehled" [ref=e82] [cursor=pointer]:
+                      - /url: ../../cviceni_02/
+                      - generic [ref=e83]: Přehled
+                  - listitem [ref=e84]:
+                    - link "Úvod" [ref=e85] [cursor=pointer]:
+                      - /url: ../../cviceni_02/01_%C3%BAvod/
+                      - generic [ref=e86]: Úvod
+                  - listitem [ref=e87]:
+                    - link "Cíl 1 – datové typy a konverze" [ref=e88] [cursor=pointer]:
+                      - /url: ../../cviceni_02/02_c%C3%ADl_1_datov%C3%A9_typy_a_konverze/
+                      - generic [ref=e89]: Cíl 1 – datové typy a konverze
+                  - listitem [ref=e90]:
+                    - link "Cíl 2 – základy práce s řetězci" [ref=e91] [cursor=pointer]:
+                      - /url: ../../cviceni_02/03_c%C3%ADl_2_z%C3%A1klady_pr%C3%A1ce_s_%C5%99et%C4%9Bzci/
+                      - generic [ref=e92]: Cíl 2 – základy práce s řetězci
+                  - listitem [ref=e93]:
+                    - link "Cíl 3 – indexace a průchod řetězcem" [ref=e94] [cursor=pointer]:
+                      - /url: ../../cviceni_02/04_c%C3%ADl_3_indexace_a_pr%C5%AFchod_%C5%99et%C4%9Bzcem/
+                      - generic [ref=e95]: Cíl 3 – indexace a průchod řetězcem
+                  - listitem [ref=e96]:
+                    - link "Cíl 4 – metody řetězců" [ref=e97] [cursor=pointer]:
+                      - /url: ../../cviceni_02/05_c%C3%ADl_4_metody_%C5%99et%C4%9Bzc%C5%AF/
+                      - generic [ref=e98]: Cíl 4 – metody řetězců
+                  - listitem [ref=e99]:
+                    - link "Cíl 5 – podmínky s řetězci" [ref=e100] [cursor=pointer]:
+                      - /url: ../../cviceni_02/06_c%C3%ADl_5_podm%C3%ADnky_s_%C5%99et%C4%9Bzci/
+                      - generic [ref=e101]: Cíl 5 – podmínky s řetězci
+                  - listitem [ref=e102]:
+                    - link "Cíl 6 – základy debugování v PyCharm" [ref=e103] [cursor=pointer]:
+                      - /url: ../../cviceni_02/07_c%C3%ADl_6_z%C3%A1klady_debugov%C3%A1n%C3%AD_v_pycharm/
+                      - generic [ref=e104]: Cíl 6 – základy debugování v PyCharm
+                  - listitem [ref=e105]:
+                    - link "Závěrečný úkol – analýza textu" [ref=e106] [cursor=pointer]:
+                      - /url: ../../cviceni_02/08_z%C3%A1v%C4%9Bre%C4%8Dn%C3%BD_%C3%BAkol_anal%C3%BDza_textu/
+                      - generic [ref=e107]: Závěrečný úkol – analýza textu
+                  - listitem [ref=e108]:
+                    - link "Bonusové úkoly" [ref=e109] [cursor=pointer]:
+                      - /url: ../../cviceni_02/09_bonusov%C3%A9_%C3%BAkoly/
+                      - generic [ref=e110]: Bonusové úkoly
+                  - listitem [ref=e111]:
+                    - link "Shrnutí" [ref=e112] [cursor=pointer]:
+                      - /url: ../../cviceni_02/10_shrnut%C3%AD/
+                      - generic [ref=e113]: Shrnutí
+                  - listitem [ref=e114]:
+                    - link "Self-check" [ref=e115] [cursor=pointer]:
+                      - /url: ../../cviceni_02/11_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e116]: Self-check
+            - listitem [ref=e117]:
+              - generic [ref=e119]: Cvičení 3
+              - navigation "Cvičení 3" [ref=e121]:
+                - generic [ref=e122] [cursor=pointer]: Cvičení 3
+                - list [ref=e124]:
+                  - listitem [ref=e125]:
+                    - link "Přehled" [ref=e126] [cursor=pointer]:
+                      - /url: ../../cviceni_03/
+                      - generic [ref=e127]: Přehled
+                  - listitem [ref=e128]:
+                    - link "Úvod" [ref=e129] [cursor=pointer]:
+                      - /url: ../../cviceni_03/01_%C3%BAvod/
+                      - generic [ref=e130]: Úvod
+                  - listitem [ref=e131]:
+                    - link "Cíl 1 – funkce a základy" [ref=e132] [cursor=pointer]:
+                      - /url: ../../cviceni_03/02_c%C3%ADl_1_funkce_z%C3%A1klady/
+                      - generic [ref=e133]: Cíl 1 – funkce a základy
+                  - listitem [ref=e134]:
+                    - link "Cíl 2 – seznamy" [ref=e135] [cursor=pointer]:
+                      - /url: ../../cviceni_03/03_c%C3%ADl_2_seznamy/
+                      - generic [ref=e136]: Cíl 2 – seznamy
+                  - listitem [ref=e137]:
+                    - link "Cíl 3 – procvičování" [ref=e138] [cursor=pointer]:
+                      - /url: ../../cviceni_03/04_c%C3%ADl_3_procvi%C4%8Dov%C3%A1n%C3%AD/
+                      - generic [ref=e139]: Cíl 3 – procvičování
+                  - listitem [ref=e140]:
+                    - link "Bonusové úkoly" [ref=e141] [cursor=pointer]:
+                      - /url: ../../cviceni_03/05_bonusov%C3%A9_%C3%BAkoly/
+                      - generic [ref=e142]: Bonusové úkoly
+                  - listitem [ref=e143]:
+                    - link "Self-check" [ref=e144] [cursor=pointer]:
+                      - /url: ../../cviceni_03/06_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e145]: Self-check
+            - listitem [ref=e146]:
+              - generic [ref=e148]: Cvičení 4
+              - navigation "Cvičení 4" [ref=e150]:
+                - generic [ref=e151] [cursor=pointer]: Cvičení 4
+                - list [ref=e153]:
+                  - listitem [ref=e154]:
+                    - link "Přehled" [ref=e155] [cursor=pointer]:
+                      - /url: ../../cviceni_04/
+                      - generic [ref=e156]: Přehled
+                  - listitem [ref=e157]:
+                    - link "Úvod" [ref=e158] [cursor=pointer]:
+                      - /url: ../../cviceni_04/01_%C3%BAvod/
+                      - generic [ref=e159]: Úvod
+                  - listitem [ref=e160]:
+                    - link "Cíl 1 – výjimky a try/except" [ref=e161] [cursor=pointer]:
+                      - /url: ../../cviceni_04/02_c%C3%ADl_1_v%C3%BDjimky_a_try_except/
+                      - generic [ref=e162]: Cíl 1 – výjimky a try/except
+                  - listitem [ref=e163]:
+                    - link "Cíl 2 – while cyklus" [ref=e164] [cursor=pointer]:
+                      - /url: ../../cviceni_04/03_c%C3%ADl_2_while_cyklus/
+                      - generic [ref=e165]: Cíl 2 – while cyklus
+                  - listitem [ref=e166]:
+                    - link "Cíl 3 – množiny" [ref=e167] [cursor=pointer]:
+                      - /url: ../../cviceni_04/04_c%C3%ADl_3_mno%C5%BEiny_sets/
+                      - generic [ref=e168]: Cíl 3 – množiny
+                  - listitem [ref=e169]:
+                    - link "Cíl 3 – slovníky" [ref=e170] [cursor=pointer]:
+                      - /url: ../../cviceni_04/05_c%C3%ADl_4_slovn%C3%ADky_dictionaries/
+                      - generic [ref=e171]: Cíl 3 – slovníky
+                  - listitem [ref=e172]:
+                    - link "Cíl 4 – procvičování" [ref=e173] [cursor=pointer]:
+                      - /url: ../../cviceni_04/06_c%C3%ADl_5_procvi%C4%8Dov%C3%A1n%C3%AD/
+                      - generic [ref=e174]: Cíl 4 – procvičování
+                  - listitem [ref=e175]:
+                    - link "Bonusové úkoly" [ref=e176] [cursor=pointer]:
+                      - /url: ../../cviceni_04/07_bonusov%C3%A9_%C3%BAkoly/
+                      - generic [ref=e177]: Bonusové úkoly
+                  - listitem [ref=e178]:
+                    - link "Self-check" [ref=e179] [cursor=pointer]:
+                      - /url: ../../cviceni_04/08_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e180]: Self-check
+            - listitem [ref=e181]:
+              - generic [ref=e183]: Cvičení 5
+              - navigation "Cvičení 5" [ref=e185]:
+                - generic [ref=e186] [cursor=pointer]: Cvičení 5
+                - list [ref=e188]:
+                  - listitem [ref=e189]:
+                    - link "Přehled" [ref=e190] [cursor=pointer]:
+                      - /url: ../../cviceni_05/
+                      - generic [ref=e191]: Přehled
+                  - listitem [ref=e192]:
+                    - link "Úvod" [ref=e193] [cursor=pointer]:
+                      - /url: ../../cviceni_05/01_%C3%BAvod/
+                      - generic [ref=e194]: Úvod
+                  - listitem [ref=e195]:
+                    - link "Cíl 1 – tuple (n-tice)" [ref=e196] [cursor=pointer]:
+                      - /url: ../../cviceni_05/02_c%C3%ADl_1_tuple/
+                      - generic [ref=e197]: Cíl 1 – tuple (n-tice)
+                  - listitem [ref=e198]:
+                    - link "Cíl 2 – list comprehension" [ref=e199] [cursor=pointer]:
+                      - /url: ../../cviceni_05/03_c%C3%ADl_2_list_comprehension_filter_map_reduce/
+                      - generic [ref=e200]: Cíl 2 – list comprehension
+                  - listitem [ref=e201]:
+                    - link "Cíl 3 – načítání souborů (txt, csv, json)" [ref=e202] [cursor=pointer]:
+                      - /url: ../../cviceni_05/04_c%C3%ADl_3_na%C4%8D%C3%ADt%C3%A1n%C3%AD_soubor%C5%AF_txt_csv_json/
+                      - generic [ref=e203]: Cíl 3 – načítání souborů (txt, csv, json)
+                  - listitem [ref=e204]:
+                    - link "Cíl 4 – příkazová řádka (PowerShell, Bash, Terminal)" [ref=e205] [cursor=pointer]:
+                      - /url: ../../cviceni_05/05_c%C3%ADl_4_p%C5%99%C3%ADkazov%C3%A1_%C5%99%C3%A1dka_powershell/
+                      - generic [ref=e206]: Cíl 4 – příkazová řádka (PowerShell, Bash, Terminal)
+                  - listitem [ref=e207]:
+                    - link "Cíl 5 – Git a GitHub" [ref=e208] [cursor=pointer]:
+                      - /url: ../../cviceni_05/06_c%C3%ADl_5_git_a_github_classroom/
+                      - generic [ref=e209]: Cíl 5 – Git a GitHub
+                  - listitem [ref=e210]:
+                    - link "Cíl 6 – zadání a odevzdání úkolu" [ref=e211] [cursor=pointer]:
+                      - /url: ../../cviceni_05/07_c%C3%ADl_6_odevzd%C3%A1n%C3%AD_%C3%BAkolu/
+                      - generic [ref=e212]: Cíl 6 – zadání a odevzdání úkolu
+                  - listitem [ref=e213]:
+                    - link "Self-check" [ref=e214] [cursor=pointer]:
+                      - /url: ../../cviceni_05/08_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e215]: Self-check
+            - listitem [ref=e216]:
+              - generic [ref=e218]: Cvičení 6
+              - navigation "Cvičení 6" [ref=e220]:
+                - generic [ref=e221] [cursor=pointer]: Cvičení 6
+                - list [ref=e223]:
+                  - listitem [ref=e224]:
+                    - link "Přehled" [ref=e225] [cursor=pointer]:
+                      - /url: ../../cviceni_06/
+                      - generic [ref=e226]: Přehled
+                  - listitem [ref=e227]:
+                    - link "Úvod" [ref=e228] [cursor=pointer]:
+                      - /url: ../../cviceni_06/01_%C3%BAvod/
+                      - generic [ref=e229]: Úvod
+                  - listitem [ref=e230]:
+                    - link "Cíl 1 – funkce, rozšíření a dobré návyky" [ref=e231] [cursor=pointer]:
+                      - /url: ../../cviceni_06/02_c%C3%ADl_1_funkce_roz%C5%A1%C3%AD%C5%99en%C3%AD/
+                      - generic [ref=e232]: Cíl 1 – funkce, rozšíření a dobré návyky
+                  - listitem [ref=e233]:
+                    - link "Cíl 2 – moduly, importy a __main__" [ref=e234] [cursor=pointer]:
+                      - /url: ../../cviceni_06/03_c%C3%ADl_2_moduly_a_importy/
+                      - generic [ref=e235]: Cíl 2 – moduly, importy a __main__
+                  - listitem [ref=e236]:
+                    - link "Cíl 3 – modulární program, průnik kružnic" [ref=e237] [cursor=pointer]:
+                      - /url: ../../cviceni_06/04_c%C3%ADl_3_kru%C5%BEnice_modul%C3%A1rn%C3%AD_program/
+                      - generic [ref=e238]: Cíl 3 – modulární program, průnik kružnic
+                  - listitem [ref=e239]:
+                    - link "Cíl 4 – testy a standardní struktura Python repozitáře" [ref=e240] [cursor=pointer]:
+                      - /url: ../../cviceni_06/05_c%C3%ADl_4_testy_a_struktura_python_repozit%C3%A1%C5%99e/
+                      - generic [ref=e241]: Cíl 4 – testy a standardní struktura Python repozitáře
+                  - listitem [ref=e242]:
+                    - link "Self-check" [ref=e243] [cursor=pointer]:
+                      - /url: ../../cviceni_06/06_self_check_procvi%C4%8Den%C3%AD_znalost%C3%AD/
+                      - generic [ref=e244]: Self-check
+                  - listitem [ref=e245]:
+                    - link "Doplňek – čitelnost kódu a formátování" [ref=e246] [cursor=pointer]:
+                      - /url: ../../cviceni_06/07_doplnek_citelnost_kodu_a_formatovani/
+                      - generic [ref=e247]: Doplňek – čitelnost kódu a formátování
+            - listitem [ref=e248]:
+              - generic [ref=e250]: Cvičení 10
+              - navigation "Cvičení 10" [ref=e252]:
+                - generic [ref=e253] [cursor=pointer]: Cvičení 10
+                - list [ref=e255]:
+                  - listitem [ref=e256]:
+                    - link "Přehled" [ref=e257] [cursor=pointer]:
+                      - /url: ../../cviceni_10/
+                      - generic [ref=e258]: Přehled
+                  - listitem [ref=e259]:
+                    - link "Úvod" [ref=e260] [cursor=pointer]:
+                      - /url: ../../cviceni_10/01_%C3%BAvod/
+                      - generic [ref=e261]: Úvod
+                  - listitem [ref=e262]:
+                    - link "Cíl 1 – analýza asymptotické složitosti" [ref=e263] [cursor=pointer]:
+                      - /url: ../../cviceni_10/02_c%C3%ADl_1_analyza_asymptoticke_slozitosti/
+                      - generic [ref=e264]: Cíl 1 – analýza asymptotické složitosti
+                  - listitem [ref=e265]:
+                    - link "Cíl 2 – sekvenční a binární vyhledávání" [ref=e266] [cursor=pointer]:
+                      - /url: ../../cviceni_10/03_c%C3%ADl_2_algoritmy_vyhledavani/
+                      - generic [ref=e267]: Cíl 2 – sekvenční a binární vyhledávání
+                  - listitem [ref=e268]:
+                    - link "Cíl 3 – měření času" [ref=e269] [cursor=pointer]:
+                      - /url: ../../cviceni_10/04_c%C3%ADl_3_mereni_casu/
+                      - generic [ref=e270]: Cíl 3 – měření času
+                  - listitem [ref=e271]:
+                    - link "Cíl 4 – vyhledávání vzorů" [ref=e272] [cursor=pointer]:
+                      - /url: ../../cviceni_10/05_c%C3%ADl_4_vyhledavani_vzoru/
+                      - generic [ref=e273]: Cíl 4 – vyhledávání vzorů
+                  - listitem [ref=e274]:
+                    - link "Cíl 5 – teoreticky zajímavé algoritmy" [ref=e275] [cursor=pointer]:
+                      - /url: ../../cviceni_10/06_c%C3%ADl_5_teoreticky_zajimave_algoritmy/
+                      - generic [ref=e276]: Cíl 5 – teoreticky zajímavé algoritmy
+                  - listitem [ref=e277]:
+                    - link "Cíl 6 – odevzdání úkolu" [ref=e278] [cursor=pointer]:
+                      - /url: ../../cviceni_10/07_c%C3%ADl_6_odevzd%C3%A1n%C3%AD_%C3%BAkolu/
+                      - generic [ref=e279]: Cíl 6 – odevzdání úkolu
+            - listitem [ref=e280]:
+              - generic [ref=e282]: Cvičení 11
+              - navigation "Cvičení 11" [ref=e284]:
+                - generic [ref=e285] [cursor=pointer]: Cvičení 11
+                - list [ref=e287]:
+                  - listitem [ref=e288]:
+                    - link "Přehled" [ref=e289] [cursor=pointer]:
+                      - /url: ../../cviceni_11/
+                      - generic [ref=e290]: Přehled
+                  - listitem [ref=e291]:
+                    - link "Úvod" [ref=e292] [cursor=pointer]:
+                      - /url: ../../cviceni_11/01_%C3%BAvod/
+                      - generic [ref=e293]: Úvod
+                  - listitem [ref=e294]:
+                    - link "Cíl 1 – úvod ke řazení" [ref=e295] [cursor=pointer]:
+                      - /url: ../../cviceni_11/02_c%C3%ADl_1_%C3%BAvod_ke_%C5%99azen%C3%AD/
+                      - generic [ref=e296]: Cíl 1 – úvod ke řazení
+                  - listitem [ref=e297]:
+                    - link "Cíl 1 – Selection Sort" [ref=e298] [cursor=pointer]:
+                      - /url: ../../cviceni_11/03_c%C3%ADl_1_selection_sort/
+                      - generic [ref=e299]: Cíl 1 – Selection Sort
+                  - listitem [ref=e300]:
+                    - link "Cíl 1 – Bubble Sort" [ref=e301] [cursor=pointer]:
+                      - /url: ../../cviceni_11/04_c%C3%ADl_1_bubble_sort/
+                      - generic [ref=e302]: Cíl 1 – Bubble Sort
+                  - listitem [ref=e303]:
+                    - link "Cíl 1 – Insertion Sort" [ref=e304] [cursor=pointer]:
+                      - /url: ../../cviceni_11/05_c%C3%ADl_1_insertion_sort/
+                      - generic [ref=e305]: Cíl 1 – Insertion Sort
+                  - listitem [ref=e306]:
+                    - link "Cíl 2 – řazení v Pythonu a další algoritmy" [ref=e307] [cursor=pointer]:
+                      - /url: ../../cviceni_11/06_c%C3%ADl_2_razeni_v_pythonu_a_dalsi_algoritmy/
+                      - generic [ref=e308]: Cíl 2 – řazení v Pythonu a další algoritmy
+                  - listitem [ref=e309]:
+                    - link "Cíl 3 – odevzdání úkolu" [ref=e310] [cursor=pointer]:
+                      - /url: ../../cviceni_11/07_c%C3%ADl_3_odevzd%C3%A1n%C3%AD_%C3%BAkolu/
+                      - generic [ref=e311]: Cíl 3 – odevzdání úkolu
+            - listitem [ref=e312]:
+              - generic [ref=e314]: Cvičení 13
+              - navigation "Cvičení 13" [ref=e316]:
+                - generic [ref=e317] [cursor=pointer]: Cvičení 13
+                - list [ref=e319]:
+                  - listitem [ref=e320]:
+                    - link "Přehled" [ref=e321] [cursor=pointer]:
+                      - /url: ../../cviceni_13/
+                      - generic [ref=e322]: Přehled
+                  - listitem [ref=e323]:
+                    - link "Úvod" [ref=e324] [cursor=pointer]:
+                      - /url: ../../cviceni_13/01_%C3%BAvod/
+                      - generic [ref=e325]: Úvod
+                  - listitem [ref=e326]:
+                    - link "Cíl 1 – první třída" [ref=e327] [cursor=pointer]:
+                      - /url: ../../cviceni_13/02_c%C3%ADl_1_prvn%C3%AD_t%C5%99%C3%ADda/
+                      - generic [ref=e328]: Cíl 1 – první třída
+                  - listitem [ref=e329]:
+                    - link "Cíl 2 – dědičnost" [ref=e330] [cursor=pointer]:
+                      - /url: ../../cviceni_13/03_c%C3%ADl_2_d%C4%9Bdi%C4%8Dnost/
+                      - generic [ref=e331]: Cíl 2 – dědičnost
+                  - listitem [ref=e332]:
+                    - link "Cíl 3 – DNA sekvence" [ref=e333] [cursor=pointer]:
+                      - /url: ../../cviceni_13/04_c%C3%ADl_3_dna_sekvence/
+                      - generic [ref=e334]: Cíl 3 – DNA sekvence
+                  - listitem [ref=e335]:
+                    - link "Cíl 4 – GitHub Copilot" [ref=e336] [cursor=pointer]:
+                      - /url: ../../cviceni_13/05_c%C3%ADl_4_github_copilot/
+                      - generic [ref=e337]: Cíl 4 – GitHub Copilot
+            - listitem [ref=e338]:
+              - generic [ref=e340]: Cvičení 13B
+              - navigation "Cvičení 13B" [ref=e342]:
+                - generic [ref=e343] [cursor=pointer]: Cvičení 13B
+                - list [ref=e345]:
+                  - listitem [ref=e346]:
+                    - link "Přehled" [ref=e347] [cursor=pointer]:
+                      - /url: ../
+                      - generic [ref=e348]: Přehled
+                  - listitem [ref=e349]:
+                    - generic [ref=e351]: Úvod – AI nástroje
+                    - navigation "Obsah" [ref=e353]:
+                      - generic [ref=e354] [cursor=pointer]: Obsah
+                      - list [ref=e356]:
+                        - listitem [ref=e357]:
+                          - link "ÚVOD – PŘEHLED AI NÁSTROJŮ" [ref=e358] [cursor=pointer]:
+                            - /url: "#uvod-prehled-ai-nastroju"
+                            - generic [ref=e359]: ÚVOD – PŘEHLED AI NÁSTROJŮ
+                          - navigation "ÚVOD – PŘEHLED AI NÁSTROJŮ" [ref=e360]:
+                            - list [ref=e361]:
+                              - listitem [ref=e362]:
+                                - link "Co se v tomto cvičení naučíš?" [ref=e363] [cursor=pointer]:
+                                  - /url: "#co-se-v-tomto-cviceni-naucis"
+                                  - generic [ref=e364]: Co se v tomto cvičení naučíš?
+                              - listitem [ref=e365]:
+                                - link "Proč se o AI nástroje zajímat?" [ref=e366] [cursor=pointer]:
+                                  - /url: "#proc-se-o-ai-nastroje-zajimat"
+                                  - generic [ref=e367]: Proč se o AI nástroje zajímat?
+                              - listitem [ref=e368]:
+                                - link "Čtyři kategorie AI nástrojů" [ref=e369] [cursor=pointer]:
+                                  - /url: "#ctyri-kategorie-ai-nastroju"
+                                  - generic [ref=e370]: Čtyři kategorie AI nástrojů
+                                - navigation "Čtyři kategorie AI nástrojů" [ref=e371]:
+                                  - list [ref=e372]:
+                                    - listitem [ref=e373]:
+                                      - link "1. Chatboti" [ref=e374] [cursor=pointer]:
+                                        - /url: "#1-chatboti"
+                                        - generic [ref=e375]: 1. Chatboti
+                                    - listitem [ref=e376]:
+                                      - link "2. Online nástroje" [ref=e377] [cursor=pointer]:
+                                        - /url: "#2-online-nastroje"
+                                        - generic [ref=e378]: 2. Online nástroje
+                                    - listitem [ref=e379]:
+                                      - link "3. AI IDE (vývojová prostředí s AI)" [ref=e380] [cursor=pointer]:
+                                        - /url: "#3-ai-ide-vyvojova-prostredi-s-ai"
+                                        - generic [ref=e381]: 3. AI IDE (vývojová prostředí s AI)
+                                    - listitem [ref=e382]:
+                                      - link "4. AI agenti" [ref=e383] [cursor=pointer]:
+                                        - /url: "#4-ai-agenti"
+                                        - generic [ref=e384]: 4. AI agenti
+                              - listitem [ref=e385]:
+                                - link "Co umí AI agent – a co chatbot ne" [ref=e386] [cursor=pointer]:
+                                  - /url: "#co-umi-ai-agent-a-co-chatbot-ne"
+                                  - generic [ref=e387]: Co umí AI agent – a co chatbot ne
+                              - listitem [ref=e388]:
+                                - link "Tři způsoby, jak AI agenta spustit" [ref=e389] [cursor=pointer]:
+                                  - /url: "#tri-zpusoby-jak-ai-agenta-spustit"
+                                  - generic [ref=e390]: Tři způsoby, jak AI agenta spustit
+                                - navigation "Tři způsoby, jak AI agenta spustit" [ref=e391]:
+                                  - list [ref=e392]:
+                                    - listitem [ref=e393]:
+                                      - link "Desktopová aplikace" [ref=e394] [cursor=pointer]:
+                                        - /url: "#desktopova-aplikace"
+                                        - generic [ref=e395]: Desktopová aplikace
+                                    - listitem [ref=e396]:
+                                      - link "Terminál (CLI)" [ref=e397] [cursor=pointer]:
+                                        - /url: "#terminal-cli"
+                                        - generic [ref=e398]: Terminál (CLI)
+                                    - listitem [ref=e399]:
+                                      - link "Rozšíření v IDE" [ref=e400] [cursor=pointer]:
+                                        - /url: "#rozsireni-v-ide"
+                                        - generic [ref=e401]: Rozšíření v IDE
+                              - listitem [ref=e402]:
+                                - link "Jak se AI ptát – základní pravidla" [ref=e403] [cursor=pointer]:
+                                  - /url: "#jak-se-ai-ptat-zakladni-pravidla"
+                                  - generic [ref=e404]: Jak se AI ptát – základní pravidla
+                  - listitem [ref=e405]:
+                    - link "Cíl 1 – důležité koncepty" [ref=e406] [cursor=pointer]:
+                      - /url: ../02_c%C3%ADl_1_d%C5%AFle%C5%BEit%C3%A9_koncepty/
+                      - generic [ref=e407]: Cíl 1 – důležité koncepty
+                  - listitem [ref=e408]:
+                    - link "Cíl 2 – ukázky" [ref=e409] [cursor=pointer]:
+                      - /url: ../03_c%C3%ADl_2_uk%C3%A1zky/
+                      - generic [ref=e410]: Cíl 2 – ukázky
+        - article [ref=e412]:
+          - 'heading "CVIČENÍ 13B: AI NÁSTROJE PRO PROGRAMOVÁNÍ" [level=1] [ref=e413]'
+          - paragraph [ref=e414]: Algoritmizace a programování
+          - heading "ÚVOD – PŘEHLED AI NÁSTROJŮ" [level=2] [ref=e415]
+          - heading "Co se v tomto cvičení naučíš?" [level=3] [ref=e416]
+          - list [ref=e417]:
+            - listitem [ref=e418]: Jaké AI nástroje dnes existují a čím se liší.
+            - listitem [ref=e419]: Co je chatbot, AI IDE a AI agent – a proč na tom záleží.
+            - listitem [ref=e420]: Jak AI nástroje efektivně používat – ptát se, iterovat, kontrolovat.
+            - listitem [ref=e421]: "Důležité koncepty: repozitář, verzování, skills, MCP servery."
+            - listitem [ref=e422]: Praktické ukázky práce s AI agentem.
+          - separator [ref=e423]
+          - heading "Proč se o AI nástroje zajímat?" [level=3] [ref=e424]
+          - paragraph [ref=e425]: Pokud jsi někdy kopíroval kód do ChatGPT, čekal na odpověď, kopíroval ji zpátky do editoru, spustil, dostal chybu a celý cyklus opakoval – víš, jak je to pomalé. AI nástroje pro programování tento cyklus dramaticky zkracují nebo úplně odstraňují.
+          - paragraph [ref=e426]: "Nejde jen o to psát kód rychleji. AI nástroje dnes umí:"
+          - list [ref=e427]:
+            - listitem [ref=e428]:
+              - strong [ref=e429]: vysvětlit
+              - text: existující kód, který jsi nenapsal ty,
+            - listitem [ref=e430]:
+              - strong [ref=e431]: najít a opravit
+              - text: chyby v programu,
+            - listitem [ref=e432]:
+              - strong [ref=e433]: navrhnout
+              - text: strukturu projektu,
+            - listitem [ref=e434]:
+              - strong [ref=e435]: napsat testy
+              - text: ", dokumentaci, vizualizace,"
+            - listitem [ref=e436]:
+              - strong [ref=e437]: spustit kód
+              - text: ", přečíst výstup a samy se opravit."
+          - paragraph [ref=e438]: A to vše bez toho, abys musel přepínat mezi prohlížečem a editorem.
+          - separator [ref=e439]
+          - heading "Čtyři kategorie AI nástrojů" [level=3] [ref=e440]
+          - paragraph [ref=e441]: "AI nástroje pro programování se dají rozdělit do čtyř hlavních kategorií. Každá má jiné silné stránky:"
+          - heading "1. Chatboti" [level=4] [ref=e442]
+          - table [ref=e445]:
+            - rowgroup [ref=e446]:
+              - row "Nástroj Popis" [ref=e447]:
+                - columnheader "Nástroj" [ref=e448]
+                - columnheader "Popis" [ref=e449]
+            - rowgroup [ref=e450]:
+              - row "Claude Anthropic, silné uvažování, dlouhý kontext" [ref=e451]:
+                - cell "Claude" [ref=e452]:
+                  - strong [ref=e453]: Claude
+                - cell "Anthropic, silné uvažování, dlouhý kontext" [ref=e454]
+              - row "ChatGPT OpenAI, nejrozšířenější, GPT-4o / o3" [ref=e455]:
+                - cell "ChatGPT" [ref=e456]:
+                  - strong [ref=e457]: ChatGPT
+                - cell "OpenAI, nejrozšířenější, GPT-4o / o3" [ref=e458]
+              - row "Gemini Google, napojení na Google ekosystém" [ref=e459]:
+                - cell "Gemini" [ref=e460]:
+                  - strong [ref=e461]: Gemini
+                - cell "Google, napojení na Google ekosystém" [ref=e462]
+              - row "Grok xAI" [ref=e463]:
+                - cell "Grok" [ref=e464]:
+                  - strong [ref=e465]: Grok
+                - cell "xAI" [ref=e466]
+              - row "DeepSeek open-source, silný na kód" [ref=e467]:
+                - cell "DeepSeek" [ref=e468]:
+                  - strong [ref=e469]: DeepSeek
+                - cell "open-source, silný na kód" [ref=e470]
+          - paragraph [ref=e471]:
+            - strong [ref=e472]: "Jak to funguje:"
+            - text: Otevřeš prohlížeč, napíšeš otázku, dostaneš odpověď. Kód si zkopíruješ ručně.
+          - paragraph [ref=e473]:
+            - strong [ref=e474]: "Kdy je to vhodné:"
+            - text: Rychlé otázky, vysvětlení konceptů, jednorázové úryvky kódu. Funguje bez instalace – stačí prohlížeč.
+          - paragraph [ref=e475]:
+            - strong [ref=e476]: "Nevýhoda:"
+            - text: Ruční kopírování tam a zpět. Chatbot nevidí tvůj projekt, neví co máš v souborech, neumí spustit kód.
+          - separator [ref=e477]
+          - heading "2. Online nástroje" [level=4] [ref=e478]
+          - table [ref=e481]:
+            - rowgroup [ref=e482]:
+              - row "Nástroj Popis" [ref=e483]:
+                - columnheader "Nástroj" [ref=e484]
+                - columnheader "Popis" [ref=e485]
+            - rowgroup [ref=e486]:
+              - row "Google AI Studio experimentování s Gemini modely, prototypování" [ref=e487]:
+                - cell "Google AI Studio" [ref=e488]:
+                  - strong [ref=e489]: Google AI Studio
+                - cell "experimentování s Gemini modely, prototypování" [ref=e490]
+              - row "Lovable generování webových aplikací z popisu" [ref=e491]:
+                - cell "Lovable" [ref=e492]:
+                  - strong [ref=e493]: Lovable
+                - cell "generování webových aplikací z popisu" [ref=e494]
+              - row "Replit online IDE s AI asistentem" [ref=e495]:
+                - cell "Replit" [ref=e496]:
+                  - strong [ref=e497]: Replit
+                - cell "online IDE s AI asistentem" [ref=e498]
+              - row "Firebase Studio Google, prostředí pro vývoj s AI přímo v prohlížeči" [ref=e499]:
+                - cell "Firebase Studio" [ref=e500]:
+                  - strong [ref=e501]: Firebase Studio
+                - cell "Google, prostředí pro vývoj s AI přímo v prohlížeči" [ref=e502]
+          - paragraph [ref=e503]:
+            - strong [ref=e504]: "Jak to funguje:"
+            - text: Vše běží v prohlížeči. Napíšeš co chceš a nástroj vytvoří celý projekt – kód, náhled, někdy i deployment.
+          - paragraph [ref=e505]:
+            - strong [ref=e506]: "Kdy je to vhodné:"
+            - text: Rychlé prototypy, webové aplikace, experimenty bez lokální instalace.
+          - paragraph [ref=e507]:
+            - strong [ref=e508]: "Nevýhoda:"
+            - text: Omezená kontrola nad kódem, závislost na internetovém připojení, obtížnější práce s vlastními daty a existujícími projekty.
+          - separator [ref=e509]
+          - heading "3. AI IDE (vývojová prostředí s AI)" [level=4] [ref=e510]
+          - table [ref=e513]:
+            - rowgroup [ref=e514]:
+              - row "Nástroj Popis" [ref=e515]:
+                - columnheader "Nástroj" [ref=e516]
+                - columnheader "Popis" [ref=e517]
+            - rowgroup [ref=e518]:
+              - row "Cursor fork VS Code s vestavěnou AI, velmi populární" [ref=e519]:
+                - cell "Cursor" [ref=e520]:
+                  - strong [ref=e521]: Cursor
+                - cell "fork VS Code s vestavěnou AI, velmi populární" [ref=e522]
+              - row "Windsurf podobný koncept jako Cursor" [ref=e523]:
+                - cell "Windsurf" [ref=e524]:
+                  - strong [ref=e525]: Windsurf
+                - cell "podobný koncept jako Cursor" [ref=e526]
+          - paragraph [ref=e527]:
+            - strong [ref=e528]: "Jak to funguje:"
+            - text: Vypadá jako normální editor kódu (VS Code), ale AI je přímo součástí – navrhuje změny, edituje soubory, rozumí celému projektu.
+          - paragraph [ref=e529]:
+            - strong [ref=e530]: "Kdy je to vhodné:"
+            - text: Každodenní programování. AI vidí všechny soubory v projektu a navrhuje změny v kontextu.
+          - paragraph [ref=e531]:
+            - strong [ref=e532]: "Nevýhoda:"
+            - text: Vyžaduje instalaci. Placené (po zkušební době).
+          - separator [ref=e533]
+          - heading "4. AI agenti" [level=4] [ref=e534]
+          - table [ref=e537]:
+            - rowgroup [ref=e538]:
+              - row "Nástroj Cena Vhodný pro" [ref=e539]:
+                - columnheader "Nástroj" [ref=e540]
+                - columnheader "Cena" [ref=e541]
+                - columnheader "Vhodný pro" [ref=e542]
+            - rowgroup [ref=e543]:
+              - row "Claude Code ~$20/měs (Claude Pro) komplexní vícekrokové úlohy, nejlepší uvažování" [ref=e544]:
+                - cell "Claude Code" [ref=e545]:
+                  - strong [ref=e546]: Claude Code
+                - cell "~$20/měs (Claude Pro)" [ref=e547]
+                - cell "komplexní vícekrokové úlohy, nejlepší uvažování" [ref=e548]
+              - row "GitHub Copilot zdarma pro studenty denní použití v IDE, bezpečný start" [ref=e549]:
+                - cell "GitHub Copilot" [ref=e550]:
+                  - strong [ref=e551]: GitHub Copilot
+                - cell "zdarma pro studenty" [ref=e552]:
+                  - strong [ref=e553]: zdarma pro studenty
+                - cell "denní použití v IDE, bezpečný start" [ref=e554]
+              - row "OpenAI Codex v ceně ChatGPT Plus rychlé skripty, integrace s ChatGPT" [ref=e555]:
+                - cell "OpenAI Codex" [ref=e556]:
+                  - strong [ref=e557]: OpenAI Codex
+                - cell "v ceně ChatGPT Plus" [ref=e558]
+                - cell "rychlé skripty, integrace s ChatGPT" [ref=e559]
+          - paragraph [ref=e560]:
+            - strong [ref=e561]: "Jak to funguje:"
+            - text: Agent má přístup k tvému terminálu a souborům. Nejen že
+            - emphasis [ref=e562]: mluví
+            - text: o kódu – skutečně ho
+            - emphasis [ref=e563]: píše, spouští, čte chyby a opravuje je
+            - text: . Pracuje autonomně, dokud úkol nesplní nebo ho nezastavíš.
+          - paragraph [ref=e564]:
+            - strong [ref=e565]: "Kdy je to vhodné:"
+            - text: Složitější úkoly, které vyžadují víc kroků – napsat kód, spustit ho, opravit chyby, upravit podle výsledku.
+          - paragraph [ref=e566]:
+            - strong [ref=e567]: "Proč je to zásadní skok:"
+            - text: Rozdíl mezi chatbotem a agentem je asi tak velký jako rozdíl mezi tím, když někomu
+            - emphasis [ref=e568]: popíšeš
+            - text: cestu, a když ho
+            - emphasis [ref=e569]: odvezeš
+            - text: . Agent věci skutečně dělá.
+          - separator [ref=e570]
+          - heading "Co umí AI agent – a co chatbot ne" [level=3] [ref=e571]
+          - table [ref=e574]:
+            - rowgroup [ref=e575]:
+              - row "Chatbot AI agent" [ref=e576]:
+                - columnheader [ref=e577]
+                - columnheader "Chatbot" [ref=e578]
+                - columnheader "AI agent" [ref=e579]
+            - rowgroup [ref=e580]:
+              - row "Vidí tvůj projekt Ne – musíš kopírovat Ano – čte soubory přímo" [ref=e581]:
+                - cell "Vidí tvůj projekt" [ref=e582]
+                - cell "Ne – musíš kopírovat" [ref=e583]
+                - cell "Ano – čte soubory přímo" [ref=e584]
+              - row "Spouští kód Ne Ano – a čte výstup" [ref=e585]:
+                - cell "Spouští kód" [ref=e586]
+                - cell "Ne" [ref=e587]
+                - cell "Ano – a čte výstup" [ref=e588]
+              - row "Opravuje chyby Navrhne opravu textem Opraví, spustí znovu, ověří" [ref=e589]:
+                - cell "Opravuje chyby" [ref=e590]
+                - cell "Navrhne opravu textem" [ref=e591]
+                - cell "Opraví, spustí znovu, ověří" [ref=e592]
+              - row "Instaluje balíčky Ne Ano (pip install ...)" [ref=e593]:
+                - cell "Instaluje balíčky" [ref=e594]
+                - cell "Ne" [ref=e595]
+                - cell "Ano (pip install ...)" [ref=e596]:
+                  - text: Ano (
+                  - code [ref=e597]: pip install ...
+                  - text: )
+              - row "Pracuje s terminálem Ne Ano (git, spouštění skriptů, ...)" [ref=e598]:
+                - cell "Pracuje s terminálem" [ref=e599]
+                - cell "Ne" [ref=e600]
+                - cell "Ano (git, spouštění skriptů, ...)" [ref=e601]
+              - row "Edituje soubory Ne – kopíruješ ručně Ano – přímo zapisuje změny" [ref=e602]:
+                - cell "Edituje soubory" [ref=e603]
+                - cell "Ne – kopíruješ ručně" [ref=e604]
+                - cell "Ano – přímo zapisuje změny" [ref=e605]
+          - separator [ref=e606]
+          - heading "Tři způsoby, jak AI agenta spustit" [level=3] [ref=e607]
+          - heading "Desktopová aplikace" [level=4] [ref=e608]
+          - list [ref=e609]:
+            - listitem [ref=e610]: Běží lokálně na tvém počítači, hezké grafické rozhraní.
+            - listitem [ref=e611]:
+              - text: Zatím hlavně
+              - strong [ref=e612]: Claude Code
+              - text: (Claude Desktop).
+            - listitem [ref=e613]: Nejjednodušší volba – žádný terminál, žádné nastavování.
+            - listitem [ref=e614]: Ideální první krok, pokud jsi nikdy nepoužíval příkazový řádek.
+          - heading "Terminál (CLI)" [level=4] [ref=e615]
+          - list [ref=e616]:
+            - listitem [ref=e617]: Vždy nejnovější funkce.
+            - listitem [ref=e618]: Běží všude – ve VS Code terminálu, přes SSH, na serverech.
+            - listitem [ref=e619]: Nejvýkonnější způsob použití.
+            - listitem [ref=e620]:
+              - text: Příkaz
+              - code [ref=e621]: claude
+              - text: spustí Claude Code přímo v terminálu.
+          - heading "Rozšíření v IDE" [level=4] [ref=e622]
+          - list [ref=e623]:
+            - listitem [ref=e624]: GitHub Copilot ve VS Code nebo PyCharmu.
+            - listitem [ref=e625]: Napovídání přímo v editoru + chat panel + agent mód.
+            - listitem [ref=e626]: Vidíš diffy a aplikuješ je jedním klikem.
+          - blockquote [ref=e627]:
+            - paragraph [ref=e628]:
+              - strong [ref=e629]: "💡 💡 Tip:"
+              - text: Pro tento kurz doporučujeme
+              - strong [ref=e630]: GitHub Copilot v PyCharmu
+              - text: (zdarma pro studenty) nebo
+              - strong [ref=e631]: Claude Code
+              - text: (desktopová aplikace nebo terminál). Obojí zvládneš zprovoznit za pár minut.
+          - separator [ref=e632]
+          - heading "Jak se AI ptát – základní pravidla" [level=3] [ref=e633]
+          - paragraph [ref=e634]:
+            - text: AI nástroje jsou silné, ale výsledek závisí na tom,
+            - strong [ref=e635]: jak se ptáš
+            - text: ". Tady je pár zásad, které platí pro všechny kategorie:"
+          - paragraph [ref=e636]:
+            - strong [ref=e637]: 1. Buď konkrétní.
+          - paragraph [ref=e638]: "Místo:"
+          - blockquote [ref=e639]:
+            - paragraph [ref=e640]:
+              - emphasis [ref=e641]: Udělej mi graf.
+          - paragraph [ref=e642]: "raději:"
+          - blockquote [ref=e643]:
+            - paragraph [ref=e644]:
+              - emphasis [ref=e645]: Vytvoř sloupcový graf, který ukazuje počet výskytů každého písmene v řetězci "AACGTTGCA". Osa X budou písmena, osa Y počty. Použij matplotlib.
+          - paragraph [ref=e646]: Čím víc kontextu dáš, tím přesnější výsledek dostaneš.
+          - paragraph [ref=e647]:
+            - strong [ref=e648]: 2. Iteruj.
+          - paragraph [ref=e649]: "AI nedá vždy perfektní výsledek napoprvé – a to je v pořádku. Fungující postup:"
+          - list [ref=e650]:
+            - listitem [ref=e651]: Zadej, co chceš.
+            - listitem [ref=e652]: Podívej se na výsledek.
+            - listitem [ref=e653]: Řekni, co je špatně nebo co chceš jinak.
+            - listitem [ref=e654]: Opakuj, dokud to nesedí.
+          - paragraph [ref=e655]:
+            - strong [ref=e656]: 3. Rozděl větší úkol na kroky.
+          - paragraph [ref=e657]: "Místo:"
+          - blockquote [ref=e658]:
+            - paragraph [ref=e659]:
+              - emphasis [ref=e660]: Vytvoř kompletní webovou aplikaci pro správu pacientů.
+          - paragraph [ref=e661]: "raději:"
+          - blockquote [ref=e662]:
+            - paragraph [ref=e663]:
+              - emphasis [ref=e664]: Nejdřív vytvoř funkci, která načte CSV soubor s daty pacientů a vrátí seznam slovníků. Pak přidáme vizualizaci.
+          - paragraph [ref=e665]:
+            - strong [ref=e666]: 4. Ptej se na chyby přímo.
+          - paragraph [ref=e667]: "Pokud dostaneš chybovou hlášku, nemusíš ji analyzovat sám. Zkopíruj ji a zeptej se:"
+          - blockquote [ref=e668]:
+            - paragraph [ref=e669]:
+              - emphasis [ref=e670]:
+                - text: "Dostávám tuto chybu:"
+                - code [ref=e671]: "TypeError: unsupported operand type(s) for +: 'int' and 'str'"
+                - text: . Co to znamená a jak to opravit?
+          - paragraph [ref=e672]:
+            - strong [ref=e673]: 5. Kontroluj výsledky.
+          - paragraph [ref=e674]: AI může udělat chybu. Vždy si přečti, co navrhuje, a ověř, že výsledek dává smysl. Zejména u agentů, kteří mohou spouštět příkazy v terminálu – vždy si přečti, co chtějí udělat, než to potvrdíš.
+          - blockquote [ref=e675]:
+            - paragraph [ref=e676]:
+              - strong [ref=e677]: "⚠️ Důležité:"
+              - text: AI je nástroj, ne oracle. Může se mýlit, může „halucinovat" (vymyslet si funkci, která neexistuje), může navrhnout řešení, které funguje ale není správné. Tvoje úloha je výsledek vždy zkontrolovat a pochopit.
+          - separator [ref=e678]
+      - button "Zpět na začátek":
+        - img
+        - text: Zpět na začátek
+    - contentinfo [ref=e679]:
+      - generic [ref=e682]:
+        - text: Made with
+        - link "Material for MkDocs" [ref=e683] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - button "Skrýt lištu" [ref=e684] [cursor=pointer]

@@ -1,0 +1,202 @@
+- generic [active] [ref=e1]:
+  - link "Přeskočit obsah" [ref=e2] [cursor=pointer]:
+    - /url: "#ai-nastroje-pro-programovani"
+  - banner [ref=e3]:
+    - navigation "Záhlaví" [ref=e4]:
+      - link "PRG" [ref=e5] [cursor=pointer]:
+        - /url: ../..
+        - img [ref=e6]
+      - generic [ref=e9]:
+        - generic [ref=e11]: PRG
+        - generic:
+          - generic: AI nástroje — přehled
+      - dialog [ref=e12]:
+        - search [ref=e13]:
+          - generic [ref=e14]:
+            - textbox "Hledat" [ref=e15]
+            - generic:
+              - img
+            - navigation "Vyhledávání":
+              - button "Vyčistit":
+                - img
+          - generic [ref=e18]: Inicializace vyhledávání
+  - generic [ref=e19]:
+    - navigation "Karty" [ref=e20]:
+      - list [ref=e22]:
+        - listitem [ref=e23]:
+          - link "Rozcestník" [ref=e24] [cursor=pointer]:
+            - /url: ../..
+        - listitem [ref=e25]:
+          - link "Cvičení 1" [ref=e26] [cursor=pointer]:
+            - /url: ../../cviceni_01/
+        - listitem [ref=e27]:
+          - link "Cvičení 2" [ref=e28] [cursor=pointer]:
+            - /url: ../../cviceni_02/
+        - listitem [ref=e29]:
+          - link "Cvičení 3" [ref=e30] [cursor=pointer]:
+            - /url: ../../cviceni_03/
+        - listitem [ref=e31]:
+          - link "Cvičení 4" [ref=e32] [cursor=pointer]:
+            - /url: ../../cviceni_04/
+        - listitem [ref=e33]:
+          - link "Cvičení 5" [ref=e34] [cursor=pointer]:
+            - /url: ../../cviceni_05/
+        - listitem [ref=e35]:
+          - link "Cvičení 6" [ref=e36] [cursor=pointer]:
+            - /url: ../../cviceni_06/
+        - listitem [ref=e37]:
+          - link "Cvičení 10" [ref=e38] [cursor=pointer]:
+            - /url: ../../cviceni_10/
+        - listitem [ref=e39]:
+          - link "Cvičení 11" [ref=e40] [cursor=pointer]:
+            - /url: ../../cviceni_11/
+        - listitem [ref=e41]:
+          - link "Cvičení 13" [ref=e42] [cursor=pointer]:
+            - /url: ../../cviceni_13/
+        - listitem [ref=e43]:
+          - link "Cvičení 13B" [ref=e44] [cursor=pointer]:
+            - /url: ../
+    - main [ref=e45]:
+      - article [ref=e48]:
+        - heading "AI nástroje pro programování" [level=1] [ref=e49]
+        - paragraph [ref=e50]: přehled kategorií a nástrojů
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e53]: Chatboti
+            - list [ref=e54]:
+              - listitem [ref=e55]:
+                - img "Claude" [ref=e56]
+              - listitem [ref=e57]:
+                - img "OpenAI" [ref=e58]
+                - text: ChatGPT
+              - listitem [ref=e59]:
+                - img "Gemini" [ref=e60]
+              - listitem [ref=e61]:
+                - img "Grok" [ref=e62]
+              - listitem [ref=e63]:
+                - img "DeepSeek" [ref=e64]
+            - generic [ref=e65]: copy-paste · ptej se přirozeným jazykem
+          - generic [ref=e66]:
+            - generic [ref=e67]: Online nástroje
+            - list [ref=e68]:
+              - listitem [ref=e69]: Google AI Studio
+              - listitem [ref=e70]: Lovable
+              - listitem [ref=e71]:
+                - img "Replit" [ref=e72]
+              - listitem [ref=e73]: Firebase Studio
+            - generic [ref=e74]: v prohlížeči · nejrychlejší start
+          - generic [ref=e75]:
+            - generic [ref=e76]: AI IDE
+            - list [ref=e77]:
+              - listitem [ref=e78]:
+                - img "Cursor" [ref=e79]
+              - listitem [ref=e80]:
+                - img "Google Antigravity" [ref=e81]
+              - listitem [ref=e82]:
+                - img "Windsurf" [ref=e83]
+            - generic [ref=e84]: desktopové IDE s vestavěnou AI
+          - generic [ref=e85]:
+            - generic [ref=e86]: AI agenti
+            - list [ref=e87]:
+              - listitem [ref=e88]:
+                - img "Claude" [ref=e89]
+                - text: Code
+              - listitem [ref=e90]:
+                - img "OpenAI" [ref=e91]
+                - text: Codex
+              - listitem [ref=e92]: GitHub Copilot
+            - generic [ref=e93]: autonomní · terminál / IDE / CI
+        - generic [ref=e94]:
+          - heading "Chatbot vs. AI agent" [level=2] [ref=e95]
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - heading "Chatbot" [level=3] [ref=e98]
+              - list [ref=e99]:
+                - listitem [ref=e100]: — Nevidí tvůj projekt — musíš kopírovat
+                - listitem [ref=e101]: — Nespouští kód
+                - listitem [ref=e102]: — Navrhne opravu textem
+                - listitem [ref=e103]: — Neinstaluje balíčky
+                - listitem [ref=e104]: — Nemá přístup k terminálu
+                - listitem [ref=e105]: — Needituje soubory — kopíruješ ručně
+            - generic [ref=e106]:
+              - heading "AI agent" [level=3] [ref=e107]
+              - list [ref=e108]:
+                - listitem [ref=e109]: ✓ Vidí celý projekt — čte soubory přímo
+                - listitem [ref=e110]: ✓ Spouští kód a čte výstup
+                - listitem [ref=e111]: ✓ Opraví, spustí znovu, ověří
+                - listitem [ref=e112]: ✓ Instaluje si co potřebuje
+                - listitem [ref=e113]: ✓ Plný přístup k terminálu
+                - listitem [ref=e114]: ✓ Přímo zapisuje změny do souborů
+        - generic [ref=e115]:
+          - heading "Kterého agenta si vybrat?" [level=2] [ref=e116]
+          - table [ref=e117]:
+            - rowgroup [ref=e118]:
+              - row "Nástroj Cena Vhodný pro Poznámky" [ref=e119]:
+                - columnheader "Nástroj" [ref=e120]
+                - columnheader "Cena" [ref=e121]
+                - columnheader "Vhodný pro" [ref=e122]
+                - columnheader "Poznámky" [ref=e123]
+            - rowgroup [ref=e124]:
+              - row "Claude Code nejlepší ~$20/měs (Claude Pro) vyšší tarify pro náročnější použití komplexní vícekrokové úlohy, refaktoring, velké projekty nejvýkonnější uvažování; zvládá velké codebase" [ref=e125]:
+                - cell "Claude Code nejlepší" [ref=e126]:
+                  - generic [ref=e127]:
+                    - img "Claude" [ref=e128]
+                    - generic [ref=e129]: Code
+                    - generic [ref=e130]: nejlepší
+                - cell "~$20/měs (Claude Pro) vyšší tarify pro náročnější použití" [ref=e131]:
+                  - text: ~$20/měs (Claude Pro)
+                  - text: vyšší tarify pro náročnější použití
+                - cell "komplexní vícekrokové úlohy, refaktoring, velké projekty" [ref=e132]
+                - cell "nejvýkonnější uvažování; zvládá velké codebase" [ref=e133]
+              - row "GitHub Copilot zdarma pro studenty zdarma (GitHub Student Pack) jinak ~$10–19/měs denní použití v IDE, napovídání, bezpečný start výběr modelů (Claude, GPT, Gemini)" [ref=e134]:
+                - cell "GitHub Copilot zdarma pro studenty" [ref=e135]:
+                  - generic [ref=e136]:
+                    - generic [ref=e137]: GitHub Copilot
+                    - generic [ref=e138]: zdarma pro studenty
+                - cell "zdarma (GitHub Student Pack) jinak ~$10–19/měs" [ref=e139]:
+                  - text: zdarma (GitHub Student Pack)
+                  - text: jinak ~$10–19/měs
+                - cell "denní použití v IDE, napovídání, bezpečný start" [ref=e140]
+                - cell "výběr modelů (Claude, GPT, Gemini)" [ref=e141]
+              - row "OpenAI Codex v ceně ChatGPT Plus / Pro rychlé skripty, jednorázové opravy těsná integrace s ChatGPT" [ref=e142]:
+                - cell "OpenAI Codex" [ref=e143]:
+                  - generic [ref=e144]:
+                    - img "OpenAI" [ref=e145]
+                    - generic [ref=e146]: Codex
+                - cell "v ceně ChatGPT Plus / Pro" [ref=e147]
+                - cell "rychlé skripty, jednorázové opravy" [ref=e148]
+                - cell "těsná integrace s ChatGPT" [ref=e149]
+        - generic [ref=e150]:
+          - heading "Tři způsoby, jak spustit AI agenta" [level=2] [ref=e151]
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - heading "Desktopová aplikace" [level=3] [ref=e154]
+              - list [ref=e155]:
+                - listitem [ref=e156]: · Běží lokálně, hezké GUI
+                - listitem [ref=e157]: · Zatím hlavně Claude Code
+                - listitem [ref=e158]: · Nejjednodušší volba
+                - listitem [ref=e159]: · Žádný terminál, žádné nastavování
+            - generic [ref=e160]:
+              - heading "Terminál (CLI)" [level=3] [ref=e161]
+              - list [ref=e162]:
+                - listitem [ref=e163]: · Vždy nejnovější funkce
+                - listitem [ref=e164]: · Běží všude — VS Code, SSH, servery
+                - listitem [ref=e165]: · Nejvýkonnější způsob
+                - listitem [ref=e166]: · Bez vazby na konkrétní editor
+            - generic [ref=e167]:
+              - heading "Rozšíření v IDE" [level=3] [ref=e168]
+              - list [ref=e169]:
+                - listitem [ref=e170]: · GitHub Copilot ve VS Code / PyCharm
+                - listitem [ref=e171]: · Napovídání v řádku + chat
+                - listitem [ref=e172]: · Diffy jedním klikem
+                - listitem [ref=e173]: · Vypadá jako „opravdové programování"
+        - paragraph [ref=e174]: Algoritmizace a programování · Cvičení 13B
+      - button "Zpět na začátek":
+        - img
+        - text: Zpět na začátek
+    - contentinfo [ref=e175]:
+      - generic [ref=e178]:
+        - text: Made with
+        - link "Material for MkDocs" [ref=e179] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - button "Skrýt lištu" [ref=e180] [cursor=pointer]

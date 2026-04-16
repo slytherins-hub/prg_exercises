@@ -1,0 +1,460 @@
+- generic [active] [ref=e1]:
+  - link "Přeskočit obsah" [ref=e2] [cursor=pointer]:
+    - /url: "#cviceni-13b-ai-nastroje-pro-programovani"
+  - banner [ref=e3]:
+    - navigation "Záhlaví" [ref=e4]:
+      - link "PRG" [ref=e5] [cursor=pointer]:
+        - /url: ../..
+        - img [ref=e6]
+      - generic [ref=e9]:
+        - generic [ref=e11]: PRG
+        - generic:
+          - generic: Úvod – AI nástroje
+      - dialog [ref=e12]:
+        - search [ref=e13]:
+          - generic [ref=e14]:
+            - textbox "Hledat" [ref=e15]
+            - generic:
+              - img
+            - navigation "Vyhledávání":
+              - button "Vyčistit":
+                - img
+          - generic [ref=e18]: Inicializace vyhledávání
+  - generic [ref=e19]:
+    - navigation "Karty" [ref=e20]:
+      - list [ref=e22]:
+        - listitem [ref=e23]:
+          - link "Rozcestník" [ref=e24] [cursor=pointer]:
+            - /url: ../..
+        - listitem [ref=e25]:
+          - link "Cvičení 1" [ref=e26] [cursor=pointer]:
+            - /url: ../../cviceni_01/
+        - listitem [ref=e27]:
+          - link "Cvičení 2" [ref=e28] [cursor=pointer]:
+            - /url: ../../cviceni_02/
+        - listitem [ref=e29]:
+          - link "Cvičení 3" [ref=e30] [cursor=pointer]:
+            - /url: ../../cviceni_03/
+        - listitem [ref=e31]:
+          - link "Cvičení 4" [ref=e32] [cursor=pointer]:
+            - /url: ../../cviceni_04/
+        - listitem [ref=e33]:
+          - link "Cvičení 5" [ref=e34] [cursor=pointer]:
+            - /url: ../../cviceni_05/
+        - listitem [ref=e35]:
+          - link "Cvičení 6" [ref=e36] [cursor=pointer]:
+            - /url: ../../cviceni_06/
+        - listitem [ref=e37]:
+          - link "Cvičení 10" [ref=e38] [cursor=pointer]:
+            - /url: ../../cviceni_10/
+        - listitem [ref=e39]:
+          - link "Cvičení 11" [ref=e40] [cursor=pointer]:
+            - /url: ../../cviceni_11/
+        - listitem [ref=e41]:
+          - link "Cvičení 13" [ref=e42] [cursor=pointer]:
+            - /url: ../../cviceni_13/
+        - listitem [ref=e43]:
+          - link "Cvičení 13B" [ref=e44] [cursor=pointer]:
+            - /url: ../
+    - main [ref=e45]:
+      - generic [ref=e46]:
+        - navigation "Navigace" [ref=e50]:
+          - list [ref=e51]:
+            - listitem [ref=e52]:
+              - generic:
+                - generic: Cvičení 13B
+              - navigation "Cvičení 13B" [ref=e53]:
+                - list [ref=e54]:
+                  - listitem [ref=e55]:
+                    - link "Přehled" [ref=e56] [cursor=pointer]:
+                      - /url: ../
+                      - generic [ref=e57]: Přehled
+                  - listitem [ref=e58]:
+                    - link "Úvod – AI nástroje" [ref=e59] [cursor=pointer]:
+                      - /url: ./
+                      - generic [ref=e60]: Úvod – AI nástroje
+                  - listitem [ref=e61]:
+                    - link "Cíl 1 – důležité koncepty" [ref=e62] [cursor=pointer]:
+                      - /url: ../02_c%C3%ADl_1_d%C5%AFle%C5%BEit%C3%A9_koncepty/
+                      - generic [ref=e63]: Cíl 1 – důležité koncepty
+                  - listitem [ref=e64]:
+                    - link "Cíl 2 – ukázky" [ref=e65] [cursor=pointer]:
+                      - /url: ../03_c%C3%ADl_2_uk%C3%A1zky/
+                      - generic [ref=e66]: Cíl 2 – ukázky
+                  - listitem [ref=e67]:
+                    - link "Slide – přehled AI nástrojů" [ref=e68] [cursor=pointer]:
+                      - /url: ../ai_prehled/
+                      - generic [ref=e69]: Slide – přehled AI nástrojů
+        - navigation "Obsah" [ref=e73]:
+          - generic [ref=e74]: Obsah
+          - list [ref=e75]:
+            - listitem [ref=e76]:
+              - link "ÚVOD – PŘEHLED AI NÁSTROJŮ" [ref=e77] [cursor=pointer]:
+                - /url: "#uvod-prehled-ai-nastroju"
+                - generic [ref=e78]: ÚVOD – PŘEHLED AI NÁSTROJŮ
+              - navigation "ÚVOD – PŘEHLED AI NÁSTROJŮ" [ref=e79]:
+                - list [ref=e80]:
+                  - listitem [ref=e81]:
+                    - link "Co se v tomto cvičení naučíš?" [ref=e82] [cursor=pointer]:
+                      - /url: "#co-se-v-tomto-cviceni-naucis"
+                      - generic [ref=e83]: Co se v tomto cvičení naučíš?
+                  - listitem [ref=e84]:
+                    - link "Proč se o AI nástroje zajímat?" [ref=e85] [cursor=pointer]:
+                      - /url: "#proc-se-o-ai-nastroje-zajimat"
+                      - generic [ref=e86]: Proč se o AI nástroje zajímat?
+                  - listitem [ref=e87]:
+                    - link "Čtyři kategorie AI nástrojů" [ref=e88] [cursor=pointer]:
+                      - /url: "#ctyri-kategorie-ai-nastroju"
+                      - generic [ref=e89]: Čtyři kategorie AI nástrojů
+                    - navigation "Čtyři kategorie AI nástrojů" [ref=e90]:
+                      - list [ref=e91]:
+                        - listitem [ref=e92]:
+                          - link "1. Chatboti" [ref=e93] [cursor=pointer]:
+                            - /url: "#1-chatboti"
+                            - generic [ref=e94]: 1. Chatboti
+                        - listitem [ref=e95]:
+                          - link "2. Online nástroje" [ref=e96] [cursor=pointer]:
+                            - /url: "#2-online-nastroje"
+                            - generic [ref=e97]: 2. Online nástroje
+                        - listitem [ref=e98]:
+                          - link "3. AI IDE (vývojová prostředí s AI)" [ref=e99] [cursor=pointer]:
+                            - /url: "#3-ai-ide-vyvojova-prostredi-s-ai"
+                            - generic [ref=e100]: 3. AI IDE (vývojová prostředí s AI)
+                        - listitem [ref=e101]:
+                          - link "4. AI agenti" [ref=e102] [cursor=pointer]:
+                            - /url: "#4-ai-agenti"
+                            - generic [ref=e103]: 4. AI agenti
+                  - listitem [ref=e104]:
+                    - link "Co umí AI agent – a co chatbot ne" [ref=e105] [cursor=pointer]:
+                      - /url: "#co-umi-ai-agent-a-co-chatbot-ne"
+                      - generic [ref=e106]: Co umí AI agent – a co chatbot ne
+                  - listitem [ref=e107]:
+                    - link "Tři způsoby, jak AI agenta spustit" [ref=e108] [cursor=pointer]:
+                      - /url: "#tri-zpusoby-jak-ai-agenta-spustit"
+                      - generic [ref=e109]: Tři způsoby, jak AI agenta spustit
+                    - navigation "Tři způsoby, jak AI agenta spustit" [ref=e110]:
+                      - list [ref=e111]:
+                        - listitem [ref=e112]:
+                          - link "Desktopová aplikace" [ref=e113] [cursor=pointer]:
+                            - /url: "#desktopova-aplikace"
+                            - generic [ref=e114]: Desktopová aplikace
+                        - listitem [ref=e115]:
+                          - link "Terminál (CLI)" [ref=e116] [cursor=pointer]:
+                            - /url: "#terminal-cli"
+                            - generic [ref=e117]: Terminál (CLI)
+                        - listitem [ref=e118]:
+                          - link "Rozšíření v IDE" [ref=e119] [cursor=pointer]:
+                            - /url: "#rozsireni-v-ide"
+                            - generic [ref=e120]: Rozšíření v IDE
+                  - listitem [ref=e121]:
+                    - link "Jak se AI ptát – základní pravidla" [ref=e122] [cursor=pointer]:
+                      - /url: "#jak-se-ai-ptat-zakladni-pravidla"
+                      - generic [ref=e123]: Jak se AI ptát – základní pravidla
+        - article [ref=e125]:
+          - 'heading "CVIČENÍ 13B: AI NÁSTROJE PRO PROGRAMOVÁNÍ" [level=1] [ref=e126]'
+          - paragraph [ref=e127]: Algoritmizace a programování
+          - heading "ÚVOD – PŘEHLED AI NÁSTROJŮ" [level=2] [ref=e128]
+          - heading "Co se v tomto cvičení naučíš?" [level=3] [ref=e129]
+          - list [ref=e130]:
+            - listitem [ref=e131]: Jaké AI nástroje dnes existují a čím se liší.
+            - listitem [ref=e132]: Co je chatbot, AI IDE a AI agent – a proč na tom záleží.
+            - listitem [ref=e133]: Jak AI nástroje efektivně používat – ptát se, iterovat, kontrolovat.
+            - listitem [ref=e134]: "Důležité koncepty: repozitář, verzování, skills, MCP servery."
+            - listitem [ref=e135]: Praktické ukázky práce s AI agentem.
+          - separator [ref=e136]
+          - heading "Proč se o AI nástroje zajímat?" [level=3] [ref=e137]
+          - paragraph [ref=e138]: Pokud jsi někdy kopíroval kód do ChatGPT, čekal na odpověď, kopíroval ji zpátky do editoru, spustil, dostal chybu a celý cyklus opakoval – víš, jak je to pomalé. AI nástroje pro programování tento cyklus dramaticky zkracují nebo úplně odstraňují.
+          - paragraph [ref=e139]: "Nejde jen o to psát kód rychleji. AI nástroje dnes umí:"
+          - list [ref=e140]:
+            - listitem [ref=e141]:
+              - strong [ref=e142]: vysvětlit
+              - text: existující kód, který jsi nenapsal ty,
+            - listitem [ref=e143]:
+              - strong [ref=e144]: najít a opravit
+              - text: chyby v programu,
+            - listitem [ref=e145]:
+              - strong [ref=e146]: navrhnout
+              - text: strukturu projektu,
+            - listitem [ref=e147]:
+              - strong [ref=e148]: napsat testy
+              - text: ", dokumentaci, vizualizace,"
+            - listitem [ref=e149]:
+              - strong [ref=e150]: spustit kód
+              - text: ", přečíst výstup a samy se opravit."
+          - paragraph [ref=e151]: A to vše bez toho, abys musel přepínat mezi prohlížečem a editorem.
+          - separator [ref=e152]
+          - heading "Čtyři kategorie AI nástrojů" [level=3] [ref=e153]
+          - blockquote [ref=e154]:
+            - paragraph [ref=e155]:
+              - strong [ref=e156]: "🖥️ Slide:"
+              - text: Celý přehled nástrojů si můžeš otevřít jako
+              - link "samostatný slide" [ref=e157] [cursor=pointer]:
+                - /url: ../ai_prehled/
+              - text: – hodí se třeba na projektor.
+          - paragraph [ref=e158]: "AI nástroje pro programování se dají rozdělit do čtyř hlavních kategorií. Každá má jiné silné stránky:"
+          - heading "1. Chatboti" [level=4] [ref=e159]
+          - table [ref=e162]:
+            - rowgroup [ref=e163]:
+              - row "Nástroj Popis" [ref=e164]:
+                - columnheader "Nástroj" [ref=e165]
+                - columnheader "Popis" [ref=e166]
+            - rowgroup [ref=e167]:
+              - row "Claude Anthropic, silné uvažování, dlouhý kontext" [ref=e168]:
+                - cell "Claude" [ref=e169]:
+                  - strong [ref=e170]: Claude
+                - cell "Anthropic, silné uvažování, dlouhý kontext" [ref=e171]
+              - row "ChatGPT OpenAI, nejrozšířenější, GPT-4o / o3" [ref=e172]:
+                - cell "ChatGPT" [ref=e173]:
+                  - strong [ref=e174]: ChatGPT
+                - cell "OpenAI, nejrozšířenější, GPT-4o / o3" [ref=e175]
+              - row "Gemini Google, napojení na Google ekosystém" [ref=e176]:
+                - cell "Gemini" [ref=e177]:
+                  - strong [ref=e178]: Gemini
+                - cell "Google, napojení na Google ekosystém" [ref=e179]
+              - row "Grok xAI" [ref=e180]:
+                - cell "Grok" [ref=e181]:
+                  - strong [ref=e182]: Grok
+                - cell "xAI" [ref=e183]
+              - row "DeepSeek open-source, silný na kód" [ref=e184]:
+                - cell "DeepSeek" [ref=e185]:
+                  - strong [ref=e186]: DeepSeek
+                - cell "open-source, silný na kód" [ref=e187]
+          - paragraph [ref=e188]:
+            - strong [ref=e189]: "Jak to funguje:"
+            - text: Otevřeš prohlížeč, napíšeš otázku, dostaneš odpověď. Kód si zkopíruješ ručně.
+          - paragraph [ref=e190]:
+            - strong [ref=e191]: "Kdy je to vhodné:"
+            - text: Rychlé otázky, vysvětlení konceptů, jednorázové úryvky kódu. Funguje bez instalace – stačí prohlížeč.
+          - paragraph [ref=e192]:
+            - strong [ref=e193]: "Nevýhoda:"
+            - text: Ruční kopírování tam a zpět. Chatbot nevidí tvůj projekt, neví co máš v souborech, neumí spustit kód.
+          - separator [ref=e194]
+          - heading "2. Online nástroje" [level=4] [ref=e195]
+          - table [ref=e198]:
+            - rowgroup [ref=e199]:
+              - row "Nástroj Popis" [ref=e200]:
+                - columnheader "Nástroj" [ref=e201]
+                - columnheader "Popis" [ref=e202]
+            - rowgroup [ref=e203]:
+              - row "Google AI Studio experimentování s Gemini modely, prototypování" [ref=e204]:
+                - cell "Google AI Studio" [ref=e205]:
+                  - strong [ref=e206]: Google AI Studio
+                - cell "experimentování s Gemini modely, prototypování" [ref=e207]
+              - row "Lovable generování webových aplikací z popisu" [ref=e208]:
+                - cell "Lovable" [ref=e209]:
+                  - strong [ref=e210]: Lovable
+                - cell "generování webových aplikací z popisu" [ref=e211]
+              - row "Replit online IDE s AI asistentem" [ref=e212]:
+                - cell "Replit" [ref=e213]:
+                  - strong [ref=e214]: Replit
+                - cell "online IDE s AI asistentem" [ref=e215]
+              - row "Firebase Studio Google, prostředí pro vývoj s AI přímo v prohlížeči" [ref=e216]:
+                - cell "Firebase Studio" [ref=e217]:
+                  - strong [ref=e218]: Firebase Studio
+                - cell "Google, prostředí pro vývoj s AI přímo v prohlížeči" [ref=e219]
+          - paragraph [ref=e220]:
+            - strong [ref=e221]: "Jak to funguje:"
+            - text: Vše běží v prohlížeči. Napíšeš co chceš a nástroj vytvoří celý projekt – kód, náhled, někdy i deployment.
+          - paragraph [ref=e222]:
+            - strong [ref=e223]: "Kdy je to vhodné:"
+            - text: Rychlé prototypy, webové aplikace, experimenty bez lokální instalace.
+          - paragraph [ref=e224]:
+            - strong [ref=e225]: "Nevýhoda:"
+            - text: Omezená kontrola nad kódem, závislost na internetovém připojení, obtížnější práce s vlastními daty a existujícími projekty.
+          - separator [ref=e226]
+          - heading "3. AI IDE (vývojová prostředí s AI)" [level=4] [ref=e227]
+          - table [ref=e230]:
+            - rowgroup [ref=e231]:
+              - row "Nástroj Popis" [ref=e232]:
+                - columnheader "Nástroj" [ref=e233]
+                - columnheader "Popis" [ref=e234]
+            - rowgroup [ref=e235]:
+              - row "Cursor fork VS Code s vestavěnou AI, velmi populární" [ref=e236]:
+                - cell "Cursor" [ref=e237]:
+                  - strong [ref=e238]: Cursor
+                - cell "fork VS Code s vestavěnou AI, velmi populární" [ref=e239]
+              - row "Windsurf podobný koncept jako Cursor" [ref=e240]:
+                - cell "Windsurf" [ref=e241]:
+                  - strong [ref=e242]: Windsurf
+                - cell "podobný koncept jako Cursor" [ref=e243]
+          - paragraph [ref=e244]:
+            - strong [ref=e245]: "Jak to funguje:"
+            - text: Vypadá jako normální editor kódu (VS Code), ale AI je přímo součástí – navrhuje změny, edituje soubory, rozumí celému projektu.
+          - paragraph [ref=e246]:
+            - strong [ref=e247]: "Kdy je to vhodné:"
+            - text: Každodenní programování. AI vidí všechny soubory v projektu a navrhuje změny v kontextu.
+          - paragraph [ref=e248]:
+            - strong [ref=e249]: "Nevýhoda:"
+            - text: Vyžaduje instalaci. Placené (po zkušební době).
+          - separator [ref=e250]
+          - heading "4. AI agenti" [level=4] [ref=e251]
+          - table [ref=e254]:
+            - rowgroup [ref=e255]:
+              - row "Nástroj Cena Vhodný pro" [ref=e256]:
+                - columnheader "Nástroj" [ref=e257]
+                - columnheader "Cena" [ref=e258]
+                - columnheader "Vhodný pro" [ref=e259]
+            - rowgroup [ref=e260]:
+              - row "Claude Code ~$20/měs (Claude Pro) komplexní vícekrokové úlohy, nejlepší uvažování" [ref=e261]:
+                - cell "Claude Code" [ref=e262]:
+                  - strong [ref=e263]: Claude Code
+                - cell "~$20/měs (Claude Pro)" [ref=e264]
+                - cell "komplexní vícekrokové úlohy, nejlepší uvažování" [ref=e265]
+              - row "GitHub Copilot zdarma pro studenty denní použití v IDE, bezpečný start" [ref=e266]:
+                - cell "GitHub Copilot" [ref=e267]:
+                  - strong [ref=e268]: GitHub Copilot
+                - cell "zdarma pro studenty" [ref=e269]:
+                  - strong [ref=e270]: zdarma pro studenty
+                - cell "denní použití v IDE, bezpečný start" [ref=e271]
+              - row "OpenAI Codex v ceně ChatGPT Plus rychlé skripty, integrace s ChatGPT" [ref=e272]:
+                - cell "OpenAI Codex" [ref=e273]:
+                  - strong [ref=e274]: OpenAI Codex
+                - cell "v ceně ChatGPT Plus" [ref=e275]
+                - cell "rychlé skripty, integrace s ChatGPT" [ref=e276]
+          - paragraph [ref=e277]:
+            - strong [ref=e278]: "Jak to funguje:"
+            - text: Agent má přístup k tvému terminálu a souborům. Nejen že
+            - emphasis [ref=e279]: mluví
+            - text: o kódu – skutečně ho
+            - emphasis [ref=e280]: píše, spouští, čte chyby a opravuje je
+            - text: . Pracuje autonomně, dokud úkol nesplní nebo ho nezastavíš.
+          - paragraph [ref=e281]:
+            - strong [ref=e282]: "Kdy je to vhodné:"
+            - text: Složitější úkoly, které vyžadují víc kroků – napsat kód, spustit ho, opravit chyby, upravit podle výsledku.
+          - paragraph [ref=e283]:
+            - strong [ref=e284]: "Proč je to zásadní skok:"
+            - text: Rozdíl mezi chatbotem a agentem je asi tak velký jako rozdíl mezi tím, když někomu
+            - emphasis [ref=e285]: popíšeš
+            - text: cestu, a když ho
+            - emphasis [ref=e286]: odvezeš
+            - text: . Agent věci skutečně dělá.
+          - separator [ref=e287]
+          - heading "Co umí AI agent – a co chatbot ne" [level=3] [ref=e288]
+          - table [ref=e291]:
+            - rowgroup [ref=e292]:
+              - row "Chatbot AI agent" [ref=e293]:
+                - columnheader [ref=e294]
+                - columnheader "Chatbot" [ref=e295]
+                - columnheader "AI agent" [ref=e296]
+            - rowgroup [ref=e297]:
+              - row "Vidí tvůj projekt Ne – musíš kopírovat Ano – čte soubory přímo" [ref=e298]:
+                - cell "Vidí tvůj projekt" [ref=e299]
+                - cell "Ne – musíš kopírovat" [ref=e300]
+                - cell "Ano – čte soubory přímo" [ref=e301]
+              - row "Spouští kód Ne Ano – a čte výstup" [ref=e302]:
+                - cell "Spouští kód" [ref=e303]
+                - cell "Ne" [ref=e304]
+                - cell "Ano – a čte výstup" [ref=e305]
+              - row "Opravuje chyby Navrhne opravu textem Opraví, spustí znovu, ověří" [ref=e306]:
+                - cell "Opravuje chyby" [ref=e307]
+                - cell "Navrhne opravu textem" [ref=e308]
+                - cell "Opraví, spustí znovu, ověří" [ref=e309]
+              - row "Instaluje balíčky Ne Ano (pip install ...)" [ref=e310]:
+                - cell "Instaluje balíčky" [ref=e311]
+                - cell "Ne" [ref=e312]
+                - cell "Ano (pip install ...)" [ref=e313]:
+                  - text: Ano (
+                  - code [ref=e314]: pip install ...
+                  - text: )
+              - row "Pracuje s terminálem Ne Ano (git, spouštění skriptů, ...)" [ref=e315]:
+                - cell "Pracuje s terminálem" [ref=e316]
+                - cell "Ne" [ref=e317]
+                - cell "Ano (git, spouštění skriptů, ...)" [ref=e318]
+              - row "Edituje soubory Ne – kopíruješ ručně Ano – přímo zapisuje změny" [ref=e319]:
+                - cell "Edituje soubory" [ref=e320]
+                - cell "Ne – kopíruješ ručně" [ref=e321]
+                - cell "Ano – přímo zapisuje změny" [ref=e322]
+          - separator [ref=e323]
+          - heading "Tři způsoby, jak AI agenta spustit" [level=3] [ref=e324]
+          - heading "Desktopová aplikace" [level=4] [ref=e325]
+          - list [ref=e326]:
+            - listitem [ref=e327]: Běží lokálně na tvém počítači, hezké grafické rozhraní.
+            - listitem [ref=e328]:
+              - text: Zatím hlavně
+              - strong [ref=e329]: Claude Code
+              - text: (Claude Desktop).
+            - listitem [ref=e330]: Nejjednodušší volba – žádný terminál, žádné nastavování.
+            - listitem [ref=e331]: Ideální první krok, pokud jsi nikdy nepoužíval příkazový řádek.
+          - heading "Terminál (CLI)" [level=4] [ref=e332]
+          - list [ref=e333]:
+            - listitem [ref=e334]: Vždy nejnovější funkce.
+            - listitem [ref=e335]: Běží všude – ve VS Code terminálu, přes SSH, na serverech.
+            - listitem [ref=e336]: Nejvýkonnější způsob použití.
+            - listitem [ref=e337]:
+              - text: Příkaz
+              - code [ref=e338]: claude
+              - text: spustí Claude Code přímo v terminálu.
+          - heading "Rozšíření v IDE" [level=4] [ref=e339]
+          - list [ref=e340]:
+            - listitem [ref=e341]: GitHub Copilot ve VS Code nebo PyCharmu.
+            - listitem [ref=e342]: Napovídání přímo v editoru + chat panel + agent mód.
+            - listitem [ref=e343]: Vidíš diffy a aplikuješ je jedním klikem.
+          - blockquote [ref=e344]:
+            - paragraph [ref=e345]:
+              - strong [ref=e346]: "💡 💡 Tip:"
+              - text: Pro tento kurz doporučujeme
+              - strong [ref=e347]: GitHub Copilot v PyCharmu
+              - text: (zdarma pro studenty) nebo
+              - strong [ref=e348]: Claude Code
+              - text: (desktopová aplikace nebo terminál). Obojí zvládneš zprovoznit za pár minut.
+          - separator [ref=e349]
+          - heading "Jak se AI ptát – základní pravidla" [level=3] [ref=e350]
+          - paragraph [ref=e351]:
+            - text: AI nástroje jsou silné, ale výsledek závisí na tom,
+            - strong [ref=e352]: jak se ptáš
+            - text: ". Tady je pár zásad, které platí pro všechny kategorie:"
+          - paragraph [ref=e353]:
+            - strong [ref=e354]: 1. Buď konkrétní.
+          - paragraph [ref=e355]: "Místo:"
+          - blockquote [ref=e356]:
+            - paragraph [ref=e357]:
+              - emphasis [ref=e358]: Udělej mi graf.
+          - paragraph [ref=e359]: "raději:"
+          - blockquote [ref=e360]:
+            - paragraph [ref=e361]:
+              - emphasis [ref=e362]: Vytvoř sloupcový graf, který ukazuje počet výskytů každého písmene v řetězci "AACGTTGCA". Osa X budou písmena, osa Y počty. Použij matplotlib.
+          - paragraph [ref=e363]: Čím víc kontextu dáš, tím přesnější výsledek dostaneš.
+          - paragraph [ref=e364]:
+            - strong [ref=e365]: 2. Iteruj.
+          - paragraph [ref=e366]: "AI nedá vždy perfektní výsledek napoprvé – a to je v pořádku. Fungující postup:"
+          - list [ref=e367]:
+            - listitem [ref=e368]: Zadej, co chceš.
+            - listitem [ref=e369]: Podívej se na výsledek.
+            - listitem [ref=e370]: Řekni, co je špatně nebo co chceš jinak.
+            - listitem [ref=e371]: Opakuj, dokud to nesedí.
+          - paragraph [ref=e372]:
+            - strong [ref=e373]: 3. Rozděl větší úkol na kroky.
+          - paragraph [ref=e374]: "Místo:"
+          - blockquote [ref=e375]:
+            - paragraph [ref=e376]:
+              - emphasis [ref=e377]: Vytvoř kompletní webovou aplikaci pro správu pacientů.
+          - paragraph [ref=e378]: "raději:"
+          - blockquote [ref=e379]:
+            - paragraph [ref=e380]:
+              - emphasis [ref=e381]: Nejdřív vytvoř funkci, která načte CSV soubor s daty pacientů a vrátí seznam slovníků. Pak přidáme vizualizaci.
+          - paragraph [ref=e382]:
+            - strong [ref=e383]: 4. Ptej se na chyby přímo.
+          - paragraph [ref=e384]: "Pokud dostaneš chybovou hlášku, nemusíš ji analyzovat sám. Zkopíruj ji a zeptej se:"
+          - blockquote [ref=e385]:
+            - paragraph [ref=e386]:
+              - emphasis [ref=e387]:
+                - text: "Dostávám tuto chybu:"
+                - code [ref=e388]: "TypeError: unsupported operand type(s) for +: 'int' and 'str'"
+                - text: . Co to znamená a jak to opravit?
+          - paragraph [ref=e389]:
+            - strong [ref=e390]: 5. Kontroluj výsledky.
+          - paragraph [ref=e391]: AI může udělat chybu. Vždy si přečti, co navrhuje, a ověř, že výsledek dává smysl. Zejména u agentů, kteří mohou spouštět příkazy v terminálu – vždy si přečti, co chtějí udělat, než to potvrdíš.
+          - blockquote [ref=e392]:
+            - paragraph [ref=e393]:
+              - strong [ref=e394]: "⚠️ Důležité:"
+              - text: AI je nástroj, ne oracle. Může se mýlit, může „halucinovat" (vymyslet si funkci, která neexistuje), může navrhnout řešení, které funguje ale není správné. Tvoje úloha je výsledek vždy zkontrolovat a pochopit.
+          - separator [ref=e395]
+      - button "Zpět na začátek":
+        - img
+        - text: Zpět na začátek
+    - contentinfo [ref=e396]:
+      - generic [ref=e399]:
+        - text: Made with
+        - link "Material for MkDocs" [ref=e400] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - button "Skrýt lištu" [ref=e401] [cursor=pointer]

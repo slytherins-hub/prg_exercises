@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Záhlaví" [ref=e3]:
+      - link "PRG" [ref=e4] [cursor=pointer]:
+        - /url: /.
+        - img [ref=e5]
+      - generic [ref=e10]: PRG
+      - dialog [ref=e11]:
+        - search [ref=e12]:
+          - generic [ref=e13]:
+            - textbox "Hledat" [ref=e14]
+            - generic:
+              - img
+            - navigation "Vyhledávání":
+              - button "Vyčistit":
+                - img
+          - generic [ref=e17]: Inicializace vyhledávání
+  - generic [ref=e18]:
+    - navigation "Karty" [ref=e19]:
+      - list [ref=e21]:
+        - listitem [ref=e22]:
+          - link "Rozcestník" [ref=e23] [cursor=pointer]:
+            - /url: /.
+        - listitem [ref=e24]:
+          - link "Cvičení 1" [ref=e25] [cursor=pointer]:
+            - /url: /cviceni_01/
+        - listitem [ref=e26]:
+          - link "Cvičení 2" [ref=e27] [cursor=pointer]:
+            - /url: /cviceni_02/
+        - listitem [ref=e28]:
+          - link "Cvičení 3" [ref=e29] [cursor=pointer]:
+            - /url: /cviceni_03/
+        - listitem [ref=e30]:
+          - link "Cvičení 4" [ref=e31] [cursor=pointer]:
+            - /url: /cviceni_04/
+        - listitem [ref=e32]:
+          - link "Cvičení 5" [ref=e33] [cursor=pointer]:
+            - /url: /cviceni_05/
+        - listitem [ref=e34]:
+          - link "Cvičení 6" [ref=e35] [cursor=pointer]:
+            - /url: /cviceni_06/
+        - listitem [ref=e36]:
+          - link "Cvičení 10" [ref=e37] [cursor=pointer]:
+            - /url: /cviceni_10/
+        - listitem [ref=e38]:
+          - link "Cvičení 11" [ref=e39] [cursor=pointer]:
+            - /url: /cviceni_11/
+        - listitem [ref=e40]:
+          - link "Cvičení 13" [ref=e41] [cursor=pointer]:
+            - /url: /cviceni_13/
+        - listitem [ref=e42]:
+          - link "Cvičení 13B" [ref=e43] [cursor=pointer]:
+            - /url: /cviceni_13_B/
+    - main [ref=e44]:
+      - generic [ref=e45]:
+        - navigation "Navigace" [ref=e49]:
+          - list [ref=e50]
+        - generic [ref=e52]:
+          - generic:
+            - navigation "Obsah"
+        - article [ref=e54]:
+          - heading "404 - Not found" [level=1] [ref=e55]
+      - button "Zpět na začátek":
+        - img
+        - text: Zpět na začátek
+    - contentinfo [ref=e56]:
+      - generic [ref=e59]:
+        - text: Made with
+        - link "Material for MkDocs" [ref=e60] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/
+  - button "Skrýt lištu" [ref=e61] [cursor=pointer]

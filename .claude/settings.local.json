@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m mkdocs serve)",
+      "Bash(uv sync *)",
+      "Bash(.venv/Scripts/mkdocs serve *)",
+      "Bash(mkdir -p d:/prg_cviko_ai/prg_exercises/docs/cviceni_13_B/ai_logos)",
+      "Bash(cp d:/prg_cviko_ai/prezentace_workshop_muni/media/ai_logos/*.svg d:/prg_cviko_ai/prezentace_workshop_muni/media/ai_logos/*.png d:/prg_cviko_ai/prg_exercises/docs/cviceni_13_B/ai_logos/)",
+      "Bash(claude mcp *)",
+      "Bash(cmd /c \"npx --version\")",
+      "Bash(\"C:/Program Files/nodejs/npx.cmd\" -y @playwright/mcp@latest)",
+      "Bash(kill %1)",
+      "Bash(python -c ' *)",
+      "Bash(curl -s http://127.0.0.1:8000/)",
+      "mcp__playwright__browser_navigate"
+    ]
+  }
+}
