@@ -117,15 +117,15 @@ nav:
     - Cíl 4 – vyhledávání vzorů: cviceni_10/05_cíl_4_vyhledavani_vzoru.md
     - Cíl 5 – teoreticky zajímavé algoritmy: cviceni_10/06_cíl_5_teoreticky_zajimave_algoritmy.md
     - Cíl 6 – odevzdání úkolu: cviceni_10/07_cíl_6_odevzdání_úkolu.md
-  - Cvičení 10B:
-    - Přehled: cviceni_10_B/README.md
-    - Úvod: cviceni_10_B/01_uvod.md
-    - Odevzdání úkolu: cviceni_10_B/02_odevzdani.md
-    - Cíl 1 – Selection Sort: cviceni_10_B/03_cil_1_selection_sort.md
-    - Cíl 1 – Bubble Sort: cviceni_10_B/04_cil_1_bubble_sort.md
-    - Cíl 1 – řazení v Pythonu: cviceni_10_B/05_cil_1_razeni_v_pythonu.md
-    - Cíl 2 – OOP teorie: cviceni_10_B/06_cil_2_oop_uvod.md
-    - Cíl 2 – třída HodnoceniStudentu: cviceni_10_B/07_cil_2_hodnoceni_studentu.md
+  - Cvičení 11:
+    - Přehled: cviceni_11/README.md
+    - Úvod: cviceni_11/01_uvod.md
+    - Odevzdání úkolu: cviceni_11/02_odevzdani.md
+    - Cíl 1 – Selection Sort: cviceni_11/03_cil_1_selection_sort.md
+    - Cíl 2 – Bubble Sort: cviceni_11/04_cil_2_bubble_sort.md
+    - Cíl 3 – řazení v Pythonu: cviceni_11/05_cil_3_razeni_v_pythonu.md
+    - Cíl 4 – OOP teorie: cviceni_11/06_cil_4_oop_uvod.md
+    - Cíl 5 – třída HodnoceniStudentu: cviceni_11/07_cil_5_hodnoceni_studentu.md
 
 extra_css:
   - assets/nav-toggle.css

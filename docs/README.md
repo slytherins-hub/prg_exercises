@@ -1,6 +1,5 @@
 ﻿# PRG – Podklady ke cvičením
 
-
 ## Cvičení
 1. [Cvičení 1: První kroky s Pythonem](cviceni_01/README.md)
 2. [Cvičení 2: Datové typy a řetězce](cviceni_02/README.md)
@@ -11,4 +10,5 @@
 7. [Cvičení 7: Procvičování](cviceni_07/README.md)
 8. [Cvičení 9: Základy Git a GitHub](cviceni_09/README.md)
 9. [Cvičení 10: Algoritmy vyhledávání](cviceni_10/README.md)
+10. [Cvičení 11: Algoritmy řazení a základy OOP](cviceni_11/README.md)
 

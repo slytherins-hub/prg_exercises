@@ -162,15 +162,6 @@ jednotkou bude opět počet porovnání. Uvědom si, že po prvním porovnání 
 po druhém porovnání čtvrtina ($n/4$) a po třetím porovnání osmina ($n/8$). Jaký je celkový počet porovnání v závislosti
 na počtu prvků v nejhorším scénáři?
 
-**Případ 1:** Prvek se nachází v seznamu
-
-|                 | Kdy nastane? | Asymptotická složitost |
-|-----------------|--------------|------------------------|
-| Nejlepší scénář |              |                        |
-| Nejhorší scénář |              |                        |
-
-**Případ 2:** Prvek se nenachází v seznamu
-
 |                 | Kdy nastane? | Asymptotická složitost |
 |-----------------|--------------|------------------------|
 | Nejlepší scénář |              |                        |
