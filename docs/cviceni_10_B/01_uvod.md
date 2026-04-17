@@ -23,8 +23,8 @@ Obě části propojíme jednou úlohou: evidencí bodů z testu. Napíšeš si k
 ### Jak tímhle cvičením projít prakticky
 
 1. Úplně na začátku si vytvoř nový prázdný repozitář na GitHubu a naklonuj ho — postup najdeš v sekci [Odevzdání úkolu](02_odevzdani.md). Budeš mít hned kam commitovat.
-2. Selection Sort si napíšeme společně na cvičení — doma ho nepiš.
-3. Implementuj a vyzkoušej Bubble Sort jako samostatnou funkci.
+2. Implementuj a vyzkoušej Selection Sort jako samostatnou funkci.
+3. Pokračuj Bubble Sortem a otestuj ho na náhodných datech.
 4. Porovnej svou implementaci s vestavěným řazením v Pythonu.
 5. Projdi si teorii OOP — na jednoduchém příkladu si uvědom, co je `__init__`, `self` a metoda.
 6. Teprve potom se pusť do třídy `HodnoceniStudentu` a postupně ji rozšiřuj o nové metody.

@@ -45,17 +45,49 @@ Všimni si, že v každém průchodu algoritmus prohodí dva prvky — nalezené
 > my_list[1], my_list[3] = my_list[3], my_list[1]
 > ```
 
-### 1.3 Společná implementace
+---
 
-Selection Sort si naprogramujeme **společně na cvičení** — nepiš ho sám doma. Cílem je, abys krok za krokem viděl, jak z principu popsaného výše vznikne funkční kód, a mohl se ptát na věci, které nejsou jasné.
+### 1.3 Testovací data: generátor náhodných čísel
 
-Ve vlastním repozitáři si pak v modulu `sorting.py` budeš mít funkci `selection_sort()` se stejným rozhraním jako u dalších řadicích funkcí:
+Než se pustíš do implementace, připrav si způsob, jak vyrobit testovací seznam. Ručně psát pokaždé jiné hodnoty je otrava — Python má přímo modul `random`, kterým si vygeneruješ libovolně dlouhý seznam čísel v zadaném rozsahu.
 
-- vstup: libovolně dlouhý seznam čísel,
-- výstup: nový vzestupně seřazený seznam,
-- původní seznam nechává beze změny.
+```python
+import random
 
-### 1.4 Stručně ke složitosti
+def random_numbers(count, low=0, high=100):
+    return [random.randint(low, high) for _ in range(count)]
+```
+
+Použití:
+
+```python
+values = random_numbers(10)              # 10 čísel v rozsahu 0–100
+print(values)   # např. [42, 7, 91, 15, 63, 8, 57, 73, 2, 100]
+
+small = random_numbers(5, low=0, high=20)   # 5 čísel v rozsahu 0–20
+```
+
+> **💡 Tip:** Pokud chceš, aby se ti při každém spuštění vygenerovala **stejná** posloupnost (třeba kvůli opakovatelnému testu), přidej na začátek `random.seed(42)` nebo jiné pevné číslo.
+
+Funkci `random_numbers()` použiješ jak pro testování Selection Sortu, tak pro Bubble Sort v další části.
+
+---
+
+### 1.4 Úkol: implementace `selection_sort()`
+
+**📝 ÚKOL: Selection Sort**
+
+1. Vytvoř modul `sorting.py` a zkopíruj do něj funkci `random_numbers()` z předchozí sekce.
+2. Do stejného souboru doplň funkci `selection_sort()`.
+3. Funkce má jeden vstupní parametr: libovolně dlouhý seznam čísel.
+4. Funkce vrátí **nový** vzestupně seřazený seznam. Původní seznam nechává beze změny.
+5. Volání funkce ověř v `main()` — třeba na krátkém seznamu `[5, 1, 4, 2, 8]` a na náhodně vygenerovaném seznamu 20 čísel.
+
+> **💡 Tip:** Abys nechal původní seznam beze změny, na začátku funkce si vytvoř jeho kopii — například `numbers = numbers[:]` nebo `numbers = list(numbers)`.
+
+---
+
+### 1.5 Stručně ke složitosti
 
 | Nejlepší scénář | Nejhorší scénář |
 | --- | --- |
