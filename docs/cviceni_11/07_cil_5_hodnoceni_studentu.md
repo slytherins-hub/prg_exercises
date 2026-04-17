@@ -2,10 +2,10 @@
 
 Algoritmizace a programování
 
-## CÍL 5: TŘÍDA HodnoceniStudentu
+## CÍL 5: TŘÍDA StudentsGrades
 
 V této části aplikuješ právě probranou teorii OOP na konkrétní úlohu: evidenci výsledků testu. 
-Napíšeš si třídu `HodnoceniStudentu`, která drží seznam bodů (0–100) a postupně do ní přidáš metody pro získání známky,
+Napíšeš si třídu `StudentsGrades`, která drží seznam bodů (0–100) a postupně do ní přidáš metody pro získání známky,
 vyhledávání a řazení.
 
 ### 5.1 Úloha
@@ -24,17 +24,17 @@ tabulky převádí na písmennou známku (ECTS):
 
 Potřebuješ nad daty dělat různé operace: získat body konkrétního studenta, spočítat počet studentů, zjistit písmennou
 známku, najít studenty s určitým výsledkem a seřadit výsledky od nejhoršího po nejlepšího. Bez OOP bys každé funkci 
-pořád dokola předával seznam `scores`. S třídou `HodnoceniStudentu` si seznam „pamatuje" samotný objekt.
+pořád dokola předával seznam `scores`. S třídou `StudentsGrades` si seznam „pamatuje" samotný objekt.
 
 ---
 
 ### 5.2 Připravený základ
 
-Vytvoř si modul `hodnoceni_studentu.py` a zkopíruj do něj následující základ. Jde o minimální třídu — `__init__`
+Vytvoř si modul `student_grades.py` a zkopíruj do něj následující základ. Jde o minimální třídu — `__init__`
 + dvě jednoduché metody. Postupně si ji rozšíříš.
 
 ```python
-class HodnoceniStudentu:
+class StudentsGrades:
     def __init__(self, scores):
         self.scores = scores
 
@@ -51,17 +51,17 @@ Co která část dělá:
 - **`get_by_index(self, index)`** — vrátí počet bodů studenta na zadané pozici.
 - **`count(self)`** — vrátí počet studentů (délku seznamu).
 
-> **💡 Připomenutí konvence:** Třída je v `PascalCase` (`HodnoceniStudentu`), zatímco soubor (`hodnoceni_studentu.py`), 
-> metody (`get_by_index`, `count`), atribut (`self.scores`) i budoucí instance (`vysledky`) jsou v `snake_case`.
+> **💡 Připomenutí konvence:** Třída je v `PascalCase` (`StudentsGrades`), zatímco soubor (`student_grades.py`),
+> metody (`get_by_index`, `count`), atribut (`self.scores`) i budoucí instance (`results`) jsou v `snake_case`.
 
 Vyzkoušej použití:
 
 ```python
-vysledky = HodnoceniStudentu([85, 42, 91, 67, 50, 73, 100, 38, 58])
+results = StudentsGrades([85, 42, 91, 67, 50, 73, 100, 38, 58])
 
-print(vysledky.count())          # 9
-print(vysledky.get_by_index(2))  # 91
-print(vysledky.scores)           # [85, 42, 91, 67, 50, 73, 100, 38, 58]
+print(results.count())          # 9
+print(results.get_by_index(2))  # 91
+print(results.scores)           # [85, 42, 91, 67, 50, 73, 100, 38, 58]
 ```
 
 Všimni si, že `scores` je **atribut** (čteš ho bez závorek), zatímco `count()` a `get_by_index()` jsou **metody** (volání se závorkami).
@@ -78,9 +78,9 @@ Doplň do třídy metodu `get_grade()`, která vrátí **písmennou známku** st
 4. Ověř z `main()`:
 
     ```python
-    print(vysledky.get_grade(2))  # A (91 bodů)
-    print(vysledky.get_grade(6))  # A (100 bodů)
-    print(vysledky.get_grade(7))  # F (38 bodů)
+    print(results.get_grade(2))  # A (91 bodů)
+    print(results.get_grade(6))  # A (100 bodů)
+    print(results.get_grade(7))  # F (38 bodů)
     ```
 
 > **Nápověda:** Použij `if` / `elif` / `else`. Na pořadí podmínek záleží — začni od nejvyššího rozsahu (90+) a postupuj dolů, nebo naopak.
@@ -98,9 +98,9 @@ jako **sekvenční vyhledávání** z minulého cvičení — projdeš celý sez
 4. Ověř z `main()`:
 
     ```python
-    print(vysledky.find(100))  # [6]
-    print(vysledky.find(50))   # [4]
-    print(vysledky.find(77))   # []
+    print(results.find(100))  # [6]
+    print(results.find(50))   # [4]
+    print(results.find(77))   # []
     ```
 
 ---
@@ -118,8 +118,8 @@ Bubble Sortu — **kód z funkce `bubble_sort()` v `sorting.py` si do metody př
 5. Ověř z `main()`:
 
     ```python
-    print(vysledky.get_sorted())   # [38, 42, 50, 58, 67, 73, 85, 91, 100]
-    print(vysledky.scores)         # [85, 42, 91, 67, 50, 73, 100, 38, 58]  ← beze změny
+    print(results.get_sorted())   # [38, 42, 50, 58, 67, 73, 85, 91, 100]
+    print(results.scores)         # [85, 42, 91, 67, 50, 73, 100, 38, 58]  ← beze změny
     ```
 
 > **Poznámka:** Přímé zkopírování kódu z funkce do metody není ideální řešení — kód je pak napsaný dvakrát. 
@@ -130,16 +130,16 @@ Bubble Sortu — **kód z funkce `bubble_sort()` v `sorting.py` si do metody př
 
 #### ÚKOL: Demonstrace třídy
 
-V hlavní funkci `main()` použij třídu `HodnoceniStudentu` tak, aby předvedla všechny své metody:
+V hlavní funkci `main()` použij třídu `StudentsGrades` tak, aby předvedla všechny své metody:
 
-1. Vytvoř objekt `vysledky = HodnoceniStudentu([85, 42, 91, 67, 50, 73, 100, 38, 58])`.
+1. Vytvoř objekt `results = StudentsGrades([85, 42, 91, 67, 50, 73, 100, 38, 58])`.
 2. Vypiš, kolik studentů psalo test (využij `count()`).
 3. V cyklu vypiš pro každého studenta jeho pořadí (index), počet bodů a písmennou známku. Očekávaný výstup by měl vypadat třeba takto:
 
     ```
-    Student 0: 85 bodů – B
-    Student 1: 42 bodů – F
-    Student 2: 91 bodů – A
+    Student 0: 85 points – B
+    Student 1: 42 points – F
+    Student 2: 91 points – A
     ...
     ```
 
@@ -150,9 +150,9 @@ V hlavní funkci `main()` použij třídu `HodnoceniStudentu` tak, aby předvedl
     ```python
     from sorting import random_numbers
 
-    vysledky_nahodne = HodnoceniStudentu(random_numbers(30, 0, 100))
-    print(vysledky_nahodne.count())
-    print(vysledky_nahodne.get_sorted())
+    random_results = StudentsGrades(random_numbers(30, 0, 100))
+    print(random_results.count())
+    print(random_results.get_sorted())
     ```
 
     Pusť `main()` víckrát — pokaždé dostaneš jinou skupinu a uvidíš, jak si třída poradí s různými daty.
@@ -167,15 +167,15 @@ Pokud máš čas a chuť, rozšiř třídu o další metody:
 - **`best()` a `worst()`** — vrátí nejvyšší a nejnižší skóre (hodí se využít `get_sorted()`).
 - **`pass_rate()`** — vrátí podíl studentů, kteří **nedostali** F (tj. měli alespoň 50 bodů). Výstup v rozsahu 0.0 až 1.0.
 - **`__str__(self)`** — další **speciální metoda** jako `__init__`. Pokud ji definuješ, Python ji zavolá automaticky 
-  při `print(vysledky)` a místo výchozího výstupu ve stylu `<__main__.HodnoceniStudentu object at 0x00012a3...>` 
+  při `print(results)` a místo výchozího výstupu ve stylu `<__main__.StudentsGrades object at 0x00012a3...>` 
   dostaneš tvůj vlastní čitelný text. Metoda musí vracet řetězec, například:
 
-    ```python
-    def __str__(self):
-        return f"HodnoceniStudentu: {self.count()} studentů, průměr {self.average():.1f}"
-    ```
-
-    Pak stačí napsat `print(vysledky)` a Python se postará o zbytek.
+  ```python
+  def __str__(self):
+      return f"StudentsGrades: {self.count()} studentů, průměr {self.average():.1f}"
+  ```
+    
+  Pak stačí napsat `print(vysledky)` a Python se postará o zbytek.
 
 ---
 
@@ -207,15 +207,15 @@ znova. Trik je v tom, že si seřazenou verzi **jednou spočítáš a zapamatuje
       (stejně jako u `get_sorted`).
     - Vrať index v seřazeném seznamu, nebo `None`, pokud skóre neexistuje.
 
-3. Abys viděl, že se řazení provede opravdu jen jednou, dej si na začátek if bloku třeba `print("řadím…")`. 
+3. Abys viděl, že se řazení provede opravdu jen jednou, dej si na začátek if bloku třeba `print("sorting…")`. 
    Zavolej `find_sorted()` několikrát za sebou s různými skóre — hláška se objeví jen poprvé.
 
    ```python
-   vysledky = HodnoceniStudentu([85, 42, 91, 67, 50, 73, 100, 38, 58])
+   results = StudentsGrades([85, 42, 91, 67, 50, 73, 100, 38, 58])
    
-   print(vysledky.find_sorted(91))   # řadím…  → index 7
-   print(vysledky.find_sorted(50))   # → index 2 (už neřadí)
-   print(vysledky.find_sorted(77))   # → None  (77 tam není)
+   print(results.find_sorted(91))   # sorting…  → index 7
+   print(results.find_sorted(50))   # → index 2 (už neřadí)
+   print(results.find_sorted(77))   # → None  (77 tam není)
    ```
 
 > **Poznámka — caching:** Tomuhle přístupu se říká **caching** (nebo **memoizace**) — výsledek drahého výpočtu si 

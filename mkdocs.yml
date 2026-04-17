@@ -125,7 +125,7 @@ nav:
     - Cíl 2 – Bubble Sort: cviceni_11/04_cil_2_bubble_sort.md
     - Cíl 3 – řazení v Pythonu: cviceni_11/05_cil_3_razeni_v_pythonu.md
     - Cíl 4 – OOP teorie: cviceni_11/06_cil_4_oop_uvod.md
-    - Cíl 5 – třída HodnoceniStudentu: cviceni_11/07_cil_5_hodnoceni_studentu.md
+    - Cíl 5 – třída StudentsGrades: cviceni_11/07_cil_5_hodnoceni_studentu.md
 
 extra_css:
   - assets/nav-toggle.css
