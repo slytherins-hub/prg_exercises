@@ -80,12 +80,38 @@ AI může generovat kód, který obsahuje bezpečnostní chyby. Studie ukazují,
 
 ---
 
-### 3.5 Shrnutí pravidel
+### 3.5 Sandbox a Docker – proč je důležité omezit agenta
+
+AI agent má přístup k tvému terminálu a souborům. To znamená, že **může udělat cokoli, co bys udělal ty** – smazat soubory, přepsat kód, nainstalovat balíčky, spustit libovolný příkaz. Většina agentů se před rizikovými akcemi ptá na potvrzení, ale:
+
+- Při rychlé práci je lákavé potvrzovat všechno bez čtení.
+- Některé nástroje nabízí „auto-approve" / „YOLO" mód, kde agent dělá vše bez ptaní.
+- Agent může udělat chybu – smazat soubory, přepsat konfiguraci, provést `git push --force`.
+
+**Řešení: sandbox (izolované prostředí)**
+
+Sandbox znamená, že agent běží v omezeném prostředí, kde nemůže poškodit tvůj systém:
+
+| Přístup | Co to je | Kdy použít |
+|---------|----------|-----------|
+| **Potvrzování příkazů** | Agent se ptá před každou akcí | Výchozí nastavení, vhodné pro začátečníky |
+| **Dedikovaný projekt/složka** | Agent pracuje jen v jedné složce, zbytek disku je v bezpečí | Vždy – proto pracuj v repozitáři per úkol |
+| **Docker kontejner** | Agent běží v izolovaném virtuálním prostředí, nemá přístup k tvému systému | Produkční použití, práce s cizím kódem |
+| **Git jako záchranná síť** | Commitni před prací s agentem, vrať změny pokud se něco pokazí | Vždy |
+
+**Docker** je nástroj, který vytvoří izolovaný kontejner – jako „počítač v počítači". Agent v něm může dělat cokoli, ale nemůže ovlivnit tvůj skutečný systém. Pro pokročilejší použití (zejména když chceš nechat agenta pracovat autonomně bez potvrzování) je Docker prakticky nutnost.
+
+> **⚠️ Pravidlo:** Dokud přesně nevíš co děláš, **nevypínej potvrzování příkazů**. Vždy čti, co agent chce spustit, než to potvrdíš. Auto-approve mód je jen pro zkušené uživatele v izolovaném prostředí.
+
+---
+
+### 3.6 Shrnutí pravidel
 
 1. **Data:** Neposílej citlivé údaje do AI služeb.
 2. **Transparentnost:** Uveď, že jsi AI použil.
 3. **Porozumění:** Rozuměj všemu, co odevzdáváš.
 4. **Pravidla předmětu:** Ověř si, co je povoleno.
 5. **Bezpečnost kódu:** Kontroluj AI výstup na bezpečnostní chyby.
+6. **Izolace:** Nech agenta pracovat v omezeném prostředí a nevypínej potvrzování příkazů.
 
 ---
