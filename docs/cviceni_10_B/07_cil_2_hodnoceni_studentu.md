@@ -2,7 +2,7 @@
 
 Algoritmizace a programování
 
-## CÍL 2: TŘÍDA HODNOCENISTUDENTU
+## CÍL 2: TŘÍDA HodnoceniStudentu
 
 V této části aplikuješ právě probranou teorii OOP na konkrétní úlohu: evidenci výsledků testu. Napíšeš si třídu `HodnoceniStudentu`, která drží seznam bodů (0–100) a postupně do ní přidáš metody pro získání známky, vyhledávání a řazení.
 
@@ -45,7 +45,7 @@ Co která část dělá:
 - **`get_by_index(self, index)`** — vrátí počet bodů studenta na zadané pozici.
 - **`count(self)`** — vrátí počet studentů (délku seznamu).
 
-> **💡 Připomenutí konvence:** Třída se jmenuje `HodnoceniStudentu` — v **PascalCase**. Soubor `hodnoceni_studentu.py` a atribut `self.scores` jsou naopak v `snake_case`. Tahle zvyklost se v Pythonu dodržuje napříč kódem.
+> **💡 Připomenutí konvence:** Třída je v `PascalCase` (`HodnoceniStudentu`), zatímco soubor (`hodnoceni_studentu.py`), metody (`get_by_index`, `count`), atribut (`self.scores`) i budoucí instance (`vysledky`) jsou v `snake_case`.
 
 Vyzkoušej použití:
 

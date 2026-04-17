@@ -11,8 +11,11 @@ Až dosud jsi pracoval hlavně s **funkcemi** — funkce dostala data jako argum
 V Pythonu je úplně všechno objekt. Číslo `42` je objekt třídy `int`, řetězec `"ACGT"` je objekt třídy `str`, seznam `[1, 2, 3]` je objekt třídy `list`. Kdykoli voláš metodu, už s OOP pracuješ:
 
 ```python
-"ACGT".upper()        # metoda upper() na objektu třídy str
-[1, 2, 3].append(4)   # metoda append() na objektu třídy list
+text = "ACGT"
+text.upper()          # metoda upper() na objektu třídy str — vrátí "ACGT"
+
+numbers = [1, 2, 3]
+numbers.append(4)     # metoda append() na objektu třídy list — rozšíří seznam na [1, 2, 3, 4]
 ```
 
 Stejné platí i pro knihovny. Abys externím knihovnám dobře rozuměl (a tušil, proč má `.append()` závorky a `.shape` nemá), pomáhá vědět, co to vlastně objekt a metoda jsou.
@@ -122,7 +125,17 @@ Vrať se na chvíli k definici třídy v předchozí sekci. Tři věci, kterých
 - Metody jsou **odsazené** uvnitř třídy — jsou její součástí.
 - Každá metoda má jako první parametr **`self`** — za chvíli vysvětlíme proč.
 
-> **💡 Konvence: PascalCase.** Názvy tříd se v Pythonu píšou v tzv. **PascalCase** — každé slovo začíná velkým písmenem a mezi slovy není mezera ani podtržítko: `Obdelnik`, `HodnoceniStudentu`, `BiomedicalSignal`. Proměnné a funkce naopak používají `snake_case` (`my_list`, `bubble_sort`, `cena_za_metr`). Je to zvyklost, kterou dodržuje celá Python komunita — pomáhá na první pohled poznat, že pracuješ se třídou.
+> **💡 Konvence pojmenování: `PascalCase` vs. `snake_case`.** V Pythonu se dodržují dvě hlavní konvence:
+>
+> - **`PascalCase`** (velké písmeno na začátku každého slova, bez mezer a podtržítek) — pro **třídy**: `Obdelnik`, `HodnoceniStudentu`, `BiomedicalSignal`.
+> - **`snake_case`** (malá písmena, slova oddělená podtržítkem) — pro všechno ostatní:
+>     - **proměnné**: `my_list`, `cena_za_metr`,
+>     - **funkce**: `bubble_sort`, `random_numbers`,
+>     - **objekty / instance**: `maly`, `velky`, `vysledky`,
+>     - **metody**: `get_by_index`, `obsah`, `oplocit`,
+>     - **atributy**: `self.sirka`, `self.scores`.
+>
+> Díky těmto konvencím na první pohled poznáš, jestli pracuješ se třídou (velké začáteční písmeno), nebo s objektem / funkcí / proměnnou (malé).
 
 ---
 
