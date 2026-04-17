@@ -1,0 +1,158 @@
+- generic [ref=e2]:
+  - heading "AI nástroje pro programování" [level=1] [ref=e3]
+  - paragraph [ref=e4]: přehled kategorií a nástrojů
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]: Chatboti
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - img "Claude" [ref=e10]
+        - listitem [ref=e11]:
+          - img "OpenAI" [ref=e12]
+          - generic [ref=e13]: ChatGPT
+        - listitem [ref=e14]:
+          - img "Gemini" [ref=e15]
+        - listitem [ref=e16]:
+          - img "Grok" [ref=e17]
+        - listitem [ref=e18]:
+          - img "DeepSeek" [ref=e19]
+      - generic [ref=e20]: copy-paste · ptej se přirozeným jazykem
+    - generic [ref=e21]:
+      - generic [ref=e22]: Online nástroje
+      - list [ref=e23]:
+        - listitem [ref=e24]:
+          - generic [ref=e25]: Google AI Studio
+        - listitem [ref=e26]:
+          - generic [ref=e27]: Lovable
+        - listitem [ref=e28]:
+          - img "Replit" [ref=e29]
+        - listitem [ref=e30]:
+          - generic [ref=e31]: Firebase Studio
+      - generic [ref=e32]: v prohlížeči · nejrychlejší start
+    - generic [ref=e33]:
+      - generic [ref=e34]: AI IDE
+      - list [ref=e35]:
+        - listitem [ref=e36]:
+          - img "Cursor" [ref=e37]
+        - listitem [ref=e38]:
+          - img "Google Antigravity" [ref=e39]
+        - listitem [ref=e40]:
+          - img "Windsurf" [ref=e41]
+      - generic [ref=e42]: desktopové IDE s vestavěnou AI
+    - generic [ref=e43]:
+      - generic [ref=e44]: AI agenti
+      - list [ref=e45]:
+        - listitem [ref=e46]:
+          - img "Claude" [ref=e47]
+          - generic [ref=e48]: Code
+        - listitem [ref=e49]:
+          - img "OpenAI" [ref=e50]
+          - generic [ref=e51]: Codex
+        - listitem [ref=e52]:
+          - generic [ref=e53]: GitHub Copilot
+      - generic [ref=e54]: autonomní · terminál / IDE / CI
+  - generic [ref=e55]:
+    - heading "Chatbot vs. AI agent" [level=2] [ref=e56]
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - heading "Chatbot" [level=3] [ref=e59]
+        - list [ref=e60]:
+          - listitem [ref=e61]: —Nevidí tvůj projekt — musíš kopírovat
+          - listitem [ref=e62]: —Nespouští kód
+          - listitem [ref=e63]: —Navrhne opravu textem
+          - listitem [ref=e64]: —Neinstaluje balíčky
+          - listitem [ref=e65]: —Nemá přístup k terminálu
+          - listitem [ref=e66]: —Needituje soubory — kopíruješ ručně
+      - generic [ref=e67]:
+        - heading "AI agent" [level=3] [ref=e68]
+        - list [ref=e69]:
+          - listitem [ref=e70]: ✓Vidí celý projekt — čte soubory přímo
+          - listitem [ref=e71]: ✓Spouští kód a čte výstup
+          - listitem [ref=e72]: ✓Opraví, spustí znovu, ověří
+          - listitem [ref=e73]: ✓Instaluje si co potřebuje
+          - listitem [ref=e74]: ✓Plný přístup k terminálu
+          - listitem [ref=e75]: ✓Přímo zapisuje změny do souborů
+  - generic [ref=e76]:
+    - heading "Kterého agenta si vybrat?" [level=2] [ref=e77]
+    - table [ref=e78]:
+      - rowgroup [ref=e79]:
+        - row "Nástroj Cena Vhodný pro Poznámky" [ref=e80]:
+          - columnheader "Nástroj" [ref=e81]
+          - columnheader "Cena" [ref=e82]
+          - columnheader "Vhodný pro" [ref=e83]
+          - columnheader "Poznámky" [ref=e84]
+      - rowgroup [ref=e85]:
+        - row "Claude Code ~$25/měs (Claude Pro) vyšší tarify pro náročnější použití komplexní vícekrokové úlohy, refaktoring, velké projekty nejvýkonnější uvažování; zvládá velké codebase" [ref=e86]:
+          - cell "Claude Code" [ref=e87]:
+            - generic [ref=e88]:
+              - img "Claude" [ref=e89]
+              - generic [ref=e90]: Code
+          - cell "~$25/měs (Claude Pro) vyšší tarify pro náročnější použití" [ref=e91]:
+            - text: ~$25/měs (Claude Pro)
+            - text: vyšší tarify pro náročnější použití
+          - cell "komplexní vícekrokové úlohy, refaktoring, velké projekty" [ref=e92]
+          - cell "nejvýkonnější uvažování; zvládá velké codebase" [ref=e93]:
+            - strong [ref=e94]: nejvýkonnější uvažování
+            - text: ; zvládá velké codebase
+        - row "GitHub Copilot ~$10/měs studentská varianta zdarma (bez nejnovějších modelů) denní použití v IDE, bezpečný start napovídání kódu při psaní; výběr modelů (Claude, GPT, Gemini)" [ref=e95]:
+          - cell "GitHub Copilot" [ref=e96]:
+            - generic [ref=e98]: GitHub Copilot
+          - cell "~$10/měs studentská varianta zdarma (bez nejnovějších modelů)" [ref=e99]:
+            - text: ~$10/měs
+            - text: studentská varianta zdarma (bez nejnovějších modelů)
+          - cell "denní použití v IDE, bezpečný start" [ref=e100]
+          - cell "napovídání kódu při psaní; výběr modelů (Claude, GPT, Gemini)" [ref=e101]:
+            - strong [ref=e102]: napovídání kódu při psaní
+            - text: ; výběr modelů (Claude, GPT, Gemini)
+        - row "OpenAI Codex ~$25/měs (ChatGPT Plus) skripty, opravy, agentní úlohy těsná integrace s ChatGPT; funkční agent" [ref=e103]:
+          - cell "OpenAI Codex" [ref=e104]:
+            - generic [ref=e105]:
+              - img "OpenAI" [ref=e106]
+              - generic [ref=e107]: Codex
+          - cell "~$25/měs (ChatGPT Plus)" [ref=e108]
+          - cell "skripty, opravy, agentní úlohy" [ref=e109]
+          - cell "těsná integrace s ChatGPT; funkční agent" [ref=e110]
+    - generic [ref=e111]:
+      - strong [ref=e112]: AI agent není model
+      - text: — je to program, který umí volat libovolný AI model (Claude, GPT, Gemini…), ale navíc má přístup k souborům, terminálu a dalším nástrojům. Model je „mozek", agent je celý „pracovník".
+    - generic [ref=e113]:
+      - strong [ref=e114]: Práce s různými agenty je velmi podobná
+      - text: — zadáváte úkol přirozeným jazykem, agent píše kód, spouští ho a opravuje chyby. Nástroje se liší v detailech, ale základní princip je u všech stejný. Jsou v mnoha ohledech ekvivalentní.
+    - generic [ref=e115]:
+      - strong [ref=e116]: Uvedené ceny jsou měsíční předplatné
+      - text: s omezeným množstvím spotřebovaných tokenů (= objem textu a kódu, který AI zpracuje). Všechny nástroje nabízejí i dražší tarify s vyššími limity nebo přímou platbu za spotřebované tokeny přes API.
+  - generic [ref=e117]:
+    - heading "Tři způsoby, jak spustit AI agenta" [level=2] [ref=e118]
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - heading "Desktopová aplikace" [level=3] [ref=e121]
+        - list [ref=e122]:
+          - listitem [ref=e123]: · Běží lokálně, hezké GUI
+          - listitem [ref=e124]: · Zatím hlavně Claude Code
+          - listitem [ref=e125]: · Nejjednodušší volba
+          - listitem [ref=e126]: · Žádný terminál, žádné nastavování
+      - generic [ref=e127]:
+        - heading "Terminál (CLI)" [level=3] [ref=e128]
+        - list [ref=e129]:
+          - listitem [ref=e130]: · Vždy nejnovější funkce
+          - listitem [ref=e131]: · Běží všude — VS Code, SSH, servery
+          - listitem [ref=e132]: · Nejvýkonnější způsob
+          - listitem [ref=e133]: · Bez vazby na konkrétní editor
+      - generic [ref=e134]:
+        - heading "Rozšíření v IDE" [level=3] [ref=e135]
+        - list [ref=e136]:
+          - listitem [ref=e137]: · Claude Code, Copilot, Cursor a další
+          - listitem [ref=e138]: · Agent mód + chat přímo v editoru
+          - listitem [ref=e139]: · Diffy jedním klikem
+          - listitem [ref=e140]: · Copilot navíc nabízí doplňování řádků při psaní
+    - generic [ref=e141]:
+      - generic [ref=e142]:
+        - img "Claude — desktopová aplikace" [ref=e143] [cursor=pointer]
+        - generic [ref=e144]: Claude — desktopová aplikace
+      - generic [ref=e145]:
+        - img "Claude Code — terminál" [ref=e146] [cursor=pointer]
+        - generic [ref=e147]: Claude Code — terminál
+      - generic [ref=e148]:
+        - img "GitHub Copilot — VS Code" [ref=e149] [cursor=pointer]
+        - generic [ref=e150]: GitHub Copilot — VS Code
+  - paragraph [ref=e151]: Algoritmizace a programování · Cvičení 13B

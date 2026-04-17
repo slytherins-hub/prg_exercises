@@ -76,17 +76,19 @@ git checkout .
 
 > **💡 Tip:** Commituj často. Před každou větší interakcí s agentem je dobrý nápad commitnout, abys měl bod, ke kterému se můžeš vrátit.
 
+> **💡 Tip:** Git příkazy nemusíš psát sám – řekni agentovi třeba *„commitni aktuální stav s rozumnou zprávou"* a on to udělá za tebe.
+
 ---
 
-### 1.3 Co je CLAUDE.md (a proč na něm záleží)
+### 1.3 Instrukční soubor projektu
 
-`CLAUDE.md` je speciální soubor, který AI agent (konkrétně Claude Code) přečte vždy, když začne pracovat v daném projektu. Je to tvůj způsob, jak agentovi říct:
+Každý agent umí na začátku práce přečíst speciální soubor s instrukcemi pro daný projekt. Je to tvůj způsob, jak agentovi říct:
 
 - jaký je to projekt a co dělá,
 - jaké konvence používáš (pojmenování souborů, jazyk komentářů, ...),
 - co má a nemá dělat.
 
-**Příklad jednoduchého CLAUDE.md:**
+**Příklad:**
 
 ```markdown
 # Projekt: Analýza biomedicínských dat
@@ -100,31 +102,65 @@ git checkout .
 
 Agent tento soubor přečte automaticky a přizpůsobí svou práci. Nemusíš mu pokaždé opakovat stejné instrukce.
 
-> **💡 Tip:** CLAUDE.md funguje v Claude Code. Jiní agenti mají podobné mechanismy – například Cursor má `.cursorrules`, GitHub Copilot čte `.github/copilot-instructions.md`.
+Každý nástroj používá jiný název souboru:
+
+| Nástroj | Soubor |
+|---------|--------|
+| Claude Code | `CLAUDE.md` |
+| OpenAI Codex | `AGENTS.md` |
+| GitHub Copilot | `.github/copilot-instructions.md` |
+| Cursor | `.cursorrules` |
+
+> **💡 Tip:** `AGENTS.md` (používaný Codexem) se postupně stává obecnějším standardem — některé nástroje ho umí číst vedle svého vlastního formátu. Pokud chceš jeden soubor pro více agentů, `AGENTS.md` je dobrá volba. Do ostatních souborů (např. `CLAUDE.md`) pak stačí napsat jen odkaz: *„Instrukce jsou v AGENTS.md"*.
 
 ---
 
-### 1.4 Skills (dovednosti)
+### 1.4 Kontext – co agent vidí a proč na tom záleží
 
-Některé AI nástroje podporují **skills** – předpřipravené příkazy, které rozšiřují schopnosti agenta o specializované úlohy.
+Když s agentem komunikuješ, všechno co napíšeš ty a co odpoví on se ukládá do **kontextu** (někdy se říká „kontextové okno"). Agent při každé odpovědi čte celý tento kontext – tvoje zprávy, jeho odpovědi, výstupy z terminálu, obsah souborů, které četl.
 
-**Co to prakticky znamená:**
+**Proč na tom záleží?**
 
-Místo abys agentovi složitě popisoval, co má udělat, použiješ zkratku:
+- Kontext má **omezenou velikost** (závisí na modelu – typicky desítky až stovky tisíc tokenů). Když se zaplní, agent začne zapomínat starší části konverzace.
+- **Příliš velký kontext může snížit efektivitu** – agent se v záplavě informací hůř orientuje a jeho odpovědi mohou být méně přesné. I když se kontext ještě nezaplnil, kratší kontext často vede k lepším výsledkům.
+
+**Komprese kontextu:**
+
+Agenti mají mechanismus **komprese kontextu** – když se kontext blíží limitu, agent starší části konverzace shrne do kratšího souhrnu a pokračuje dál. Některé nástroje to dělají automaticky, u jiných můžeš kompresi vyvolat ručně (např. v Claude Code příkazem `/compact`). Komprese zachová klíčové informace, ale detaily se mohou ztratit.
+
+**Co s tím?**
+
+- **Začni novou konverzaci** – když přecházíš na nový úkol nebo je konverzace už hodně dlouhá. Neboj se toho – agent má přístup k souborům v projektu, takže kontext předchozí práce si přečte z kódu. Nová konverzace s čistým kontextem může často výsledek **zlepšit**, protože agent se nemusí probíjet záplavou starších zpráv.
+- **Nech agenta zapisovat poznámky** – pokud pracuješ na složitějším úkolu, řekni agentovi ať si průběžně zapisuje poznámky do `.md` souboru (třeba `notes.md` nebo `TODO.md`). Při další konverzaci si je přečte a nemusíš mu vše vysvětlovat znovu.
+- **Instrukční soubor jako trvalá paměť** – důležité informace o projektu (konvence, struktura, pravidla) patří do instrukčního souboru (viz 1.3). Agent ho čte automaticky na začátku každé konverzace, ale nezabírá zbytečně místo v kontextu při běžné práci.
+
+> **💡 Tip:** Pokud agent začne odpovídat nepřesně nebo „zapomíná" co jsi mu řekl před chvílí, je to často znak přeplněného kontextu. Začni novou konverzaci – často to samo o sobě problém vyřeší.
+
+---
+
+### 1.5 Skills (dovednosti)
+
+Některé AI nástroje podporují **skills** – předpřipravené sady instrukcí pro specializované úlohy. Klíčové je, že agent si skill **načte do kontextu sám, jen když ho potřebuje** – instrukce tam jsou připravené, ale nezabírají místo, dokud je agent nepoužije.
+
+**Jak to funguje:**
+
+Skill je v podstatě textový soubor s popisem, jak má agent provést konkrétní úkol. Když agent dostane úkol, který odpovídá nějakému skillu, sám si ho najde a načte. Nemusíš mu říkat „použij skill X" – agent to pozná z kontextu.
+
+Můžeš je ale vyvolat i ručně zkratkou:
 
 | Příkaz | Co udělá |
 |--------|---------|
 | `/commit` | Podívá se na změny, napíše commit message a commitne |
 | `/review` | Zrecenzuje pull request |
-| `/init` | Vytvoří CLAUDE.md pro aktuální projekt |
+| `/init` | Vytvoří instrukční soubor pro aktuální projekt |
 
-Skills jsou jako „recepty" – agent ví přesně, jak daný úkol provést, protože má předpřipravený postup.
+Výhoda oproti tomu, kdyby všechny instrukce byly napsané přímo v instrukčním souboru: agent si do kontextu načte **jen to, co právě potřebuje**, a zbytek mu nezabírá místo.
 
 > **💡 Tip:** Skills jsou dostupné v Claude Code. Jiní agenti mají podobné koncepty pod jinými názvy (Copilot má „slash commands" v chatu).
 
 ---
 
-### 1.5 MCP servery – rozšíření schopností agenta
+### 1.6 MCP servery – rozšíření schopností agenta
 
 **MCP** (Model Context Protocol) je standard, který umožňuje AI agentovi **připojit se k externím nástrojům a službám**. Představ si to jako „zásuvky", do kterých můžeš agenta zapojit.
 
@@ -158,27 +194,45 @@ MCP server je malý program, který běží na pozadí a překládá mezi AI age
 
 ---
 
-### 1.6 Obecná doporučení pro práci s AI
+### 1.7 Jak s agentem efektivně pracovat
 
-Tady je shrnutí nejdůležitějších pravidel, která platí bez ohledu na to, jaký nástroj používáš:
+Tady je shrnutí nejdůležitějších pravidel, která platí bez ohledu na to, jaký nástroj používáš.
 
-**Začni jednoduše.**
-Nepokoušej se hned zadat složitý úkol na 500 řádků. Začni s něčím malým – jednou funkcí, jedním grafem. Když vidíš, že to funguje, přidávej složitost postupně.
+#### Jak se ptát
 
-**Nech agenta spouštět kód.**
-Největší výhoda agentů oproti chatbotům je, že kód spustí, přečtou chybu a opraví ji sami. Nevypínej jim tuto schopnost – je to jejich hlavní síla.
+**Buď konkrétní.** Místo *„Udělej mi graf"* raději: *„Vytvoř sloupcový graf počtu výskytů každého písmene v řetězci 'AACGTTGCA'. Osa X písmena, osa Y počty. Použij matplotlib."* Čím víc kontextu dáš, tím přesnější výsledek.
 
-**Popisuj, co vidíš.**
-Když výsledek nesedí, neříkej jen „to je špatně". Řekni konkrétně: *„Graf se zobrazuje, ale chybí popisky os"* nebo *„Funkce vrací 0.5, ale pro vstup 'AACG' by měla vrátit 0.25"*.
+**Iteruj.** AI nedá vždy perfektní výsledek napoprvé – a to je v pořádku. Zadej co chceš, podívej se na výsledek, řekni co je špatně, opakuj.
 
-**Nepiš kód, když nemusíš.**
-Pokud máš k dispozici agenta, nemusíš psát kód ručně. Popiš co chceš přirozeným jazykem a nech agenta pracovat. Tvá úloha je zadávat, kontrolovat a navádět – ne psát syntaxi.
+**Popisuj, co vidíš.** Neříkej jen „to je špatně". Řekni konkrétně: *„Graf se zobrazuje, ale chybí popisky os"* nebo *„Funkce vrací 0.5, ale pro vstup 'AACG' by měla vrátit 0.25"*.
 
-**Verzuj.**
-Commituj před každou větší interakcí s agentem. Pokud agent udělá něco, co nechceš, můžeš se snadno vrátit.
+**Ptej se na chyby přímo.** Dostaneš chybovou hlášku? Nemusíš ji analyzovat sám – zkopíruj ji agentovi a zeptej se co znamená.
 
-**Čti, co agent dělá.**
-Zejména u terminálových příkazů – agent ti vždy ukáže, co chce spustit. Přečti si to. Rozumět nemusíš každému detailu, ale měl bys vědět, jestli instaluje balíček, maže soubory, nebo posílá data na internet.
+**Nech agenta, ať se doptává.** Pokud agent potřebuje víc informací, nech ho se zeptat. Nemusíš na začátku předvídat všechno – dobrý agent se sám zeptá na to, co mu chybí.
+
+#### Jak organizovat práci
+
+**Pracuj po malých krocích.** Nejčastější chyba začátečníků: zadat obrovský úkol najednou. Velké generování kódu vrší chyby na sebe a výsledek je těžké opravit. Místo toho: zadej malý kus, otestuj, commitni, pokračuj dalším.
+
+**Napřed plán, pak implementace.** Řekni agentovi: *„Napiš mi do souboru plan.md plán a TODO list toho, co bude potřeba udělat."* Zkontroluj plán, uprav ho, a pak nech agenta pracovat podle něj krok po kroku. Co je sepsané v `.md` souboru, tam zůstane a jde použít znovu — na rozdíl od kontextu konverzace, který se časem „zastarává" nebo ztratí.
+
+**Důležité informace sepisuj do `.md` souborů.** Kontext konverzace se ztratí – když začneš novou konverzaci, agent neví nic z té předchozí. Ale soubory v projektu zůstávají. Proto: rozhodnutí, požadavky, poznámky, TODO listy nech agenta zapisovat do souborů. Při další konverzaci si je přečte sám.
+
+**Verzuj.** Commituj před každou větší interakcí s agentem. Pokud agent udělá něco, co nechceš, můžeš se snadno vrátit.
+
+#### Co kontrolovat
+
+**Nech agenta spouštět kód a testy.** Největší výhoda agentů oproti chatbotům je, že kód spustí, přečtou chybu a opraví ji sami. Ještě lepší je, když agentovi řekneš ať **napíše testy** a spustí je — kvalita výstupu dramaticky roste, když má agent způsob, jak sám ověřit, že výsledek funguje.
+
+**Důvěřuj, ale prověřuj.** K AI výstupu přistupuj jako ke kódu od juniornějšího kolegy – přečti si ho, zeptej se proč to udělal takhle, zkontroluj okrajové případy. Studie ukazují, že AI kód má výrazně víc bezpečnostních chyb než kód psaný člověkem. Pozor na **tiché chyby** – kód, který vypadá správně a běží bez chyb, ale vrací špatné výsledky.
+
+**Čti, co agent dělá.** Zejména u terminálových příkazů – agent ti vždy ukáže, co chce spustit. Přečti si to. Rozumět nemusíš každému detailu, ale měl bys vědět, jestli instaluje balíček, maže soubory, nebo posílá data na internet.
+
+#### Učení s AI
+
+**AI ti pomáhá se učit — ne se učí místo tebe.** Když ti agent vygeneruje kód, přečti si ho a porozuměj mu. Pokud něčemu nerozumíš, zeptej se — agent ti to vysvětlí. Slepé přijímání AI výstupu bez porozumění (tzv. „vibe coding") ti v učení nepomůže.
+
+**Zkus to napřed sám.** Zvlášť u úkolů, které procvičují nové koncepty — zkus nejdřív napsat řešení sám a teprve pak ho porovnej s tím, co navrhne AI. Tím si budíš dovednosti, které budeš potřebovat i bez AI.
 
 > **⚠️ Bezpečnost:** Nikdy nedávej AI agentovi přístup k citlivým datům (hesla, API klíče, osobní údaje pacientů), pokud přesně nevíš, co s nimi udělá. Data odeslaná do AI služby opouštějí tvůj počítač.
 

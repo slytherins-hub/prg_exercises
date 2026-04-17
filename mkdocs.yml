@@ -4,6 +4,7 @@ docs_dir: docs
 theme:
   name: material
   language: cs
+  custom_dir: overrides
   palette:
     - scheme: default
       primary: blue
@@ -124,6 +125,7 @@ nav:
     - Úvod – AI nástroje: cviceni_13_B/01_uvod_ai_nastroje.md
     - Cíl 1 – důležité koncepty: cviceni_13_B/02_cil_1_dulezite_koncepty.md
     - Cíl 2 – ukázky: cviceni_13_B/03_cil_2_ukazky.md
+    - Cíl 3 – bezpečnost a pravidla: cviceni_13_B/05_cil_3_bezpecnost_a_pravidla.md
     - Slide – přehled AI nástrojů: cviceni_13_B/04_slide_prehled.md
 
 extra_css:
