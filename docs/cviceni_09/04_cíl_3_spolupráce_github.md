@@ -150,7 +150,7 @@ Pomocí `git status` ověř stav repozitáře a pomocí `gitk --all` nebo `git l
 
 #### ÚKOL 7: Větev, push a pull request
 
-1. V repozitáři prezencka vytvoř novou větev:
+1. V repozitáři vytvoř novou větev:
 
     ```bash
     git branch nazev_vetve
