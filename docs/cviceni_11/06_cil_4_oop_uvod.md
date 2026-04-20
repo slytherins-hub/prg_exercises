@@ -136,13 +136,13 @@ Vrať se na chvíli k definici třídy v předchozí sekci. Tři věci, kterých
 
 > **💡 Konvence pojmenování: `PascalCase` vs. `snake_case`.** V Pythonu se dodržují dvě hlavní konvence:
 >
-> - **`PascalCase`** (velké písmeno na začátku každého slova, bez mezer a podtržítek) — pro **třídy**: `Rectangle`, `HodnoceniStudentu`, `BiomedicalSignal`.
+> - **`PascalCase`** (velké písmeno na začátku každého slova, bez mezer a podtržítek) — pro **třídy**: `Rectangle`, `StudentsGrades`, `BiomedicalSignal`.
 > - **`snake_case`** (malá písmena, slova oddělená podtržítkem) — pro všechno ostatní:
 >     - **proměnné**: `my_list`, `price_per_meter`,
 >     - **funkce**: `bubble_sort`, `random_numbers`,
 >     - **objekty / instance**: `small_rect`, `big_rect`, `results`,
->     - **metody**: `get_by_index`, `area`, `fencing_cost`,
->     - **atributy**: `self.width`, `self.scores`.
+>     - **metody**: `get_score`, `area`, `fencing_cost`,
+>     - **atributy**: `self.width`, `self.grades`.
 >
 > Díky těmto konvencím na první pohled poznáš, jestli pracuješ se třídou (velké začáteční písmeno), nebo s objektem / funkcí / proměnnou (malé).
 
@@ -150,7 +150,7 @@ Vrať se na chvíli k definici třídy v předchozí sekci. Tři věci, kterých
 
 ### 4.5 Co je `__init__`
 
-`__init__` je **speciální metoda** — Python ji zavolá automaticky pokaždé, když vytváříš nový objekt. 
+`__init__` je **speciální metoda** — často označovaná jako **konstruktor** (přesněji **inicializátor**). Python ji zavolá automaticky pokaždé, když vytváříš nový objekt. 
 Slouží k **inicializaci** objektu: nastaví jeho atributy na základě hodnot, které předáš při vytvoření.
 
 Podívej se, co se stane při tomto řádku:

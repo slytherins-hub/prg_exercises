@@ -35,13 +35,14 @@ kdy začínáš nový projekt od nuly — třeba školní úkol, osobní experim
 1. Do naklonované složky zkopíruj nebo rovnou v ní vytvoř:
 
     - modul `sorting.py` — bude obsahovat funkce `bubble_sort()`, `selection_sort()` a `random_numbers()`,
-    - modul `hodnoceni_studentu.py` — bude obsahovat třídu `HodnoceniStudentu` se všemi metodami,
-    - modul `main.py` — pro ukázku použití (volitelně můžeš `main()` nechat přímo v `hodnoceni_studentu.py`).
+    - modul `student_grades.py` — bude obsahovat třídu `StudentsGrades` se všemi metodami,
+    - modul `main.py` — pro ukázku použití (volitelně můžeš `main()` nechat přímo v `student_grades.py`),
+    - soubor `grades.csv` — data třídy, která budeš načítat v `main.py` (stáhni ho z materiálů ke cvičení).
 
 2. Ulož změny do Git historie:
 
     ```
-    git add sorting.py hodnoceni_studentu.py main.py
+    git add sorting.py student_grades.py main.py grades.csv
     git commit -m "Řešení cvičení 11"
     git push
     ```
@@ -49,14 +50,14 @@ kdy začínáš nový projekt od nuly — třeba školní úkol, osobní experim
 3. Otevři svůj repozitář v prohlížeči a ověř, že se soubory objevily.
 
 > **Tip:** Nečekej s commity až na úplný konec. Je lepší si ukládat rozumné mezikroky průběžně — třeba po dokončení 
-> Bubble Sortu, po vytvoření třídy `HodnoceniStudentu`, po dopsání jednotlivých metod.
+> Bubble Sortu, po vytvoření třídy `StudentsGrades`, po dopsání jednotlivých metod.
 
 ### Checklist před odevzdáním
 
 Před finálním odevzdáním si odškrtni:
 
 - funkce `bubble_sort()` a `selection_sort()` jsou implementované a fungují na různých vstupech,
-- třída `HodnoceniStudentu` obsahuje alespoň `__init__`, `get_by_index()`, `count()`, `get_grade()`, `find()` a `get_sorted()`,
+- třída `StudentsGrades` obsahuje alespoň `__init__`, `get_score()`, `count()`, `get_grade()`, `find()`, `get_sorted()` a `from_csv()`,
 - `main()` ukazuje použití všech metod,
 - všechny změny jsou commitnuté a nahrané na GitHub,
 - repozitář je **Public** a jde otevřít i z anonymního okna prohlížeče.

@@ -114,3 +114,22 @@ algoritmus — stačí do hotového Bubble Sortu vložit pár řádků, které p
 12. `plt.show()` zobrazí finální graf se seřazenými hodnotami.
 
 ---
+
+#### ÚKOL (dobrovolný): Vizualizace Selection Sortu
+
+Zkus stejný postup aplikovat i na **Selection Sort**. Princip je totožný — do řadícího algoritmu vložíš pár řádků,
+které po každém kroku překreslí aktuální stav seznamu. Rozdíl je jen v tom, co zvýrazníš:
+
+1. **Už seřazená část** (indexy `0` až `i-1`) — obarvi zeleně (`"seagreen"`).
+2. **Aktuálně známé minimum** v neseřazené části (index `min_index`) — obarvi žlutě (`"gold"`).
+3. **Právě porovnávaný prvek** (index `j`) — obarvi červeně (`"tomato"`).
+4. **Ostatní prvky** — nech modře (`"steelblue"`).
+
+Zvýraznění dej **do vnitřního cyklu před podmínku** `if numbers[j] < numbers[min_index]:`, aby bylo vidět,
+jak se minimum postupně aktualizuje. Na rozdíl od Bubble Sortu se prohození děje jen jednou za vnější průchod — 
+uvidíš, jak se nejmenší prvek „vylétne" na své finální místo.
+
+> **Tip:** Porovnej si obě animace vedle sebe. Všimneš si, že Bubble Sort dělá mnoho drobných prohození,
+> zatímco Selection Sort prohodí v každém průchodu jen jednou — ale musí projít celou neseřazenou část, aby minimum našel.
+
+---

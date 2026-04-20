@@ -32,7 +32,7 @@ Obě části propojíme jednou úlohou: evidencí bodů z testu. Napíšeš si k
 3. Pokračuj Bubble Sortem a otestuj ho na náhodných datech.
 4. Porovnej svou implementaci s vestavěným řazením v Pythonu.
 5. Projdi si teorii OOP — na jednoduchém příkladu si uvědom, co je `__init__`, `self` a metoda.
-6. Teprve potom se pusť do třídy `HodnoceniStudentu` a postupně ji rozšiřuj o nové metody.
+6. Teprve potom se pusť do třídy `StudentsGrades` a postupně ji rozšiřuj o nové metody.
 7. Průběžně commituj, na konci nahraj finální verzi a odevzdej odkaz do e-learningu.
 
 ---
