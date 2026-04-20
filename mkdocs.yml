@@ -137,12 +137,14 @@ nav:
   - Cvičení 12:
     - Přehled: cviceni_12/README.md
     - Úvod: cviceni_12/01_úvod.md
-    - Cíl 1 – Python ekosystém: cviceni_12/02_cíl_1_ekosystem.md
-    - Cíl 2 – Jupyter Notebook: cviceni_12/02_cíl_1_jupyter_notebook.md
-    - Cíl 3 – NumPy: cviceni_12/cviceni_12_numpy.ipynb
-    - Cíl 4 – Matplotlib: cviceni_12/cviceni_12_matplotlib.ipynb
-    - Cíl 5 – Úkol – segmentace: cviceni_12/cviceni_12_segmentace.ipynb
-    - Cíl 6 – Úkol – EKG: cviceni_12/cviceni_12_ekg.ipynb
+    - Odevzdání úkolu: cviceni_12/02_odevzdani.md
+    - Cíl 1 – Python ekosystém: cviceni_12/03_cíl_1_ekosystem.md
+    - Cíl 2 – uv podrobněji: cviceni_12/04_cíl_2_uv_pokrocile.md
+    - Cíl 3 – Jupyter Notebook: cviceni_12/05_cíl_3_jupyter_notebook.md
+    - Cíl 4 – NumPy: cviceni_12/cviceni_12_numpy.ipynb
+    - Cíl 5 – Matplotlib: cviceni_12/cviceni_12_matplotlib.ipynb
+    - Cíl 6 – Úkol – segmentace: cviceni_12/cviceni_12_segmentace.ipynb
+    - Cíl 7 – Úkol – EKG: cviceni_12/cviceni_12_ekg.ipynb
 
 extra_css:
   - assets/nav-toggle.css
