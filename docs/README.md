@@ -11,3 +11,5 @@
 8. [Cvičení 9: Základy Git a GitHub](cviceni_09/README.md)
 9. [Cvičení 10: Algoritmy vyhledávání](cviceni_10/README.md)
 10. [Cvičení 11: Algoritmy řazení a základy OOP](cviceni_11/README.md)
+11. [Cvičení 12: Jupyter, NumPy, Matplotlib](cviceni_12/README.md)
+12. [Cvičení 13: OOP a AI nástroje](cviceni_13/README.md)

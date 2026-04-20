@@ -4,6 +4,7 @@ docs_dir: docs
 theme:
   name: material
   language: cs
+  custom_dir: overrides
   palette:
     - scheme: default
       primary: blue
@@ -16,6 +17,13 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false
+      include_source: true
+      ignore_h1_titles: true
 
 markdown_extensions:
   - sane_lists
@@ -126,6 +134,25 @@ nav:
     - Cíl 3 – řazení v Pythonu: cviceni_11/05_cil_3_razeni_v_pythonu.md
     - Cíl 4 – OOP teorie: cviceni_11/06_cil_4_oop_uvod.md
     - Cíl 5 – třída StudentsGrades: cviceni_11/07_cil_5_hodnoceni_studentu.md
+  - Cvičení 12:
+    - Přehled: cviceni_12/README.md
+    - Úvod: cviceni_12/01_úvod.md
+    - Cíl 1 – Python ekosystém: cviceni_12/02_cíl_1_ekosystem.md
+    - Cíl 2 – Jupyter Notebook: cviceni_12/02_cíl_1_jupyter_notebook.md
+    - Cíl 3 – NumPy: cviceni_12/cviceni_12_numpy.ipynb
+    - Cíl 4 – Matplotlib: cviceni_12/cviceni_12_matplotlib.ipynb
+    - Cíl 5 – Úkol – segmentace: cviceni_12/cviceni_12_segmentace.ipynb
+    - Cíl 6 – Úkol – EKG: cviceni_12/cviceni_12_ekg.ipynb
+  - Cvičení 13:
+    - Přehled: cviceni_13/README.md
+    - Úvod: cviceni_13/01_uvod.md
+    - Cíl 1 – dědičnost: cviceni_13/02_cil_1_dedicnost.md
+    - Cíl 2 – úkol DNA a RNA: cviceni_13/03_cil_2_dna_sekvence.md
+    - Cíl 3 – přehled AI nástrojů: cviceni_13/04_cil_3_prehled_ai_nastroju.md
+    - Cíl 4 – důležité koncepty AI nástrojů: cviceni_13/05_cil_4_dulezite_koncepty.md
+    - Cíl 5 – ukázky: cviceni_13/06_cil_5_ukazky.md
+    - Cíl 6 – bezpečnost a pravidla: cviceni_13/07_cil_6_bezpecnost_a_pravidla.md
+    - Slide – přehled AI nástrojů: cviceni_13/08_slide_prehled.md
 
 extra_css:
   - assets/nav-toggle.css
