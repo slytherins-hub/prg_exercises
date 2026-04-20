@@ -132,7 +132,7 @@ Agenti mají mechanismus **komprese kontextu** – když se kontext blíží lim
 
 - **Začni novou konverzaci** – když přecházíš na nový úkol nebo je konverzace už hodně dlouhá. Neboj se toho – agent má přístup k souborům v projektu, takže kontext předchozí práce si přečte z kódu. Nová konverzace s čistým kontextem může často výsledek **zlepšit**, protože agent se nemusí probíjet záplavou starších zpráv.
 - **Nech agenta zapisovat poznámky** – pokud pracuješ na složitějším úkolu, řekni agentovi ať si průběžně zapisuje poznámky do `.md` souboru (třeba `notes.md` nebo `TODO.md`). Při další konverzaci si je přečte a nemusíš mu vše vysvětlovat znovu.
-- **Instrukční soubor jako trvalá paměť** – důležité informace o projektu (konvence, struktura, pravidla) patří do instrukčního souboru (viz 1.3). Agent ho čte automaticky na začátku každé konverzace, ale nezabírá zbytečně místo v kontextu při běžné práci.
+- **Instrukční soubor jako trvalá paměť** – důležité informace o projektu (konvence, struktura, pravidla) patří do instrukčního souboru (viz 4.3). Agent ho čte automaticky na začátku každé konverzace, ale nezabírá zbytečně místo v kontextu při běžné práci.
 
 > **💡 Tip:** Pokud agent začne odpovídat nepřesně nebo „zapomíná" co jsi mu řekl před chvílí, je to často znak přeplněného kontextu. Začni novou konverzaci – často to samo o sobě problém vyřeší.
 

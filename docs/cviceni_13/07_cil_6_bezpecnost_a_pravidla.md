@@ -4,6 +4,12 @@ Algoritmizace a programování
 
 ## CÍL 6: BEZPEČNOST A PRAVIDLA POUŽÍVÁNÍ AI
 
+AI agent je mocný nástroj — vidí tvé soubory, spouští tvé příkazy a tvá data posílá přes internet. Než
+ho pustíš na ostrou práci, je potřeba rozumět třem věcem: **co se děje s tvými daty**, **jaká pravidla
+platí při studiu** a **jak zabránit tomu, aby agent něco nevratně pokazil**. O tom je tento cíl.
+
+---
+
 ### 6.1 Co AI služby dělají s tvými daty
 
 Když používáš AI agenta, tvůj kód, data a konverzace se odesílají na servery poskytovatele (Anthropic, OpenAI, GitHub, Google…). Je důležité rozumět, co se s nimi děje:

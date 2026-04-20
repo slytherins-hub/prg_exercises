@@ -21,7 +21,7 @@ při používání dodržovat, a vyzkoušíš si agenta v akci.
 1. Co je **dědičnost** a proč se vyplatí o ní vědět.
 2. Jak napsat **rodičovskou** a **odvozenou třídu** pomocí `class Child(Parent):` a `super()`.
 3. Jak použít dědičnost na praktických úlohách (biomedicínský signál, DNA sekvence).
-4. Jaké **AI nástroje** dnes existují a čím se liší (chatboti, AI IDE, AI agenti).
+4. Jaké **AI nástroje** dnes existují a čím se liší (chatboti, online nástroje, AI IDE, AI agenti).
 5. Důležité koncepty kolem AI agentů — repozitář, verzování, kontext, skills, MCP.
 6. Jak AI efektivně používat a jaká pravidla (univerzitní i bezpečnostní) při tom dodržovat.
 

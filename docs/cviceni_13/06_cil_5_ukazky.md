@@ -177,20 +177,3 @@ Cílem není naprogramovat hru – cílem je vidět, jak agent zvládá **iterat
 > **💡 Tip:** Pokud hra nefunguje nebo má chyby, řekni agentovi přesně co vidíš. Neřeš to ručně – nech ho, ať to opraví sám.
 
 ---
-
-### Shrnutí
-
-V tomto cvičení jsi si vyzkoušel:
-
-- **Různé kategorie AI nástrojů** – od chatbotů po autonomní agenty.
-- **Důležité koncepty** – repozitáře, verzování, CLAUDE.md, skills, MCP.
-- **Praktickou práci s AI agentem** – zadávání úkolů, iterace, kontrola výsledků.
-
-Klíčové poznatky:
-
-1. **AI agent je nejsilnější, když ho necháš pracovat** – spouštět kód, číst chyby, opravovat.
-2. **Kvalita výsledku závisí na kvalitě zadání** – buď konkrétní, iteruj, kontroluj.
-3. **Verzuj** – commituj před a po práci s agentem.
-4. **AI je nástroj, ne náhrada za porozumění** – vždy zkontroluj, co agent vytvořil.
-
----
