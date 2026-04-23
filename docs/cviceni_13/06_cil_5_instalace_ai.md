@@ -133,7 +133,7 @@ Máš platné předplatné některého z agentů?
     **Instalace (Windows, PowerShell):**
 
     ```powershell
-    # v učebně je potřeba ještě povolit spouštění skriptů:
+    # v učebně je potřeba ještě povolit spouštění skriptů a pak restartovat terminal:
     Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
     instalace:
     npm install -g @google/gemini-cli
