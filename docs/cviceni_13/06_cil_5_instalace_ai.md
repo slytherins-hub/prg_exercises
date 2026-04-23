@@ -171,6 +171,18 @@ Máš platné předplatné některého z agentů?
     irm https://claude.ai/install.ps1 | iex
     ```
 
+    > **⚠️ Pokud instalátor vypíše warning, že cesta nebyla přidána do PATH:** Claude installer záměrně **nemění PATH automaticky** (binárku jen rozbalí do `C:\Users\<jméno>\.local\bin`), aby nic tichého nerozbil. Pokud po instalaci `claude` v terminálu nefunguje, **přidej tu cestu do User PATH ručně** — v PowerShellu spusť:
+    >
+    > ```powershell
+    > [Environment]::SetEnvironmentVariable(
+    >     "PATH",
+    >     $env:PATH + ";$env:USERPROFILE\.local\bin",
+    >     "User"
+    > )
+    > ```
+    >
+    > Pak **restartuj terminál** a ověř `claude --version`.
+
     **Instalace (macOS, Linux, WSL):**
 
     ```bash
@@ -280,18 +292,23 @@ Máš platné předplatné některého z agentů?
 
     **Předplatné:** ChatGPT Plus / Pro / Business / Edu / Enterprise (model `gpt-5.3-codex`).
 
+    > **⚙️ Nezbytný předpoklad: Node.js 20+** (kvůli `npm`). Postup instalace Node.js — včetně varianty bez admin práv přes pomocný skript — je stejný jako u Gemini CLI, viz callout v záložce „Gemini CLI ⭐ demo" výše. **Pozor — `winget install OpenAI.Codex` na Windows nedoporučujeme**: balíček ne vždy spolehlivě přidá `codex` do PATH. Použij raději `npm install -g` níže.
+
     **Instalace (Windows, PowerShell):**
 
     ```powershell
-    winget install --id OpenAI.Codex
+    # v učebně je potřeba ještě povolit spouštění skriptů a pak restartovat terminal:
+    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+    # instalace:
+    npm install -g @openai/codex
     ```
 
     **Instalace (macOS, Linux, WSL):**
 
     ```bash
-    brew install --cask codex
-    # nebo
     npm install -g @openai/codex
+    # nebo přes Homebrew (macOS):
+    brew install --cask codex
     ```
 
     **Spuštění a přihlášení:**
