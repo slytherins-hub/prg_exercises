@@ -119,7 +119,12 @@ Máš platné předplatné některého z agentů?
 
     **Tohle je nástroj, který si ukážeme přímo na cvičení** — má nejméně překážek pro start a free tier vystačí na celý semestr běžného použití.
 
-    **Instalace (Windows, PowerShell — vyžaduje Node.js 20+):**
+    > **⚙️ Nezbytný předpoklad: Node.js 20+.** Bez něj `npm` ani `npx` nepoběží a instalace selže.
+    >
+    > - **Na cvičení** (učebna VUT) je Node.js **už nainstalovaný**, můžeš rovnou na `npm install`.
+    > - **Doma** si Node.js stáhni z **[nodejs.org/download](https://nodejs.org/en/download)** (LTS verze; nainstaluje i `npm`). Alternativně přes balíčkovače: `winget install OpenJS.NodeJS.LTS` (Windows) nebo `brew install node` (macOS/Linux). Po instalaci ověř `node --version` (musí být ≥ 20) a `npm --version`.
+
+    **Instalace (Windows, PowerShell):**
 
     ```powershell
     npm install -g @google/gemini-cli
@@ -134,8 +139,6 @@ Máš platné předplatné některého z agentů?
     # nebo přes Homebrew (macOS, Linux):
     brew install gemini-cli
     ```
-
-    Pokud Node.js nemáš, nainstaluj ho přes [nodejs.org/download](https://nodejs.org/en/download) nebo `winget install OpenJS.NodeJS.LTS` / `brew install node`.
 
     **Spuštění a přihlášení:**
 
