@@ -121,8 +121,14 @@ Máš platné předplatné některého z agentů?
 
     > **⚙️ Nezbytný předpoklad: Node.js 20+.** Bez něj `npm` ani `npx` nepoběží a instalace selže.
     >
-    > - **Na cvičení** (učebna VUT) je Node.js **už nainstalovaný**, můžeš rovnou na `npm install`.
-    > - **Doma** si Node.js stáhni z **[nodejs.org/download](https://nodejs.org/en/download)** (LTS verze; nainstaluje i `npm`). Alternativně přes balíčkovače: `winget install OpenJS.NodeJS.LTS` (Windows) nebo `brew install node` (macOS/Linux). Po instalaci ověř `node --version` (musí být ≥ 20) a `npm --version`.
+    > - **S admin právy** si Node.js stáhni z **[nodejs.org/download](https://nodejs.org/en/download)** (LTS, nainstaluje i `npm`). Alternativně přes balíčkovače: `winget install OpenJS.NodeJS.LTS` (Windows, vyžaduje UAC) nebo `brew install node` (macOS/Linux). Po instalaci ověř `node --version` (musí být ≥ 20) a `npm --version`.
+    > - **BEZ admin práv (Windows — typicky učebnové PC)** — pomocný skript stáhne LTS .zip do `%LOCALAPPDATA%\nodejs` a přidá do User PATH. V PowerShellu spusť:
+    >
+    >     ```powershell
+    >     irm https://gist.githubusercontent.com/tomasvicar/c087caa3334703ff2353b328259bc341/raw/install-node-user.ps1 | iex
+    >     ```
+    >
+    >     Otevři **nový** terminál (PATH se načítá při startu) a ověř `node --version`. Skript si můžeš [otevřít a přečíst](https://gist.github.com/tomasvicar/c087caa3334703ff2353b328259bc341) před spuštěním — vždy si zkontroluj, co pouštíš přes `iex`.
 
     **Instalace (Windows, PowerShell):**
 
