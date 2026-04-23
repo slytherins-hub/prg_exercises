@@ -4,6 +4,8 @@ Algoritmizace a programování
 
 ## CÍL 4: DŮLEŽITÉ KONCEPTY AI NÁSTROJŮ
 
+> **⚠️ Stav: duben 2026.** Vývoj AI nástrojů jde velmi rychle — konkrétní postupy, příkazy i doporučení se můžou během měsíců změnit. Pro aktuální stav se vždy řiď oficiálními zdroji uvedenými v textu.
+
 Než začneš s AI agentem pracovat na reálných úkolech, je potřeba rozumět několika konceptům. Nejsou složité, ale bez nich se budeš zbytečně ztrácet.
 
 ---
@@ -235,5 +237,37 @@ Tady je shrnutí nejdůležitějších pravidel, která platí bez ohledu na to,
 **Zkus to napřed sám.** Zvlášť u úkolů, které procvičují nové koncepty — zkus nejdřív napsat řešení sám a teprve pak ho porovnej s tím, co navrhne AI. Tím si budíš dovednosti, které budeš potřebovat i bez AI.
 
 > **⚠️ Bezpečnost:** Nikdy nedávej AI agentovi přístup k citlivým datům (hesla, API klíče, osobní údaje pacientů), pokud přesně nevíš, co s nimi udělá. Data odeslaná do AI služby opouštějí tvůj počítač.
+
+---
+
+### 4.8 Co dělat, když se agent zasekne, halucinuje nebo se točí v kruhu
+
+I dobrý agent se občas zasekne. Typické scénáře, na které u prvních pokusů narazíš:
+
+- **Točí se v kruhu** — opravuje pořád stejnou chybu, vrací stejné řešení s drobnou variací, znovu spouští stejný test, který znovu padá.
+- **Halucinuje** — odkazuje na neexistující soubor, importuje funkci, která v balíčku není, „vidí" v kódu řádek, který tam není.
+- **Lže o tom, co udělal** — tvrdí *„už jsem opravil X a otestoval to"*, ale fakticky to neudělal nebo to neprošlo.
+- **Zavírá se / zamrzá** — odpovídá pomalu, vypisuje obří výstupy, plní si kontext nesmysly.
+
+**Co s tím — od levných k drastickým krokům:**
+
+1. **Řekni mu, ať se zastaví a popíše stav.** Konkrétní fráze, které fungují:
+    - *„Stop. Žádné další změny. Popiš mi v 3 větách, kde teď přesně jsme a co je rozbité."*
+    - *„Ukaž mi přesně tu chybovou hlášku, na kterou narážíš — celou, neřez ji."*
+    - *„Co jsi zkusil, co fungovalo a co ne? Vypiš to bodově."*
+
+    Často sám prozradí, kde dělá chybu (nebo že o problému ani neví).
+
+2. **Vrať ho na pevnou půdu.** Pokud halucinuje cesty/funkce: *„Spusť `ls` a ukaž mi, co tam reálně je"* nebo *„Otevři soubor X a doslova ocituj řádky 10-20"*. Donutí ho přečíst realitu místo toho, co si pamatuje.
+
+3. **Zúžit zadání.** Velké úkoly = víc šance na zacyklení. *„Neřeš celé X. Udělej jen jeden malý krok: opravit funkci `foo` tak, aby pro vstup `[1,2,3]` vrátila `6`. Nic víc."*
+
+4. **Verzování jako záchranná brzda.** Pokud jsi commitoval před úkolem (viz 4.2), `git diff` ti řekne, co agent natropil za škody, a `git checkout .` všechno vrátí. Bez Gitu jsi v potížích.
+
+5. **Začni novou konverzaci.** Pokud se chování nezlepšuje, ukončit session a začít znovu je často **nejrychlejší cesta**. Předtím nech agenta zapsat shrnutí do `notes.md` (viz 4.4) — nová konverzace si to přečte a navážeš tam, kde jsi skončil, bez balastu starého kontextu.
+
+6. **Přepni model.** Některé úlohy jsou pro daný model na hraně schopností. Pokud Sonnet/Haiku zacyklí, zkus Opus nebo `thinker` (e-INFRA). Naopak na triviální úkol může Opus „přemýšlet" zbytečně a méně náročný model je lepší.
+
+> **💡 Hlavní pravidlo:** Když cítíš, že se s agentem **handrkuješ a nehne se to vpřed**, **zastav se**. Tři minuty ručního přemýšlení jsou rychlejší než pět minut dalšího plácání s agentem. Buď zúž zadání, nebo udělej krok ručně a pak ho pošli zpátky agentovi.
 
 ---

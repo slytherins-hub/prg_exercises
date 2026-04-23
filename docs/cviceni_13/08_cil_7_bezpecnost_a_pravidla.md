@@ -4,6 +4,8 @@ Algoritmizace a programování
 
 ## CÍL 7: BEZPEČNOST A PRAVIDLA POUŽÍVÁNÍ AI
 
+> **⚠️ Stav: duben 2026.** Vývoj AI nástrojů i univerzitních pravidel jde velmi rychle. Pro závazné znění pravidel se vždy řiď aktuální oficiální stránkou své instituce ([vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai) pro VUT) a podmínkami konkrétního předmětu.
+
 AI agent je mocný nástroj — vidí tvé soubory, spouští tvé příkazy a tvá data posílá přes internet. Než
 ho pustíš na ostrou práci, je potřeba rozumět třem věcem: **co se děje s tvými daty**, **jaká pravidla
 platí při studiu** a **jak zabránit tomu, aby agent něco nevratně pokazil**. O tom je tento cíl.

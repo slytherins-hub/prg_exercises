@@ -4,6 +4,8 @@ Algoritmizace a programování
 
 ## CÍL 5: INSTALACE AI NÁSTROJŮ
 
+> **⚠️ Stav: duben 2026.** Vývoj AI nástrojů jde velmi rychle — instalační příkazy, ceny, free tiery i názvy modelů se můžou rychle měnit. Pro aktuální stav vždy zkontroluj oficiální dokumentaci (odkazy v každé záložce).
+
 V minulých cílech jsi se dozvěděl, **co** AI agenti umí a **jaké koncepty** jsou kolem nich důležité. Teď si jednoho nainstaluješ, abys ho mohl v dalším cíli použít na praktické úkoly.
 
 > **⭐ Než začneš — povinný odkaz:** VUT má vlastní rozcestník **[vut.cz/ai](https://www.vut.cz/ai)**, který je pro studenty VUT **nejlepší jednotný zdroj** k AI nástrojům. Najdeš tam aktuální přehled licencí, postupy přihlášení, **i přístup do e-INFRA / MetaCentra** (viz záložka „Claude Code + e-INFRA" níže). Než budeš cokoli platit nebo instalovat, projdi si nejdřív tuhle stránku — ušetří ti čas i peníze.
@@ -252,7 +254,9 @@ Máš platné předplatné některého z agentů?
     | `qwen3-coder-next`, `qwen3-coder` | Specializované coding modely |
     | `gpt-oss-120b`, `deepseek-r1` | Otevřené alternativy |
 
-    > **⚠️ Pozor — neposílej citlivá data:** I když je e-INFRA provozovaná v ČR, jde stále o **vzdálenou službu**. Neposílej do ní pacientská data, hesla ani API klíče. Pravidlo z cíle 7 platí beze změny.
+    > **🔒 Bezpečné pro univerzitní data:** e-INFRA běží v infrastruktuře CESNET / českých akademických institucí. Provozovatel deklaruje, že **data neopouštějí prostředí e-INFRA** (žádné odesílání ke komerčním poskytovatelům typu Anthropic / OpenAI / Google). Pro běžnou univerzitní práci — výukové materiály, studentské projekty, neveřejný interní VUT/MUNI obsah — je proto **vhodnější volba než komerční cloudoví agenti**.
+
+    > **⚠️ Co i tak nikdy neposílej:** Pravidla z cíle 7 platí dál — hesla, API klíče, osobní údaje pacientů, citlivá data podléhající GDPR či smluvním závazkům **nepatří do žádné AI služby, ani do té univerzitní**. Bezpečné prostředí ≠ povolení posílat cokoliv.
 
     > **💡 Tip:** Plnou aktuální dokumentaci k integracím (VS Code, JetBrains, Jupyter) najdeš na [docs.cerit.io](https://docs.cerit.io/en/docs/ai-as-a-service/llm-integration). Širší přehled modelů (Claude, GPT, Gemini, open-source na e-INFRA) je v [Doplňku — aktuální AI modely](10_doplnek_modely.md).
 

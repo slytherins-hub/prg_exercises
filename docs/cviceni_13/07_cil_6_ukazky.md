@@ -4,6 +4,8 @@ Algoritmizace a programování
 
 ## CÍL 6: UKÁZKY – AI V PRAXI
 
+> **⚠️ Stav: duben 2026.** Vývoj AI nástrojů jde velmi rychle — agenti se chovají jinak než před půl rokem a doporučené postupy se rychle vyvíjejí. Příklady ber jako orientační, ne jako zaručeně reprodukovatelný recept.
+
 V této části si vyzkoušíš práci s AI agentem na praktických úkolech. Cílem není naučit se novou syntaxi – cílem je naučit se **efektivně komunikovat s AI** a používat ho jako nástroj pro řešení reálných úloh.
 
 > **💡 Než začneš:** Předpokládá se, že už máš nainstalovaného agenta podle **[Cíle 5 — Instalace AI nástrojů](06_cil_5_instalace_ai.md)**. Pokud ještě ne, projdi nejdřív tu stránku — zabere ti to pár minut.
