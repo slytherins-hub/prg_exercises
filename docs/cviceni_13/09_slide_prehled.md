@@ -145,6 +145,7 @@ h1 { text-align: center; font-size: 2.2rem; font-weight: 800; color: #1a1a2e; ma
         <li><img src="../ai_logos/claude_ai_wordmark.svg" alt="Claude"><span class="tool-suffix">Code</span></li>
         <li><img src="../ai_logos/openai_wordmark.svg" alt="OpenAI"><span class="tool-suffix">Codex</span></li>
         <li class="icon"><img src="../ai_logos/github_copilot.svg" alt=""><span class="tool-name">GitHub Copilot</span></li>
+        <li><img src="../ai_logos/gemini_wordmark.svg" alt="Gemini"><span class="tool-suffix">CLI</span></li>
       </ul>
       <span class="tool-card-foot">autonomní · terminál / IDE / CI</span>
     </div>
@@ -202,6 +203,12 @@ h1 { text-align: center; font-size: 2.2rem; font-weight: 800; color: #1a1a2e; ma
           <td>~$25/měs (ChatGPT Plus)</td>
           <td>skripty, opravy, agentní úlohy</td>
           <td>těsná integrace s ChatGPT; funkční agent</td>
+        </tr>
+        <tr class="highlight">
+          <td><div class="logo-cell"><img src="../ai_logos/gemini_wordmark.svg" alt="Gemini"><span class="tool-suffix">CLI</span><span class="badge badge-free">free tier</span></div></td>
+          <td>~$25/měs (Google AI Pro)<br><strong>velkorysá free verze</strong>:<br>60 req/min, <strong>1000 req/den</strong> s Google účtem</td>
+          <td>velké refaktoringy, projekty s mnoha soubory, free volba pro studenty</td>
+          <td><strong>Gemini 3.1 Pro · 1M kontext</strong>; open-source; ukázkový agent na cvičení</td>
         </tr>
       </tbody>
     </table>

@@ -2,7 +2,7 @@
 
 Algoritmizace a programování
 
-## CÍL 6: BEZPEČNOST A PRAVIDLA POUŽÍVÁNÍ AI
+## CÍL 7: BEZPEČNOST A PRAVIDLA POUŽÍVÁNÍ AI
 
 AI agent je mocný nástroj — vidí tvé soubory, spouští tvé příkazy a tvá data posílá přes internet. Než
 ho pustíš na ostrou práci, je potřeba rozumět třem věcem: **co se děje s tvými daty**, **jaká pravidla
@@ -10,7 +10,7 @@ platí při studiu** a **jak zabránit tomu, aby agent něco nevratně pokazil**
 
 ---
 
-### 6.1 Co AI služby dělají s tvými daty
+### 7.1 Co AI služby dělají s tvými daty
 
 Když používáš AI agenta, tvůj kód, data a konverzace se odesílají na servery poskytovatele (Anthropic, OpenAI, GitHub, Google…). Je důležité rozumět, co se s nimi děje:
 
@@ -28,9 +28,29 @@ Když používáš AI agenta, tvůj kód, data a konverzace se odesílají na se
 
 ---
 
-### 6.2 Pravidla používání AI na univerzitě
+### 7.2 Pravidla používání AI na univerzitě
 
-Používání AI nástrojů při studiu se řídí pravidly tvé univerzity a konkrétního předmětu. Tady jsou obecné zásady, které typicky platí:
+> **📜 Závazná pravidla VUT:** Plné znění je na **[vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai)** (a oficiální stanovisko na [úřední desce VUT](https://www.vut.cz/uredni-deska/ai)). Čti **dřív, než AI použiješ na zápočťák, semestrálku nebo závěrečnou práci** — porušení může mít disciplinární následky.
+
+#### Co říká stanovisko VUT — krátce
+
+VUT bere generativní AI jako **asistenční a konzultační nástroj** (ne jako náhradu vlastní práce) a nastavuje k jejímu použití tyto závazné principy:
+
+1. **Odpovědnost za výstup** — Za škody i za kvalitu odevzdaných výstupů odpovídá ten, kdo AI použil. AI nemůže být „omluvou" za chybu v práci.
+2. **Povinnost ověřovat** — Musíš důsledně ověřit **správnost, pravdivost i nezávadnost** všeho, co AI vyprodukuje. Halucinace = tvoje chyba.
+3. **Ochrana dat** — Nesmíš do AI nástrojů svěřovat osobní údaje, obchodní tajemství, ani jiná chráněná data, pokud na to nemáš výslovné oprávnění. Vždy zvaž, co odesíláš.
+4. **Soulad s předpisy** — AI lze používat jen tam, kde to neodporuje obecně závazným zákonům **a vnitřním předpisům VUT** (včetně etického kodexu).
+5. **Transparentnost** — *„Nesprávné či nepřiznané použití generativní AI může být považováno za porušení etických zásad ve smyslu ghost-writing nebo contract-cheating."* Použití AI vždy v práci přiznej (viz 7.3 Akademická integrita).
+6. **Autorská práva** — Při použití výstupů z AI dbáš na autorská práva a podmínky poskytovatele dané AI služby. Některé výstupy mohou mít licenční omezení.
+7. **Hodnotové směřování** — AI má sloužit ke zlepšování kvality života, udržitelnosti a řešení reálných problémů, **ne** k obcházení vlastního studia.
+
+> **💡 Praktický překlad pro tohle cvičení:** AI ti smí pomoct kód napsat, opravit nebo vysvětlit. Co odevzdáš, musíš **ty sám rozumět** a umět vysvětlit u tabule nebo v diskusi. A do agenta nikdy nelep cizí osobní údaje, hesla ani interní materiály VUT.
+
+> **⚠️ Toto je jen orientační výtah — závazné je znění VUT.** Souhrn 7 bodů výše je didaktické zjednodušení, ne přesné parafrázování. Závazný zdroj je vždy oficiální stanovisko VUT na **[vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai)** — pokud řešíš konkrétní hraniční situaci, čti přímo tam.
+
+> **🎯 Vždy si zjisti pravidla konkrétního předmětu a projektu — to je nejdůležitější.** Univerzitní stanovisko stanovuje rámec, ale **konkrétní povolení a omezení nastavuje každý vyučující sám pro svůj předmět** (sylabus, zadání úkolu, pokyny k závěrečné práci, podmínky zkoušky). Stejné pravidlo platí pro projekty mimo školu — vždy se zeptej, **co je pro tenhle konkrétní úkol povolené**, než AI použiješ. Když si nejsi jistý, zeptej se vyučujícího/vedoucího — je to rychlejší než řešit pak průšvih.
+
+Obecné zásady, které **typicky** platí napříč předměty (znova: ne závazně, ale jako vodítko):
 
 **AI je povolený nástroj, ne zakázaný — ale s pravidly:**
 
@@ -54,7 +74,7 @@ Používání AI nástrojů při studiu se řídí pravidly tvé univerzity a ko
 
 ---
 
-### 6.3 Akademická integrita
+### 7.3 Akademická integrita
 
 Použití AI bez uvedení zdroje může být posuzováno jako **plagiát** – podobně jako kdybys opsal od spolužáka. Klíčový rozdíl mezi legitimním použitím a podvodem:
 
@@ -69,7 +89,7 @@ Použití AI bez uvedení zdroje může být posuzováno jako **plagiát** – p
 
 ---
 
-### 6.4 Bezpečnost kódu generovaného AI
+### 7.4 Bezpečnost kódu generovaného AI
 
 AI může generovat kód, který obsahuje bezpečnostní chyby. Studie ukazují, že AI kód má výrazně víc bezpečnostních zranitelností než kód psaný člověkem. Na co si dávat pozor:
 
@@ -86,7 +106,7 @@ AI může generovat kód, který obsahuje bezpečnostní chyby. Studie ukazují,
 
 ---
 
-### 6.5 Sandbox a Docker – proč je důležité omezit agenta
+### 7.5 Sandbox a Docker – proč je důležité omezit agenta
 
 AI agent má přístup k tvému terminálu a souborům. To znamená, že **může udělat cokoli, co bys udělal ty** – smazat soubory, přepsat kód, nainstalovat balíčky, spustit libovolný příkaz. Většina agentů se před rizikovými akcemi ptá na potvrzení, ale:
 
@@ -111,7 +131,7 @@ Sandbox znamená, že agent běží v omezeném prostředí, kde nemůže poško
 
 ---
 
-### 6.6 Shrnutí pravidel
+### 7.6 Shrnutí pravidel
 
 1. **Data:** Neposílej citlivé údaje do AI služeb.
 2. **Transparentnost:** Uveď, že jsi AI použil.

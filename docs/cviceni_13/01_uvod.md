@@ -23,6 +23,7 @@ při používání dodržovat, a vyzkoušíš si agenta v akci.
 3. Jak použít dědičnost na praktických úlohách (biomedicínský signál, DNA sekvence).
 4. Jaké **AI nástroje** dnes existují a čím se liší (chatboti, online nástroje, AI IDE, AI agenti).
 5. Důležité koncepty kolem AI agentů — repozitář, verzování, kontext, skills, MCP.
-6. Jak AI efektivně používat a jaká pravidla (univerzitní i bezpečnostní) při tom dodržovat.
+6. Jak si AI agenta **nainstalovat** (plugin v IDE, terminál, desktopová aplikace) a jak se rozhodnout mezi Claude Code, Codexem a GitHub Copilotem podle toho, k čemu máš přístup.
+7. Jak AI efektivně používat a jaká pravidla (univerzitní i bezpečnostní) při tom dodržovat.
 
 ---

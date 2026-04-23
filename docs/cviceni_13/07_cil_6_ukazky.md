@@ -2,33 +2,15 @@
 
 Algoritmizace a programování
 
-## CÍL 5: UKÁZKY – AI V PRAXI
+## CÍL 6: UKÁZKY – AI V PRAXI
 
 V této části si vyzkoušíš práci s AI agentem na praktických úkolech. Cílem není naučit se novou syntaxi – cílem je naučit se **efektivně komunikovat s AI** a používat ho jako nástroj pro řešení reálných úloh.
 
----
-
-### 5.1 Příprava
-
-Než začneš, potřebuješ AI agenta. Máš dvě hlavní možnosti:
-
-**Možnost A: GitHub Copilot v PyCharmu (doporučeno)**
-
-1. Otevři `File → Settings → Plugins`.
-2. Vyhledej **GitHub Copilot** a klikni **Install**.
-3. Restartuj PyCharm a přihlas se GitHub účtem.
-4. Otevři panel Copilot Chat a přepni na **Agent** mód.
-
-> **💡 Tip:** Copilot je zdarma pro studenty přes [GitHub Education](https://education.github.com/).
-
-**Možnost B: Claude Code**
-
-1. Stáhni desktopovou aplikaci z [claude.ai](https://claude.ai/) nebo nainstaluj CLI: `npm install -g @anthropic-ai/claude-code`.
-2. Přihlas se a otevři složku projektu.
+> **💡 Než začneš:** Předpokládá se, že už máš nainstalovaného agenta podle **[Cíle 5 — Instalace AI nástrojů](06_cil_5_instalace_ai.md)**. Pokud ještě ne, projdi nejdřív tu stránku — zabere ti to pár minut.
 
 ---
 
-### 5.2 Úkol 1: Analýza textu
+### 6.1 Úkol 1: Analýza textu
 
 Vytvoř novou složku pro tento úkol a otevři ji v PyCharmu (nebo spusť agenta v terminálu v této složce).
 
@@ -55,7 +37,7 @@ Vytvoř novou složku pro tento úkol a otevři ji v PyCharmu (nebo spusť agent
 
 ---
 
-### 5.3 Úkol 2: Práce s daty
+### 6.2 Úkol 2: Práce s daty
 
 **📝 ÚKOL: Řekni agentovi:**
 
@@ -82,7 +64,7 @@ Vytvoř novou složku pro tento úkol a otevři ji v PyCharmu (nebo spusť agent
 
 ---
 
-### 5.4 Úkol 3: Vizualizace – od nuly po hotový graf
+### 6.3 Úkol 3: Vizualizace – od nuly po hotový graf
 
 **📝 ÚKOL: Řekni agentovi:**
 
@@ -101,7 +83,7 @@ Vytvoř novou složku pro tento úkol a otevři ji v PyCharmu (nebo spusť agent
 
 ---
 
-### 5.5 Úkol 4: Oprava chybného kódu
+### 6.4 Úkol 4: Oprava chybného kódu
 
 Tento úkol je jiný – začneš s kódem, který nefunguje, a necháš agenta najít a opravit chyby.
 
@@ -145,7 +127,7 @@ statistiky(cisla)
 
 ---
 
-### 5.6 Úkol 5: Commitování přes agenta
+### 6.5 Úkol 5: Commitování přes agenta
 
 **📝 ÚKOL:**
 
@@ -162,7 +144,7 @@ statistiky(cisla)
 
 ---
 
-### 5.7 Bonusový úkol: Hra
+### 6.6 Bonusový úkol: Hra
 
 **📝 ÚKOL: Řekni agentovi:**
 
@@ -175,5 +157,7 @@ Až hra funguje, zadej modifikaci:
 Cílem není naprogramovat hru – cílem je vidět, jak agent zvládá **iterativní vývoj** většího projektu a jak ho efektivně navádět.
 
 > **💡 Tip:** Pokud hra nefunguje nebo má chyby, řekni agentovi přesně co vidíš. Neřeš to ručně – nech ho, ať to opraví sám.
+
+> **💡 Tip — dej agentovi „oči":** Agent ve výchozím stavu nevidí, jak hra vypadá — neumí spustit GUI okno. Řekni mu, ať si **sám zprovozní způsob, jak hru vizuálně zkontrolovat**: třeba pomocný skript, který v každém kroku uloží snapshot herní mřížky do PNG (`pygame.image.save()` nebo `tkinter.PostScript`), nebo si nasadí MCP server pro screenshoty (např. [Playwright MCP](https://github.com/microsoft/playwright-mcp), který umí ovládat a fotit okna). Agent pak může sám kontrolovat, jestli se had hýbe správně, jestli zmizí po sebrání jídla atd. — bez toho, abys ty musel hru pořád pouštět a popisovat mu, co vidíš.
 
 ---
