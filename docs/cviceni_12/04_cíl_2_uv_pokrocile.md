@@ -68,13 +68,13 @@ Proč to `uv` dělá?
 
 ### 2.3 Další praktické příkazy
 
-| Příkaz | K čemu |
-|--------|--------|
-| `uv add <balíček>` | Přidá balíček do `pyproject.toml` **a** nainstaluje ho. |
-| `uv remove <balíček>` | Opak `uv add` — odebere balíček z `pyproject.toml` a odinstaluje. |
-| `uv sync` | Nainstaluje přesně to, co je v `uv.lock`. Používáš **po klonování** nebo **po `git pull`**, pokud se změnily závislosti. |
-| `uv run <příkaz>` | Spustí příkaz uvnitř virtuálního prostředí projektu. Např. `uv run python main.py`, `uv run jupyter notebook`. |
-| `uv tree` | Zobrazí strom závislostí — uvidíš, co kterou knihovnu drží v projektu. |
+| Příkaz                | K čemu                                                                                                                   |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------|
+| `uv add <balíček>`    | Přidá balíček do `pyproject.toml` **a** nainstaluje ho.                                                                  |
+| `uv remove <balíček>` | Opak `uv add` — odebere balíček z `pyproject.toml` a odinstaluje.                                                        |
+| `uv sync`             | Nainstaluje přesně to, co je v `uv.lock`. Používáš **po klonování** nebo **po `git pull`**, pokud se změnily závislosti. |
+| `uv run <příkaz>`     | Spustí příkaz uvnitř virtuálního prostředí projektu. Např. `uv run python main.py`, `uv run jupyter notebook`.           |
+| `uv tree`             | Zobrazí strom závislostí — uvidíš, co kterou knihovnu drží v projektu.                                                   |
 
 **Ukázka `uv tree`:**
 
@@ -146,11 +146,11 @@ uv tool uninstall ruff  # odinstalace
 
 **Rozdíl proti `uv add`:**
 
-| `uv add numpy` | `uv tool install ruff` |
-|----------------|------------------------|
-| Přidá do **projektu** (zapíše do `pyproject.toml`) | Nainstaluje **globálně** pro tvého uživatele |
-| Dostupné jen `uv run python …` v projektu | Dostupné jako příkaz odkudkoliv v terminálu |
-| Vhodné pro knihovny (`numpy`, `matplotlib`) | Vhodné pro CLI nástroje (`ruff`, `black`, `httpie`) |
+| `uv add numpy`                                     | `uv tool install ruff`                              |
+|----------------------------------------------------|-----------------------------------------------------|
+| Přidá do **projektu** (zapíše do `pyproject.toml`) | Nainstaluje **globálně** pro tvého uživatele        |
+| Dostupné jen `uv run python …` v projektu          | Dostupné jako příkaz odkudkoliv v terminálu         |
+| Vhodné pro knihovny (`numpy`, `matplotlib`)        | Vhodné pro CLI nástroje (`ruff`, `black`, `httpie`) |
 
 Projektový a nástrojový prostor jsou **striktně oddělené** a nepletou se — což je proti klasickému
 `pip install -g` (globální pip) velká výhoda.
@@ -168,15 +168,16 @@ uv python install 3.12    # můžeš mít i víc verzí vedle sebe
 ```
 
 Když pak v projektu `pyproject.toml` obsahuje `requires-python = ">=3.13"`, `uv` si sám vybere
-(a případně stáhne) správnou verzi při prvním `uv sync`. Pro studenta to znamená: **nemusíš
-řešit „která verze Pythonu mi běží v terminálu"** — `uv` to dopočítá podle projektu.
+(a případně stáhne) správnou verzi při prvním `uv sync`. **Nemusíš řešit „která verze Pythonu mi běží v terminálu"**
+— `uv` to dopočítá podle projektu.
 
 ---
 
 ### 2.7 Co **ne**commitovat
 
 Složka **`.venv/`** obsahuje skutečně nainstalované balíčky (stovky MB dat). Do Gitu **nepatří** —
-generuje se lokálně z `pyproject.toml` + `uv.lock`:
+generuje se lokálně z `pyproject.toml` + `uv.lock`. Proto by měla být v `.gitignore`, což je soubor, který říká Gitu, 
+které soubory a složky má ignorovat (necommitovat):
 
 ```
 # .gitignore
