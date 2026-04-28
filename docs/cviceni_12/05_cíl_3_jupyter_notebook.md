@@ -46,12 +46,14 @@ svého projektu. Použij `uv` (ze cvičení 1 a Cíle 1):
 
 ```bash
 # uvnitř složky tvého projektu
-uv add jupyter numpy matplotlib
+uv add jupyter notebook pip numpy matplotlib
 ```
 
-Tím se do `pyproject.toml` přidají tři balíčky najednou:
+Tím se do `pyproject.toml` přidá pět balíčků najednou:
 
 - **`jupyter`** — samotný Jupyter (klient, kernel, IPython),
+- **`notebook`** — klasické rozhraní Jupyter Notebooku (potřeba pro spuštění v PyCharmu),
+- **`pip`** — bez něj PyCharm při startu kernelu hází chybu,
 - **`numpy`** — numerické výpočty (budeš potřebovat v dalším cíli),
 - **`matplotlib`** — vykreslování grafů.
 
@@ -111,35 +113,58 @@ Přidej markdown buňku (změň typ buňky z `Code` na `Markdown`) s nadpisem a 
 Tento notebook procvičuje práci s Jupyter Notebooky, numpy a matplotlib.
 ```
 
+Markdown v Jupyteru navíc podporuje LaTeX vzorce (mezi `$...$` pro inline a `$$...$$` pro samostatný řádek)
+a vkládání obrázků z internetu i z disku. Přidej druhou markdown buňku s ukázkou:
+
+```markdown
+## Vzorec
+
+Pythagorova věta:
+
+$$ c = \sqrt{a^2 + b^2} $$
+
+Inline použití: pro $a = 3$ a $b = 4$ vyjde $c = 5$.
+
+## Obrázek
+
+![Logo Pythonu](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
+```
+
+Po spuštění buňky (`Shift+Enter`) Jupyter vykreslí vzorec přes MathJax a obrázek stáhne a zobrazí přímo v notebooku.
+
 **2. Code buňky – IPython výhody**
 
 Přidej code buňku a vyzkoušej automatický výstup (bez `print()`):
 
 ```python
 # automatický výstup poslední hodnoty v buňce
-jmeno = "Jupyter"
-verze = 4.2
-verze
+a = 3
+b = 4
+c = (a**2 + b**2) ** 0.5
+c
 ```
 
-**3. Nápověda stylem IPython**
-
-```python
-# zkus nápovědu – spusť a prohlédni si výstup
-len?
-```
-
-**4. Shell příkaz přímo v notebooku**
-
-```python
-# vypiš balíčky nainstalované v projektu
-!uv pip list
-```
+**3. Shell příkaz přímo v notebooku**
 
 Vykřičník `!` řekne Jupyteru, že má zbytek řádku poslat shellu — ne Pythonu. Hodí se na rychlou
-kontrolu prostředí, instalace balíčků (`!uv add pandas`) nebo třeba výpis souborů.
+instalaci balíčků, kontrolu prostředí nebo třeba výpis souborů. Vyzkoušej si to — doinstaluj
+si knihovnu `cowsay` přímo z notebooku a hned ji použij:
 
-**5. Záměrné rozbití stavu**
+```python
+# instalace knihovny rovnou z notebooku
+!uv add cowsay
+```
+
+```python
+# použití nainstalované knihovny
+import cowsay
+cowsay.cow("Ahoj z Jupyteru!")
+```
+
+> **💡 Tip:** Po `!uv add` může být potřeba restartovat kernel (`Kernel → Restart`),
+> aby Python nově nainstalovaný balíček uviděl.
+
+**4. Záměrné rozbití stavu**
 
 - V buňce A nastav `x = 42`.
 - V buňce B vypiš `print(x)` – funguje.

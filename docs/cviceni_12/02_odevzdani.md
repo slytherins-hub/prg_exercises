@@ -33,18 +33,19 @@ i s grafy, takže reviewer uvidí tvé výsledky bez spuštění.
     ```
 
 3. Do naklonované složky stáhni a rozbal data pro úkoly (odkazy najdeš v hlavičce každého
-   notebooku — sekce Cíl 3–6). Po rozbalení budeš mít vedle notebooků složky `skupina_a/`,
-   `skupina_b/`, `ekg_klid/`, `ekg_zatez/` a soubory `pacienti.npy`, `mpl_data.npz`.
+   notebooku — sekce Cíl 3–7). Po rozbalení budeš mít vedle notebooků složky `ekg_klid/`,
+   `ekg_zatez/`, `ekg_real/` (a volitelně `skupina_a/`, `skupina_b/` pro dobrovolný úkol)
+   a soubory `pacienti.npy`, `mpl_data.npz`.
 
 ### Vložení řešení a odevzdání
 
 1. Do naklonované složky vlož vyplněné notebooky:
 
-    - `cviceni_12_uvod.ipynb` — tvůj první notebook z Cíle 2,
-    - `cviceni_12_numpy.ipynb` — vyplněný úkol z Cíle 3 (analýza dat klinické studie),
-    - `cviceni_12_matplotlib.ipynb` — vyplněný úkol z Cíle 4 (zátěžový test),
-    - `cviceni_12_segmentace.ipynb` — vyplněný úkol z Cíle 5 (segmentace snímků),
-    - `cviceni_12_ekg.ipynb` — vyplněný úkol z Cíle 6 (detekce R-vrcholů a TF).
+    - `cviceni_12_uvod.ipynb` — tvůj první notebook z Cíle 3,
+    - `cviceni_12_numpy.ipynb` — vyplněný úkol z Cíle 4 (analýza dat klinické studie),
+    - `cviceni_12_matplotlib.ipynb` — projetý notebook z Cíle 5 (bez úkolu, jen procvičení),
+    - `cviceni_12_ekg.ipynb` — vyplněný úkol z Cíle 6 (detekce R-vrcholů a TF),
+    - `cviceni_12_segmentace.ipynb` — **dobrovolný** úkol z Cíle 7 (segmentace snímků).
 
 2. Před commitem v každém notebooku spusť **Restart & Run All** a ověř, že všechny buňky
    proběhnou bez chyby. GitHub pak vykreslí uložené výstupy (grafy, čísla) přímo v prohlížeči.
@@ -52,7 +53,8 @@ i s grafy, takže reviewer uvidí tvé výsledky bez spuštění.
 3. Ulož změny do Git historie (včetně datových souborů — repozitář má být spustitelný sám o sobě):
 
     ```
-    git add *.ipynb pacienti.npy mpl_data.npz skupina_a/ skupina_b/ ekg_klid/ ekg_zatez/
+    git add *.ipynb pacienti.npy mpl_data.npz ekg_klid/ ekg_zatez/ ekg_real/
+    # přidej i skupina_a/ skupina_b/ pokud jsi řešil i dobrovolný úkol segmentace
     git commit -m "Řešení cvičení 12"
     git push
     ```
@@ -67,10 +69,12 @@ i s grafy, takže reviewer uvidí tvé výsledky bez spuštění.
 
 Před finálním odevzdáním si odškrtni:
 
-- všechny 4 cílové notebooky (`numpy`, `matplotlib`, `segmentace`, `ekg`) mají vyplněné poslední buňky s řešením,
+- 2 povinné notebooky s úkolem (`numpy`, `ekg`) mají vyplněné poslední buňky s řešením,
+- `matplotlib` notebook je projetý bez chyb (bez úkolu),
+- (volitelně) dobrovolný `segmentace` notebook,
 - v každém notebooku proběhne **Restart & Run All** bez chyb,
 - grafy a výstupy jsou uložené v notebooku (vidíš je na GitHubu v prohlížeči),
-- u segmentace a EKG je vyplněná závěrečná **Interpretace**,
+- u EKG (a u segmentace, pokud jsi ji řešil) je vyplněná závěrečná **Interpretace**,
 - všechna data potřebná pro spuštění jsou v repozitáři,
 - repozitář je **Public** a jde otevřít i z anonymního okna prohlížeče.
 
@@ -79,7 +83,7 @@ Před finálním odevzdáním si odškrtni:
 <h2 style="color:#c62828;">❗❗ POVINNÉ ODEVZDÁNÍ</h2>
 <ul style="color:#c62828;">
   <li>Pro splnění cvičení je nezbytné odevzdat do e-learningu funkční odkaz na repozitář.</li>
-  <li>Cílem je mít v repozitáři vyplněné všechny úkoly z tohoto cvičení.</li>
+  <li>Cílem je mít v repozitáři vyplněné všechny <strong>povinné</strong> úkoly z tohoto cvičení (úkol segmentace je dobrovolný).</li>
   <li>Odevzdání a modifikace v repozitáři je nutné provést nejpozději do půlnoci v den cvičení.</li>
   <li>Ověř, že repozitář je <code>Public</code> a jde otevřít i z anonymního okna prohlížeče.</li>
 </ul>

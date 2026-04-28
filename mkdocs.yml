@@ -143,8 +143,8 @@ nav:
     - Cíl 3 – Jupyter Notebook: cviceni_12/05_cíl_3_jupyter_notebook.md
     - Cíl 4 – NumPy: cviceni_12/cviceni_12_numpy.ipynb
     - Cíl 5 – Matplotlib: cviceni_12/cviceni_12_matplotlib.ipynb
-    - Cíl 6 – Úkol – segmentace: cviceni_12/cviceni_12_segmentace.ipynb
-    - Cíl 7 – Úkol – EKG: cviceni_12/cviceni_12_ekg.ipynb
+    - Cíl 6 – Úkol – EKG: cviceni_12/cviceni_12_ekg.ipynb
+    - Cíl 7 – Úkol – segmentace (dobrovolné): cviceni_12/cviceni_12_segmentace.ipynb
 
 extra_css:
   - assets/nav-toggle.css

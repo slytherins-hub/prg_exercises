@@ -8,5 +8,5 @@
 5. [CÍL 3: JUPYTER NOTEBOOK](05_cíl_3_jupyter_notebook.md)
 6. [CÍL 4: NUMPY](cviceni_12_numpy.ipynb)
 7. [CÍL 5: MATPLOTLIB](cviceni_12_matplotlib.ipynb)
-8. [CÍL 6: ÚKOL – SEGMENTACE](cviceni_12_segmentace.ipynb)
-9. [CÍL 7: ÚKOL – EKG](cviceni_12_ekg.ipynb)
+8. [CÍL 6: ÚKOL – EKG](cviceni_12_ekg.ipynb)
+9. [CÍL 7: ÚKOL – SEGMENTACE (dobrovolné)](cviceni_12_segmentace.ipynb)
