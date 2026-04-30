@@ -6,12 +6,6 @@ Algoritmizace a programování
 
 > **⚠️ Stav: duben 2026.** Vývoj AI nástrojů i univerzitních pravidel jde velmi rychle. Pro závazné znění pravidel se vždy řiď aktuální oficiální stránkou své instituce ([vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai) pro VUT) a podmínkami konkrétního předmětu.
 
-> **📌 Tři věci, které si z tohohle cíle musíš odnést:**
->
-> 1. **Rozuměj tomu, co odevzdáváš.** Nestačí, že to funguje — musíš umět vysvětlit, jak a proč. Když to neumíš obhájit u tabule, není to tvoje práce.
-> 2. **Za odevzdané ručíš ty, ne AI.** „Tohle mi vygeneroval Copilot" není omluva. Halucinace, chyba, bezpečnostní díra — všechno padá na tebe.
-> 3. **U každého úkolu si zjisti pravidla.** AI smí být povolená, omezená nebo úplně zakázaná — záleží na předmětu, projektu a vyučujícím. Tahle informace by dnes měla být v zadání; pokud chybí, zeptej se **dřív**, než AI použiješ.
-
 AI agent je mocný nástroj — vidí tvé soubory, spouští tvé příkazy a tvá data posílá přes internet. Než
 ho pustíš na ostrou práci, je potřeba rozumět třem věcem: **co se děje s tvými daty**, **jaká pravidla
 platí při studiu** a **jak zabránit tomu, aby agent něco nevratně pokazil**. O tom je tento cíl.
@@ -93,6 +87,12 @@ Obecné zásady, které **typicky** platí napříč předměty (znova: ne záva
 1. Zkopíruješ zadání do AI.
 2. AI vygeneruje celé řešení.
 3. Odevzdáš ho beze změn a bez porozumění.
+
+> **📌 Tři věci, které si z téhle sekce musíš odnést:**
+>
+> 1. **Rozuměj tomu, co odevzdáváš.** Nestačí, že to funguje — musíš umět vysvětlit, jak a proč. Když to neumíš obhájit u tabule, není to tvoje práce.
+> 2. **Za odevzdané ručíš ty, ne AI.** „Tohle mi vygeneroval Copilot" není omluva. Halucinace, chyba, bezpečnostní díra — všechno padá na tebe.
+> 3. **U každého úkolu si zjisti pravidla.** AI smí být povolená, omezená nebo úplně zakázaná — záleží na předmětu, projektu a vyučujícím. Tahle informace by dnes měla být v zadání; pokud chybí, zeptej se **dřív**, než AI použiješ.
 
 ---
 
