@@ -6,6 +6,12 @@ Algoritmizace a programování
 
 > **⚠️ Stav: duben 2026.** Vývoj AI nástrojů i univerzitních pravidel jde velmi rychle. Pro závazné znění pravidel se vždy řiď aktuální oficiální stránkou své instituce ([vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai) pro VUT) a podmínkami konkrétního předmětu.
 
+> **📌 Tři věci, které si z tohohle cíle musíš odnést:**
+>
+> 1. **Rozuměj tomu, co odevzdáváš.** Nestačí, že to funguje — musíš umět vysvětlit, jak a proč. Když to neumíš obhájit u tabule, není to tvoje práce.
+> 2. **Za odevzdané ručíš ty, ne AI.** „Tohle mi vygeneroval Copilot" není omluva. Halucinace, chyba, bezpečnostní díra — všechno padá na tebe.
+> 3. **U každého úkolu si zjisti pravidla.** AI smí být povolená, omezená nebo úplně zakázaná — záleží na předmětu, projektu a vyučujícím. Tahle informace by dnes měla být v zadání; pokud chybí, zeptej se **dřív**, než AI použiješ.
+
 AI agent je mocný nástroj — vidí tvé soubory, spouští tvé příkazy a tvá data posílá přes internet. Než
 ho pustíš na ostrou práci, je potřeba rozumět třem věcem: **co se děje s tvými daty**, **jaká pravidla
 platí při studiu** a **jak zabránit tomu, aby agent něco nevratně pokazil**. O tom je tento cíl.
@@ -51,6 +57,20 @@ VUT bere generativní AI jako **asistenční a konzultační nástroj** (ne jako
 > **⚠️ Toto je jen orientační výtah — závazné je znění VUT.** Souhrn 7 bodů výše je didaktické zjednodušení, ne přesné parafrázování. Závazný zdroj je vždy oficiální stanovisko VUT na **[vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai)** — pokud řešíš konkrétní hraniční situaci, čti přímo tam.
 
 > **🎯 Vždy si zjisti pravidla konkrétního předmětu a projektu — to je nejdůležitější.** Univerzitní stanovisko stanovuje rámec, ale **konkrétní povolení a omezení nastavuje každý vyučující sám pro svůj předmět** (sylabus, zadání úkolu, pokyny k závěrečné práci, podmínky zkoušky). Stejné pravidlo platí pro projekty mimo školu — vždy se zeptej, **co je pro tenhle konkrétní úkol povolené**, než AI použiješ. Když si nejsi jistý, zeptej se vyučujícího/vedoucího — je to rychlejší než řešit pak průšvih.
+
+#### Proč se pravidla liší — analogie s kalkulačkou
+
+Jestli je AI povolená, omezená, nebo úplně zakázaná, záleží na tom, **k čemu konkrétní předmět nebo úkol slouží**. Dobrá analogie je kalkulačka:
+
+- **V první třídě je kalkulačka u písemky zakázaná.** Ne proto, že by byla špatná — ale protože celý smysl cvičení je naučit se sčítat v hlavě. Kdyby ji učitelka dovolila, dítě zmáčkne pár tlačítek, dostane správný výsledek a **nic se nenaučí**. Cíl není mít vyřešený příklad; cíl je rozumět tomu, jak čísla fungují.
+- **Ve čtvrtém ročníku inženýrství je kalkulačka (a Matlab, a numerické knihovny) povinnou výbavou.** Když počítáš statiku mostu, nikdo nečeká, že budeš násobit matice na papíře — cíl je **dostat správný výsledek v rozumném čase**, ne trénovat aritmetiku.
+
+S AI je to úplně stejné:
+
+- V předmětech, kde se učíš **základy** (jako tady v Algoritmizaci a programování), je cílem pochopit, jak se rozkládá problém na funkce, proč pole indexujeme od nuly a jak vlastně počítač přemýšlí. Kdyby všechno napsala AI, **mineš celý vzdělávací cíl** — i když odevzdáš funkční kód. Proto bývá AI v základních předmětech omezená nebo regulovaná.
+- V projektových předmětech, na bakalářce, ve výzkumu nebo v praxi je naopak cílem **dodat fungující řešení**. Tam je AI standardní pracovní nástroj jako kompilátor nebo debugger — kdo ji nepoužívá, je zbytečně pomalý.
+
+**Proto se musíš u každého úkolu ptát.** Stejné zadání („napiš program, který…") může mít naprosto opačné pravidlo podle toho, jestli si máš procvičit základy, nebo dodat výsledek.
 
 Obecné zásady, které **typicky** platí napříč předměty (znova: ne závazně, ale jako vodítko):
 
