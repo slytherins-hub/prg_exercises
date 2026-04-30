@@ -145,7 +145,7 @@ Tenhle úkol je **ukázka, co všechno agent zvládne sám**: přijmout zadání
 
 ---
 
-### 6.6 Bonusový úkol: Hra
+### 6.6 Bonusový úkol 1: Hra
 
 **📝 ÚKOL: Řekni agentovi:**
 
@@ -160,5 +160,29 @@ Cílem není naprogramovat hru – cílem je vidět, jak agent zvládá **iterat
 > **💡 Tip:** Pokud hra nefunguje nebo má chyby, řekni agentovi přesně co vidíš. Neřeš to ručně – nech ho, ať to opraví sám.
 
 > **💡 Tip — dej agentovi „oči":** Agent ve výchozím stavu nevidí, jak hra vypadá — neumí spustit GUI okno. Řekni mu, ať si **sám zprovozní způsob, jak hru vizuálně zkontrolovat**: třeba pomocný skript, který v každém kroku uloží snapshot herní mřížky do PNG (`pygame.image.save()` nebo `tkinter.PostScript`), nebo si nasadí MCP server pro screenshoty (např. [Playwright MCP](https://github.com/microsoft/playwright-mcp), který umí ovládat a fotit okna). Agent pak může sám kontrolovat, jestli se had hýbe správně, jestli zmizí po sebrání jídla atd. — bez toho, abys ty musel hru pořád pouštět a popisovat mu, co vidíš.
+
+---
+
+### 6.7 Bonusový úkol 2: Prezentace přes Marp (neprogramovací)
+
+Tenhle úkol není o kódu — necháš agenta naklonovat repozitář s podklady ke cvičení, vytáhnout z nich obsah o AI nástrojích a sepsat z něj krátkou prezentaci pomocí [Marp](https://marp.app/) (nástroj, který z Markdownu vyrobí slidy v PDF/HTML). Ukazuje, že agent zvládne i „kancelářské" úkoly: zorientovat se v cizím repozitáři, vytáhnout klíčové body a naformátovat je do prezentačního formátu.
+
+**📝 ÚKOL: Řekni agentovi:**
+
+> *Naklonuj mi <https://github.com/slytherins-hub/prg_exercises.git> a udělej mi prezentaci o AI nástrojích podle toho co je ve cvičení 13. Použij nástroj Marp a udělej pdf i html.*
+
+**Co sleduj:**
+
+- Naklonoval si agent repozitář a skutečně si přečetl podklady ze složky `docs/cviceni_13/`, nebo začal psát „od oka"?
+- Odpovídají body opravdu obsahu cvičení, nebo si agent vymýšlí?
+- Vejde se klíčový obsah na slide bez přetečení?
+- Funguje vygenerované PDF i HTML? Pokud ne, řekni agentovi co je špatně a nech ho to opravit.
+
+> **💡 Tip — dej agentovi „oči" i tady:** Stejně jako u hry agent nevidí, jak prezentace vypadá. Řekni mu, ať si **napíše krátký skript pro vizuální kontrolu** — třeba že každý slide z PDF vyrenderuje na PNG (`pdf2image` nebo `pdftoppm`) a pak si obrázky sám prohlédne (čte je rovnou). Díky tomu může sám zkontrolovat, jestli text netrčí přes okraj, jestli nejsou prázdné slidy, jestli se nepřekrývají bloky — bez toho, abys mu to musel popisovat ty.
+
+> **💡 Tip — Marp nemusí být jediná volba.** Pokud tě zajímá experiment, řekni agentovi, ať použije jiný nástroj a porovnej výsledky:
+> - **[Quarto](https://quarto.org/docs/presentations/)** — vědecky orientovaný, umí Markdown → HTML/PDF/PowerPoint, s podporou kódu a citací.
+> - **[Reveal.js](https://revealjs.com/)** — JavaScriptový framework pro interaktivní HTML prezentace s animacemi a přechody.
+> - **Čisté vlastní HTML/CSS** — žádný framework, jen HTML soubor se slidy. Nejvíc volnosti, nejvíc práce — dobré pro porovnání, jak agent zvládá design „od nuly".
 
 ---
