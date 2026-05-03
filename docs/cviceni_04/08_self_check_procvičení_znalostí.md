@@ -10,8 +10,8 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 
 1. **Jaký je rozdíl mezi `for` a `while` cyklem?**
     <ol type="a">
-      <li><code>for</code> je rychlejší</li>
       <li><code>for</code> se používá pro známý počet opakování, `while` pro neznámý počet</li>
+      <li><code>for</code> je rychlejší</li>
       <li><code>while</code> je zastaralý</li>
       <li>Žádný rozdíl</li>
     </ol>
@@ -19,7 +19,7 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> <code>for</code> se používá, když víš předem kolikrát se má opakovat (např. projdi seznam), <code>while</code> když opakuješ dokud platí podmínka (např. dokud uživatel nezadá správný vstup)
+<b>a.</b> <code>for</code> se používá, když víš předem kolikrát se má opakovat (např. projdi seznam), <code>while</code> když opakuješ dokud platí podmínka (např. dokud uživatel nezadá správný vstup)
 
 </details>
 
@@ -32,29 +32,29 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
     <ol type="a">
       <li>Vypíše: 0 1 2 3 4</li>
       <li>Vypíše: 0 1 2 3 4 5</li>
-      <li>Nekonečný cyklus</li>
       <li>Chybu</li>
+      <li>Nekonečný cyklus</li>
     </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>c.</b> Nekonečný cyklus - <code>x</code> se nikdy nezmění, podmínka <code>x < 5</code> bude pořád pravdivá
+<b>d.</b> Nekonečný cyklus - <code>x</code> se nikdy nezmění, podmínka <code>x < 5</code> bude pořád pravdivá
 
 </details>
 
 3. **Co dělá klíčové slovo <code>break</code>?**
     <ol type="a">
       <li>Přeskočí aktuální iteraci a pokračuje další</li>
-      <li>Ukončí celý cyklus okamžitě</li>
-      <li>Ukončí program</li>
       <li>Vyhodí chybu</li>
+      <li>Ukončí program</li>
+      <li>Ukončí celý cyklus okamžitě</li>
     </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Ukončí celý cyklus okamžitě a pokračuje kódem za cyklem
+<b>d.</b> Ukončí celý cyklus okamžitě a pokračuje kódem za cyklem
 
 </details>
 
@@ -75,8 +75,8 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 
 5. **Kdy je vhodné použít <code>while True</code>?**
     <ol type="a">
-      <li>Nikdy, vždycky způsobí nekonečný cyklus</li>
       <li>Když chceš cyklus, který se ukončí pomocí <code>break</code> uvnitř</li>
+      <li>Nikdy, vždycky způsobí nekonečný cyklus</li>
       <li>Jen pro začátečníky</li>
       <li>Nahrazuje if podmínku</li>
     </ol>
@@ -84,7 +84,7 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> <code>while True</code> s <code>break</code> uvnitř je běžný vzor pro menu nebo validaci vstupu - cyklus běží dokud nenastane nějaká vnitřní podmínka
+<b>a.</b> <code>while True</code> s <code>break</code> uvnitř je běžný vzor pro menu nebo validaci vstupu - cyklus běží dokud nenastane nějaká vnitřní podmínka
 
 </details>
 
@@ -95,15 +95,15 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 6. **Co je pravda o slovnících?**
     <ol type="a">
       <li>Indexují se pomocí pozic (0, 1, 2...)</li>
-      <li>Indexují se pomocí klíčů</li>
-      <li>Mohou mít duplicitní klíče</li>
       <li>Jsou immutable</li>
+      <li>Mohou mít duplicitní klíče</li>
+      <li>Indexují se pomocí klíčů</li>
     </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Slovníky používají klíče místo číselných indexů. Klíče musí být unikátní!
+<b>d.</b> Slovníky používají klíče místo číselných indexů. Klíče musí být unikátní!
 
 </details>
 
@@ -135,15 +135,15 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 
     <ol type="a">
       <li><code>{"name": "Jan", "name": "Marie"}</code></li>
-      <li><code>{"name": "Marie"}</code></li>
-      <li>Chyba</li>
       <li><code>{"name": "Jan"}</code></li>
+      <li>Chyba</li>
+      <li><code>{"name": "Marie"}</code></li>
     </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> <code>{"name": "Marie"}</code> – přiřazení na existující klíč ho přepíše, klíče musí být unikátní
+<b>d.</b> <code>{"name": "Marie"}</code> – přiřazení na existující klíč ho přepíše, klíče musí být unikátní
 
 </details>
 
@@ -194,8 +194,8 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
     ```
 
     <ol type="a">
-      <li>Methionin, Fenylalanin</li>
       <li>AUG, UUU</li>
+      <li>Methionin, Fenylalanin</li>
       <li>AUG: Methionin, UUU: Fenylalanin</li>
       <li>Chybu</li>
     </ol>
@@ -203,7 +203,7 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> AUG, UUU – při iteraci <code>for x in slovnik</code> dostáváš jen klíče (ne hodnoty!)
+<b>a.</b> AUG, UUU – při iteraci <code>for x in slovnik</code> dostáváš jen klíče (ne hodnoty!)
 
 </details>
 

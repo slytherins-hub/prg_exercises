@@ -22,30 +22,30 @@ Algoritmizace a programování
 2. **Co udělá <code>if __name__ == "__main__":</code>?**
    <ol type="a">
       <li>Spustí se vždy při importu modulu</li>
-      <li>Spustí se jen při přímém spuštění souboru</li>
-      <li>Zakáže import modulu</li>
       <li>Spustí testy z <code>pytest</code></li>
+      <li>Zakáže import modulu</li>
+      <li>Spustí se jen při přímém spuštění souboru</li>
    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Blok se vykoná jen při přímém spuštění souboru.
+<b>d.</b> Blok se vykoná jen při přímém spuštění souboru.
 
 </details>
 
 3. **Které volání správně míchá poziční a pojmenované argumenty?**
    <ol type="a">
       <li><code>compute_score_delta(score=1540, 1200, round_to=1)</code></li>
-      <li><code>compute_score_delta(1540, baseline=1200, round_to=1)</code></li>
-      <li><code>compute_score_delta(1540, 1200, score=1800)</code></li>
       <li><code>compute_score_delta(round_to=1, 1540, 1200)</code></li>
+      <li><code>compute_score_delta(1540, 1200, score=1800)</code></li>
+      <li><code>compute_score_delta(1540, baseline=1200, round_to=1)</code></li>
    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Poziční argumenty jdou nejdřív, pojmenované až za nimi.
+<b>d.</b> Poziční argumenty jdou nejdřív, pojmenované až za nimi.
 
 </details>
 
@@ -97,15 +97,15 @@ Algoritmizace a programování
 7. **Jaká je doporučená reprezentace kružnice v Cíli 3?**
    <ol type="a">
       <li><code>[x, y, r]</code></li>
-      <li><code>{"x": x, "y": y, "r": r}</code></li>
-      <li><code>(x, y, r, color)</code></li>
       <li><code>"x,y,r"</code></li>
+      <li><code>(x, y, r, color)</code></li>
+      <li><code>{"x": x, "y": y, "r": r}</code></li>
    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> V Cíli 3 se pracuje se slovníky s klíči <code>x</code>, <code>y</code>, <code>r</code>.
+<b>d.</b> V Cíli 3 se pracuje se slovníky s klíči <code>x</code>, <code>y</code>, <code>r</code>.
 
 </details>
 

@@ -34,15 +34,15 @@ d) ValueError - int() neumí převést desetinné číslo jako string! Musí bý
 
 **3. Co je pravda o stringech v Pythonu?**
 
-- a) Jsou mutable (lze měnit)
-- b) Jsou immutable (nelze měnit)
+- a) Jsou immutable (nelze měnit)
+- b) Jsou mutable (lze měnit)
 - c) Obsahují pouze ASCII znaky
 - d) Mají pevnou délku
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) Jsou immutable - po vytvoření nelze změnit, lze jen vytvořit nový string
+a) Jsou immutable - po vytvoření nelze změnit, lze jen vytvořit nový string
 </details>
 
 **4. Co vrátí `type("123")`?**
@@ -61,14 +61,14 @@ b) `<class 'str'>` - uvozovky znamená text, ne číslo!
 **5. Jak převést text "37.5" na desetinné číslo?**
 
 - a) `int("37.5")`
-- b) `float("37.5")`
-- c) `str(37.5)`
+- b) `str(37.5)`
+- c) `float("37.5")`
 - d) `number("37.5")`
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) `float("37.5")` - int() by vyhodilo chybu, protože "37.5" není celé číslo
+c) `float("37.5")` - int() by vyhodilo chybu, protože "37.5" není celé číslo
 </details>
 
 ### Část B: Indexování a slicing
@@ -76,27 +76,27 @@ b) `float("37.5")` - int() by vyhodilo chybu, protože "37.5" není celé čísl
 **6. Co vypíše `"Python"[1]`?**
 
 - a) "P"
-- b) "y"
+- b) Chybu
 - c) "t"
-- d) Chybu
+- d) "y"
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) "y" (indexování od 0: P=0, y=1, t=2, ...)
+d) "y" (indexování od 0: P=0, y=1, t=2, ...)
 </details>
 
 **7. Co vrátí `"Hello"[-1]`?**
 
 - a) "H"
-- b) "o"
-- c) "l"
+- b) "l"
+- c) "o"
 - d) Chybu
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) "o" (záporný index = od konce: -1=poslední, -2=předposlední, ...)
+c) "o" (záporný index = od konce: -1=poslední, -2=předposlední, ...)
 </details>
 
 **8. Co vypíše `"Python"[1:4]`?**
@@ -115,14 +115,14 @@ a) "yth" (slice od indexu 1 DO indexu 4, ale BEZ něj: pozice 1, 2, 3)
 **9. Jak získat string pozpátku?**
 
 - a) `text.reverse()`
-- b) `text[::-1]`
+- b) `text[-1:]`
 - c) `reverse(text)`
-- d) `text[-1:]`
+- d) `text[::-1]`
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) `text[::-1]` (slice s krokem -1)
+d) `text[::-1]` (slice s krokem -1)
 </details>
 
 **10. Co vrátí `"Programming"[::2]`?**
@@ -173,28 +173,28 @@ b) PYTHON\npython (`.upper()` vrací NOVÝ string, původní se NEMĚNÍ - immut
 
 **13. Co vrátí `"a,b,c".split(",")`?**
 
-- a) `"abc"`
-- b) `["a", "b", "c"]`
+- a) `["a", "b", "c"]`
+- b) `"abc"`
 - c) `["a,b,c"]`
 - d) `("a", "b", "c")`
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) `["a", "b", "c"]` (seznam stringů)
+a) `["a", "b", "c"]` (seznam stringů)
 </details>
 
 **14. Co vrátí `"Hello World".find("o")`?**
 
 - a) 1
-- b) 4
+- b) 2
 - c) 7
-- d) 2
+- d) 4
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) 4 (první výskyt "o" je na indexu 4: H-e-l-l-o)
+d) 4 (první výskyt "o" je na indexu 4: H-e-l-l-o)
 </details>
 
 **15. Co udělá `" ".join(["a", "b", "c"])`?**
@@ -241,14 +241,14 @@ b) "Hodnota: 3.14" (`.2f` = 2 desetinná místa)
 **18. Co vypíše `f"{5 + 3}"`?**
 
 - a) "5 + 3"
-- b) "8"
-- c) "53"
+- b) "53"
+- c) "8"
 - d) Chybu
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) "8" (f-string vyhodnotí výraz uvnitř `{}`)
+c) "8" (f-string vyhodnotí výraz uvnitř `{}`)
 </details>
 
 ### Část E: Praktické úkoly
@@ -299,15 +299,15 @@ NEBO jednořádkově: `result = float("36.5") + 1`
 
 **22. Co vypíše `len("Hello World")`?**
 
-- a) 10
-- b) 11
+- a) 11
+- b) 10
 - c) 12
 - d) 2
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) 11 (mezera se počítá!)
+a) 11 (mezera se počítá!)
 </details>
 
 ### Část F: Debugování
@@ -315,27 +315,27 @@ b) 11 (mezera se počítá!)
 **23. Co udělá breakpoint v PyCharmu?**
 
 - a) Smaže řádek kódu
-- b) Zastaví program na daném řádku během debug módu
+- b) Spustí program rychleji
 - c) Označí chybu
-- d) Spustí program rychleji
+- d) Zastaví program na daném řádku během debug módu
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) Zastaví program na daném řádku během debug módu
+d) Zastaví program na daném řádku během debug módu
 </details>
 
 **24. Co dělá klávesa F8 v debuggeru?**
 
 - a) Spustí program normálně
-- b) Step Over - provede aktuální řádek a posune se dál
-- c) Ukončí debugování
-- d) Nastaví breakpoint
+- b) Nastaví breakpoint
+- c) Step Over - provede aktuální řádek a posune se dál
+- d) Ukončí debugování
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) Step Over - provede aktuální řádek a posune se na další
+c) Step Over - provede aktuální řádek a posune se na další
 </details>
 
 **25. Co dělá klávesa F9 v debuggeru?**

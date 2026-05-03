@@ -27,28 +27,28 @@ b) None - funkce nic nevrací (chybí `return`), takže vrací implicitně `None
 
 **2. Jaký je rozdíl mezi funkcí a metodou?**
 
-- a) Žádný rozdíl
-- b) Funkce se volá samostatně `len(list)`, metoda přes tečku `list.append()`
+- a) Funkce se volá samostatně `len(list)`, metoda přes tečku `list.append()`
+- b) Žádný rozdíl
 - c) Funkce jsou rychlejší
 - d) Metody jsou zastaralé
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) Funkce se volá samostatně (např. `len(numbers)`), metoda se volá na objektu přes tečku (např. `numbers.append(5)`)
+a) Funkce se volá samostatně (např. `len(numbers)`), metoda se volá na objektu přes tečku (např. `numbers.append(5)`)
 </details>
 
 **3. Co znamená princip DRY?**
 
 - a) "Don't Run Yet" - nespouštěj zatím
-- b) "Don't Repeat Yourself" - neopakuj se
+- b) "Debug Right Yesterday" - debuguj hned
 - c) "Do Require Yield" - vyžaduj yield
-- d) "Debug Right Yesterday" - debuguj hned
+- d) "Don't Repeat Yourself" - neopakuj se
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) "Don't Repeat Yourself" - pokud píšeš stejný kód vícekrát, zabal ho do funkce
+d) "Don't Repeat Yourself" - pokud píšeš stejný kód vícekrát, zabal ho do funkce
 </details>
 
 **4. Co vypíše tento kód?**
@@ -61,15 +61,15 @@ result = greet("Jan")
 print(result)
 ```
 
-- a) Ahoj, Jan! a Konec
-- b) Jen Ahoj, Jan!
+- a) Jen Ahoj, Jan!
+- b) Ahoj, Jan! a Konec
 - c) Jen Konec
 - d) Chybu
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) Jen "Ahoj, Jan!" - `return` ukončí funkci, `print("Konec")` se nikdy neprovede
+a) Jen "Ahoj, Jan!" - `return` ukončí funkci, `print("Konec")` se nikdy neprovede
 </details>
 
 **5. Jaký je správný Google-style docstring?**
@@ -128,14 +128,14 @@ a) `[1, 2, 3, 4, 5]` - operátor `+` spojuje seznamy (concatenation)
 **8. Co vrátí `[10, 20, 30][1]`?**
 
 - a) 10
-- b) 20
+- b) Chybu
 - c) 30
-- d) Chybu
+- d) 20
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) 20 - index 1 je druhý prvek (indexuje se od 0)
+d) 20 - index 1 je druhý prvek (indexuje se od 0)
 </details>
 
 **9. Co udělá tento kód?**
@@ -162,15 +162,15 @@ for i, name in enumerate(names, 1):
  print(f"{i}. {name}")
 ```
 
-- a) 0. Jan, 1. Marie, 2. Petr
-- b) 1. Jan, 2. Marie, 3. Petr
+- a) 1. Jan, 2. Marie, 3. Petr
+- b) 0. Jan, 1. Marie, 2. Petr
 - c) Jan, Marie, Petr
 - d) Chybu
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) 1. Jan, 2. Marie, 3. Petr - `enumerate(list, 1)` začíná číslovat od 1
+a) 1. Jan, 2. Marie, 3. Petr - `enumerate(list, 1)` začíná číslovat od 1
 </details>
 
 ### Část C: Metody seznamů
@@ -191,27 +191,27 @@ b) `numbers.append([4, 5])` → `[1, 2, 3, [4, 5]]` (vnořený), `numbers.extend
 **12. Co vrátí metoda `sort()`?**
 
 - a) Seřazený seznam
-- b) None
+- b) Index
 - c) True/False
-- d) Index
+- d) None
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) None - `sort()` mění seznam na místě (in-place) a nic nevrací
+d) None - `sort()` mění seznam na místě (in-place) a nic nevrací
 </details>
 
 **13. Co udělá `numbers.pop()`?**
 
 - a) Odebere a vrátí první prvek
-- b) Odebere a vrátí poslední prvek
+- b) Vypíše seznam
 - c) Odebere všechny prvky
-- d) Vypíše seznam
+- d) Odebere a vrátí poslední prvek
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) Odebere a vrátí poslední prvek - `pop(0)` by odebralo první
+d) Odebere a vrátí poslední prvek - `pop(0)` by odebralo první
 </details>
 
 **14. Kdy použít `sorted()` místo `sort()`?**
@@ -230,14 +230,14 @@ b) `sorted(list)` vrací nový seřazený seznam a původní nechává nezměně
 **15. Co se stane při `numbers.remove(5)`, když 5 není v seznamu?**
 
 - a) Nic
-- b) ValueError
+- b) Odebere první prvek
 - c) Vrátí None
-- d) Odebere první prvek
+- d) ValueError
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) ValueError: list.remove(x): x not in list - proto je lepší nejdřív zkontrolovat `if 5 in numbers:`
+d) ValueError: list.remove(x): x not in list - proto je lepší nejdřív zkontrolovat `if 5 in numbers:`
 </details>
 
 ### Část D: Vnořené seznamy
@@ -296,15 +296,15 @@ def sum_list(numbers):
  return total
 ```
 
-- a) Nic, je to správně
-- b) `total` není inicializováno před použitím
+- a) `total` není inicializováno před použitím
+- b) Nic, je to správně
 - c) Špatná syntaxe cyklu
 - d) `return` je mimo funkci
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-b) `total` musí být nejdřív inicializováno: `total = 0` před cyklem, jinak bude UnboundLocalError
+a) `total` musí být nejdřív inicializováno: `total = 0` před cyklem, jinak bude UnboundLocalError
 </details>
 
 **20. Co vrátí tato funkce?**

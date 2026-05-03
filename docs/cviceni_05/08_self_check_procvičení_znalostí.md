@@ -28,8 +28,8 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
    item_id, quantity, price = ("A101", 4, 99)
    ```
    <ol type="a">
-      <li>Vytvoří slovník</li>
       <li>Přiřadí tři hodnoty do tří proměnných</li>
+      <li>Vytvoří slovník</li>
       <li>Seřadí tuple podle velikosti</li>
       <li>Vyhodí chybu vždy</li>
    </ol>
@@ -37,7 +37,7 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Přiřadí tří hodnoty do tří proměnných.
+<b>a.</b> Přiřadí tří hodnoty do tří proměnných.
 
 </details>
 
@@ -62,15 +62,15 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
    ```
    <ol type="a">
       <li><code>[1, 2, 3]</code></li>
-      <li><code>[2, 4, 6]</code></li>
-      <li><code>[1, 4, 9]</code></li>
       <li>Chybu</li>
+      <li><code>[1, 4, 9]</code></li>
+      <li><code>[2, 4, 6]</code></li>
    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Vytvoří nový seznam s hodnotami <code>[2, 4, 6]</code>.
+<b>d.</b> Vytvoří nový seznam s hodnotami <code>[2, 4, 6]</code>.
 
 </details>
 
@@ -91,8 +91,8 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 
 6. **Co je hlavní výhoda list comprehension oproti <code>for + append</code>?**
    <ol type="a">
-      <li>Vždy je rychlejší o řády</li>
       <li>Je stručnější a často čitelnější pro jednoduché případy</li>
+      <li>Vždy je rychlejší o řády</li>
       <li>Umožní zapisovat bez závorek</li>
       <li>Nahrazuje všechny cykly</li>
    </ol>
@@ -100,7 +100,7 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Je stručnější a často čitelnější pro jednoduché případy.
+<b>a.</b> Je stručnější a často čitelnější pro jednoduché případy.
 
 </details>
 
@@ -126,30 +126,30 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 8. **Proč používat <code>with open(...) as file</code>?**
    <ol type="a">
      <li>Je to kratší zápis</li>
-     <li>Automaticky zavře soubor</li>
      <li>Je to povinné jen pro JSON</li>
+     <li>Automaticky zavře soubor</li>
      <li>Přidá automaticky <code>strip()</code></li>
    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Automaticky zavře soubor
+<b>c.</b> Automaticky zavře soubor
 
 </details>
 
 9. **K čemu je důležité <code>encoding="utf-8"</code>?**
    <ol type="a">
      <li>Zrychlí čtení o 50 %</li>
-     <li>Pomáhá správně načítat české znaky</li>
-     <li>Je nutné jen pro CSV</li>
      <li>Nahrazuje <code>delimiter</code></li>
+     <li>Je nutné jen pro CSV</li>
+     <li>Pomáhá správně načítat české znaky</li>
    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Pomáhá správně načítat české znaky
+<b>d.</b> Pomáhá správně načítat české znaky
 
 </details>
 
@@ -185,8 +185,8 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 
 12. **Co dělá <code>Path("data") / "soubor.txt"</code>?**
    <ol type="a">
-     <li>Dělí text matematicky</li>
      <li>Bezpečně skládá cestu</li>
+     <li>Dělí text matematicky</li>
      <li>Maže soubor</li>
      <li>Vytvoří Git commit</li>
    </ol>
@@ -194,22 +194,22 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Bezpečně skládá cestu
+<b>a.</b> Bezpečně skládá cestu
 
 </details>
 
 13. **Co dělá <code>Path("data").glob("*.csv")</code>?**
    <ol type="a">
      <li>Spustí všechny CSV soubory</li>
-     <li>Najde CSV soubory podle vzoru</li>
-     <li>Převede CSV na JSON</li>
      <li>Otevře Excel</li>
+     <li>Převede CSV na JSON</li>
+     <li>Najde CSV soubory podle vzoru</li>
    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Najde CSV soubory podle vzoru
+<b>d.</b> Najde CSV soubory podle vzoru
 
 </details>
 
@@ -235,22 +235,22 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 15. **Co vypíše <code>Get-Location</code> v PowerShellu?**
    <ol type="a">
      <li>Obsah složky</li>
-     <li>Aktuální cestu</li>
-     <li>Historii příkazů</li>
      <li>Verzi Pythonu</li>
+     <li>Historii příkazů</li>
+     <li>Aktuální cestu</li>
    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Aktuální cestu
+<b>d.</b> Aktuální cestu
 
 </details>
 
 16. **Který příkaz použiješ pro kontrolu změn před commitem?**
    <ol type="a">
-     <li><code>git clone</code></li>
      <li><code>git status</code></li>
+     <li><code>git clone</code></li>
      <li><code>git push</code></li>
      <li><code>git pull</code></li>
    </ol>
@@ -258,22 +258,22 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> <code>git status</code>
+<b>a.</b> <code>git status</code>
 
 </details>
 
 17. **Jaký je správný minimální postup odevzdání?**
    <ol type="a">
      <li><code>git push → git add → git commit</code></li>
-     <li><code>git add → git commit → git push</code></li>
      <li><code>git commit → git clone → git push</code></li>
+     <li><code>git add → git commit → git push</code></li>
      <li><code>git pull → git clone → git status</code></li>
    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> <code>git add → git commit → git push</code>
+<b>c.</b> <code>git add → git commit → git push</code>
 
 </details>
 
@@ -339,8 +339,8 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 
 22. **Co platí o instalaci Gitu v tomto kurzu?**
    <ol type="a">
-     <li>Git se instaluje vždy i na školních počítačích</li>
      <li>Na školních počítačích je Git připravený, instalace je hlavně pro domácí PC</li>
+     <li>Git se instaluje vždy i na školních počítačích</li>
      <li>Git není potřeba, stačí GitHub web</li>
      <li>Git je potřeba jen pro bonusové úkoly</li>
    </ol>
@@ -348,7 +348,7 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Na školních počítačích je Git připravený, instalace je hlavně pro domácí PC
+<b>a.</b> Na školních počítačích je Git připravený, instalace je hlavně pro domácí PC
 
 </details>
 
@@ -404,15 +404,15 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 26. **Co uděláš jako první, když si nejsi jistý(á), co je špatně?**
    <ol type="a">
      <li><code>git reset --hard</code></li>
-     <li><code>git status</code></li>
-     <li><code>git clone</code></li>
      <li><code>git branch</code></li>
+     <li><code>git clone</code></li>
+     <li><code>git status</code></li>
    </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> <code>git status</code>
+<b>d.</b> <code>git status</code>
 
 </details>
 
