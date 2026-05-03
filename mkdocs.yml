@@ -145,6 +145,18 @@ nav:
     - Cíl 5 – Matplotlib: cviceni_12/cviceni_12_matplotlib.ipynb
     - Cíl 6 – Úkol – EKG: cviceni_12/cviceni_12_ekg.ipynb
     - Cíl 7 – Úkol – segmentace (dobrovolné): cviceni_12/cviceni_12_segmentace.ipynb
+  - Cvičení 13:
+    - Přehled: cviceni_13/README.md
+    - Úvod: cviceni_13/01_uvod.md
+    - Cíl 1 – dědičnost: cviceni_13/02_cil_1_dedicnost.md
+    - Cíl 2 – úkol DNA a RNA: cviceni_13/03_cil_2_dna_sekvence.md
+    - Cíl 3 – přehled AI nástrojů: cviceni_13/04_cil_3_prehled_ai_nastroju.md
+    - Cíl 4 – důležité koncepty AI nástrojů: cviceni_13/05_cil_4_dulezite_koncepty.md
+    - Cíl 5 – instalace AI nástrojů: cviceni_13/06_cil_5_instalace_ai.md
+    - Cíl 6 – ukázky: cviceni_13/07_cil_6_ukazky.md
+    - Cíl 7 – bezpečnost a pravidla: cviceni_13/08_cil_7_bezpecnost_a_pravidla.md
+    - Slide – přehled AI nástrojů: cviceni_13/09_slide_prehled.md
+    - Doplněk – aktuální AI modely: cviceni_13/10_doplnek_modely.md
 
 extra_css:
   - assets/nav-toggle.css
