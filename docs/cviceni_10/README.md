@@ -8,3 +8,4 @@
 5. [CÍL 4: VYHLEDÁVÁNÍ VZORŮ](05_cíl_4_vyhledavani_vzoru.md)
 6. [CÍL 5: TEORETICKY ZAJÍMAVÉ ALGORITMY](06_cíl_5_teoreticky_zajimave_algoritmy.md)
 7. [CÍL 6: ODEVZDÁNÍ ÚKOLU](07_cíl_6_odevzdání_úkolu.md)
+8. [SELF-CHECK: PROCVIČENÍ ZNALOSTÍ](08_self_check_procvičení_znalostí.md)

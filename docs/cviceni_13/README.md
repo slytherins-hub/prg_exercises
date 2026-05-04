@@ -11,3 +11,5 @@
 8. [CÍL 7: BEZPEČNOST A PRAVIDLA POUŽÍVÁNÍ AI](08_cil_7_bezpecnost_a_pravidla.md)
 9. [Slide – přehled AI nástrojů](09_slide_prehled.md)
 10. [Doplněk – aktuální AI modely (duben 2026)](10_doplnek_modely.md)
+11. [Doplněk – ovládání AI agentů](11_doplnek_ovladani_agentu.md)
+12. [SELF-CHECK: PROCVIČENÍ ZNALOSTÍ](12_self_check_procvičení_znalostí.md)

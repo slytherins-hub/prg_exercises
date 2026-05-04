@@ -126,13 +126,17 @@ Když s agentem komunikuješ, všechno co napíšeš ty a co odpoví on se uklá
 - Kontext má **omezenou velikost** (závisí na modelu – typicky desítky až stovky tisíc tokenů). Když se zaplní, agent začne zapomínat starší části konverzace.
 - **Příliš velký kontext může snížit efektivitu** – agent se v záplavě informací hůř orientuje a jeho odpovědi mohou být méně přesné. I když se kontext ještě nezaplnil, kratší kontext často vede k lepším výsledkům.
 
-**Komprese kontextu:**
+> **⚠️ Praktické pravidlo:** Snaž se držet kontextové okno **pod ~100k tokenů**. Většina nástrojů ti aktuální velikost kontextu zobrazuje (např. Claude Code v dolní liště). Jakmile se blížíš k tomuto limitu, kvalita odpovědí citelně klesá – agent přehlíží detaily, plete si soubory, opakuje se.
 
-Agenti mají mechanismus **komprese kontextu** – když se kontext blíží limitu, agent starší části konverzace shrne do kratšího souhrnu a pokračuje dál. Některé nástroje to dělají automaticky, u jiných můžeš kompresi vyvolat ručně (např. v Claude Code příkazem `/compact`). Komprese zachová klíčové informace, ale detaily se mohou ztratit.
+**Komprese kontextu vs. čistý start:**
+
+Agenti mají mechanismus **komprese kontextu** (např. v Claude Code příkaz `/compact`) – když se kontext blíží limitu, starší části konverzace se shrnou do kratšího souhrnu a pokračuje se dál. Komprese ale **zachová jen klíčové informace, detaily a nuance se ztratí** – a navíc přenese do nové konverzace i případný „šum" ze staré (slepé uličky, opravované chyby, zastaralá rozhodnutí).
+
+> **💡 Často je lepší `/clear` než `/compact`.** Místo komprese ukončit konverzaci úplně a začít s čistým štítem. Důležité informace stejně máš v souborech projektu (kód, `notes.md`, instrukční soubor) – agent si je přečte sám. Nová konverzace bez balastu obvykle pracuje **přesněji a rychleji** než pokračování v komprimovaném kontextu.
 
 **Co s tím?**
 
-- **Začni novou konverzaci** – když přecházíš na nový úkol nebo je konverzace už hodně dlouhá. Neboj se toho – agent má přístup k souborům v projektu, takže kontext předchozí práce si přečte z kódu. Nová konverzace s čistým kontextem může často výsledek **zlepšit**, protože agent se nemusí probíjet záplavou starších zpráv.
+- **Sleduj velikost kontextu a začni novou konverzaci včas** – ideálně dřív, než se přiblížíš ke 100k tokenům. Když přecházíš na nový úkol, neváhej a použij `/clear`. Agent má přístup k souborům v projektu, takže kontext předchozí práce si přečte z kódu. Nová konverzace s čistým kontextem často výsledek **zlepší**, protože agent se nemusí probíjet záplavou starších zpráv.
 - **Nech agenta zapisovat poznámky** – pokud pracuješ na složitějším úkolu, řekni agentovi ať si průběžně zapisuje poznámky do `.md` souboru (třeba `notes.md` nebo `TODO.md`). Při další konverzaci si je přečte a nemusíš mu vše vysvětlovat znovu.
 - **Instrukční soubor jako trvalá paměť** – důležité informace o projektu (konvence, struktura, pravidla) patří do instrukčního souboru (viz 4.3). Agent ho čte automaticky na začátku každé konverzace, ale nezabírá zbytečně místo v kontextu při běžné práci.
 
@@ -158,7 +162,7 @@ Můžeš je ale vyvolat i ručně zkratkou:
 
 Výhoda oproti tomu, kdyby všechny instrukce byly napsané přímo v instrukčním souboru: agent si do kontextu načte **jen to, co právě potřebuje**, a zbytek mu nezabírá místo.
 
-> **💡 Tip:** Skills jsou dostupné v Claude Code. Jiní agenti mají podobné koncepty pod jinými názvy (Copilot má „slash commands" v chatu).
+> **💡 Tip:** Nejjednodušší způsob, jak si skill pořídit, je **říct agentovi ať si ho sám vytvoří**. Stačí popsat, co má skill dělat (např. *„vytvoř mi skill na review pull requestu, který zkontroluje styl kódu a otestuje změny"*) a agent skill napíše a uloží do správného místa. Příště ho už můžeš jen vyvolat.
 
 ---
 
@@ -193,6 +197,8 @@ MCP server je malý program, který běží na pozadí a překládá mezi AI age
 ```
 
 > **💡 Poznámka:** MCP servery jsou pokročilejší téma. Pro začátek je nepotřebuješ – agent si vystačí se soubory a terminálem. Ale je dobré vědět, že tahle možnost existuje, protože rozšiřuje to, co AI dokáže, daleko za hranice pouhého psaní kódu.
+
+> **💡 Tip:** Konfiguraci MCP serveru nemusíš psát ručně – nejjednodušší je **říct agentovi ať si vhodný MCP server najde a nainstaluje sám**. Stačí popsat, co potřebuješ (např. *„potřebuju pracovat s GitHub Issues, najdi a nastav mi vhodný MCP server"*) a agent vyhledá existující server, doplní konfiguraci a otestuje připojení.
 
 ---
 

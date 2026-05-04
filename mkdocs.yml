@@ -161,7 +161,8 @@ nav:
     - Cíl 7 – bezpečnost a pravidla: cviceni_13/08_cil_7_bezpecnost_a_pravidla.md
     - Slide – přehled AI nástrojů: cviceni_13/09_slide_prehled.md
     - Doplněk – aktuální AI modely: cviceni_13/10_doplnek_modely.md
-    - Self-check – procvičení znalostí: cviceni_13/11_self_check_procvičení_znalostí.md
+    - Doplněk – ovládání AI agentů: cviceni_13/11_doplnek_ovladani_agentu.md
+    - Self-check – procvičení znalostí: cviceni_13/12_self_check_procvičení_znalostí.md
 
 extra_css:
   - assets/nav-toggle.css

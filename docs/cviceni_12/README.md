@@ -10,3 +10,4 @@
 7. [CÍL 5: MATPLOTLIB](cviceni_12_matplotlib.ipynb)
 8. [CÍL 6: ÚKOL – EKG](cviceni_12_ekg.ipynb)
 9. [CÍL 7: ÚKOL – SEGMENTACE (dobrovolné)](cviceni_12_segmentace.ipynb)
+10. [SELF-CHECK: PROCVIČENÍ ZNALOSTÍ](06_self_check_procvičení_znalostí.md)

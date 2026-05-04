@@ -2,11 +2,11 @@
 
 Algoritmizace a programování
 
-## DOPLNĚK: AKTUÁLNÍ AI MODELY (DUBEN 2026)
+## DOPLNĚK: AKTUÁLNÍ AI MODELY (KVĚTEN 2026)
 
-> **⚠️ Tahle stránka stárne velmi rychle.** Přehled je zachycený k **dubnu 2026**. Modely se mění průměrně každé 2–3 měsíce, ceny i dostupnost přes Copilot/Codex se mění ještě častěji. Pokud něco důležitého plánuješ, vždy si nejdřív ověř aktuální stav přímo u poskytovatele. Tato stránka má sloužit jako **orientační mapa**, ne jako referenční specifikace.
+> **⚠️ Tahle stránka stárne velmi rychle.** Přehled je zachycený k **květnu 2026**. Modely se mění průměrně každé 2–3 měsíce, ceny i dostupnost přes Copilot/Codex se mění ještě častěji. Pokud něco důležitého plánuješ, vždy si nejdřív ověř aktuální stav přímo u poskytovatele. Tato stránka má sloužit jako **orientační mapa**, ne jako referenční specifikace.
 
-V agentech (Claude Code, Codex, Copilot CLI, e-INFRA) se setkáš se jmény jako *Sonnet 4.6*, *Opus 4.7*, *GPT-5.4*, *Gemini 3.1 Pro*, *agentic*, *thinker* a podobně. Tahle stránka ti dá jednoduchý přehled, **co je co a kdy si který vybrat**.
+V agentech (Claude Code, Codex, Copilot CLI, e-INFRA) se setkáš se jmény jako *Sonnet 4.6*, *Opus 4.7*, *GPT-5.5*, *Gemini 3.1 Pro*, *agentic*, *thinker* a podobně. Tahle stránka ti dá jednoduchý přehled, **co je co a kdy si který vybrat**.
 
 ---
 
@@ -28,23 +28,31 @@ Tři velikostní třídy, číslování `4.X`, kde vyšší X = novější verze
 
 #### OpenAI — rodina GPT-5.X
 
-Rok 2026 přinesl spojení reasoning a coding do jednoho modelu (GPT-5.4).
+Rok 2026 přinesl spojení reasoning a coding do jednoho modelu (GPT-5.4 → GPT-5.5).
 
-| Model | Pro co je | Kontext |
-|-------|-----------|---------|
-| **GPT-5.4** (Thinking) | Aktuální flagship — spojuje reasoning z GPT-5.3 s coding ze GPT-5.3-Codex. **Defaultní volba v Codexu.** | 272K (1M experimentálně v Codexu) |
-| **GPT-5.4 Pro** | Maximální výkon na nejtěžší úkoly, jen v ChatGPT Pro a Enterprise. | 272K |
-| **GPT-5.4 mini** | Levnější, rychlejší varianta na lehčí úkoly nebo jako sub-agent. | — |
-| **GPT-5.3-Codex** | Specializovaný coding model (předchůdce GPT-5.4 v Codexu). Pořád aktivní, hlavně v Copilot CLI. | — |
-| **GPT-5.3-Codex-Spark** | Research preview pro téměř okamžité interaktivní úpravy. Jen ChatGPT Pro. | — |
+| Model | Vydání | Pro co je | Kontext |
+|-------|--------|-----------|---------|
+| **GPT-5.5** (Thinking) | 23. 4. 2026 | **Aktuální flagship.** Velký skok proti 5.4 v agentním kódování (Terminal-Bench 2.0: 82,7 %). Nový default v Codexu pro Plus/Pro/Business/Enterprise/Edu. | **1M** v API, 400K v Codexu |
+| **GPT-5.5 Pro** | 23. 4. 2026 | Maximální přesnost na nejtěžší úkoly. Jen ChatGPT Pro / Business / Enterprise. | 1M / 400K |
+| **GPT-5.4** (Thinking) | 2026 | Předchozí flagship, stále dostupný v Codexu/API. | 272K (1M experimentálně) |
+| **GPT-5.4 Pro** | 2026 | Předchozí Pro varianta. | 272K |
+| **GPT-5.4 mini** | 2026 | Levnější, rychlejší varianta na lehčí úkoly nebo jako sub-agent. | — |
+| **GPT-5.3-Codex** | 2025 | Specializovaný coding model (předchůdce). Pořád aktivní, hlavně v Copilot CLI. | — |
+| **GPT-5.3-Codex-Spark** | 2025 | Research preview pro téměř okamžité interaktivní úpravy. Jen ChatGPT Pro. | — |
+
+> **💡 GPT-5.5 v Codexu má „Fast mode"** — generuje tokeny ~1,5× rychleji za ~2,5× cenu. Hodí se na interaktivní úpravy, kde chceš okamžitou odezvu.
+
+> **💡 Reasoning effort** u GPT-5.5: `none / low / medium (default) / high / xhigh`. Vyšší úroveň = víc přemýšlení, ale dražší a pomalejší.
 
 > **💡 Co je „retired" k dubnu 2026:** GPT-4o, GPT-4.1, o4-mini, GPT-5 (Instant + Thinking), GPT-5.1 — pokud někde uvidíš tyhle názvy v dokumentaci, jde o starší materiály.
 
-**Kde GPT modely uvidíš:** OpenAI Codex (default `gpt-5.4`), GitHub Copilot CLI, ChatGPT, API.
+**Kde GPT modely uvidíš:** OpenAI Codex (default postupně `gpt-5.5`), GitHub Copilot CLI, ChatGPT, API.
 
 #### Google — rodina Gemini 3
 
 Velký skok v reasoning a v multimodalitě (text, obraz, audio, video).
+
+**Pro modely (placené, flagship):**
 
 | Model | Pro co je | Kontext |
 |-------|-----------|---------|
@@ -52,9 +60,44 @@ Velký skok v reasoning a v multimodalitě (text, obraz, audio, video).
 | **Gemini 3 Pro** | Předchozí flagship, stále dostupný. | 1M |
 | **Gemini 3 Deep Think** | Speciální „přemýšlí déle" mód v AI Ultra. | 1M |
 
-> **💡 Síla Gemini:** **kontextové okno 1M tokenů** (≈ 1 500 stran textu, 30 000 řádků kódu, 8 hodin audia, 1 hodina videa). Když potřebuješ AI ukázat opravdu hodně dat najednou, Gemini je přirozená volba.
+**Flash a Lite modely (zajímavé pro free tier):**
 
-**Kde Gemini modely uvidíš:** **Gemini CLI** (nativní, defaultní volba), GitHub Copilot CLI (přes `/model`), gemini.google.com, AI Studio, Vertex AI.
+| Model | Pro co je | Kontext |
+|-------|-----------|---------|
+| **Gemini 3.1 Flash-Lite Preview** | Aktuální nejrychlejší/nejlevnější model 3.x generace. Vhodný pro krátké dotazy, jednoduché úkoly, batch zpracování. **Free-eligible** v API. | 1M |
+| **Gemini 3.1 Flash Live Preview** | Optimalizovaný pro live (streaming) interakce. **Free-eligible**. | 1M |
+| **Gemini 3 Flash Preview** | Vyvážený rychlost/kvalita poměr v 3.x generaci. **Free-eligible**. | 1M |
+| **Gemini 2.5 Flash** | Stabilní default na free tieru – „pracovní kůň" pro běžné kódování a chat. | 1M |
+| **Gemini 2.5 Flash-Lite** | Nejvyšší propustnost na free tieru. Pro masové/levné použití. | 1M |
+| **Gemini 2.5 Pro** | Stále zdarma na free tieru, ale s extrémně nízkou kvótou. | 1M |
+
+> **💡 Síla Gemini:** **kontextové okno 1M tokenů** (≈ 1 500 stran textu, 30 000 řádků kódu, 8 hodin audia, 1 hodina videa). Když potřebuješ AI ukázat opravdu hodně dat najednou, Gemini je přirozená volba – a to **i na free tieru**.
+
+##### Free tier konkrétně (květen 2026)
+
+Free tier dostal **dvě výrazná zpřísnění**: v 12/2025 snížení limitů o 50–80 % a od **1. 4. 2026 odstraněny Pro modely** z free výběru (kromě 2.5 Pro s drasticky sníženou kvótou).
+
+**Aktuální stav přes API klíč (zdarma, bez kreditní karty):**
+
+| Model | RPM (req/min) | RPD (req/den) |
+|-------|---------------|---------------|
+| Gemini 2.5 Flash-Lite | 15 | 1 000 |
+| Gemini 2.5 Flash | 10 | 500 |
+| Gemini 2.5 Pro | 5 | 100 |
+| Gemini 3.x Flash / Flash-Lite Preview | proměnlivé | proměnlivé (free-eligible v některých routes) |
+
+Universal cap přes všechny modely: **250 000 TPM** (tokens per minute).
+
+**Přes Gemini CLI s přihlášením Google účtem** (jiná autentizace, štědřejší limity):
+
+- **1 000 req/den, 60 req/min** napříč všemi modely
+- Default model: Gemini Flash (Pro je velmi omezený – pár dotazů, pak fallback na Flash)
+
+> **💡 Doporučení pro tohle cvičení:** Pro úkoly z Cíle 6 a běžnou výuku **úplně stačí free tier Gemini CLI** přihlášený Google účtem. 1 000 req/den vystačí na intenzivní práci s agentem a Flash modely jsou pro učení Pythonu více než dost.
+
+> **⚠️ Deprecated k 06/2026:** Gemini 2.0 Flash byl ukončen 3. 3. 2026, **2.0 Flash-Lite shutdownuje 1. 6. 2026**. Pokud máš někde napsané `gemini-2.0-flash-lite`, do 1. 6. přepiš na `2.5-flash-lite`.
+
+**Kde Gemini modely uvidíš:** **Gemini CLI** (nativní, defaultní volba – zdarma), GitHub Copilot CLI (přes `/model`), gemini.google.com, AI Studio, Vertex AI.
 
 ---
 
@@ -82,9 +125,9 @@ Vývoj otevřených modelů zrychlil natolik, že jsou v mnoha úlohách jen pá
 | **Gemini CLI (free)** | Gemini 3.1 Pro | Mezi Gemini variantami; pevně v rámci Google rodiny |
 | **Claude Code (placený)** | Sonnet 4.6 | Opus 4.7, Haiku 4.5 (`/model`) |
 | **Claude Code + e-INFRA** | `agentic` (= Qwen3-Coder / Sonnet-class open model) | `thinker` (Opus-class), `mini` (Haiku-class) — viz tabulka pod záložkou „Claude Code + e-INFRA" |
-| **OpenAI Codex** | GPT-5.4 (Codex) | GPT-5.4 Pro (jen Pro plán), GPT-5.3-Codex, GPT-5.3-Codex-Spark |
-| **GitHub Copilot CLI (Pro+)** | Sonnet 4.5 (`/model` přepne) | Claude Opus 4.6/4.7, Sonnet 4.4-4.6, Haiku 4.5, **GPT-5.4**, GPT-5.3-Codex, **Gemini 3 Flash, Gemini 3.1 Pro**, Grok Code Fast 1 |
-| **GitHub Copilot Student / Free** | Auto mode | Bez ručního výběru — Auto mode routuje, ale Opus/Sonnet/GPT-5.4 nemůžeš zvolit ručně. Premium modely jen přes Auto. |
+| **OpenAI Codex** | GPT-5.5 (Codex) | GPT-5.5 Pro (jen Pro plán), GPT-5.4, GPT-5.3-Codex, GPT-5.3-Codex-Spark |
+| **GitHub Copilot CLI (Pro+)** | Sonnet 4.5 (`/model` přepne) | Claude Opus 4.6/4.7, Sonnet 4.4-4.6, Haiku 4.5, **GPT-5.5**, GPT-5.4, GPT-5.3-Codex, **Gemini 3 Flash, Gemini 3.1 Pro**, Grok Code Fast 1 |
+| **GitHub Copilot Student / Free** | Auto mode | Bez ručního výběru — Auto mode routuje, ale Opus/Sonnet/GPT-5.5 nemůžeš zvolit ručně. Premium modely jen přes Auto. |
 
 > **💡 Tip — `/model` v terminálu:** Prakticky všichni tři CLI agenti (`claude`, `codex`, `copilot`) přijímají uvnitř session příkaz `/model` — vypíše dostupné modely a umožní přepnout. Vyzkoušej hned po prvním přihlášení, ať vidíš svoji nabídku.
 
@@ -99,7 +142,7 @@ GitHub Copilot a OpenAI Codex počítají požadavky pomocí **multiplierů**:
 | Model | Multiplier (Copilot) | Co to znamená |
 |-------|---------------------|---------------|
 | Claude Haiku 4.5 | 0.33× | 3 dotazy = 1 premium request |
-| Claude Sonnet 4.6, GPT-5.3-Codex, GPT-5.4 | 1× | 1:1 |
+| Claude Sonnet 4.6, GPT-5.3-Codex, GPT-5.4, GPT-5.5 | 1× | 1:1 |
 | Claude Opus 4.6 | 3× | 1 dotaz = 3 premium requesty |
 | Claude Opus 4.7 | 7.5× (do 30. 4. 2026) | Promo cena, normálně dražší |
 

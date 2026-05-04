@@ -8,3 +8,4 @@
 5. [CÍL 3: ŘAZENÍ V PYTHONU](05_cil_3_razeni_v_pythonu.md)
 6. [CÍL 4: OOP – TEORIE](06_cil_4_oop_uvod.md)
 7. [CÍL 5: TŘÍDA StudentsGrades](07_cil_5_hodnoceni_studentu.md)
+8. [SELF-CHECK: PROCVIČENÍ ZNALOSTÍ](08_self_check_procvičení_znalostí.md)
