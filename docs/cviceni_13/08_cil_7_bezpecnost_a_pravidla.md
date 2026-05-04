@@ -4,6 +4,8 @@ Algoritmizace a programování
 
 ## CÍL 7: BEZPEČNOST A PRAVIDLA POUŽÍVÁNÍ AI
 
+**„S velkou mocí přichází velká odpovědnost."**
+
 > **⚠️ Stav: duben 2026.** Vývoj AI nástrojů i univerzitních pravidel jde velmi rychle. Pro závazné znění pravidel se vždy řiď aktuální oficiální stránkou své instituce ([vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai) pro VUT) a podmínkami konkrétního předmětu.
 
 Tato kapitola má dvě části:
@@ -17,7 +19,7 @@ Tato kapitola má dvě části:
 
 ### A.1 Závazný zdroj — VUT
 
-Plné a závazné znění pravidel VUT najdeš na **[vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai)** (a oficiální stanovisko na [úřední desce VUT](https://www.vut.cz/uredni-deska/ai)). Čti **dřív, než AI použiješ na zápočťák, semestrálku nebo závěrečnou práci** — porušení může mít disciplinární následky.
+Plné a závazné znění pravidel VUT najdeš na **[vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai)** (a oficiální stanovisko na [úřední desce VUT](https://www.vut.cz/uredni-deska/ai)). Čti **dřív, než AI použiješ na zápočťák, semestrálku nebo závěrečnou práci** — porušení může mít disciplinární následky (například neuvedení použití AI může být posuzováno jako plagiát).
 
 VUT bere generativní AI jako **asistenční a konzultační nástroj** (ne jako náhradu vlastní práce). Cokoli zde uvádíme níže je didaktické zjednodušení — pro hraniční situace se vždy podívej do oficiálního zdroje.
 
