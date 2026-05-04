@@ -30,7 +30,7 @@ Ať už zvolíš kteréhokoliv z nich, můžeš ho použít **třemi způsoby**.
 
 ---
 
-### 5.2 Plugin v IDE — doporučená první volba
+### 5.2 Plugin v IDE
 
 Plugin v PyCharmu nebo VS Code je **nejpříjemnější varianta pro běžné programování**:
 
@@ -135,8 +135,12 @@ Máš platné předplatné některého z agentů?
     ```powershell
     # v učebně je potřeba ještě povolit spouštění skriptů a pak restartovat terminal:
     Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-    instalace:
+    ```
+
+    ```powershell
+    # instalace:
     npm install -g @google/gemini-cli
+    # po instalaci restartuj terminál, aby se příkaz `gemini` načetl do PATH
     ```
 
     **Instalace (macOS, Linux, WSL):**
@@ -301,6 +305,7 @@ Máš platné předplatné některého z agentů?
     Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
     # instalace:
     npm install -g @openai/codex
+    # po instalaci restartuj terminál, aby se příkaz `codex` načetl do PATH
     ```
 
     **Instalace (macOS, Linux, WSL):**
@@ -358,10 +363,10 @@ Po instalaci spusť agenta v testovací složce a vyzkoušej:
 ```bash
 # vytvoř si testovací složku, ať agent nepřepíše nic důležitého
 mkdir test_ai && cd test_ai
-git init
+uv init
 
 # spusť agenta (nahraď podle toho, co jsi instaloval)
-claude        # nebo: codex, copilot
+gemini        # nebo: claude, codex, copilot
 ```
 
 V chatu napiš:

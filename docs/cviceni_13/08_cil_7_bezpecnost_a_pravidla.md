@@ -6,13 +6,73 @@ Algoritmizace a programování
 
 > **⚠️ Stav: duben 2026.** Vývoj AI nástrojů i univerzitních pravidel jde velmi rychle. Pro závazné znění pravidel se vždy řiď aktuální oficiální stránkou své instituce ([vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai) pro VUT) a podmínkami konkrétního předmětu.
 
-AI agent je mocný nástroj — vidí tvé soubory, spouští tvé příkazy a tvá data posílá přes internet. Než
-ho pustíš na ostrou práci, je potřeba rozumět třem věcem: **co se děje s tvými daty**, **jaká pravidla
-platí při studiu** a **jak zabránit tomu, aby agent něco nevratně pokazil**. O tom je tento cíl.
+Tato kapitola má dvě části:
+
+- **Pravidla** — co o použití AI říká VUT a co z toho prakticky plyne pro tvoji práci ve škole.
+- **Rizika** — co se děje s tvými daty a jak zabránit tomu, aby agent něco nevratně pokazil.
 
 ---
 
-### 7.1 Co AI služby dělají s tvými daty
+## A) PRAVIDLA
+
+### A.1 Závazný zdroj — VUT
+
+Plné a závazné znění pravidel VUT najdeš na **[vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai)** (a oficiální stanovisko na [úřední desce VUT](https://www.vut.cz/uredni-deska/ai)). Čti **dřív, než AI použiješ na zápočťák, semestrálku nebo závěrečnou práci** — porušení může mít disciplinární následky.
+
+VUT bere generativní AI jako **asistenční a konzultační nástroj** (ne jako náhradu vlastní práce). Cokoli zde uvádíme níže je didaktické zjednodušení — pro hraniční situace se vždy podívej do oficiálního zdroje.
+
+### A.2 Krátké shrnutí (7 principů VUT)
+
+1. **Odpovědnost za výstup** — Za kvalitu i škody odpovídá ten, kdo AI použil. AI není omluva.
+2. **Povinnost ověřovat** — Správnost, pravdivost i nezávadnost výstupu si musíš ověřit. Halucinace = tvoje chyba.
+3. **Ochrana dat** — Žádné osobní údaje, obchodní tajemství ani chráněná data bez výslovného oprávnění.
+4. **Soulad s předpisy** — AI lze používat jen tam, kde to neodporuje zákonům a vnitřním předpisům VUT.
+5. **Transparentnost** — Nepřiznané použití AI může být posuzováno jako ghost-writing / contract-cheating. Vždy přiznej.
+6. **Autorská práva** — Respektuj licence výstupů AI a podmínky poskytovatele.
+7. **Hodnotové směřování** — AI má pomáhat řešit reálné problémy, ne obcházet vlastní studium.
+
+### A.3 Pravidla v praxi
+
+**Vždy si zjisti pravidla konkrétního předmětu a úkolu.** Univerzitní stanovisko stanovuje rámec, ale **konkrétní povolení a omezení nastavuje každý vyučující sám** (sylabus, zadání úkolu, pokyny k závěrečné práci). Když si nejsi jistý, zeptej se vyučujícího — je to rychlejší než řešit pak průšvih.
+
+**Doporučený postup u úkolu:**
+
+1. Zkus úkol napřed vyřešit sám.
+2. Tam kde se zasekneš, požádej AI o vysvětlení konceptu, nápovědu nebo ukázku.
+3. Porozuměj řešení a dopiš/uprav ho vlastními silami.
+4. Do komentáře napiš, co konkrétně jsi s AI dělal: *„Při řešení jsem použil GitHub Copilot / Claude Code pro [co konkrétně]."*
+
+**Legitimní použití vs. podvod:**
+
+| Legitimní použití | Podvod |
+|-------------------|--------|
+| AI pomůže pochopit koncept, ty napíšeš řešení | AI napíše řešení, ty ho odevzdáš |
+| Uvedeš, jaký nástroj jsi použil | Zatajíš použití AI |
+| Umíš vysvětlit každý řádek svého kódu | Neumíš vysvětlit, co kód dělá |
+| AI použiješ k odladění konkrétní chyby | AI použiješ k obejití celého úkolu |
+
+> **📌 Tři věci, které si musíš odnést:**
+>
+> 1. **Rozuměj tomu, co odevzdáváš.** Když to neumíš obhájit u tabule, není to tvoje práce.
+> 2. **Za odevzdané ručíš ty, ne AI.** „Tohle mi vygeneroval Copilot" není omluva.
+> 3. **U každého úkolu si zjisti pravidla.** Pokud chybí v zadání, zeptej se **dřív**, než AI použiješ.
+
+### A.4 Proč se pravidla liší — analogie s kalkulačkou
+
+Jestli je AI povolená, omezená, nebo úplně zakázaná, záleží na tom, **k čemu konkrétní předmět nebo úkol slouží**. Dobrá analogie je kalkulačka:
+
+- **V první třídě je kalkulačka u písemky zakázaná.** Ne proto, že by byla špatná — ale protože celý smysl cvičení je naučit se sčítat v hlavě. Kdyby ji učitelka dovolila, dítě zmáčkne pár tlačítek, dostane správný výsledek a **nic se nenaučí**.
+- **Ve čtvrtém ročníku inženýrství je kalkulačka (a Matlab, a numerické knihovny) povinnou výbavou.** Když počítáš statiku mostu, nikdo nečeká, že budeš násobit matice na papíře — cíl je **dostat správný výsledek v rozumném čase**.
+
+S AI je to úplně stejné. V předmětech, kde se učíš **základy** (jako tady v Algoritmizaci a programování), je cílem pochopit, jak se rozkládá problém na funkce a jak počítač přemýšlí. Kdyby všechno napsala AI, **mineš celý vzdělávací cíl** — i když odevzdáš funkční kód. V projektových předmětech, na bakalářce nebo v praxi je naopak cílem **dodat fungující řešení** a AI je standardní pracovní nástroj jako kompilátor.
+
+**Proto se musíš u každého úkolu ptát.** Stejné zadání („napiš program, který…") může mít opačné pravidlo podle toho, jestli si máš procvičit základy, nebo dodat výsledek.
+
+---
+
+## B) RIZIKA
+
+### B.1 Co AI služby dělají s tvými daty
 
 Když používáš AI agenta, tvůj kód, data a konverzace se odesílají na servery poskytovatele (Anthropic, OpenAI, GitHub, Google…). Je důležité rozumět, co se s nimi děje:
 
@@ -28,138 +88,25 @@ Když používáš AI agenta, tvůj kód, data a konverzace se odesílají na se
 
 > **💡 Tip:** Pokud potřebuješ AI pomoc s kódem, který pracuje s citlivými daty, použij **zástupné/syntetické hodnoty** místo skutečných dat.
 
----
+> **🇨🇿 Tip — e-INFRA / CESNET:** Pro univerzitní data je doporučená varianta **[chat.ai.e-infra.cz](https://chat.ai.e-infra.cz)** — chatbot provozovaný v české akademické infrastruktuře CESNET. Pro studenty s eduID/CESNET účtem (přes [MetaCentrum](https://metavo.metacentrum.cz/)) je **zdarma** a provozovatel deklaruje, že **data neopouštějí prostředí e-INFRA** (žádné odesílání ke komerčním poskytovatelům typu Anthropic / OpenAI / Google). Vedle webového chatbota nabízí i OpenAI-kompatibilní API endpoint, který lze použít v Claude Code (viz Cíl 5). Pro běžnou univerzitní práci — výukové materiály, studentské projekty, neveřejný interní obsah — vhodnější volba než komerční cloudoví agenti.
 
-### 7.2 Pravidla používání AI na univerzitě
+### B.2 Bezpečnost kódu generovaného AI
 
-> **📜 Závazná pravidla VUT:** Plné znění je na **[vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai)** (a oficiální stanovisko na [úřední desce VUT](https://www.vut.cz/uredni-deska/ai)). Čti **dřív, než AI použiješ na zápočťák, semestrálku nebo závěrečnou práci** — porušení může mít disciplinární následky.
+AI kód má statisticky víc bezpečnostních zranitelností než kód psaný člověkem. Typické problémy: **hardcoded hesla a API klíče**, špatně ošetřené vstupy (SQL injection, XSS), zastaralé knihovny se známými chybami a zbytečně volná oprávnění.
 
-#### Co říká stanovisko VUT — krátce
+**Co s tím:** přečti si výstup, než ho commitneš. Hesla a klíče drž mimo repozitář (`.gitignore`, `.env`).
 
-VUT bere generativní AI jako **asistenční a konzultační nástroj** (ne jako náhradu vlastní práce) a nastavuje k jejímu použití tyto závazné principy:
+### B.3 Sandbox a Docker — proč omezit agenta
 
-1. **Odpovědnost za výstup** — Za škody i za kvalitu odevzdaných výstupů odpovídá ten, kdo AI použil. AI nemůže být „omluvou" za chybu v práci.
-2. **Povinnost ověřovat** — Musíš důsledně ověřit **správnost, pravdivost i nezávadnost** všeho, co AI vyprodukuje. Halucinace = tvoje chyba.
-3. **Ochrana dat** — Nesmíš do AI nástrojů svěřovat osobní údaje, obchodní tajemství, ani jiná chráněná data, pokud na to nemáš výslovné oprávnění. Vždy zvaž, co odesíláš.
-4. **Soulad s předpisy** — AI lze používat jen tam, kde to neodporuje obecně závazným zákonům **a vnitřním předpisům VUT** (včetně etického kodexu).
-5. **Transparentnost** — *„Nesprávné či nepřiznané použití generativní AI může být považováno za porušení etických zásad ve smyslu ghost-writing nebo contract-cheating."* Použití AI vždy v práci přiznej (viz 7.3 Akademická integrita).
-6. **Autorská práva** — Při použití výstupů z AI dbáš na autorská práva a podmínky poskytovatele dané AI služby. Některé výstupy mohou mít licenční omezení.
-7. **Hodnotové směřování** — AI má sloužit ke zlepšování kvality života, udržitelnosti a řešení reálných problémů, **ne** k obcházení vlastního studia.
-
-> **💡 Praktický překlad pro tohle cvičení:** AI ti smí pomoct kód napsat, opravit nebo vysvětlit. Co odevzdáš, musíš **ty sám rozumět** a umět vysvětlit u tabule nebo v diskusi. A do agenta nikdy nelep cizí osobní údaje, hesla ani interní materiály VUT.
-
-> **⚠️ Toto je jen orientační výtah — závazné je znění VUT.** Souhrn 7 bodů výše je didaktické zjednodušení, ne přesné parafrázování. Závazný zdroj je vždy oficiální stanovisko VUT na **[vut.cz/ai/pravidla-ai](https://www.vut.cz/ai/pravidla-ai)** — pokud řešíš konkrétní hraniční situaci, čti přímo tam.
-
-> **🎯 Vždy si zjisti pravidla konkrétního předmětu a projektu — to je nejdůležitější.** Univerzitní stanovisko stanovuje rámec, ale **konkrétní povolení a omezení nastavuje každý vyučující sám pro svůj předmět** (sylabus, zadání úkolu, pokyny k závěrečné práci, podmínky zkoušky). Stejné pravidlo platí pro projekty mimo školu — vždy se zeptej, **co je pro tenhle konkrétní úkol povolené**, než AI použiješ. Když si nejsi jistý, zeptej se vyučujícího/vedoucího — je to rychlejší než řešit pak průšvih.
-
-#### Proč se pravidla liší — analogie s kalkulačkou
-
-Jestli je AI povolená, omezená, nebo úplně zakázaná, záleží na tom, **k čemu konkrétní předmět nebo úkol slouží**. Dobrá analogie je kalkulačka:
-
-- **V první třídě je kalkulačka u písemky zakázaná.** Ne proto, že by byla špatná — ale protože celý smysl cvičení je naučit se sčítat v hlavě. Kdyby ji učitelka dovolila, dítě zmáčkne pár tlačítek, dostane správný výsledek a **nic se nenaučí**. Cíl není mít vyřešený příklad; cíl je rozumět tomu, jak čísla fungují.
-- **Ve čtvrtém ročníku inženýrství je kalkulačka (a Matlab, a numerické knihovny) povinnou výbavou.** Když počítáš statiku mostu, nikdo nečeká, že budeš násobit matice na papíře — cíl je **dostat správný výsledek v rozumném čase**, ne trénovat aritmetiku.
-
-S AI je to úplně stejné:
-
-- V předmětech, kde se učíš **základy** (jako tady v Algoritmizaci a programování), je cílem pochopit, jak se rozkládá problém na funkce, proč pole indexujeme od nuly a jak vlastně počítač přemýšlí. Kdyby všechno napsala AI, **mineš celý vzdělávací cíl** — i když odevzdáš funkční kód. Proto bývá AI v základních předmětech omezená nebo regulovaná.
-- V projektových předmětech, na bakalářce, ve výzkumu nebo v praxi je naopak cílem **dodat fungující řešení**. Tam je AI standardní pracovní nástroj jako kompilátor nebo debugger — kdo ji nepoužívá, je zbytečně pomalý.
-
-**Proto se musíš u každého úkolu ptát.** Stejné zadání („napiš program, který…") může mít naprosto opačné pravidlo podle toho, jestli si máš procvičit základy, nebo dodat výsledek.
-
-Obecné zásady, které **typicky** platí napříč předměty (znova: ne závazně, ale jako vodítko):
-
-**AI je povolený nástroj, ne zakázaný — ale s pravidly:**
-
-- **Rozuměj tomu, co odevzdáváš.** I když kód napsal AI agent, zodpovědnost za výsledek neseš ty. Pokud neumíš vysvětlit, jak tvůj kód funguje, je to problém.
-- **Uveď, že jsi AI použil.** Většina předmětů vyžaduje transparentnost – napiš do komentáře nebo do dokumentace, jaký nástroj jsi použil a jak.
-- **AI nesmí nahradit učení.** Cílem úkolů je, abys pochopil koncept. Pokud AI udělá celý úkol za tebe a ty se nic nenaučíš, míjíš se s účelem studia.
-- **Nepoužívej AI u zkoušek a testů**, pokud to není explicitně povoleno.
-
-**Příklad správného přístupu:**
-
-1. Zkus úkol napřed vyřešit sám.
-2. Tam kde se zasekneš, požádej AI o pomoc – vysvětlení konceptu, nápovědu, ukázku.
-3. Porozuměj řešení a dopiš/uprav ho vlastními silami.
-4. Do komentáře napiš: *„Při řešení jsem použil GitHub Copilot / Claude Code pro [co konkrétně]."*
-
-**Příklad špatného přístupu:**
-
-1. Zkopíruješ zadání do AI.
-2. AI vygeneruje celé řešení.
-3. Odevzdáš ho beze změn a bez porozumění.
-
-> **📌 Tři věci, které si z téhle sekce musíš odnést:**
->
-> 1. **Rozuměj tomu, co odevzdáváš.** Nestačí, že to funguje — musíš umět vysvětlit, jak a proč. Když to neumíš obhájit u tabule, není to tvoje práce.
-> 2. **Za odevzdané ručíš ty, ne AI.** „Tohle mi vygeneroval Copilot" není omluva. Halucinace, chyba, bezpečnostní díra — všechno padá na tebe.
-> 3. **U každého úkolu si zjisti pravidla.** AI smí být povolená, omezená nebo úplně zakázaná — záleží na předmětu, projektu a vyučujícím. Tahle informace by dnes měla být v zadání; pokud chybí, zeptej se **dřív**, než AI použiješ.
-
----
-
-### 7.3 Akademická integrita
-
-Použití AI bez uvedení zdroje může být posuzováno jako **plagiát** – podobně jako kdybys opsal od spolužáka. Klíčový rozdíl mezi legitimním použitím a podvodem:
-
-| Legitimní použití | Podvod |
-|-------------------|--------|
-| AI pomůže pochopit koncept, ty napíšeš řešení | AI napíše řešení, ty ho odevzdáš |
-| Uvedeš jaký nástroj jsi použil | Zatajíš použití AI |
-| Umíš vysvětlit každý řádek svého kódu | Neumíš vysvětlit co kód dělá |
-| AI použiješ k odladění konkrétní chyby | AI použiješ k obejití celého úkolu |
-
-> **⚠️ Důležité:** Pravidla se liší předmět od předmětu a univerzita od univerzity. Vždy si přečti pravidla konkrétního předmětu a pokud si nejsi jistý, zeptej se vyučujícího.
-
----
-
-### 7.4 Bezpečnost kódu generovaného AI
-
-AI může generovat kód, který obsahuje bezpečnostní chyby. Studie ukazují, že AI kód má výrazně víc bezpečnostních zranitelností než kód psaný člověkem. Na co si dávat pozor:
-
-- **Hardcoded credentials** – AI může do kódu vložit ukázkové heslo nebo API klíč. Nikdy to neodevzdávej do Gitu.
-- **SQL injection, XSS** – AI ne vždy správně ošetřuje uživatelské vstupy.
-- **Zastaralé knihovny** – AI může navrhnout verze balíčků se známými zranitelnostmi.
-- **Příliš volná oprávnění** – AI může navrhnout řešení, které funguje, ale dává víc přístupu než je nutné.
-
-**Co s tím:**
-
-- Vždy zkontroluj, jestli kód neobsahuje hardcoded hesla nebo klíče.
-- U webových aplikací zkontroluj ošetření vstupů.
-- Používej `.gitignore` pro soubory s citlivými údaji (`.env`, `credentials.json`).
-
----
-
-### 7.5 Sandbox a Docker – proč je důležité omezit agenta
-
-AI agent má přístup k tvému terminálu a souborům. To znamená, že **může udělat cokoli, co bys udělal ty** – smazat soubory, přepsat kód, nainstalovat balíčky, spustit libovolný příkaz. Většina agentů se před rizikovými akcemi ptá na potvrzení, ale:
-
-- Při rychlé práci je lákavé potvrzovat všechno bez čtení.
-- Některé nástroje nabízí „auto-approve" / „YOLO" mód, kde agent dělá vše bez ptaní.
-- Agent může udělat chybu – smazat soubory, přepsat konfiguraci, provést `git push --force`.
-
-**Řešení: sandbox (izolované prostředí)**
-
-Sandbox znamená, že agent běží v omezeném prostředí, kde nemůže poškodit tvůj systém:
+AI agent může udělat cokoli, co bys udělal ty — smazat soubory, přepsat kód, spustit libovolný příkaz. Většina agentů se před rizikovou akcí ptá, ale auto-approve / „YOLO" mód toto vypíná a agent může chybu provést bez tvého vědomí.
 
 | Přístup | Co to je | Kdy použít |
 |---------|----------|-----------|
-| **Potvrzování příkazů** | Agent se ptá před každou akcí | Výchozí nastavení, vhodné pro začátečníky |
-| **Dedikovaný projekt/složka** | Agent pracuje jen v jedné složce, zbytek disku je v bezpečí | Vždy – proto pracuj v repozitáři per úkol |
-| **Docker kontejner** | Agent běží v izolovaném virtuálním prostředí, nemá přístup k tvému systému | Produkční použití, práce s cizím kódem |
-| **Git jako záchranná síť** | Commitni před prací s agentem, vrať změny pokud se něco pokazí | Vždy |
+| **Potvrzování příkazů** | Agent se ptá před každou akcí | Výchozí — vhodné pro začátečníky |
+| **Dedikovaný projekt/složka** | Agent pracuje jen v jedné složce | Vždy — pracuj v repozitáři per úkol |
+| **Docker kontejner** | Agent běží v izolovaném prostředí, nemůže ovlivnit tvůj systém | Pokročilé použití, autonomní běh, cizí kód |
+| **Git jako záchranná síť** | Commitni před prací s agentem | Vždy |
 
-**Docker** je nástroj, který vytvoří izolovaný kontejner – jako „počítač v počítači". Agent v něm může dělat cokoli, ale nemůže ovlivnit tvůj skutečný systém. Pro pokročilejší použití (zejména když chceš nechat agenta pracovat autonomně bez potvrzování) je Docker prakticky nutnost.
-
-> **⚠️ Pravidlo:** Dokud přesně nevíš co děláš, **nevypínej potvrzování příkazů**. Vždy čti, co agent chce spustit, než to potvrdíš. Auto-approve mód je jen pro zkušené uživatele v izolovaném prostředí.
-
----
-
-### 7.6 Shrnutí pravidel
-
-1. **Data:** Neposílej citlivé údaje do AI služeb.
-2. **Transparentnost:** Uveď, že jsi AI použil.
-3. **Porozumění:** Rozuměj všemu, co odevzdáváš.
-4. **Pravidla předmětu:** Ověř si, co je povoleno.
-5. **Bezpečnost kódu:** Kontroluj AI výstup na bezpečnostní chyby.
-6. **Izolace:** Nech agenta pracovat v omezeném prostředí a nevypínej potvrzování příkazů.
+> **⚠️ Pravidlo:** Dokud přesně nevíš, co děláš, **nevypínej potvrzování příkazů**. Auto-approve je jen pro zkušené uživatele v izolovaném prostředí (typicky Docker).
 
 ---
