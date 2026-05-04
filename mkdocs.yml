@@ -108,6 +108,7 @@ nav:
     - Cíl 1 – Určení aktivity z akcelerometrických dat: cviceni_07/02_cíl_1_úkol_aktivity_podle_akcelerometru.md
     - Cíl 2 – Správce kontaktů: cviceni_07/03_cíl_2_úkol_správce_kontaktů.md
     - Doporučení – jak postupovat: cviceni_07/04_doporučení_jak_postupovat.md
+    - Self-check – procvičení znalostí: cviceni_07/05_self_check_procvičení_znalostí.md
   - Cvičení 9:
     - Přehled: cviceni_09/README.md
     - Úvod: cviceni_09/01_úvod.md
@@ -125,6 +126,7 @@ nav:
     - Cíl 4 – vyhledávání vzorů: cviceni_10/05_cíl_4_vyhledavani_vzoru.md
     - Cíl 5 – teoreticky zajímavé algoritmy: cviceni_10/06_cíl_5_teoreticky_zajimave_algoritmy.md
     - Cíl 6 – odevzdání úkolu: cviceni_10/07_cíl_6_odevzdání_úkolu.md
+    - Self-check – procvičení znalostí: cviceni_10/08_self_check_procvičení_znalostí.md
   - Cvičení 11:
     - Přehled: cviceni_11/README.md
     - Úvod: cviceni_11/01_uvod.md
@@ -134,6 +136,7 @@ nav:
     - Cíl 3 – řazení v Pythonu: cviceni_11/05_cil_3_razeni_v_pythonu.md
     - Cíl 4 – OOP teorie: cviceni_11/06_cil_4_oop_uvod.md
     - Cíl 5 – třída StudentsGrades: cviceni_11/07_cil_5_hodnoceni_studentu.md
+    - Self-check – procvičení znalostí: cviceni_11/08_self_check_procvičení_znalostí.md
   - Cvičení 12:
     - Přehled: cviceni_12/README.md
     - Úvod: cviceni_12/01_úvod.md
@@ -145,6 +148,7 @@ nav:
     - Cíl 5 – Matplotlib: cviceni_12/cviceni_12_matplotlib.ipynb
     - Cíl 6 – Úkol – EKG: cviceni_12/cviceni_12_ekg.ipynb
     - Cíl 7 – Úkol – segmentace (dobrovolné): cviceni_12/cviceni_12_segmentace.ipynb
+    - Self-check – procvičení znalostí: cviceni_12/06_self_check_procvičení_znalostí.md
   - Cvičení 13:
     - Přehled: cviceni_13/README.md
     - Úvod: cviceni_13/01_uvod.md
@@ -157,6 +161,7 @@ nav:
     - Cíl 7 – bezpečnost a pravidla: cviceni_13/08_cil_7_bezpecnost_a_pravidla.md
     - Slide – přehled AI nástrojů: cviceni_13/09_slide_prehled.md
     - Doplněk – aktuální AI modely: cviceni_13/10_doplnek_modely.md
+    - Self-check – procvičení znalostí: cviceni_13/11_self_check_procvičení_znalostí.md
 
 extra_css:
   - assets/nav-toggle.css
