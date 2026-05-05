@@ -122,7 +122,8 @@ Vývoj otevřených modelů zrychlil natolik, že jsou v mnoha úlohách jen pá
 
 | Nástroj | Defaultní model | Co lze přepnout |
 |---------|----------------|------------------|
-| **Gemini CLI (free)** | Gemini 3.1 Pro | Mezi Gemini variantami; pevně v rámci Google rodiny |
+| **Gemini CLI (free)** | Gemini Flash (Pro je velmi omezený – pár dotazů, pak fallback na Flash) | Mezi Gemini variantami; pevně v rámci Google rodiny |
+| **Gemini CLI (Google AI Pro / Ultra)** | Gemini 3.1 Pro | Mezi Gemini variantami (Flash, Flash-Lite, Pro); pevně v rámci Google rodiny |
 | **Claude Code (placený)** | Sonnet 4.6 | Opus 4.7, Haiku 4.5 (`/model`) |
 | **Claude Code + e-INFRA** | `agentic` (= Qwen3-Coder / Sonnet-class open model) | `thinker` (Opus-class), `mini` (Haiku-class) — viz tabulka pod záložkou „Claude Code + e-INFRA" |
 | **OpenAI Codex** | GPT-5.5 (Codex) | GPT-5.5 Pro (jen Pro plán), GPT-5.4, GPT-5.3-Codex, GPT-5.3-Codex-Spark |
