@@ -186,3 +186,15 @@ Tenhle úkol není o kódu — necháš agenta naklonovat repozitář s podklady
 > - **Čisté vlastní HTML/CSS** — žádný framework, jen HTML soubor se slidy. Nejvíc volnosti, nejvíc práce — dobré pro porovnání, jak agent zvládá design „od nuly".
 
 ---
+
+### 6.8 Další nápady – ne čistě programovací zadání
+
+Tohle už není úkol, jen **inspirace**, co všechno se dá s agentem zkusit, když chceš vyjít z čistě softwarové bubliny. Smyslem je vidět, že agent dokáže pracovat s nástroji okolo kódu — instalovat software, pracovat s hardwarem, generovat fyzické věci. Vyber si, co tě baví, nebo si vymysli vlastní variantu.
+
+- **3D model pro tisk v OpenSCADu.** *„Nainstaluj OpenSCAD a pomocí něho mi pro 3D tisk namodeluj a zobraz hrneček se 3ma ušima."* Agent OpenSCAD nainstaluje, napíše `.scad` skript, vygeneruje náhled (PNG / STL) a sám si zkontroluje, jestli model vypadá rozumně. Můžeš pak iterovat — *„udělej ucha větší"*, *„přidej na dno gravírování s mým jménem"*, *„exportuj do STL pro tiskárnu"*.
+
+- **Arduino + RGB LED matice 8×8 Neopixel WS2812B.** *„Chtěl bych pomocí Arduino Uno rozblikat RGB LED matici 8×8 Neopixel WS2812B — nejprve mi do `md` sepiš, jak to musím zapojit, a až to zapojím, tak mi tam pomocí Arduino CLI nahraješ kód a uděláš GUI pro ovládání v Pythonu s nějakými ukázkovými vzory."* Agent ti nejdřív vygeneruje schéma zapojení (piny, napájení, rezistor, kondenzátor), potom přes [Arduino CLI](https://arduino.github.io/arduino-cli/) zkompiluje a nahraje firmware s knihovnou Adafruit NeoPixel a nakonec napíše Python GUI (tkinter / PyQt), které přes sériový port posílá vzory — duha, běžící světlo, „Game of Life", reakce na zvuk z mikrofonu apod.
+
+- **Stáhnutí a přepis YouTube videa.** *„Stáhni mi z <https://www.youtube.com/watch?v=TiNpzxoBPz0> zvuk tohohle videa, přepiš ho do formátovaného `md` dokumentu a vytvoř přeloženou českou variantu."* Agent si nainstaluje `yt-dlp` (stažení audia jako MP3 / WAV) a třeba `whisper` nebo `faster-whisper` (lokální přepis řeči), vygeneruje přepis s časovými značkami a nadpisy, naformátuje ho do Markdownu a nakonec vyrobí druhý `md` soubor s českým překladem.
+
+---
