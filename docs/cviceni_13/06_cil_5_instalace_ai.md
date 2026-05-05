@@ -12,7 +12,7 @@ V minulých cílech jsi se dozvěděl, **co** AI agenti umí a **jaké koncepty*
 
 > **⚠️ Pozor:** Hlavní volby — **Claude Code**, **GitHub Copilot**, **OpenAI Codex** a **Gemini CLI** — jsou dnes srovnatelně kvalitní a v zásadě dělají totéž. Nemá smysl vybírat „ten nejlepší" — vyber **ten, ke kterému máš nejjednodušší přístup** (předplatné, studentské benefity, školní zdroje, free tier).
 
-> **🎓 Co se použije přímo na cvičení:** **Gemini CLI** — defaultně dává **1 000 požadavků/den zdarma** s libovolným osobním Google účtem, model Gemini 3.1 Pro s 1M kontextem. Pro výuku ideální: nikdo nepotřebuje předplatné ani MetaCentrum, instalace zabere minutu. Postup je v [záložce „Gemini CLI"](#instalace-vyber-si-jednu-z-peti-zalozek) v sekci 5.3.
+> **🎓 Co se použije přímo na cvičení:** **Gemini CLI** — defaultně dává **1 000 požadavků/den zdarma** s libovolným osobním Google účtem. Pro výuku ideální: nikdo nepotřebuje předplatné ani MetaCentrum, instalace zabere minutu. Postup je v [záložce „Gemini CLI"](#instalace-vyber-si-jednu-z-peti-zalozek) v sekci 5.3.
 
 ---
 
@@ -79,7 +79,7 @@ Terminál vypadá strohá oproti pluginu, ale má dvě velké výhody:
 Než budeš cokoli instalovat, projdi tenhle krátký rozhodovací strom:
 
 ```
-Máš platné předplatné některého z agentů?
+Máš platné předplatné některé z AI služeb?
 │
 ├── ANO, Claude Pro / Max               →  Claude Code (záložka „Claude Code")
 │
@@ -93,8 +93,13 @@ Máš platné předplatné některého z agentů?
     │
     ├── Máš jen Google účet (gmail / školní Workspace)?  ⭐ DOPORUČENO
     │       →  Gemini CLI free (záložka „Gemini CLI")
-    │          (1000 req/den zdarma, Gemini 3.1 Pro s 1M kontextem,
+    │          (1000 req/den zdarma,
     │           žádné kreditky, žádná verifikace — ideální start)
+    │
+    ├── Máš ChatGPT účet (i jen free)?
+    │       →  OpenAI Codex free (záložka „Codex")
+    │          (omezené množství dotazů, strop ale není jasně daný
+    │           — Codex se přihlásí přes ChatGPT účet bez Plus)
     │
     ├── Máš účet v české akademické federaci eduID/CESNET (např. VUT)?
     │       →  Claude Code napojený na e-INFRA (záložka „Claude Code + e-INFRA")
@@ -109,13 +114,15 @@ Máš platné předplatné některého z agentů?
 
 > **💡 Tip:** Pokud máš víc možností (např. studentský Copilot + předplatné Claude), klidně si nainstaluj víc agentů vedle sebe. Nepřekáží si — každý si řídí vlastní login a vlastní složku v `~/`.
 
+> **💡 Tip:** Klidně si nainstaluj **všechny free nástroje najednou** (Gemini CLI, Codex free, Copilot Free, Claude Code přes e-INFRA) a přepínej mezi nimi — nebo je používej souběžně v různých oknech. Ovládání v terminálu je u všech velmi podobné (interaktivní chat, slash-příkazy, potvrzování změn), takže přechod mezi nimi je téměř bez nákladu a hodí se to: když jeden vyčerpá denní limit nebo se zasekne, druhý často úkol dotáhne.
+
 #### Instalace — vyber si jednu z pěti záložek
 
 === "Gemini CLI ⭐ demo"
 
     > **📚 Víc info:** [github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) · [release notes](https://geminicli.com/docs/changelogs/) · [oficiální setup návod](https://docs.cloud.google.com/gemini/docs/codeassist/gemini-cli) · [Google blog — Introducing Gemini CLI](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-cli-open-source-ai-agent/)
 
-    **Předplatné:** **žádné** — stačí libovolný osobní Google účet (gmail i školní Workspace). Free tier dává **60 požadavků/min** a **1 000 požadavků/den** s modelem Gemini 3.1 Pro (1M kontext). Pro vyšší limity Google AI Pro / Ultra, případně Vertex AI s placeným Google Cloud projektem.
+    **Předplatné:** **žádné** — stačí libovolný osobní Google účet (gmail i školní Workspace). Free tier dává **60 požadavků/min** a **1 000 požadavků/den**. Pro nejnovější model **Gemini 3.1 Pro** (1M kontext) a vyšší limity Google AI Pro / Ultra, případně Vertex AI s placeným Google Cloud projektem.
 
     **Tohle je nástroj, který si ukážeme přímo na cvičení** — má nejméně překážek pro start a free tier vystačí na celý semestr běžného použití.
 
@@ -294,7 +301,7 @@ Máš platné předplatné některého z agentů?
 
     > **📚 Víc info:** [github.com/openai/codex](https://github.com/openai/codex) · [oficiální dokumentace developers.openai.com/codex](https://developers.openai.com/codex) · [config reference](https://developers.openai.com/codex/config-reference) · [IDE integrace](https://developers.openai.com/codex/ide)
 
-    **Předplatné:** ChatGPT Plus / Pro / Business / Edu / Enterprise (model `gpt-5.3-codex`).
+    **Předplatné:** ChatGPT Free (omezené množství dotazů, strop ale není jasně daný) nebo Plus / Pro / Business / Edu / Enterprise.
 
     > **⚙️ Nezbytný předpoklad: Node.js 20+** (kvůli `npm`). Postup instalace Node.js — včetně varianty bez admin práv přes pomocný skript — je stejný jako u Gemini CLI, viz callout v záložce „Gemini CLI ⭐ demo" výše. **Pozor — `winget install OpenAI.Codex` na Windows nedoporučujeme**: balíček ne vždy spolehlivě přidá `codex` do PATH. Použij raději `npm install -g` níže.
 
