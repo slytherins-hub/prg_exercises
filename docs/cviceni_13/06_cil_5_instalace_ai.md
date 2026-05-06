@@ -98,7 +98,9 @@ Máš platné předplatné některé z AI služeb?
     │
     ├── Máš ChatGPT účet (i jen free)?
     │       →  OpenAI Codex free (záložka „Codex")
-    │          (omezené množství dotazů, strop ale není jasně daný
+    │          (omezené množství dotazů, strop ale není jasně daný — po
+    │           určitém množství dotazů Codex oznámí vyčerpání limitu
+    │           a musíš počkat několik hodin
     │           — Codex se přihlásí přes ChatGPT účet bez Plus)
     │
     ├── Máš účet v české akademické federaci eduID/CESNET (např. VUT)?
@@ -111,8 +113,6 @@ Máš platné předplatné některé z AI služeb?
                (bez nejnovějších premium modelů — Claude Opus/Sonnet, GPT-5.4 ti nejsou
                 dostupné, dostáváš jen starší/menší modely přes Auto mode)
 ```
-
-> **💡 Tip:** Pokud máš víc možností (např. studentský Copilot + předplatné Claude), klidně si nainstaluj víc agentů vedle sebe. Nepřekáží si — každý si řídí vlastní login a vlastní složku v `~/`.
 
 > **💡 Tip:** Klidně si nainstaluj **všechny free nástroje najednou** (Gemini CLI, Codex free, Copilot Free, Claude Code přes e-INFRA) a přepínej mezi nimi — nebo je používej souběžně v různých oknech. Ovládání v terminálu je u všech velmi podobné (interaktivní chat, slash-příkazy, potvrzování změn), takže přechod mezi nimi je téměř bez nákladu a hodí se to: když jeden vyčerpá denní limit nebo se zasekne, druhý často úkol dotáhne.
 
@@ -167,6 +167,8 @@ Máš platné předplatné některé z AI služeb?
     ```
 
     Při prvním spuštění vyber **„Sign in with Google"** — otevře se prohlížeč s OAuth flow, přihlas se a vrať se do terminálu. Hotovo.
+
+    > **🛡️ Firewall popup při startu:** Při prvním spuštění může Windows Defender Firewall (nebo jiný firewall) vyskočit s dotazem na povolení síťové komunikace pro Node.js. Klidně dej **Cancel / Zrušit** — `gemini` to nepotřebuje pro normální fungování (OAuth flow běží přes prohlížeč na `localhost`) a vše proběhne správně i tak.
 
     > **💡 Tip:** Pokud chceš agentovi v projektu sdělit konvence (jazyk komentářů, struktura, …), vytvoř v kořeni projektu soubor `GEMINI.md` — funguje stejně jako `CLAUDE.md` u Claude Code (viz cíl 4.3).
 
@@ -301,7 +303,7 @@ Máš platné předplatné některé z AI služeb?
 
     > **📚 Víc info:** [github.com/openai/codex](https://github.com/openai/codex) · [oficiální dokumentace developers.openai.com/codex](https://developers.openai.com/codex) · [config reference](https://developers.openai.com/codex/config-reference) · [IDE integrace](https://developers.openai.com/codex/ide)
 
-    **Předplatné:** ChatGPT Free (omezené množství dotazů, strop ale není jasně daný) nebo Plus / Pro / Business / Edu / Enterprise.
+    **Předplatné:** ChatGPT Free (omezené množství dotazů, strop ale není jasně daný — po určitém množství dotazů Codex prostě oznámí, že jsi limit vyčerpal a musíš počkat několik hodin, než se okno resetuje) nebo Plus / Pro / Business / Edu / Enterprise.
 
     > **⚙️ Nezbytný předpoklad: Node.js 20+** (kvůli `npm`). Postup instalace Node.js — včetně varianty bez admin práv přes pomocný skript — je stejný jako u Gemini CLI, viz callout v záložce „Gemini CLI ⭐ demo" výše. **Pozor — `winget install OpenAI.Codex` na Windows nedoporučujeme**: balíček ne vždy spolehlivě přidá `codex` do PATH. Použij raději `npm install -g` níže.
 
