@@ -167,6 +167,18 @@ nav:
     - Doplněk – aktuální AI modely: cviceni_13/10_doplnek_modely.md
     - Doplněk – ovládání AI agentů: cviceni_13/11_doplnek_ovladani_agentu.md
     - Self-check – procvičení znalostí: cviceni_13/12_self_check_procvičení_znalostí.md
+  - Cvičení 13 jen AI:
+    - Přehled: cviceni_13_ai/README.md
+    - Úvod: cviceni_13_ai/01_uvod.md
+    - Cíl 3 – přehled AI nástrojů: cviceni_13_ai/04_cil_3_prehled_ai_nastroju.md
+    - Cíl 4 – důležité koncepty AI nástrojů: cviceni_13_ai/05_cil_4_dulezite_koncepty.md
+    - Cíl 5 – instalace AI nástrojů: cviceni_13_ai/06_cil_5_instalace_ai.md
+    - Cíl 6 – ukázky: cviceni_13_ai/07_cil_6_ukazky.md
+    - Cíl 7 – bezpečnost a pravidla: cviceni_13_ai/08_cil_7_bezpecnost_a_pravidla.md
+    - Slide – přehled AI nástrojů: cviceni_13_ai/09_slide_prehled.md
+    - Doplněk – aktuální AI modely: cviceni_13_ai/10_doplnek_modely.md
+    - Doplněk – ovládání AI agentů: cviceni_13_ai/11_doplnek_ovladani_agentu.md
+    - Self-check – procvičení znalostí: cviceni_13_ai/12_self_check_procvičení_znalostí.md
 
 extra_css:
   - assets/nav-toggle.css
