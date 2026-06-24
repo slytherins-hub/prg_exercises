@@ -38,18 +38,18 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 
 </details>
 
-3. **Která z následujících kategorií AI nástrojů je *zdarma* s libovolným osobním Google účtem (1000 req/den)?**
+3. **Která z následujících kategorií AI nástrojů je *zdarma* s libovolným osobním Google účtem?**
     <ol type="a">
        <li>Claude Code</li>
        <li>OpenAI Codex</li>
-       <li>Gemini CLI</li>
+       <li>Antigravity CLI (Google, nástupce Gemini CLI)</li>
        <li>Cursor</li>
     </ol>
 
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>c.</b> Gemini CLI dává free tier 60 req/min a 1000 req/den s modelem Gemini 3.1 Pro (1M kontext) — ideální start pro studenty bez předplatného. Proto se používá přímo na cvičení.
+<b>c.</b> Antigravity CLI (nástupce Gemini CLI) funguje zdarma s libovolným Google účtem, modely z rodiny Gemini 3 (1M kontext) — ideální start pro studenty bez předplatného. Navíc nepotřebuje Node.js. Proto se používá přímo na cvičení.
 
 </details>
 
@@ -154,7 +154,7 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 10. **Který AI agent se ve cvičení používá pro praktické ukázky a proč?**
     <ol type="a">
        <li>Cursor — protože je ze všech nejnovější</li>
-       <li>Gemini CLI — má free tier 1000 req/den, žádné předplatné, instalace zabere minutu</li>
+       <li>Antigravity CLI — funguje zdarma s Google účtem, žádné předplatné, instalace zabere minutu a nepotřebuje Node.js</li>
        <li>JetBrains AI Assistant — je předinstalovaný v PyCharmu</li>
        <li>Windsurf — funguje jen v učebnách VUT</li>
     </ol>
@@ -162,11 +162,11 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>b.</b> Gemini CLI má nejméně překážek pro start: stačí libovolný Google účet, žádná kreditka, free tier vystačí na celý semestr. Proto je ideální pro výuku.
+<b>b.</b> Antigravity CLI (nástupce Gemini CLI) má nejméně překážek pro start: stačí libovolný Google účet, žádná kreditka, instaluje se jedním skriptem a nepotřebuje Node.js. Proto je ideální pro výuku.
 
 </details>
 
-11. **Co je nezbytný předpoklad pro instalaci Gemini CLI nebo OpenAI Codex přes `npm`?**
+11. **Co je nezbytný předpoklad pro instalaci OpenAI Codex (nebo GitHub Copilot CLI) přes `npm`?**
     <ol type="a">
        <li>Java 17+</li>
        <li>Docker</li>
@@ -177,7 +177,7 @@ Tato část je dobrovolná a slouží jen pro rychlé ověření, že máš hlav
 <details class="answer-details">
 <summary>Zobrazit správnou odpověď</summary>
 
-<b>d.</b> Bez Node.js 20+ <code>npm</code> ani <code>npx</code> nepoběží a instalace selže. V učebně bez admin práv je k dispozici pomocný PowerShell skript, který Node.js stáhne do uživatelského profilu.
+<b>d.</b> Bez Node.js 20+ <code>npm</code> ani <code>npx</code> nepoběží a instalace selže. V učebně bez admin práv je k dispozici pomocný PowerShell skript, který Node.js stáhne do uživatelského profilu. (Pozn.: Antigravity CLI je výjimka — je to binárka v Go a Node.js nepotřebuje.)
 
 </details>
 

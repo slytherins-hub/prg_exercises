@@ -88,16 +88,16 @@ Free tier dostal **dvě výrazná zpřísnění**: v 12/2025 snížení limitů 
 
 Universal cap přes všechny modely: **250 000 TPM** (tokens per minute).
 
-**Přes Gemini CLI s přihlášením Google účtem** (jiná autentizace, štědřejší limity):
+**Přes Antigravity CLI s přihlášením Google účtem** (jiná autentizace než API klíč, nástupce Gemini CLI):
 
-- **1 000 req/den, 60 req/min** napříč všemi modely
+- Free tier napříč všemi modely; po přechodu z Gemini CLI na Antigravity jsou limity **přísnější** než dřív — aktuální čísla viz [oficiální dokumentace](https://antigravity.google/docs/cli-install)
 - Default model: Gemini Flash (Pro je velmi omezený – pár dotazů, pak fallback na Flash)
 
-> **💡 Doporučení pro tohle cvičení:** Pro úkoly z Cíle 6 a běžnou výuku **úplně stačí free tier Gemini CLI** přihlášený Google účtem. 1 000 req/den vystačí na intenzivní práci s agentem a Flash modely jsou pro učení Pythonu více než dost.
+> **💡 Doporučení pro tohle cvičení:** Pro úkoly z Cíle 6 a běžnou výuku **úplně stačí free tier Antigravity CLI** přihlášený Google účtem. Flash modely jsou pro učení Pythonu více než dost; když narazíš na denní limit, přepni na jiný free nástroj (Codex free, Copilot Free, Claude Code přes e-INFRA).
 
 > **⚠️ Deprecated k 06/2026:** Gemini 2.0 Flash byl ukončen 3. 3. 2026, **2.0 Flash-Lite shutdownuje 1. 6. 2026**. Pokud máš někde napsané `gemini-2.0-flash-lite`, do 1. 6. přepiš na `2.5-flash-lite`.
 
-**Kde Gemini modely uvidíš:** **Gemini CLI** (nativní, defaultní volba – zdarma), GitHub Copilot CLI (přes `/model`), gemini.google.com, AI Studio, Vertex AI.
+**Kde Gemini modely uvidíš:** **Antigravity CLI** (nativní, defaultní volba – zdarma, nástupce Gemini CLI), GitHub Copilot CLI (přes `/model`), gemini.google.com, AI Studio, Vertex AI.
 
 ---
 
@@ -122,8 +122,8 @@ Vývoj otevřených modelů zrychlil natolik, že jsou v mnoha úlohách jen pá
 
 | Nástroj | Defaultní model | Co lze přepnout |
 |---------|----------------|------------------|
-| **Gemini CLI (free)** | Gemini Flash (Pro je velmi omezený – pár dotazů, pak fallback na Flash) | Mezi Gemini variantami; pevně v rámci Google rodiny |
-| **Gemini CLI (Google AI Pro / Ultra)** | Gemini 3.1 Pro | Mezi Gemini variantami (Flash, Flash-Lite, Pro); pevně v rámci Google rodiny |
+| **Antigravity CLI (free)** | Gemini Flash (Pro je velmi omezený – pár dotazů, pak fallback na Flash) | Gemini varianty přes `/model`; podle plánu i Claude / GPT-OSS |
+| **Antigravity CLI (Google AI Pro / Ultra)** | Gemini 3.1 Pro | Gemini varianty (Flash, Flash-Lite, Pro) přes `/model`; podle plánu i Claude / GPT-OSS |
 | **Claude Code (placený)** | Sonnet 4.6 | Opus 4.7, Haiku 4.5 (`/model`) |
 | **Claude Code + e-INFRA** | `agentic` (= Qwen3-Coder / Sonnet-class open model) | `thinker` (Opus-class), `mini` (Haiku-class) — viz tabulka pod záložkou „Claude Code + e-INFRA" |
 | **OpenAI Codex** | GPT-5.5 (Codex) | GPT-5.5 Pro (jen Pro plán), GPT-5.4, GPT-5.3-Codex, GPT-5.3-Codex-Spark |

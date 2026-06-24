@@ -4,15 +4,17 @@ Algoritmizace a programování
 
 ## CÍL 5: INSTALACE AI NÁSTROJŮ
 
-> **⚠️ Stav: duben 2026.** Vývoj AI nástrojů jde velmi rychle — instalační příkazy, ceny, free tiery i názvy modelů se můžou rychle měnit. Pro aktuální stav vždy zkontroluj oficiální dokumentaci (odkazy v každé záložce).
+> **⚠️ Stav: červen 2026.** Vývoj AI nástrojů jde velmi rychle — instalační příkazy, ceny, free tiery i názvy modelů se můžou rychle měnit. Pro aktuální stav vždy zkontroluj oficiální dokumentaci (odkazy v každé záložce).
+>
+> **🔄 Co se změnilo:** Google **ukončil Gemini CLI** a nahradil ho novým **Antigravity CLI** (oznámeno 19. 5. 2026, pro osobní free/Pro/Ultra účty Gemini CLI přestalo fungovat 18. 6. 2026). Je to nový nástroj — closed-source binárka v Go, ovládá se příkazem `agy`, **už nepotřebuje Node.js** a instaluje se jedním skriptem. Tenhle materiál už popisuje **Antigravity CLI**. (Gemini CLI zůstává dostupné jen pro placené Gemini Code Assist / Enterprise a API klíče.)
 
 V minulých cílech jsi se dozvěděl, **co** AI agenti umí a **jaké koncepty** jsou kolem nich důležité. Teď si jednoho nainstaluješ, abys ho mohl v dalším cíli použít na praktické úkoly.
 
 > **⭐ Než začneš — povinný odkaz:** VUT má vlastní rozcestník **[vut.cz/ai](https://www.vut.cz/ai)**, který je pro studenty VUT **nejlepší jednotný zdroj** k AI nástrojům. Najdeš tam aktuální přehled licencí, postupy přihlášení, **i přístup do e-INFRA / MetaCentra** (viz záložka „Claude Code + e-INFRA" níže). Než budeš cokoli platit nebo instalovat, projdi si nejdřív tuhle stránku — ušetří ti čas i peníze.
 
-> **⚠️ Pozor:** Hlavní volby — **Claude Code**, **GitHub Copilot**, **OpenAI Codex** a **Gemini CLI** — jsou dnes srovnatelně kvalitní a v zásadě dělají totéž. Nemá smysl vybírat „ten nejlepší" — vyber **ten, ke kterému máš nejjednodušší přístup** (předplatné, studentské benefity, školní zdroje, free tier).
+> **⚠️ Pozor:** Hlavní volby — **Claude Code**, **GitHub Copilot**, **OpenAI Codex** a **Antigravity CLI** (Google) — jsou dnes srovnatelně kvalitní a v zásadě dělají totéž. Nemá smysl vybírat „ten nejlepší" — vyber **ten, ke kterému máš nejjednodušší přístup** (předplatné, studentské benefity, školní zdroje, free tier).
 
-> **🎓 Co se použije přímo na cvičení:** **Gemini CLI** — defaultně dává **1 000 požadavků/den zdarma** s libovolným osobním Google účtem. Pro výuku ideální: nikdo nepotřebuje předplatné ani MetaCentrum, instalace zabere minutu. Postup je v [záložce „Gemini CLI"](#instalace-vyber-si-jednu-z-peti-zalozek) v sekci 5.3.
+> **🎓 Co se použije přímo na cvičení:** **Antigravity CLI** — funguje **zdarma** s libovolným osobním Google účtem. Pro výuku ideální: nikdo nepotřebuje předplatné ani MetaCentrum, instalace zabere minutu a **nepotřebuje ani Node.js**. Postup je v [záložce „Antigravity CLI"](#instalace-vyber-si-jednu-z-peti-zalozek) v sekci 5.3.
 
 ---
 
@@ -87,13 +89,13 @@ Máš platné předplatné některé z AI služeb?
 │
 ├── ANO, GitHub Copilot Pro / Pro+      →  GitHub Copilot CLI (záložka „Copilot")
 │
-├── ANO, Google AI Pro / Ultra          →  Gemini CLI (záložka „Gemini CLI")
+├── ANO, Google AI Pro / Ultra          →  Antigravity CLI (záložka „Antigravity CLI")
 │
 └── NE
     │
     ├── Máš jen Google účet (gmail / školní Workspace)?  ⭐ DOPORUČENO
-    │       →  Gemini CLI free (záložka „Gemini CLI")
-    │          (1000 req/den zdarma,
+    │       →  Antigravity CLI free (záložka „Antigravity CLI")
+    │          (zdarma s Google účtem,
     │           žádné kreditky, žádná verifikace — ideální start)
     │
     ├── Máš ChatGPT účet (i jen free)?
@@ -114,63 +116,50 @@ Máš platné předplatné některé z AI služeb?
                 dostupné, dostáváš jen starší/menší modely přes Auto mode)
 ```
 
-> **💡 Tip:** Klidně si nainstaluj **všechny free nástroje najednou** (Gemini CLI, Codex free, Copilot Free, Claude Code přes e-INFRA) a přepínej mezi nimi — nebo je používej souběžně v různých oknech. Ovládání v terminálu je u všech velmi podobné (interaktivní chat, slash-příkazy, potvrzování změn), takže přechod mezi nimi je téměř bez nákladu a hodí se to: když jeden vyčerpá denní limit nebo se zasekne, druhý často úkol dotáhne.
+> **💡 Tip:** Klidně si nainstaluj **všechny free nástroje najednou** (Antigravity CLI, Codex free, Copilot Free, Claude Code přes e-INFRA) a přepínej mezi nimi — nebo je používej souběžně v různých oknech. Ovládání v terminálu je u všech velmi podobné (interaktivní chat, slash-příkazy, potvrzování změn), takže přechod mezi nimi je téměř bez nákladu a hodí se to: když jeden vyčerpá denní limit nebo se zasekne, druhý často úkol dotáhne.
 
 #### Instalace — vyber si jednu z pěti záložek
 
-=== "Gemini CLI ⭐ demo"
+=== "Antigravity CLI ⭐ demo"
 
-    > **📚 Víc info:** [github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) · [release notes](https://geminicli.com/docs/changelogs/) · [oficiální setup návod](https://docs.cloud.google.com/gemini/docs/codeassist/gemini-cli) · [Google blog — Introducing Gemini CLI](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-cli-open-source-ai-agent/)
+    > **📚 Víc info:** [antigravity.google/docs/cli-install](https://antigravity.google/docs/cli-install) · [getting started](https://antigravity.google/docs/cli-getting-started) · [github.com/google-antigravity/antigravity-cli](https://github.com/google-antigravity/antigravity-cli) · [Google blog — Transitioning Gemini CLI to Antigravity CLI](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)
 
-    **Předplatné:** **žádné** — stačí libovolný osobní Google účet (gmail i školní Workspace). Free tier dává **60 požadavků/min** a **1 000 požadavků/den**. Pro nejnovější model **Gemini 3.1 Pro** (1M kontext) a vyšší limity Google AI Pro / Ultra, případně Vertex AI s placeným Google Cloud projektem.
+    > **🔄 Nahradilo Gemini CLI:** Antigravity CLI je nástupce Gemini CLI (osobní free/Pro/Ultra účty Gemini CLI přestaly fungovat 18. 6. 2026). Oproti Gemini CLI je to **closed-source binárka napsaná v Go**, ovládá se příkazem **`agy`** a **nepotřebuje Node.js ani `npm`** — instaluje se jedním skriptem. Sdílí stejný „mozek" s desktopovou aplikací Antigravity.
 
-    **Tohle je nástroj, který si ukážeme přímo na cvičení** — má nejméně překážek pro start a free tier vystačí na celý semestr běžného použití.
+    **Předplatné:** **žádné** — stačí libovolný osobní Google účet (gmail i školní Workspace). Free tier funguje, vyšší limity dává **Google AI Pro / Ultra**. Modely jsou z rodiny **Gemini 3** (1M kontext). Limity free tieru jsou po přechodu na Antigravity přísnější než dřív — aktuální čísla viz [oficiální dokumentace](https://antigravity.google/docs/cli-install).
 
-    > **⚙️ Nezbytný předpoklad: Node.js 20+.** Bez něj `npm` ani `npx` nepoběží a instalace selže.
-    >
-    > - **S admin právy** si Node.js stáhni z **[nodejs.org/download](https://nodejs.org/en/download)** (LTS, nainstaluje i `npm`). Alternativně přes balíčkovače: `winget install OpenJS.NodeJS.LTS` (Windows, vyžaduje UAC) nebo `brew install node` (macOS/Linux). Po instalaci ověř `node --version` (musí být ≥ 20) a `npm --version`.
-    > - **BEZ admin práv (Windows — typicky učebnové PC)** — pomocný skript stáhne LTS .zip do `%LOCALAPPDATA%\nodejs` a přidá do User PATH. V PowerShellu spusť:
-    >
-    >     ```powershell
-    >     irm https://gist.githubusercontent.com/tomasvicar/c087caa3334703ff2353b328259bc341/raw/install-node-user.ps1 | iex
-    >     ```
-    >
-    >     Otevři **nový** terminál (PATH se načítá při startu) a ověř `node --version`. Skript si můžeš [otevřít a přečíst](https://gist.github.com/tomasvicar/c087caa3334703ff2353b328259bc341) před spuštěním — vždy si zkontroluj, co pouštíš přes `iex`.
+    **Tohle je nástroj, který si ukážeme přímo na cvičení** — má nejméně překážek pro start: žádné předplatné, žádná kreditka a navíc **nepotřebuje Node.js**.
 
     **Instalace (Windows, PowerShell):**
 
     ```powershell
-    # v učebně je potřeba ještě povolit spouštění skriptů a pak restartovat terminal:
-    Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-    ```
-
-    ```powershell
-    # instalace:
-    npm install -g @google/gemini-cli
-    # po instalaci restartuj terminál, aby se příkaz `gemini` načetl do PATH
+    irm https://antigravity.google/cli/install.ps1 | iex
+    # po instalaci restartuj terminál, aby se příkaz `agy` načetl do PATH
     ```
 
     **Instalace (macOS, Linux, WSL):**
 
     ```bash
-    npm install -g @google/gemini-cli
-    # nebo bez globální instalace:
-    npx @google/gemini-cli
-    # nebo přes Homebrew (macOS, Linux):
-    brew install gemini-cli
+    curl -fsSL https://antigravity.google/cli/install.sh | bash
+    ```
+
+    Instalátor stáhne binárku `agy` do uživatelského profilu (na Windows `%LOCALAPPDATA%\Antigravity`, na Unixu `~/.local/bin`) — **admin práva nejsou potřeba**. Pokud `agy` po instalaci v terminálu nefunguje, dorovnej PATH a shell příkazem:
+
+    ```bash
+    agy install
     ```
 
     **Spuštění a přihlášení:**
 
     ```bash
-    gemini          # spustí agenta v aktuální složce
+    agy             # spustí agenta v aktuální složce
     ```
 
-    Při prvním spuštění vyber **„Sign in with Google"** — otevře se prohlížeč s OAuth flow, přihlas se a vrať se do terminálu. Hotovo.
+    Při prvním spuštění vyber **„Sign in with Google"** — otevře se prohlížeč s OAuth flow, přihlas se a vrať se do terminálu. Hotovo. Verzi ověříš `agy --version`, aktualizuješ ji kdykoli `agy update`.
 
-    > **🛡️ Firewall popup při startu:** Při prvním spuštění může Windows Defender Firewall (nebo jiný firewall) vyskočit s dotazem na povolení síťové komunikace pro Node.js. Klidně dej **Cancel / Zrušit** — `gemini` to nepotřebuje pro normální fungování (OAuth flow běží přes prohlížeč na `localhost`) a vše proběhne správně i tak.
+    > **🛡️ Firewall popup při startu:** Při prvním spuštění může Windows Defender Firewall (nebo jiný firewall) vyskočit s dotazem na povolení síťové komunikace pro `agy`. Klidně dej **Cancel / Zrušit** — pro normální fungování to není potřeba (OAuth flow běží přes prohlížeč na `localhost`) a vše proběhne správně i tak.
 
-    > **💡 Tip:** Pokud chceš agentovi v projektu sdělit konvence (jazyk komentářů, struktura, …), vytvoř v kořeni projektu soubor `GEMINI.md` — funguje stejně jako `CLAUDE.md` u Claude Code (viz cíl 4.3).
+    > **💡 Tip:** Pokud chceš agentovi v projektu sdělit konvence (jazyk komentářů, struktura, …), vytvoř v kořeni projektu soubor `AGENTS.md` — funguje stejně jako `CLAUDE.md` u Claude Code (viz cíl 4.3). Antigravity CLI používá `AGENTS.md` (Gemini CLI dříve používal `GEMINI.md`).
 
 === "Claude Code"
 
@@ -305,7 +294,18 @@ Máš platné předplatné některé z AI služeb?
 
     **Předplatné:** ChatGPT Free (omezené množství dotazů, strop ale není jasně daný — po určitém množství dotazů Codex prostě oznámí, že jsi limit vyčerpal a musíš počkat několik hodin, než se okno resetuje) nebo Plus / Pro / Business / Edu / Enterprise.
 
-    > **⚙️ Nezbytný předpoklad: Node.js 20+** (kvůli `npm`). Postup instalace Node.js — včetně varianty bez admin práv přes pomocný skript — je stejný jako u Gemini CLI, viz callout v záložce „Gemini CLI ⭐ demo" výše. **Pozor — `winget install OpenAI.Codex` na Windows nedoporučujeme**: balíček ne vždy spolehlivě přidá `codex` do PATH. Použij raději `npm install -g` níže.
+    > **⚙️ Nezbytný předpoklad: Node.js 20+** (kvůli `npm`). Bez něj `npm` ani `npx` nepoběží a instalace selže. (Na rozdíl od Antigravity CLI, které Node.js nepotřebuje.)
+    >
+    > - **S admin právy** si Node.js stáhni z **[nodejs.org/download](https://nodejs.org/en/download)** (LTS, nainstaluje i `npm`). Alternativně přes balíčkovače: `winget install OpenJS.NodeJS.LTS` (Windows, vyžaduje UAC) nebo `brew install node` (macOS/Linux). Po instalaci ověř `node --version` (musí být ≥ 20) a `npm --version`.
+    > - **BEZ admin práv (Windows — typicky učebnové PC)** — pomocný skript stáhne LTS .zip do `%LOCALAPPDATA%\nodejs` a přidá do User PATH. V PowerShellu spusť:
+    >
+    >     ```powershell
+    >     irm https://gist.githubusercontent.com/tomasvicar/c087caa3334703ff2353b328259bc341/raw/install-node-user.ps1 | iex
+    >     ```
+    >
+    >     Otevři **nový** terminál (PATH se načítá při startu) a ověř `node --version`. Skript si můžeš [otevřít a přečíst](https://gist.github.com/tomasvicar/c087caa3334703ff2353b328259bc341) před spuštěním — vždy si zkontroluj, co pouštíš přes `iex`.
+    >
+    > **Pozor — `winget install OpenAI.Codex` na Windows nedoporučujeme**: balíček ne vždy spolehlivě přidá `codex` do PATH. Použij raději `npm install -g` níže.
 
     **Instalace (Windows, PowerShell):**
 
@@ -375,7 +375,7 @@ mkdir test_ai && cd test_ai
 uv init
 
 # spusť agenta (nahraď podle toho, co jsi instaloval)
-gemini        # nebo: claude, codex, copilot
+agy           # nebo: claude, codex, copilot
 ```
 
 V chatu napiš:

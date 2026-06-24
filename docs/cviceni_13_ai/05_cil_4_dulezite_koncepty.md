@@ -137,7 +137,7 @@ Agenti mají mechanismus **komprese kontextu** (např. v Claude Code příkaz `/
 **Co s tím?**
 
 - **Sleduj velikost kontextu a začni novou konverzaci včas** – ideálně dřív, než se přiblížíš ke 100k tokenům. Když přecházíš na nový úkol, neváhej a použij `/clear`. Agent má přístup k souborům v projektu, takže kontext předchozí práce si přečte z kódu. Nová konverzace s čistým kontextem často výsledek **zlepší**, protože agent se nemusí probíjet záplavou starších zpráv.
-- **Nech agenta zapisovat poznámky** – pokud pracuješ na složitějším úkolu, řekni agentovi ať si průběžně zapisuje poznámky do `.md` souboru (třeba `notes.md` nebo `TODO.md`). Při další konverzaci si je přečte a nemusíš mu vše vysvětlovat znovu.
+- **Nech agenta zapisovat poznámky** – pokud pracuješ na složitějším úkolu, řekni agentovi ať si průběžně zapisuje poznámky do `.md` souboru (třeba `notes.md` nebo `TODO.md`). Při další konverzaci si je přečte a nemusíš mu vše vysvětlovat znovu. (Markdown je ideální pro soubory, které čte zase AI; pro reporty určené člověku je lepší HTML — viz tip v [4.7](#47-jak-s-agentem-efektivne-pracovat).)
 - **Instrukční soubor jako trvalá paměť** – důležité informace o projektu (konvence, struktura, pravidla) patří do instrukčního souboru (viz 4.3). Agent ho čte automaticky na začátku každé konverzace, ale nezabírá zbytečně místo v kontextu při běžné práci.
 
 > **💡 Tip:** Pokud agent začne odpovídat nepřesně nebo „zapomíná" co jsi mu řekl před chvílí, je to často znak přeplněného kontextu. Začni novou konverzaci – často to samo o sobě problém vyřeší.
@@ -218,6 +218,8 @@ Tady je shrnutí nejdůležitějších pravidel, která platí bez ohledu na to,
 
 **Nech agenta, ať se doptává.** Pokud agent potřebuje víc informací, nech ho se zeptat. Nemusíš na začátku předvídat všechno – dobrý agent se sám zeptá na to, co mu chybí.
 
+**Piš v jazyce, který ovládáš.** Moderní modely rozumí česky výborně, takže **dobrá čeština je lepší než špatná angličtina**. Když nutíš sám sebe do angličtiny, kterou neovládáš na jisto, zadání bývá nepřesné a tím i výsledek. Raději napiš jasný a konkrétní prompt česky. (Angličtina se hodí leda pro samotný *kód* — názvy proměnných, komentáře, commit messages —, ne nutně pro komunikaci s agentem.)
+
 #### Jak organizovat práci
 
 **Pracuj po malých krocích.** Nejčastější chyba začátečníků: zadat obrovský úkol najednou. Velké generování kódu vrší chyby na sebe a výsledek je těžké opravit. Místo toho: zadej malý kus, otestuj, commitni, pokračuj dalším.
@@ -225,6 +227,13 @@ Tady je shrnutí nejdůležitějších pravidel, která platí bez ohledu na to,
 **Napřed plán, pak implementace.** Řekni agentovi: *„Napiš mi do souboru plan.md plán a TODO list toho, co bude potřeba udělat."* Zkontroluj plán, uprav ho, a pak nech agenta pracovat podle něj krok po kroku. Co je sepsané v `.md` souboru, tam zůstane a jde použít znovu — na rozdíl od kontextu konverzace, který se časem „zastarává" nebo ztratí.
 
 **Důležité informace sepisuj do `.md` souborů.** Kontext konverzace se ztratí – když začneš novou konverzaci, agent neví nic z té předchozí. Ale soubory v projektu zůstávají. Proto: rozhodnutí, požadavky, poznámky, TODO listy nech agenta zapisovat do souborů. Při další konverzaci si je přečte sám.
+
+> **💡 Markdown pro AI, HTML pro člověka.** Rozliš, kdo bude soubor číst:
+>
+> - **Čtenářem je zase AI** (instrukční soubor, `notes.md`, `plan.md`, `TODO.md`) → použij **Markdown (`.md`)**. Je úsporný na tokeny, agent ho čte přirozeně a snadno ho upravuje.
+> - **Čtenářem je člověk** (report z analýzy, shrnutí výsledků, přehled měření, dokumentace pro spolužáky) → nech agenta vygenerovat **HTML**. Dá se hezky naformátovat, **může být interaktivní** (grafy, filtrovatelné tabulky, rozbalovací sekce), otevře se rovnou v prohlížeči a vypadá výrazně líp než holý text. Pro **výsledkové reporty je HTML ideální formát** — stačí říct *„udělej z toho přehledný HTML report s grafy"*.
+>
+> Markdown se dá kdykoliv převést do HTML/PDF (viz nástroje jako Marp nebo Quarto v [Cíli 6](07_cil_6_ukazky.md)), takže klidně nech agenta psát průběžné poznámky v `.md` a finální report vyrobit v HTML.
 
 **Verzuj.** Commituj před každou větší interakcí s agentem. Pokud agent udělá něco, co nechceš, můžeš se snadno vrátit.
 
