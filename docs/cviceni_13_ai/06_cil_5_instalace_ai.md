@@ -71,10 +71,11 @@ Oba mají vlastní plugin (`Claude Code` v JetBrains Marketplace, `OpenAI Codex`
 
 > **🎯 Tohle je varianta, kterou si v tomhle cvičení nainstaluješ a pak v Cíli 6 použiješ na praktické úkoly.** Plugin v IDE výše má hezčí UI, ale CLI je univerzálnější — funkce přicházejí dřív, běží to všude (i přes SSH) a postup instalace platí napříč nástroji. Zkušenost s CLI ti pak velmi snadno přenese na plugin, opačně to ale neplatí.
 
-Terminál vypadá strohá oproti pluginu, ale má dvě velké výhody:
+Terminál vypadá strohá oproti pluginu, ale má tři velké výhody:
 
 - **Funguje všude** — Linux, macOS, Windows, vzdálený SSH server, WSL, terminál uvnitř PyCharmu.
 - **Nové funkce přicházejí jako první do CLI** a teprve s odstupem do pluginů.
+- **Nezávislé na editoru a skoro stejné u všech agentů** — terminál nepotřebuje konkrétní IDE (funguje stejně v PyCharmu, VS Code i holém terminálu) a ovládání je u **Claude Code, Codexu i Antigravity CLI** téměř identické (interaktivní chat, slash-příkazy, potvrzování změn). Co se naučíš na jednom, přeneseš na ostatní — snadno mezi nimi přepínáš.
 
 #### Rozhodovací pravidlo: kterého agenta nainstalovat?
 
