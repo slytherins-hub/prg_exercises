@@ -234,6 +234,8 @@ Tady je shrnutí nejdůležitějších pravidel, která platí bez ohledu na to,
 > - **Čtenářem je člověk** (report z analýzy, shrnutí výsledků, přehled měření, dokumentace pro spolužáky) → nech agenta vygenerovat **HTML**. Dá se hezky naformátovat, **může být interaktivní** (grafy, filtrovatelné tabulky, rozbalovací sekce), otevře se rovnou v prohlížeči a vypadá výrazně líp než holý text. Pro **výsledkové reporty je HTML ideální formát** — stačí říct *„udělej z toho přehledný HTML report s grafy"*.
 >
 > Markdown se dá kdykoliv převést do HTML/PDF (viz nástroje jako Marp nebo Quarto v [Cíli 6](07_cil_6_ukazky.md)), takže klidně nech agenta psát průběžné poznámky v `.md` a finální report vyrobit v HTML.
+>
+> **🌐 Sdílení zdarma přes GitHub Pages:** Hotovou HTML stránku (report, dashboard, prezentaci) můžeš **zdarma vystavit na web** přes [GitHub Pages](https://pages.github.com/) — stačí soubory nahrát do GitHub repozitáře a zapnout Pages v nastavení. Dostaneš veřejnou adresu typu `https://<jméno>.github.io/<repo>/`. Funguje jen pro **statické** stránky (HTML/CSS/JS, bez serveru), což reportům a prezentacím přesně stačí. Klidně to celé nech udělat agenta — *„nahraj to na GitHub a zapni GitHub Pages"*. (Mimochodem — i tyhle materiály ke cvičení takhle běží.)
 
 **Verzuj.** Commituj před každou větší interakcí s agentem. Pokud agent udělá něco, co nechceš, můžeš se snadno vrátit.
 

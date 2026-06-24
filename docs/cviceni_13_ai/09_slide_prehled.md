@@ -208,7 +208,7 @@ h1 { text-align: center; font-size: 2.2rem; font-weight: 800; color: #1a1a2e; ma
           <td><div class="logo-cell"><img src="../ai_logos/google_antigravity_wordmark.svg" alt="Google Antigravity"><span class="tool-suffix">CLI</span><span class="badge badge-free">free tier</span></div></td>
           <td>~$25/měs (Google AI Pro)<br><strong>free verze</strong> s Google účtem<br>(nástupce Gemini CLI)</td>
           <td>velké refaktoringy, projekty s mnoha soubory, free volba pro studenty</td>
-          <td><strong>Gemini 3 · 1M kontext</strong>; ovládá se příkazem <code>agy</code>; ukázkový agent na cvičení</td>
+          <td><strong>Gemini 3 · 1M kontext</strong>; ovládá se příkazem <code>agy</code>; <strong>Flash model odpovídá v sekundách</strong> (vs. minuty), ale méně kvalitně; ukázkový agent na cvičení</td>
         </tr>
       </tbody>
     </table>
