@@ -37,6 +37,14 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 - **Levný/rychlý model jako výchozí, silný jen na složité** — běžné edity a dotazy zvládne levný model (~80 % práce za zlomek ceny), na náročný refaktor, architekturu a plánování přepni nejsilnější.
 - **V příkazové řádce snadno přepínáš mezi agenty** — ovládání je u všech podobné, takže můžeš střídat Claude Code, Codex i Antigravity a **využít free tokeny od různých platforem** (když jeden vyčerpá limit, pokračuj druhým).
 
+### Který agent a co si pořídit
+
+- **Claude Code je aktuálně nejschopnější na složité věci.** Obecně v tom ale není velký rozdíl — ostatní jsou tak dva měsíce pozadu a pořadí se průběžně mění.
+- **Antigravity CLI (Gemini) má velmi rychlý model** — hodně rychlé reakce (Flash), skvělé na jednoduché úkoly a rychlé iterace.
+- **GitHub Copilot umí navíc doplňování kódu při psaní** (Tab) přímo v editoru.
+- **Co si pořídit:** placené základní varianty stojí dost podobně — **kolem 25 $/měsíc** (na intenzivní každodenní používání ale nemusí stačit, narazíš na limity). **Pokročilejší předplatné s vyššími limity vyjde zhruba na 100 $/měsíc.**
+- **CESNET (e-INFRA) dává modely zadarmo a prakticky neomezeně** — napojí se do Claude Code, ale modely jsou výrazně horší než placená špička. Postup je v [Cíli 5 — Instalace](06_cil_5_instalace_ai.md).
+
 ### Kontext a paměť
 
 - **Často mazej kontext** — nad ~100k tokenů začíná agent „hloupnout".
@@ -59,6 +67,7 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 ### Zdroje a vstupy
 
 - **Poskytni zdroje** (PDF, dataset, články), nebo nech agenta, ať si je sám stáhne.
+- **Na soubory se dá jednoduše odkazovat cestou** (často i přes `@cesta/k/souboru`) — napiš agentovi cestu a on si soubor sám přečte.
 - **Nech agenta vyhledat aktuální info na webu** — když jde o novinky nebo verze, na které trénovací data nestačí.
 - **Nech ze zdrojů udělat souhrn** s obsahem a odkazy.
 - **PDF nech přepsat do `.md`** — lépe se s ním pak pracuje.
@@ -84,7 +93,8 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 ### Prostředí a nástroje
 
 - **Nauč se pár příkazů svého agenta** (`/help`, přepnutí modelu, přerušení) — ušetří spoustu času.
-- **Nech agenta provádět instalování, nastavování a veškerou práci v příkazové řádce** — nemusíš příkazy hledat ani psát sám.
+- **Nech agenta provádět instalování, nastavování a veškerou práci v příkazové řádce** — nemusíš příkazy hledat ani psát sám. Neboj se ho nechat **instalovat nástroje a chystat prostředí** (Pythonní prostředí už nikdy nemusíš chystat ručně).
+- **Znej úrovně povolování akcí agenta** — kromě potvrzování po každém kroku bývá k dispozici **auto mód** (kontrolně se ptá jiného agenta), běh v **sandboxu** (např. Docker) nebo **povolit vše**. Komplexnější věci agent dělá klidně hodiny — s dotazem na každý krok by to nešlo reálně používat.
 - **VS Code je super** — univerzální napříč programovacími jazyky, což se hodí (často dává smysl přepnout na jiný jazyk).
 - **Nauč se Docker** — když zavřeš agenta do bezpečného kontejneru, můžeš ho nechat bezpečně pracovat bez neustálého povolování.
 - **Funguje i přes SSH na serveru** — neboj se agenta využít i pro příkazy na vzdáleném stroji, rovnou ti je vymyslí a spustí (skvělé v kombinaci s VS Code a jeho Remote-SSH).
