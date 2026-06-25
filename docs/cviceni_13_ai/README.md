@@ -14,3 +14,4 @@
 9. [Doplněk – ovládání AI agentů](11_doplnek_ovladani_agentu.md)
 10. [SELF-CHECK: PROCVIČENÍ ZNALOSTÍ](12_self_check_procvičení_znalostí.md)
 11. [DOPORUČENÉ ZDROJE](13_doporucene_zdroje.md)
+12. [NEJDŮLEŽITĚJŠÍ RADY](14_nejdulezitejsi_rady.md)
