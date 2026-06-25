@@ -13,7 +13,7 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 ### Git a repozitář
 
 - **Používej Git** — a nech s ním pracovat agenta (commituj před každou větší změnou, ať se můžeš vrátit).
-- **Nech agenta psát commit messages, README a dokumentaci** — píše je rád a dobře.
+- **Nech agenta psát commit messages, README a dokumentaci** — v psaní dokumentace je vážně výborný.
 - **Pro každý úkol čistá prázdná složka** — ať se agentovi nepletou nesouvisející soubory.
 - **Nech agenta navrhnout strukturu repozitáře** podle sebe — většinou to udělá rozumně.
 - **Nech vytvořit obsah repozitáře** (index) s odkazy na jednotlivé soubory.
@@ -107,6 +107,7 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 - **GUI umí agent velmi dobře** — neboj se nechat udělat malý nástroj i na „blbost".
 - **Co se MUSÍ stát pokaždé** (formátování, lint, kontrola) nedávej do instrukčního souboru, ale nastav jako **hook** — instrukci agent dodrží jen asi v 80 % případů, hook se spustí vždy.
 - **Python instaluj přes [uv](https://docs.astral.sh/uv/)** — je super rychlé a umí spravovat i různé verze Pythonu; stačí agentovi říct, ať ho používá, a o nic se nestaráš.
+- **Refaktoring a přepis kódu zvládá agent výborně** — ať jde o pročištění (refaktoring) existujícího kódu, nebo o převod do jiného jazyka.
 - **Neboj se jiného programovacího jazyka** — vyber podle úlohy:
     - rychle a jednoduše / zpracování dat → **Python**
     - je to pomalé → přepiš do **Rust / C++**
