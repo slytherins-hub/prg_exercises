@@ -99,6 +99,7 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 - **Nauč se Docker** — když zavřeš agenta do bezpečného kontejneru, můžeš ho nechat bezpečně pracovat bez neustálého povolování.
 - **Funguje i přes SSH na serveru** — neboj se agenta využít i pro příkazy na vzdáleném stroji, rovnou ti je vymyslí a spustí (skvělé v kombinaci s VS Code a jeho Remote-SSH).
 - **Najdi si svoje oblíbené CLI nástroje a nech je agenta používat** (`gh` CLI, `arduino-cli`, PrusaSlicer CLI…).
+- **Cokoliv, co má CLI variantu, je v kombinaci s agentem super** — agent nástroj rovnou ovládá. A když přímá CLI varianta není, většinou už existuje **MCP server**, přes který ho ovládneš taky.
 - **Arduino → `arduino-cli`** — agent pak zvládne rovnou nahrát vytvořený kód do Arduina.
 - **Na jakýkoliv drobný úkol nech vytvořit skript** (PowerShell, Bash, Python…) — přejmenovat soubory, převést formát, stáhnout data… co děláš opakovaně rukou, zvládne skript za vteřinu.
 - **GUI umí agent velmi dobře** — neboj se nechat udělat malý nástroj i na „blbost".

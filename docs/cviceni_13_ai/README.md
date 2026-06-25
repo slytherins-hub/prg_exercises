@@ -15,6 +15,7 @@
 10. [SELF-CHECK: PROCVIČENÍ ZNALOSTÍ](12_self_check_procvičení_znalostí.md)
 11. [DOPORUČENÉ ZDROJE](13_doporucene_zdroje.md)
 12. [NEJDŮLEŽITĚJŠÍ RADY](14_nejdulezitejsi_rady.md)
+13. [DOPLNĚK: UŽITEČNÉ MCP SERVERY A SKILLY](15_doplnek_mcp_servery.md)
 
 ---
 
