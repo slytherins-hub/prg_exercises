@@ -15,3 +15,15 @@
 10. [SELF-CHECK: PROCVIČENÍ ZNALOSTÍ](12_self_check_procvičení_znalostí.md)
 11. [DOPORUČENÉ ZDROJE](13_doporucene_zdroje.md)
 12. [NEJDŮLEŽITĚJŠÍ RADY](14_nejdulezitejsi_rady.md)
+
+---
+
+## Otevři si tuhle stránku v mobilu
+
+<p style="text-align:center;">
+  <img src="qr_stranka.svg" alt="QR kód na tuto stránku" style="width:260px;max-width:80%;height:auto;">
+</p>
+
+<p style="text-align:center;font-size:1.6rem;font-weight:700;word-break:break-all;">
+  <a href="https://slytherins-hub.github.io/prg_exercises/cviceni_13_ai/">https://slytherins-hub.github.io/prg_exercises/cviceni_13_ai/</a>
+</p>
