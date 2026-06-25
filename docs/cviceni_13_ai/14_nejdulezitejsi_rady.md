@@ -6,6 +6,8 @@ Algoritmizace a programování
 
 Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jednom místě.
 
+> **🧠 Úplně nejdůležitější je práce s kontextem** — dělej si zápisky (do souborů), často mazej kontext a místo dlouhých popisů používej skilly. Kdo umí hospodařit s kontextem, dostane z agenta výrazně víc.
+
 > **Není to jen o programování** — prakticky na jakýkoliv úkol je agent lepší než obyčejný chatbot (vidí soubory, spouští nástroje, sám se opraví).
 
 ### Git a repozitář
