@@ -6,6 +6,8 @@ Algoritmizace a programování
 
 Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jednom místě.
 
+> **Není to jen o programování** — prakticky na jakýkoliv úkol je agent lepší než obyčejný chatbot (vidí soubory, spouští nástroje, sám se opraví).
+
 ### Git a repozitář
 
 - **Používej Git** — a nech s ním pracovat agenta (commituj před každou větší změnou, ať se můžeš vrátit).
@@ -19,16 +21,31 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 ### Plánování a postup
 
 - **Nech agenta, ať se tě doptá** na chybějící informace.
+- **Piš v jazyce, který ovládáš** — lepší **dobrá čeština než špatná angličtina**. Nepřesné zadání = nepřesný výsledek.
+- **Mluv hlasem / diktuj** místo psaní dlouhých promptů — mluvení je zhruba 3× rychlejší, takže prompty vyjdou delší a detailnější (autor používá **[OpenWhispr](https://openwhispr.com/)**).
 - **Nejdřív plán, pak teprve tvorba** — nech celou věc naplánovat a plán si zkontroluj.
+- **Odděluj „co" od „jak"** — popiš jednoznačně pozorovatelné chování (cíl), ale způsob řešení nech na agentovi.
 - **Rozsáhlou věc dělej po krocích** — na každý krok podle plánu pusť čistého (nového) agenta.
 - **Často to trvá dlouho** — nauč se trochu multitasking (rozdělaná práce na pozadí).
+
+### Modely a náklady
+
+- **Levný/rychlý model jako výchozí, silný jen na složité** — běžné edity a dotazy zvládne levný model (~80 % práce za zlomek ceny), na náročný refaktor, architekturu a plánování přepni nejsilnější.
 
 ### Kontext a paměť
 
 - **Často mazej kontext** — nad ~100k tokenů začíná agent „hloupnout".
+- **Když si zrovna moc nerozumíte a agent nedělá, co chceš → `/clear` a začni s čistou konverzací.** Nová konverzace bez balastu obvykle pomůže víc než další dohadování.
+- **`/clear` je většinou lepší než `/compact`** — komprese zachová jen klíčové informace a přenese do nové konverzace i „šum". `/compact` použij jen tehdy, když víš, že kontext nemáš dobře uložený v souborech.
+- **Jakmile agent jede špatným směrem, hned ho přeruš** (Esc / Stop) a naveď znovu — nebo se vrať na checkpoint (Esc Esc / `/rewind`). Špatná úvaha jinak zůstává v kontextu a agent se jí dál drží.
 - **Než kontext smažeš, nech zapsat poznámky**, ať neztratíš informace.
 - **Nech agenta dělat si poznámky** — `.md` pro agenta, **HTML pro tebe** (čitatel = člověk).
 - **Nech zapsat důležitá pravidla**, která má dodržovat (jaký nástroj použít, oblíbená struktura kódu) — do instrukčního souboru.
+
+### Kontrola a ověřování
+
+- **Dej agentovi způsob, jak si práci sám ověří** — test, build, linter nebo porovnání screenshotu s návrhem, který vrací „prošlo/neprošlo". Bez měřitelného signálu se agent zastaví, jakmile to „vypadá hotově".
+- **Vyžaduj důkaz, ne tvrzení** — ať ti ukáže výstup testu, spuštěný příkaz s výsledkem nebo screenshot, ne jen „hotovo".
 
 ### Zdroje a vstupy
 
@@ -38,23 +55,39 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 - **Používej obrázky** — fotky nákresů, printscreeny, schémata. Často rychlejší než popisovat slovy.
 - **Čistě textové formáty jsou nejlepší** (`.md` je lepší než `.docx`…).
 
+### MCP servery — rozšíření agenta
+
+- **Pro aktuální dokumentaci knihovny přidej Context7 MCP** (do promptu napiš „use context7"), nebo dokumentaci dodej přes `@Docs` — trénovací data jsou zastaralá a agent si jinak vymýšlí neexistující API nových knihoven.
+- **Neinstaluj všechny MCP servery najednou** — drž se ~3–6 serverů a pod ~40 nástroji, nepoužívané vypínej. Definice nástrojů se načítají do kontextu při každém dotazu a nad ~30–50 nástroji začne agent volit špatný nástroj.
+- **Na frontend připoj Playwright MCP** — agent si sám otevře stránku, udělá screenshot a iteruje, dokud to nevypadá a nefunguje správně.
+
 ### Opakování a paralelizace
 
 - **Opakovaný úkol → vytvoř skill** a příště ho jen vyvoláš.
 - **Chceš víckrát stejnou věc → řekni, ať použije subagenty.**
 - **Nech subagenty udělat třeba 10 variant** a vyber si tu, která ti vyhovuje.
+- **Kód nech zkontrolovat NEZÁVISLÝM druhým agentem** (klidně jiným modelem) v čisté session, který vidí jen výsledný diff a má adversariální roli — „hledej chyby, nechval". Agent, který kód napsal, ho skoro vždy schválí.
+- **Subagent ať vrací jen stručné shrnutí** (ne celý průběh), výstupy slučuj postupně po jednom a po každém sloučení pusť celou sadu testů.
 - **Nech agenta psát automatické testy** — kvalita výsledku tím výrazně roste.
 
-### Nástroje a jazyky
+### Prostředí a nástroje
 
+- **VS Code je super** — univerzální napříč programovacími jazyky, což se hodí (často dává smysl přepnout na jiný jazyk).
+- **Nauč se Docker** — když zavřeš agenta do bezpečného kontejneru, můžeš ho nechat bezpečně pracovat bez neustálého povolování.
+- **Funguje i přes SSH na serveru** — agent ti může rovnou vymýšlet a spouštět příkazy.
 - **Najdi si svoje oblíbené CLI nástroje a nech je agenta používat** (`gh` CLI, `arduino-cli`, PrusaSlicer CLI…).
+- **Arduino → `arduino-cli`** — agent pak zvládne rovnou nahrát vytvořený kód do Arduina.
 - **GUI umí agent velmi dobře** — neboj se nechat udělat malý nástroj i na „blbost".
+- **Co se MUSÍ stát pokaždé** (formátování, lint, kontrola) nedávej do instrukčního souboru, ale nastav jako **hook** — instrukci agent dodrží jen asi v 80 % případů, hook se spustí vždy.
 - **Neboj se jiného programovacího jazyka** — vyber podle úlohy:
     - rychle a jednoduše / zpracování dat → **Python**
     - je to pomalé → přepiš do **Rust / C++**
     - souvisí to s webem → **JavaScript / TypeScript**
     - hodně paralelních operací → **Go**
 
-### Výstupy
+### Výstupy podle úkolu
 
-- **Pro výsledky je nejlepší HTML** (může být interaktivní), případně **Jupyter notebook**, pokud ti vyhovuje.
+- **Pro výsledky a reporty je nejlepší HTML** (může být interaktivní), případně **Jupyter notebook**, pokud ti vyhovuje.
+- **Prezentace** → **[Quarto](https://quarto.org/)** nebo **[Marp](https://marp.app/)**, popřípadě **LaTeX**.
+- **PDF** → **LaTeX**. Jde rozjet i workflow Overleaf → GitHub → lokální kopie, tam upravovat agentem a nahrát zpět.
+- **3D modely pro tisk** → **[CadQuery](https://github.com/CadQuery/cadquery)** / **[OpenSCAD](https://openscad.org/)** na modelování, **[Three.js](https://threejs.org/)** na zobrazení na míru v prohlížeči, **PrusaSlicer CLI** ať ti dá rovnou g-code.

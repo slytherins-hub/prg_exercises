@@ -10,5 +10,6 @@ Svět AI nástrojů se mění rychle — nejlepší způsob, jak zůstat v obraz
 
 - **[AI s rozumem](https://www.youtube.com/@aisrozumem)** 🇨🇿 — český kanál o praktickém a smysluplném používání AI. Dobrý start, pokud chceš obsah v češtině a bez zbytečného humbuku.
 - **[Matt Pocock](https://www.youtube.com/@mattpocockuk)** 🇬🇧 — anglicky mluvící kanál zaměřený na vývoj s AI (AI coding nástroje, agenti, praktické workflow). Hodí se, až budeš chtít jít víc do hloubky.
+- **[How I AI](https://www.youtube.com/@howiaipodcast)** 🇬🇧 — podcast o tom, jak lidé reálně používají AI ve své práci. Dobrý zdroj inspirace a konkrétních postupů.
 
 > **💡 Tip:** Sleduj i oficiální blogy a changelogy nástrojů, které používáš (odkazy najdeš v [Cíli 5 — Instalace AI nástrojů](06_cil_5_instalace_ai.md)) — funkce přibývají doslova každý týden.
