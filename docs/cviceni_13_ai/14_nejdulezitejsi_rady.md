@@ -16,7 +16,6 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 - **Nech agenta navrhnout strukturu repozitáře** podle sebe — většinou to udělá rozumně.
 - **Nech vytvořit obsah repozitáře** (index) s odkazy na jednotlivé soubory.
 - **Snaž se mít všechny informace v repozitáři** — co je jen v kontextu modelu, snadno zmizí (kontext často mažeš).
-- **Pro paralelní práci na jedné věci použij `git worktrees`** — stačí říct agentovi, ať to použije.
 - **Statickou stránku online** zveřejníš zdarma přes **GitHub Pages**.
 
 ### Plánování a postup
@@ -31,6 +30,7 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 - **Začni nejjednodušší verzí, co funguje (MVP)**, a teprve pak přidávej — snáz se ladí i commituje.
 - **Rozsáhlou věc dělej po krocích** — na každý krok podle plánu pusť čistého (nového) agenta.
 - **Často to trvá dlouho** — nauč se trochu multitasking (rozdělaná práce na pozadí).
+- **Pro paralelní práci na jedné věci použij `git worktrees`** — stačí říct agentovi, ať to použije.
 
 ### Modely a náklady
 
@@ -90,6 +90,7 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 - **Funguje i přes SSH na serveru** — neboj se agenta využít i pro příkazy na vzdáleném stroji, rovnou ti je vymyslí a spustí (skvělé v kombinaci s VS Code a jeho Remote-SSH).
 - **Najdi si svoje oblíbené CLI nástroje a nech je agenta používat** (`gh` CLI, `arduino-cli`, PrusaSlicer CLI…).
 - **Arduino → `arduino-cli`** — agent pak zvládne rovnou nahrát vytvořený kód do Arduina.
+- **Na jakýkoliv drobný úkol nech vytvořit skript** (PowerShell, Bash, Python…) — přejmenovat soubory, převést formát, stáhnout data… co děláš opakovaně rukou, zvládne skript za vteřinu.
 - **GUI umí agent velmi dobře** — neboj se nechat udělat malý nástroj i na „blbost".
 - **Co se MUSÍ stát pokaždé** (formátování, lint, kontrola) nedávej do instrukčního souboru, ale nastav jako **hook** — instrukci agent dodrží jen asi v 80 % případů, hook se spustí vždy.
 - **Python instaluj přes [uv](https://docs.astral.sh/uv/)** — je super rychlé a umí spravovat i různé verze Pythonu; stačí agentovi říct, ať ho používá, a o nic se nestaráš.
@@ -101,7 +102,7 @@ Stručný tahák — nejužitečnější návyky pro práci s AI agenty na jedno
 
 ### Výstupy podle úkolu
 
-- **Pro výsledky a reporty je nejlepší HTML** (může být interaktivní), případně **Jupyter notebook**, pokud ti vyhovuje.
+- **Jakýkoliv dokument dnes může být místo PDF rovnou HTML** — každý ho snadno otevře v prohlížeči a dá se v něm udělat úplně cokoliv, klidně **interaktivně**: tlačítka, šoupátka, živé grafy, 3D vizualizace… Pro výsledky a reporty je proto HTML nejlepší volba (případně **Jupyter notebook**, pokud ti vyhovuje).
 - **Prezentace** → **[Quarto](https://quarto.org/)** nebo **[Marp](https://marp.app/)**, popřípadě **LaTeX**.
 - **PDF** → **LaTeX**. Jde rozjet i workflow Overleaf → GitHub → lokální kopie, tam upravovat agentem a nahrát zpět.
 - **3D modely pro tisk** → **[CadQuery](https://github.com/CadQuery/cadquery)** / **[OpenSCAD](https://openscad.org/)** na modelování, **[Three.js](https://threejs.org/)** na zobrazení na míru v prohlížeči, **PrusaSlicer CLI** ať ti dá rovnou g-code.
